@@ -8,7 +8,7 @@ package com.Entity;
 public class BankAccount {
 
     private int id;
-    private String uid;
+    private int uid;
     private String account;//卡号
 
     public int getId() {
@@ -19,11 +19,11 @@ public class BankAccount {
         this.id = id;
     }
 
-    public String getUid() {
+    public int getUid() {
         return uid;
     }
 
-    public void setUid(String uid) {
+    public void setUid(int uid) {
         this.uid = uid;
     }
 
