@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Dao.UserDao">
+
+ <resultMap type="com.Entity.User" id="User">
+  <id property="id" column="id"/>
+  <result property="username" column="username"/>
+  <result property="password" column="password"/>
+  <result property="phonenumber" column="phonenumber"/>
+  <result property="state" column="state"/>
+  <result property="species" column="species"/>
+  <result property="money" column="money"/>
+
+</resultMap>
+
+
+    <insert id="insertUser">
+
+    insert into user(username,password,phonenumber,state,species)
+    values (#{username},#{password},#{phonenumber},#{state},#{species})
+
+   </insert>
+
+
+
+  <select id="selectById" resultMap="User" parameterType="int">
+
+      select username,password,phonenumber,state,species,money from user where id=#{id}
+       
+        
+    </select>
+
+    <select id="selectByUsername" resultMap="User" parameterType="String">
+
+        select id,password,phonenumber,state,species,money from user where username=#{username}
+
+
+    </select>
+
+    <update id="updateUser" >
+
+        update
+        user
+        <set>
+        <if test="id !=null">
+            id = #{id},
+        </if>
+        <if test="password !=null and password.length() !=0">
+            password = #{password},
+        </if>
+        <if test="phonenumber!=null and phonenumber.length() !=0">
+            phonenumber = #{phonenumber},
+        </if>
+
+        </set>
+        where
+        id=#{id} and state!=0
+
+    </update>
+
+
+
+
+    <delete id="deleteUser">
+        delete
+        from
+       user
+        where
+        id=#{id}
+
+    </delete>
+
+
+
+    
+
+</mapper>
