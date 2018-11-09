@@ -52,7 +52,7 @@
             password = #{password},
         </if>
         <if test="phonenumber!=null and phonenumber.length() !=0">
-            phonenumber = #{phonenumber},
+            phonenumber = #{phonenumber}
         </if>
 
         </set>
