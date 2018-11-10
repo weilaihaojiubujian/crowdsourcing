@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Dao.TaskDao">
+
+ <resultMap type="com.Entity.Task" id="Task">
+  <id property="id" column="id"/>
+  <result property="createtime" column="createtime"/>
+  <result property="completetime" column="completetime"/>
+  <result property="price" column="price"/>
+
+</resultMap>
+
+ <insert id="insertTask">
+
+  insert into task(uid,tmid,createtime,price)
+  values (#{uid},#{tmid},#{createtime},#{price})
+
+ </insert>
+
+ <update id="insertTaskcompletetime" >
+
+  update
+  task
+  <set>
+   <if test="id !=null">
+    id = #{id},
+   </if>
+   <if test="completetime !=null">
+    completetime= #{completetime}
+   </if>
+
+
+  </set>
+  where
+  id=#{id}
+
+ </update>
+
+ <select id="selectTask" resultMap="Task" parameterType="int">
+
+  select uid,tmid,createtime,price from task where id=#{id}
+
+
+ </select>
+
+ <delete id="deleteTask">
+  delete
+  from
+  task
+  where
+  id=#{id}
+
+ </delete>
+
+
+
+
+</mapper>

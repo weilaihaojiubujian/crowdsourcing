@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Dao.TaskmessageDao">
+
+ <resultMap type="com.Entity.Taskmessage" id="Taskmessage">
+  <id property="id" column="id"/>
+  <result property="name" column="name"/>
+  <result property="message" column="message"/>
+  <result property="state" column="state"/>
+  <result property="startingaddress" column="startingaddress"/>
+  <result property="startingdetail" column="startingdetail"/>
+  <result property="weight" column="weight"/>
+  <result property="purposeaddress" column="purposeaddress"/>
+  <result property="purposedetail" column="purposedetail"/>
+
+</resultMap>
+
+
+ <insert id="insertTaskmessage" parameterType="Taskmessage">
+  insert  into taskmessage(uid,ttid,pmid,name,message,startingaddress,startingdetail,purposeaddress,purposedetail,weight,startinggeohash,purposegeohash,startingposition,purposeposition)
+  values (#{uid},#{ttid},#{pmid},#{name},#{message},#{startingaddress},#{startingdetail},#{purposeaddress},#{purposedetail},#{weight},#{startinggeohash},#{purposegeohash},
+  point(#{startinglocationX},#{startinglocationY}),point(#{purposelocationX},#{purposelocationY}))
+ </insert>
+
+
+ <update id="updateTaskmessagestate" >
+
+  update
+  taskmessage
+  <set>
+   <if test="id !=null">
+    id = #{id},
+   </if>
+   <if test="state !=null ">
+    state = #{state}
+   </if>
+
+  </set>
+  where
+  id=#{id} and state!=0
+
+ </update>
+
+ <select id="selectTaskmessage" resultMap="Taskmessage" parameterType="int">
+
+  select id,uid,ttid,pmid,name,message,startingaddress,startingdetail,purposeaddress,purposedetail,weight from taskmessage where id=#{id}
+
+
+ </select>
+
+ <delete id="deleteTaskmessage">
+  delete
+  from
+  taskmessage
+  where
+  id=#{id}
+
+ </delete>
+
+
+
+</mapper>
