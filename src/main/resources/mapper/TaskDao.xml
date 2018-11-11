@@ -24,16 +24,12 @@
 
   update
   task
-  <set>
-   <if test="id !=null">
-    id = #{id},
-   </if>
-   <if test="completetime !=null">
+  set
+
     completetime= #{completetime}
-   </if>
 
 
-  </set>
+
   where
   id=#{id}
 

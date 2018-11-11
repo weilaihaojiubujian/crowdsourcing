@@ -1,6 +1,7 @@
 package com.Dao;
 
 import com.Entity.Task;
+import org.apache.ibatis.annotations.Param;
 
 import java.sql.Timestamp;
 
@@ -25,7 +26,7 @@ public interface TaskDao {
      * @param completetime
      * @return
      */
-    int insertTaskcompletetime(int id,Timestamp completetime);
+    int insertTaskcompletetime(@Param("id")int id, @Param("completetime")Timestamp completetime);
 
 
     /**

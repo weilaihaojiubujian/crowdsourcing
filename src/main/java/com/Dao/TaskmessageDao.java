@@ -1,6 +1,7 @@
 package com.Dao;
 
 import com.Entity.Taskmessage;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @Author: wanghongbin
@@ -24,7 +25,7 @@ public interface TaskmessageDao {
      * @param state
      * @return
      */
-    int updateTaskmessagestate(int id,int state);
+    int updateTaskmessagestate(@Param("id")int id, @Param("state")int state);
 
 
     /**

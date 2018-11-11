@@ -18,8 +18,8 @@
 
     <insert id="insertPersoninformation">
 
-    insert into personinformation(uid,name,sex,city,birthday,idcard,evaluation)
-    values (#{uid},#{name},#{sex},#{city},#{birthday},#{idcard},#{evaluation})
+    insert into personinformation(uid,name,sex,city,birthday,idcard)
+    values (#{uid},#{name},#{sex},#{city},#{birthday},#{idcard})
 
    </insert>
 
