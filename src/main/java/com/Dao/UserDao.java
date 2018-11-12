@@ -1,6 +1,7 @@
 package com.Dao;
 
 import com.Entity.User;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @Author: wanghongbin
@@ -32,6 +33,15 @@ public interface UserDao {
      * @return
      */
     User selectByUsername(String username);
+
+
+    /**
+     * 通过用户名和密码登陆
+     * @param username
+     * @param password
+     * @return
+     */
+    User selectByUsernamePassword(@Param("username")String username,@Param("password") String password);
 
 
     /**

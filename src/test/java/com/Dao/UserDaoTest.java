@@ -60,6 +60,16 @@ public class UserDaoTest {
     }
 
     @Test
+    public void selectByUsernamePassword()
+    {
+        String username="weilai";
+        String password="12345";
+        User u=userDao.selectByUsernamePassword(username,password);
+        System.out.println("用户:"+u);
+
+    }
+
+    @Test
     public void updateUser()
     {
         User u=new User();

@@ -14,7 +14,12 @@
 </resultMap>
 
 
+ <select id="selectByUsernamePassword" resultMap="Administrator" >
 
+  select id,username,password from administrator where username=#{username} and password=#{password}
+
+
+ </select>
 
 
     

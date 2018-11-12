@@ -40,6 +40,14 @@
 
     </select>
 
+
+    <select id="selectByUsernamePassword" resultMap="User" >
+
+        select id,phonenumber,state,species,money from user where username=#{username} and password=#{password}
+
+
+    </select>
+
     <update id="updateUser" >
 
         update
