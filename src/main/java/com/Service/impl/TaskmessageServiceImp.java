@@ -5,6 +5,7 @@ import com.Entity.Taskmessage;
 import com.Service.TaskmessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @Author: wanghongbin
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
  * @Date: Create in 21:11 2018/11/12
  */
 @Service
+@Transactional
 public class TaskmessageServiceImp implements TaskmessageService {
 
     @Autowired
@@ -28,7 +30,7 @@ public class TaskmessageServiceImp implements TaskmessageService {
     @Override
     public boolean updateTaskmessagestate(int id, int state) {
 
-        if(id==0 || state==1)
+        if(id==0 || state==0)
         {
             return false;
         }

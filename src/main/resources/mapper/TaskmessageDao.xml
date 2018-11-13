@@ -40,7 +40,7 @@
 
   </set>
   where
-  id=#{id} and state!=0
+  id=#{id} and state!=1
 
  </update>
 

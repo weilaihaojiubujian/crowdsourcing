@@ -37,7 +37,7 @@
 
  <select id="selectTask" resultMap="Task" parameterType="int">
 
-  select uid,tmid,createtime,price from task where id=#{id}
+  select uid,tmid,createtime,completetime,price from task where id=#{id}
 
 
  </select>

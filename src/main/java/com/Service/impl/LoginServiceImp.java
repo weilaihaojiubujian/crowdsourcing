@@ -7,6 +7,7 @@ import com.Entity.User;
 import com.Service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @Author: wanghongbin
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
  * @Date: Create in 19:05 2018/11/12
  */
 @Service
+@Transactional
 public class LoginServiceImp implements LoginService {
 
     @Autowired
@@ -29,6 +31,7 @@ public class LoginServiceImp implements LoginService {
             return null;
         }
         User user=userDao.selectByUsernamePassword(username,password);
+        System.out.println(user);
       if(user!=null)
       {
          return user;

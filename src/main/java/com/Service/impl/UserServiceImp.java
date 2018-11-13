@@ -5,6 +5,7 @@ import com.Entity.User;
 import com.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @Author: wanghongbin
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
  * @Date: Create in 19:22 2018/11/12
  */
 @Service
+@Transactional
 public class UserServiceImp implements UserService {
 
 

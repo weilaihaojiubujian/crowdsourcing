@@ -5,6 +5,7 @@ import com.Entity.Personinformation;
 import com.Service.PersoninformationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @Author: wanghongbin
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
  * @Date: Create in 20:18 2018/11/12
  */
 @Service
+@Transactional
 public class PersoninformationServiceImp implements PersoninformationService {
 
     @Autowired

@@ -6,6 +6,7 @@ import com.Entity.Taskmessage;
 import com.Service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Timestamp;
 
@@ -15,6 +16,7 @@ import java.sql.Timestamp;
  * @Date: Create in 21:32 2018/11/12
  */
 @Service
+@Transactional
 public class TaskServiceImp implements TaskService {
 
     @Autowired
