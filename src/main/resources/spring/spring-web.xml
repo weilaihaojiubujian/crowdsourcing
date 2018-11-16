@@ -11,15 +11,19 @@
        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
+    <mvc:view-controller path="/" view-name="login"/>
+
     <context:component-scan base-package="com.Controller"/>
 
+
     <mvc:annotation-driven/>
-    <mvc:resources mapping="/resources/**" location="/resources/"/>
-    <mvc:resources mapping="/html/**" location="/html"/>
+
+    <mvc:default-servlet-handler/>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
     </bean>
 
 </beans>

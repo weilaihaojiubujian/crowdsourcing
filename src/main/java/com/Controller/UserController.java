@@ -25,17 +25,20 @@ public class UserController {
     @Autowired
     LoginService loginService;
 
-    @RequestMapping(value = "/login",method = RequestMethod.GET)
+
+
+
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String login(HttpServletRequest request, Model model, HttpSession session){
         User u=(User) session.getAttribute("user");
-        if(u!=null) return "WEB-INF/jsp/client.jsp";
+        if(u!=null) return "client";
         String username=request.getParameter("username");
         String password=request.getParameter("password");
         if(password==null||password.equals("")|| username==null||username.equals(""))
-            return "WEB-INF/jsp/erro.jsp";//调试
+            return "error";//调试
 
         User user=loginService.userLogin(username,password);
         model.addAttribute("user",user);
-        return "WEB-INF/jsp/client.jsp";
+        return "client";
     }
 }

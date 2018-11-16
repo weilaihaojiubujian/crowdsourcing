@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Dao.PersoninformationDao">
+
+ <resultMap type="com.Entity.Personinformation" id="Personinformation">
+    <id property="id" column="id"/>
+    <result property="name" column="name"/>
+    <result property="sex" column="sex"/>
+     <result property="city" column="city"/>
+     <result property="birthday" column="birthday"/>
+     <result property="idcard" column="idcard"/>
+     <result property="evaluation" column="evaluation"/>
+</resultMap>
+
+
+    <insert id="insertPersoninformation">
+
+    insert into personinformation(uid,name,sex,city,birthday,idcard)
+    values (#{uid},#{name},#{sex},#{city},#{birthday},#{idcard})
+
+   </insert>
+
+
+    <update id="updatePersoninformation" >
+
+        update
+        personinformation
+        <set>
+            <if test="id !=null">
+                id = #{id},
+            </if>
+            <if test="name !=null and name.length() !=0">
+                name = #{name},
+            </if>
+            <if test="sex!=null and sex.length() !=0">
+                sex = #{sex},
+            </if>
+            <if test="city!=null and city.length() !=0">
+                city = #{city},
+            </if>
+            <if test="birthday!=null ">
+                birthday = #{birthday},
+            </if>
+            <if test="idcard!=null and idcard.length() !=0">
+                idcard = #{idcard},
+            </if>
+            <if test="evaluation!=null ">
+                evaluation= #{evaluation}
+            </if>
+
+        </set>
+        where
+        uid=#{uid}
+
+    </update>
+
+
+
+  <select id="selectPersoninformation" resultMap="Personinformation" parameterType="int">
+
+      select id,name,sex,city,birthday,idcard,evaluation from personinformation where uid=#{uid}
+       
+        
+    </select>
+
+
+
+
+
+    <delete id="deletePersoninformation">
+        delete
+        from
+       personinformation
+        where
+        id=#{id}
+
+    </delete>
+
+
+
+    
+
+</mapper>
