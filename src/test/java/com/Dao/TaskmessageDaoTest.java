@@ -29,7 +29,7 @@ public class TaskmessageDaoTest {
     public void  insertTaskmessage()
     {
         Taskmessage t=new Taskmessage();
-        int uid=2;
+        int uid=7;
         int ttid=1;
         int pmid=2;
         String name="帮忙收快递";
@@ -40,7 +40,7 @@ public class TaskmessageDaoTest {
         String purposedetail="东和公寓653";
         double weight=4.5;
         Double startinglocationX=89.11;
-        Double startinglocationY=91.25;
+        Double startinglocationY=61.25;
         Double purposelocationX=75.12;
         Double purposelocationY=45.23;
         t.setStartinggeohash(new GeoHash().encode(startinglocationX,startinglocationY));

@@ -26,6 +26,16 @@ public class Useraddress {
 
     private Timestamp createtime;//用户定位时间
 
+    private Double distance;
+
+    public Double getDistance() {
+        return distance;
+    }
+
+    public void setDistance(Double distance) {
+        this.distance = distance;
+    }
+
     public int getId() {
         return id;
     }
@@ -101,6 +111,7 @@ public class Useraddress {
                 ", locationX=" + locationX +
                 ", locationY=" + locationY +
                 ", createtime=" + createtime +
+                ", distance=" + distance +
                 '}';
     }
 }

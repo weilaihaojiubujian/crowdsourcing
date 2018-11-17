@@ -30,15 +30,15 @@ public class UseraddressDaoTest {
     public void  insertUseraddress()
     {
         Useraddress u=new Useraddress();
-        int uid=6;
+        int uid=2;
 
 
         String startingaddress="浙江省杭州市浙江科技学院小和山校区";
         String startingdetail="西和公寓507";
 
 
-        Double startinglocationX=89.11;
-        Double startinglocationY=45.25;
+        Double startinglocationX=79.11;
+        Double startinglocationY=55.25;
 
         u.setGeohash(new GeoHash().encode(startinglocationX,startinglocationY));
 
@@ -68,13 +68,12 @@ public class UseraddressDaoTest {
 
     @Test
     public void selectByPos() {
-        int uid = 6;
-
-        List<Useraddress> t = useraddressDao.selectByPos(uid);
+        int uid = 7;
+        double distance=1000000000;
+        List<Useraddress> t = useraddressDao.selectByPos(uid,distance);
         for (Useraddress i : t) {
             System.out.println("用户地址" + i);
-            System.out.println(i.getLocationX());
-            System.out.println(i.getLocationY());
+
         }
     }
     @Test

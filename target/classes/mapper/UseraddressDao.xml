@@ -31,12 +31,15 @@
 
 
     <select id="selectByPos" resultType="Useraddress">
-        select x(position) "locationX",y(position) "locationY"
+        select u.uid,st_distance_sphere(point(q.a,q.b),u.position) as distance
         from
-        useraddress
+        useraddress u,( select x(startingposition) a ,y(startingposition) b  from taskmessage where uid=#{uid}) as q
 
         where
-         uid=#{uid}
+        st_distance_sphere(point(q.a,q.b),u.position)<![CDATA[ <= ]]>#{distance}
+         and u.uid!=#{uid}
+         ORDER BY distance ASC
+         limit 0,10
 
     </select>
 
