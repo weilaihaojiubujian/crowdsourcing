@@ -1,0 +1,173 @@
+html,body{
+	height: 100%;
+}
+body{
+	background-image: url("../img/Login.png");
+	/*visibility: hidden;*/
+	background-size: cover;
+}
+/*@font-face{
+	font-family: "Aller_Rg";
+	src:url('../font/Aller_Rg.ttf');
+}*/
+/*-------------header--------------*/
+header{
+	font-size: small;
+	font-weight: 400;
+	color: white;
+}
+
+
+
+
+
+
+/*-------------mian--------------*/
+main{
+	display: flex;
+	height: inherit;
+}
+article{
+	height: inherit;
+}
+/*.background{
+	width: 30%;
+	height: inherit;
+	
+}*/
+/*.logo{
+	position: relative;
+	float: left;
+
+	width: 20em;
+	height: 10em;
+	margin: 0 auto;
+	background-image: url("../img/logo.png");
+	background-size: contain;
+}*/
+.logoContainer{
+	width: 40%;
+	height: inherit;
+	/*vertical-align: middle;*/
+}
+.logoImg{
+	width: 100%;
+	height: 50%;
+	background-image: url("../img/logoWhite.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 15em;
+	margin-left: 5em;
+}
+.registerContainer{
+	width: 60%;
+	/*height: inherit;*/
+	
+	min-width: 38em;
+	margin: 0 auto;
+	margin-top: 5em;
+	/*margin-left: 5em;*/
+}
+h3{
+	font-size: large;
+	font-weight: 600;
+	text-align: center;
+	background-color: #06abd4;
+	margin: 0 -1.6em;
+	height: 2em;
+	color: white;
+	line-height: 2em;
+	font-family: sans-serif;
+	transition: background-color .4s ease;
+}
+h3:hover{
+	background-color: #056982;
+}
+.ReisterText{
+	min-height: 60%;
+	width: 50%;
+	/*height: inherit;*/
+	background-color: rgba(255,255,255,0.8);
+	box-shadow:0 0 0.5em #c1c1c1; 
+	border-radius: 0.5em;
+	/*position: relative;
+	left: 50%;
+	top: 8em;*/
+	/*vertical-align: middle;*/
+	margin: auto;
+	/*margin-top: 5em;*/
+	padding: 1em 2em;
+	/*border: 1px solid black;*/
+}
+.img{
+	width: 10em;
+	height: 3em;
+	margin: 1em auto;
+	background-image: url("../img/logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.loginLogo{
+	/*width: inherit;*/
+	height: 30%;
+	/*border: 1px solid black;*/
+}
+
+
+form div{
+	margin: 0.8em 0;
+	display: flex;
+	word-spacing: 0.5em;
+}
+/*form div label{
+	width: 40%;
+	height: 2em;
+	text-align:right;
+}*/
+form div div{
+	width: 40%;
+	height: 2em;
+	line-height: 2em;
+	padding-right: 0.5em;
+	/*text-align: right;*/
+}
+form div div label{
+	text-align: right;
+	width: 100%;
+	font-size: 0.9em;
+	font-weight: 300;
+}
+form div div+div{
+	width: 60%;
+}
+form small{
+	display: block;
+	margin-top: 0.5em;
+	/*margin: 0 auto;*/
+	text-align: center;
+	width: 100%;
+}
+.submit{
+	margin: 0 auto;
+
+	/*text-align:center;*/
+}
+.submit input{
+	margin: 0 auto;
+}
+
+input:focus{
+	color:#338295;
+}
+
+
+
+/*-------------footer--------------*/
+
+footer{
+	position: absolute;
+	bottom: 0;
+	font-size: small;
+	font-weight: 700;
+	color: white;
+}
