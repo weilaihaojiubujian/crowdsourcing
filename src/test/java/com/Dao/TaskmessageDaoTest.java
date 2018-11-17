@@ -1,6 +1,7 @@
 package com.Dao;
 
 import com.Entity.Taskmessage;
+import com.Entity.Useraddress;
 import com.Util.GeoHash;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,6 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @Author: wanghongbin
@@ -67,6 +69,7 @@ public class TaskmessageDaoTest {
     {
         int id=1;
         int state=2;
+
         int i=taskmessageDao.updateTaskmessagestate(id,state);
         System.out.println(i);
     }
@@ -78,6 +81,10 @@ public class TaskmessageDaoTest {
         Taskmessage t=taskmessageDao.selectTaskmessage(id);
         System.out.println("任务信息："+t);
     }
+
+
+
+
 
     @Test
     public void  deleteTaskmessage()

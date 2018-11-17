@@ -44,6 +44,8 @@
 
  </update>
 
+
+
  <select id="selectTaskmessage" resultMap="Taskmessage" parameterType="int">
 
   select id,uid,ttid,pmid,name,message,startingaddress,startingdetail,purposeaddress,purposedetail,weight from taskmessage where id=#{id}

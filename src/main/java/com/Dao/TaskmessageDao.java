@@ -1,7 +1,10 @@
 package com.Dao;
 
 import com.Entity.Taskmessage;
+import com.Entity.Useraddress;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * @Author: wanghongbin
@@ -34,6 +37,7 @@ public interface TaskmessageDao {
      * @return
      */
     Taskmessage selectTaskmessage(int id);
+
 
 
     /**
