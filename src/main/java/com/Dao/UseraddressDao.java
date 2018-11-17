@@ -35,8 +35,13 @@ public interface UseraddressDao {
      */
     List<Useraddress> selectByUid(int uid);
 
-    List<Useraddress> selectByPos(@Param("uid") int uid
-                                 );
+    /**
+     * 查找最近的10位用户
+     * @param uid
+     * @param distance
+     * @return
+     */
+    List<Useraddress> selectByPos(@Param("uid") int uid,@Param("distance") double distance );
 
     /**
      * 删除地址
