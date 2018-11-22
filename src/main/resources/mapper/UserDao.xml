@@ -43,7 +43,7 @@
 
     <select id="selectByUsernamePassword" resultMap="User" >
 
-        select id,phonenumber,state,species,money from user where username=#{username} and password=#{password}
+        select id,username,phonenumber,state,species,money from user where username=#{username} and password=#{password}
 
 
     </select>

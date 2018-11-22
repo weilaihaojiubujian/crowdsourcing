@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Dao.UseraddressDao">
+
+ <resultMap type="com.Entity.Useraddress" id="Useraddress">
+     <id property="id" column="id"/>
+     <result property="address" column="address"/>
+     <result property="detail" column="detail"/>
+     <result property="createtime" column="createtime"/>
+</resultMap>
+
+
+    <insert id="insertUseraddress">
+
+    insert into useraddress(uid,address,detail,geohash,position,createtime)
+    values (#{uid},#{address},#{detail},#{geohash},point(#{locationX},#{locationY}),#{createtime})
+
+   </insert>
+
+
+
+  <select id="selectById" resultMap="Useraddress" parameterType="int">
+
+      select * from useraddress where id=#{id}
+       
+        
+    </select>
+
+
+    <select id="selectByPos" resultType="Useraddress">
+        select u.uid,st_distance_sphere(point(q.a,q.b),u.position) as distance
+        from
+        useraddress u,( select x(startingposition) a ,y(startingposition) b  from taskmessage where uid=#{uid}) as q
+
+        where
+        st_distance_sphere(point(q.a,q.b),u.position)<![CDATA[ <= ]]>#{distance}
+         and u.uid!=#{uid}
+         ORDER BY distance ASC
+         limit 0,10
+
+    </select>
+
+    <select id="selectByUid" resultMap="Useraddress" parameterType="int">
+
+        select * from useraddress where uid=#{uid}
+
+
+    </select>
+
+
+
+
+
+    <delete id="deleteAddress">
+        delete
+        from
+       useraddress
+        where
+        id=#{id}
+
+    </delete>
+
+
+
+    
+
+</mapper>
