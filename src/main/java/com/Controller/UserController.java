@@ -76,6 +76,11 @@ public class UserController {
         }
     }
 
+    @RequestMapping(value = "/regist",method = RequestMethod.GET)
+    public String regist(){
+        return "regist";
+    }
+
 
     @RequestMapping(value = "/regist",method = RequestMethod.POST)
     public String registuser(HttpServletRequest request, Model model, HttpSession session){

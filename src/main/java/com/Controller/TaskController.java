@@ -14,9 +14,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class TaskController {
 
     @RequestMapping(value = "/release",method = RequestMethod.GET)
-    public String regist(){
+    public String release(){
 
 
-        return "regist";
+
+        return "release";
+    }
+
+    @RequestMapping(value = "/release",method = RequestMethod.POST)
+    public String releasetask(){
+
+
+        return "release";
     }
 }

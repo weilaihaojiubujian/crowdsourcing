@@ -18,5 +18,6 @@
     <input type="radio" name="use" value="管理员">管理员<br>
     <input type="submit" value="登录">
 </form>
+<a href="/user/regist"   ><input type="button" name="注册" value="注册"></a>
 </body>
 </html>

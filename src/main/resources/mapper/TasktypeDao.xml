@@ -13,9 +13,19 @@
 
 </resultMap>
 
+ <select id="select" resultMap="Tasktype">
+
+  select id,name from tasktype
 
 
+ </select>
 
+ <select id="selectByname" resultMap="Tasktype" parameterType="String">
+
+  select id from tasktype where name=#{name}
+
+
+ </select>
 
     
 

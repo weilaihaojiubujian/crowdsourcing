@@ -14,7 +14,19 @@
 </resultMap>
 
 
+ <select id="select" resultMap="Pricingmodel">
 
+  select id,name from pricingmodel
+
+
+ </select>
+
+ <select id="selectByname" resultMap="Pricingmodel" parameterType="String">
+
+  select id from pricingmodel where name=#{name}
+
+
+ </select>
 
 
     

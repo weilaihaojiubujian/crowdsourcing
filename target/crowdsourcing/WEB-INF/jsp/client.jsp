@@ -18,5 +18,6 @@
     <c:if test="${ sessionScope.user.species.equals('erchants')}">商家</c:if>】使用系统</div>
 <td>主界面</td>
 
+<a href="/task/release"></a>
 </body>
 </html>

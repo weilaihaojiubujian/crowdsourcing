@@ -1,4 +1,4 @@
-package com.Dao;
+package com.Service;
 
 import com.Entity.Tasktype;
 
@@ -7,9 +7,9 @@ import java.util.List;
 /**
  * @Author: wanghongbin
  * @Description:
- * @Date: Create in 15:01 2018/11/8
+ * @Date: Create in 16:14 2018/11/23
  */
-public interface TasktypeDao {
+public interface TasktypeService {
 
     /**
      * 查找所有种类
@@ -17,12 +17,10 @@ public interface TasktypeDao {
      */
     List<Tasktype> select();
 
-
     /**
      * 通过name查找
      * @param name
      * @return
      */
     Tasktype selectByname(String name);
-
 }
