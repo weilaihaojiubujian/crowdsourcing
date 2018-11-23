@@ -1,7 +1,11 @@
 package com.Dao;
 
+import com.Dto.Merchants;
+import com.Dto.People;
 import com.Entity.User;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * @Author: wanghongbin
@@ -43,6 +47,19 @@ public interface UserDao {
      */
     User selectByUsernamePassword(@Param("username")String username,@Param("password") String password);
 
+    /**
+     * 列出所有state=0的个人用户
+     * @return
+     */
+    List<People> selectpeople();
+
+
+    /**
+     * 列出所有state=0的商家用户
+     * @return
+     */
+    List<Merchants> selectmerchants();
+
 
     /**
      * 更新用户
@@ -50,6 +67,14 @@ public interface UserDao {
      * @return
      */
     int updateUser(User user);
+
+
+    /**
+     * 更新用户状态
+     * @param id
+     * @return
+     */
+    int updateUserState(int id);
 
 
     /**

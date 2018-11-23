@@ -11,6 +11,8 @@
     <title>管理员主界面</title>
 </head>
 <body>
+<a href="/administrator/audit"   ><input type="button" name="审核用户" value="审核用户"></a>
+
 
 </body>
 </html>

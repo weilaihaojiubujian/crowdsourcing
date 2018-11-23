@@ -28,14 +28,14 @@
 
   <select id="selectById" resultMap="User" parameterType="int">
 
-      select username,password,phonenumber,state,species,money from user where id=#{id}
+      select username,password,phonenumber,state,species,money from user where id=#{id} and state=1
        
         
     </select>
 
     <select id="selectByUsername" resultMap="User" parameterType="String">
 
-        select id,password,phonenumber,state,species,money from user where username=#{username}
+        select id,password,phonenumber,state,species,money from user where username=#{username}and state=1
 
 
     </select>
@@ -43,7 +43,21 @@
 
     <select id="selectByUsernamePassword" resultMap="User" >
 
-        select id,username,phonenumber,state,species,money from user where username=#{username} and password=#{password}
+        select id,username,phonenumber,state,species,money from user where username=#{username} and password=#{password}and state=1
+
+
+    </select>
+
+    <select id="selectpeople" resultType="com.Dto.People" >
+
+        select u.id,username,password,phonenumber,name,sex,city,birthday,idcard from user u,personinformation p where  state=0 and species="people" and u.id=p.uid
+
+
+    </select>
+
+    <select id="selectmerchants" resultType="com.Dto.Merchants" >
+
+        select u.id,username,password,phonenumber,name,address,headname,headidcard from user u,businessinformation b where  state=0 and species="merchants" and u.id=b.uid
 
 
     </select>
@@ -69,7 +83,16 @@
 
     </update>
 
+    <update id="updateUserState" >
 
+        update
+        user
+       SET
+       state=1
+        where
+        id=#{id}
+
+    </update>
 
 
     <delete id="deleteUser">

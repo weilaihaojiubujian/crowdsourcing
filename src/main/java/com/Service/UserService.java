@@ -2,6 +2,8 @@ package com.Service;
 
 import com.Entity.User;
 
+import java.util.List;
+
 /**
  * @Author: wanghongbin
  * @Description:
@@ -23,6 +25,7 @@ public interface UserService {
      * @return
      */
     User selectUserById(int id);
+
 
 
 }

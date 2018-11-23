@@ -3,6 +3,8 @@ package com.Service.impl;
 import com.Dao.TaskmessageDao;
 import com.Entity.Taskmessage;
 import com.Service.TaskmessageService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,6 +18,8 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class TaskmessageServiceImp implements TaskmessageService {
 
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
+
     @Autowired
     private TaskmessageDao taskmessageDao;
 
@@ -24,6 +28,7 @@ public class TaskmessageServiceImp implements TaskmessageService {
         if(taskmessage==null) return false;
         int i=taskmessageDao.insertTaskmessage(taskmessage);
         System.out.println(i);
+        log.info("TaskmessageServiceImp"+"任务具体信息发布={}", i);
         return i>0?true:false;
     }
 
@@ -37,6 +42,7 @@ public class TaskmessageServiceImp implements TaskmessageService {
 
         int i=taskmessageDao.updateTaskmessagestate(id,state);
         System.out.println(i);
+        log.info("TaskmessageServiceImp"+"更新任务状态={}", i);
         return i>0?true:false;
     }
 
@@ -48,6 +54,7 @@ public class TaskmessageServiceImp implements TaskmessageService {
             return null;
         }
         Taskmessage t=taskmessageDao.selectTaskmessage(id);
+        log.info("TaskmessageServiceImp"+"查看任务具体信息={}", t);
         if(t!=null)
         {
             return t;
@@ -63,7 +70,7 @@ public class TaskmessageServiceImp implements TaskmessageService {
             return false;
         }
         int i=taskmessageDao.deleteTaskmessage(id);
-        System.out.println(i);
+        log.info("TaskmessageServiceImp"+"删除任务具体信息={}", i);
         return i>0?true:false;
     }
 }

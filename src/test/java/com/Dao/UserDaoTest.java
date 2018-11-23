@@ -1,5 +1,7 @@
 package com.Dao;
 
+import com.Dto.Merchants;
+import com.Dto.People;
 import com.Entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,6 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @Author: wanghongbin
@@ -69,6 +72,38 @@ public class UserDaoTest {
         System.out.println("用户:"+u);
 
     }
+    @Test
+    public void selectpeople()
+    {
+
+        List<People> u=userDao.selectpeople();
+        for (People i:u)
+        {
+            System.out.println("个人用户:"+i);
+        }
+
+
+    }
+
+    @Test
+    public void selectmerchants()
+    {
+
+        List<Merchants> u=userDao.selectmerchants();
+        for (Merchants i:u)
+        {
+            System.out.println("商家用户:"+i);
+        }
+
+
+    }
+    @Test
+    public void updateUserState()
+    {
+       int id=1;
+        int i=userDao.updateUserState(id);
+        System.out.println(i);
+    }
 
     @Test
     public void updateUser()
@@ -85,6 +120,7 @@ public class UserDaoTest {
         int i=userDao.updateUser(u);
         System.out.println(i);
     }
+
 
     @Test
     public void deleteUser()

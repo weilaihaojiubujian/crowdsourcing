@@ -5,6 +5,8 @@ import com.Dao.UserDao;
 import com.Entity.Administrator;
 import com.Entity.User;
 import com.Service.LoginService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,6 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional
 public class LoginServiceImp implements LoginService {
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     private UserDao userDao;
@@ -31,7 +34,8 @@ public class LoginServiceImp implements LoginService {
             return null;
         }
         User user=userDao.selectByUsernamePassword(username,password);
-        System.out.println(user);
+
+        log.info("LoginServiceImp"+"用户登录={}", user);
       if(user!=null)
       {
          return user;
@@ -47,6 +51,7 @@ public class LoginServiceImp implements LoginService {
             return null;
         }
         Administrator administrator=administratorDao.selectByUsernamePassword(username,password);
+        log.info("LoginServiceImp"+"管理员登录={}", administrator);
         if(administrator!=null)
         {
             return administrator;

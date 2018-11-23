@@ -4,6 +4,8 @@ import com.Dao.TaskDao;
 import com.Entity.Task;
 import com.Entity.Taskmessage;
 import com.Service.TaskService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,6 +21,8 @@ import java.sql.Timestamp;
 @Transactional
 public class TaskServiceImp implements TaskService {
 
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
+
     @Autowired
     private TaskDao taskDao;
 
@@ -27,7 +31,7 @@ public class TaskServiceImp implements TaskService {
 
         if(task==null) return false;
         int i=taskDao.insertTask(task);
-        System.out.println(i);
+        log.info("TaskServiceImp"+"任务接受={}", i);
         return i>0?true:false;
 
     }
@@ -39,7 +43,7 @@ public class TaskServiceImp implements TaskService {
             return false;
         }
         int i=taskDao.insertTaskcompletetime(id,completetime);
-        System.out.println(i);
+        log.info("TaskServiceImp"+"任务完成时间更新={}", i);
         return i>0?true:false;
 
     }
@@ -52,6 +56,7 @@ public class TaskServiceImp implements TaskService {
             return null;
         }
         Task t=taskDao.selectTask(id);
+        log.info("TaskServiceImp"+"查看任务={}", t);
         if(t!=null)
         {
             return t;
@@ -66,7 +71,7 @@ public class TaskServiceImp implements TaskService {
             return false;
         }
         int i=taskDao.deleteTask(id);
-        System.out.println(i);
+        log.info("TaskServiceImp"+"删除任务={}", i);
         return i>0?true:false;
 
     }
