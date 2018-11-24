@@ -1,8 +1,8 @@
 package com.Service.impl;
 
 import com.Dao.UserDao;
-import com.Dto.Merchants;
-import com.Dto.People;
+import com.Dto.Business;
+import com.Dto.Person;
 import com.Service.AuditService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,9 +27,9 @@ public class AuditServiceImp implements AuditService{
 
 
     @Override
-    public List<People> selectpeople() {
+    public List<Person> selectpeople() {
 
-        List<People> p=userDao.selectpeople();
+        List<Person> p=userDao.selectpeople();
         log.info("AuditServiceImp"+"个人信息={}", p);
         if (p!=null)
         {
@@ -43,9 +43,9 @@ public class AuditServiceImp implements AuditService{
     }
 
     @Override
-    public List<Merchants> selectmerchants() {
+    public List<Business> selectmerchants() {
 
-        List<Merchants> m=userDao.selectmerchants();
+        List<Business> m=userDao.selectmerchants();
         log.info("AuditServiceImp"+"商家信息={}", m);
         if (m!=null)
         {

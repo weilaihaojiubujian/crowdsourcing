@@ -38,4 +38,21 @@ public class BusinessinformationServiceImp implements BusinessinformationService
         log.info("BusinessinformationServiceImp"+"商家信息更新={}", i);
         return i>0?true:false;
     }
+
+    @Override
+    public Businessinformation selectBusinessinformation(int uid) {
+        if (uid==0)
+            return null;
+        Businessinformation b=businessinformationDao.selectBusinessinformation(uid);
+        log.info("BusinessinformationServiceImp"+"商家信息={}", b);
+        if(b!=null)
+        {
+            return b;
+        }
+        else {
+            return null;
+        }
+
+
+    }
 }

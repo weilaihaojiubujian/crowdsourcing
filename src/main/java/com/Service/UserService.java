@@ -1,6 +1,7 @@
 package com.Service;
 
 import com.Entity.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -28,4 +29,12 @@ public interface UserService {
 
 
 
+    /**
+     * 通过用户名和密码查询序号
+     * @param username
+     * @param password
+     * @return
+     */
+
+    User selectByUsernamePasswordToId(@Param("username")String username, @Param("password") String password);
 }

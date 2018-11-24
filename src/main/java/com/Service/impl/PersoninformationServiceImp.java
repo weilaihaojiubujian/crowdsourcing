@@ -40,4 +40,22 @@ public class PersoninformationServiceImp implements PersoninformationService {
         log.info("PersoninformationServiceImp"+"个人信息更新={}", i);
         return i>0?true:false;
     }
+
+    @Override
+    public Personinformation selectPersoninformation(int uid) {
+        if (uid==0)
+            return  null;
+        Personinformation p=personinformationDao.selectPersoninformation(uid);
+        log.info("PersoninformationServiceImp"+"个人信息={}", p);
+        if(p!=null)
+        {
+            return p;
+        }
+        else {
+            return null;
+        }
+
+
+
+    }
 }

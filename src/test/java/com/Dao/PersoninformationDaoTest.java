@@ -7,6 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.text.ParseException;
 import java.util.Date;
 
 /**
@@ -23,14 +24,13 @@ public class PersoninformationDaoTest {
     private PersoninformationDao personinformationDao;
 
     @Test
-    public void insertPersoninformation()
-    {
+    public void insertPersoninformation() throws ParseException {
         Personinformation p=new Personinformation();
         int uid=2;
         String name="汪宏斌";
         String sex="男";
         String city="杭州";
-        Date birthday=new java.util.Date();
+        String birthday="2018-11-15";
         String idcard="330283199710211419";
         p.setUid(uid);
         p.setName(name);

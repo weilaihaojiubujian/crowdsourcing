@@ -60,53 +60,9 @@
 
         }
 
-        function yanzhentruepassword(){
-
-            var length=document.getElementById('password').value.length;
-            var use=document.getElementById('password');
-            var value=document.getElementById('password').value;
-            var length1=document.getElementById('password1').value.length;
-            var use1=document.getElementById('password1');
-            var value1=document.getElementById('password').value;
-            if( value==value1){
 
 
 
-
-                document.getElementById('lab4').innerHTML=("ok");
-
-
-
-            }
-
-            else {
-
-                document.getElementById('lab4').innerHTML=("两次密码不一致");
-                use1.focus();
-            }
-
-        }
-
-        function yanzhenrealname(){
-
-
-            var length=document.getElementById('realname').value.length;
-            var use=document.getElementById('realname');
-            if(length>10){
-                use.focus();
-                document.getElementById('lab5').innerHTML=("名字不能超过10个字符");
-            }
-            else if(length==0){
-
-                document.getElementById('lab5').innerHTML=("名字不能为空");
-                use.focus();
-            }
-            else
-            {
-                document.getElementById('lab5').innerHTML=("ok");
-            }
-
-        }
         function yanzhenshuzi(){
             var phone=document.getElementById('phonenumber');
             var phonenumber=document.getElementById('phonenumber').value;
@@ -126,24 +82,6 @@
                 document.getElementById('lab2').innerHTML=("号码可用");
             }
 
-        }
-        function yanzhenemail(){
-            var email=document.getElementById('email');
-            var length=document.getElementById('email').value.length;
-            var reg=/^([a-zA-Z0-9]+[_|\-|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\-|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/gi;
-            if (email.value == "") {
-                document.getElementById('lab3').innerHTML=("邮箱不能为空!");
-            }
-            //格式验证
-            else if (!reg.test(email.value)) {
-                email.focus();
-
-                document.getElementById('lab3').innerHTML=("邮件格式不正确，请重新输入!");
-            }
-            else {
-
-                document.getElementById('lab3').innerHTML=("邮箱可使用!");
-            }
         }
 
 
@@ -165,9 +103,9 @@
 
     联系电话: <input type="text"  name="phonenumber" id="phonenumber" onblur="yanzhenshuzi()"><label id="lab2"></label><br>
 
-    电子邮件: <select name="species" id="species">
-    <option value="people">people</option>
-    <option value="merchants">merchants</option>
+    用户类别: <select name="species" id="species">
+    <option value="person">个人</option>
+    <option value="business">商家</option>
 </select><br>
 
 

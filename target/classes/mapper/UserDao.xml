@@ -48,16 +48,37 @@
 
     </select>
 
-    <select id="selectpeople" resultType="com.Dto.People" >
+    <select id="selectByUsernamePasswordToId" resultMap="User" >
 
-        select u.id,username,password,phonenumber,name,sex,city,birthday,idcard from user u,personinformation p where  state=0 and species="people" and u.id=p.uid
+        select id,username,phonenumber,state,species,money from user where username=#{username} and password=#{password}
 
 
     </select>
 
-    <select id="selectmerchants" resultType="com.Dto.Merchants" >
+    <select id="selectpeople" resultType="com.Dto.Person" >
 
-        select u.id,username,password,phonenumber,name,address,headname,headidcard from user u,businessinformation b where  state=0 and species="merchants" and u.id=b.uid
+        select u.id,username,password,phonenumber,name,sex,city,birthday,idcard from user u,personinformation p where  state=0 and species="person" and u.id=p.uid
+
+
+    </select>
+
+    <select id="selectpeopleinformation" resultType="com.Dto.Person" >
+
+        select u.id,username,password,phonenumber,name,sex,city,birthday,idcard from user u,personinformation p where  state=1 and species="person" and u.id=p.uid and u.id=#{id}
+
+
+    </select>
+
+    <select id="selectmerchants" resultType="com.Dto.Business" >
+
+        select u.id,username,password,phonenumber,name,address,headname,headidcard from user u,businessinformation b where  state=0 and species="business" and u.id=b.uid
+
+
+    </select>
+
+    <select id="selectbusinessinformation" resultType="com.Dto.Business" >
+
+        select u.id,username,password,phonenumber,name,address,headname,headidcard from user u,businessinformation b where  state=1 and species="business" and u.id=b.uid and u.id=#{id}
 
 
     </select>

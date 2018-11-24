@@ -21,4 +21,11 @@ public interface PersoninformationService {
      * @param personinformation
      */
     boolean updatePersoninformation(Personinformation personinformation);
+
+    /**
+     * 查看个人信息
+     * @param uid
+     * @return
+     */
+    Personinformation selectPersoninformation(int uid);
 }

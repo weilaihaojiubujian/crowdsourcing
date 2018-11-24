@@ -44,5 +44,26 @@ public class UserServiceImp implements UserService {
         return null;
     }
 
+    @Override
+    public User selectByUsernamePasswordToId(String username, String password) {
+
+
+        if(username.equals("")||username==null ||password.equals("")||password==null )
+        {
+            return null;
+        }
+        User u=userDao.selectByUsernamePasswordToId(username,password);
+        log.info("UserServiceImp"+"查询用户={}", u);
+        if (u!=null)
+        {
+            return u;
+        }
+        else {
+            return null;
+        }
+
+
+    }
+
 
 }

@@ -14,10 +14,11 @@
 </head>
 <body>
 <div>欢迎【${sessionScope.user.username}】
-    【 <c:if test="${ sessionScope.user.species.equals('people')}">用户</c:if>
-    <c:if test="${ sessionScope.user.species.equals('erchants')}">商家</c:if>】使用系统</div>
+    【 <c:if test="${ sessionScope.user.species.equals('person')}">用户</c:if>
+    <c:if test="${ sessionScope.user.species.equals('business')}">商家</c:if>】使用系统</div>
 <td>主界面</td>
 
 <a href="/task/release">发布任务</a>
+<a href="/user/information">信息</a>
 </body>
 </html>

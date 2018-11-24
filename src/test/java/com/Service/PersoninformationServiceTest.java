@@ -12,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.ParseException;
 import java.util.Date;
 
 /**
@@ -31,13 +32,13 @@ public class PersoninformationServiceTest {
 
     @Test
     @Rollback(false) //能对数据库里的表进行增删操作.原因：在操作数据时开启了事务，数据被放在iBATIS的一级缓存中，而操作之后没有提交事务
-    public void PersoninformationRegistered() {
+    public void PersoninformationRegistered() throws ParseException {
         Personinformation p=new Personinformation();
         int uid=2;
         String name="江闲人";
         String sex="男";
         String city="绍兴";
-        Date birthday=new java.util.Date();
+        String birthday="2018-11-15";
         String idcard="3302211419";
         p.setUid(uid);
         p.setName(name);

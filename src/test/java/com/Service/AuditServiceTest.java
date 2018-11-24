@@ -1,8 +1,7 @@
 package com.Service;
 
-import com.Dto.Merchants;
-import com.Dto.People;
-import com.Entity.User;
+import com.Dto.Business;
+import com.Dto.Person;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -32,8 +31,8 @@ public class AuditServiceTest {
     @Test
     public void selectpeople() {
 
-        List<People> u = auditService.selectpeople();
-        for (People i : u) {
+        List<Person> u = auditService.selectpeople();
+        for (Person i : u) {
             log.info("个人用户={}", u);
         }
 
@@ -42,8 +41,8 @@ public class AuditServiceTest {
 
     @Test
     public void selectmerchants() {
-        List<Merchants> u = auditService.selectmerchants();
-        for (Merchants i : u) {
+        List<Business> u = auditService.selectmerchants();
+        for (Business i : u) {
             log.info("商家用户={}", u);
         }
 

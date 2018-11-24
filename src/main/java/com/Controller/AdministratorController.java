@@ -1,10 +1,8 @@
 package com.Controller;
 
-import com.Dto.Merchants;
-import com.Dto.People;
-import com.Entity.User;
+import com.Dto.Business;
+import com.Dto.Person;
 import com.Service.AuditService;
-import com.Service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,15 +32,15 @@ public class AdministratorController {
     public  ModelAndView audituser(){
 
         ModelAndView m= new ModelAndView();
-        List<People> p=auditService.selectpeople();
+        List<Person> p=auditService.selectpeople();
         log.info("AdministratorController"+"用户个人信息={}", p);
 
-        List<Merchants> me=auditService.selectmerchants();
+        List<Business> me=auditService.selectmerchants();
         log.info("AdministratorController"+"商家个人信息={}", me);
 
 
-        m.addObject("peoples", p);
-        m.addObject("merchantss", me);
+        m.addObject("persons", p);
+        m.addObject("businesss", me);
         m.setViewName("audituser");
 
         return m;

@@ -1,12 +1,14 @@
 package com.Dto;
 
+import java.util.Date;
+
 /**
  * @Author: wanghongbin
  * @Description:
- * @Date: Create in 19:37 2018/11/23
+ * @Date: Create in 19:34 2018/11/23
  */
-public class Merchants {
-    //商家信息
+public class Person {
+    //个人信息
 
     private int id;//序号
 
@@ -16,13 +18,16 @@ public class Merchants {
 
     private String phonenumber;//手机号
 
+
     private String name;
 
-    private String address;
+    private String sex;
 
-    private String headname;//负责人姓名
+    private String city;
 
-    private String headidcard;//负责人身份证号
+    private Date birthday;
+
+    private String idcard;//身份证号
 
     public int getId() {
         return id;
@@ -64,41 +69,50 @@ public class Merchants {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address;
+    public String getSex() {
+        return sex;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
-    public String getHeadname() {
-        return headname;
+    public String getCity() {
+        return city;
     }
 
-    public void setHeadname(String headname) {
-        this.headname = headname;
+    public void setCity(String city) {
+        this.city = city;
     }
 
-    public String getHeadidcard() {
-        return headidcard;
+    public Date getBirthday() {
+        return birthday;
     }
 
-    public void setHeadidcard(String headidcard) {
-        this.headidcard = headidcard;
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public String getIdcard() {
+        return idcard;
+    }
+
+    public void setIdcard(String idcard) {
+        this.idcard = idcard;
     }
 
     @Override
     public String toString() {
-        return "Merchants{" +
+        return "Person{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", phonenumber='" + phonenumber + '\'' +
                 ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", headname='" + headname + '\'' +
-                ", headidcard='" + headidcard + '\'' +
+                ", sex='" + sex + '\'' +
+                ", city='" + city + '\'' +
+                ", birthday=" + birthday +
+                ", idcard='" + idcard + '\'' +
                 '}';
     }
 }

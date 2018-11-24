@@ -22,4 +22,12 @@ public interface BusinessinformationService {
      * @param businessinformation
      */
     boolean updateBusinessinformation(Businessinformation businessinformation);
+
+    /**
+     * 查看商家信息
+     * @param uid
+     * @return
+     */
+    Businessinformation selectBusinessinformation(int uid);
+
 }

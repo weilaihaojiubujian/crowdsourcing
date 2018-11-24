@@ -1,11 +1,10 @@
 package com.Dao;
 
-import com.Dto.Merchants;
-import com.Dto.People;
+import com.Dto.Business;
+import com.Dto.Person;
 import com.Entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -32,7 +31,7 @@ public class UserDaoTest {
       String username="weilai";
       String password="123";
       String phonenumber="13758149770";
-      String species="people";
+      String species="person";
       u.setUsername(username);
       u.setPassword(password);
       u.setPhonenumber(phonenumber);
@@ -73,11 +72,35 @@ public class UserDaoTest {
 
     }
     @Test
+    public void selectByUsernamePasswordToId()
+    {
+        String username="qw";
+        String password="as";
+        User u=userDao.selectByUsernamePasswordToId(username,password);
+        System.out.println("用户:"+u);
+
+    }
+
+    @Test
+    public void selectpeopleinformation()
+    {
+
+        int id=2;
+       Person u=userDao.selectpeopleinformation(id);
+
+
+            System.out.println("个人用户:"+u);
+
+
+
+    }
+
+    @Test
     public void selectpeople()
     {
 
-        List<People> u=userDao.selectpeople();
-        for (People i:u)
+        List<Person> u=userDao.selectpeople();
+        for (Person i:u)
         {
             System.out.println("个人用户:"+i);
         }
@@ -89,11 +112,24 @@ public class UserDaoTest {
     public void selectmerchants()
     {
 
-        List<Merchants> u=userDao.selectmerchants();
-        for (Merchants i:u)
+        List<Business> u=userDao.selectmerchants();
+        for (Business i:u)
         {
             System.out.println("商家用户:"+i);
         }
+
+
+    }
+
+    @Test
+    public void selectbusinessinformation()
+    {
+
+        int id=7;
+        Business u=userDao.selectbusinessinformation(id);
+
+            System.out.println("商家用户:"+u);
+
 
 
     }

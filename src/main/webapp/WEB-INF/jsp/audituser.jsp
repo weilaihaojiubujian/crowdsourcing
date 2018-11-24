@@ -27,7 +27,7 @@
         <th>身份证号</th>
         <th></th>
     </tr>
-    <c:forEach var="p" items="${peoples}">
+    <c:forEach var="p" items="${persons}">
         <tr>
             <td>${p.id}</td>
             <td><c:out value="${p.username}"></c:out></td>
@@ -56,7 +56,7 @@
         <th>负责人身份证号</th>
         <th></th>
     </tr>
-    <c:forEach var="m" items="${merchantss}">
+    <c:forEach var="m" items="${businesss}">
         <tr>
             <td>${m.id}</td>
             <td><c:out value="${m.username}"></c:out></td>

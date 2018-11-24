@@ -1,7 +1,7 @@
 package com.Dao;
 
-import com.Dto.Merchants;
-import com.Dto.People;
+import com.Dto.Business;
+import com.Dto.Person;
 import com.Entity.User;
 import org.apache.ibatis.annotations.Param;
 
@@ -47,20 +47,42 @@ public interface UserDao {
      */
     User selectByUsernamePassword(@Param("username")String username,@Param("password") String password);
 
+
+    /**
+     * 通过用户名和密码查询序号
+     * @param username
+     * @param password
+     * @return
+     */
+
+    User selectByUsernamePasswordToId(@Param("username")String username,@Param("password") String password);
+
     /**
      * 列出所有state=0的个人用户
      * @return
      */
-    List<People> selectpeople();
+    List<Person> selectpeople();
 
 
+    /**
+     * 查询个人用户信息
+     * @param id
+     * @return
+     */
+    Person selectpeopleinformation(int id);
     /**
      * 列出所有state=0的商家用户
      * @return
      */
-    List<Merchants> selectmerchants();
+    List<Business> selectmerchants();
 
 
+    /**
+     * 查询商家信息
+     * @param id
+     * @return
+     */
+    Business selectbusinessinformation(int id);
     /**
      * 更新用户
      * @param user

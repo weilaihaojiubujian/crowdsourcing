@@ -1,5 +1,9 @@
 package com.Entity;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -18,6 +22,7 @@ public class Personinformation {
     private String sex;
 
     private String city;
+
 
     private Date birthday;
 
@@ -70,8 +75,11 @@ public class Personinformation {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
+    public void setBirthday(String birthday) throws ParseException {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date rel_birth = format.parse(birthday);
+
+        this.birthday = rel_birth;
     }
 
     public String getIdcard() {

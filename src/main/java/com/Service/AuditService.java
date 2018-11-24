@@ -1,7 +1,7 @@
 package com.Service;
 
-import com.Dto.Merchants;
-import com.Dto.People;
+import com.Dto.Business;
+import com.Dto.Person;
 
 import java.util.List;
 
@@ -16,14 +16,14 @@ public interface AuditService {
      * 列出所有state=0的个人用户
      * @return
      */
-    List<People> selectpeople();
+    List<Person> selectpeople();
 
 
     /**
      * 列出所有state=0的商家用户
      * @return
      */
-    List<Merchants> selectmerchants();
+    List<Business> selectmerchants();
 
     boolean updateUserState(int id);
 }
