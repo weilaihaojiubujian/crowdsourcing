@@ -29,6 +29,8 @@ public class Person {
 
     private String idcard;//身份证号
 
+    private double evaluation;//评价
+
     public int getId() {
         return id;
     }
@@ -101,6 +103,14 @@ public class Person {
         this.idcard = idcard;
     }
 
+    public double getEvaluation() {
+        return evaluation;
+    }
+
+    public void setEvaluation(double evaluation) {
+        this.evaluation = evaluation;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -113,6 +123,7 @@ public class Person {
                 ", city='" + city + '\'' +
                 ", birthday=" + birthday +
                 ", idcard='" + idcard + '\'' +
+                ", evaluation=" + evaluation +
                 '}';
     }
 }

@@ -109,6 +109,19 @@ public class UserDaoTest {
     }
 
     @Test
+    public void selectPerson()
+    {
+
+        List<Person> u=userDao.selectPerson();
+        for (Person i:u)
+        {
+            System.out.println("个人用户:"+i);
+        }
+
+
+    }
+
+    @Test
     public void selectmerchants()
     {
 
@@ -161,7 +174,7 @@ public class UserDaoTest {
     @Test
     public void deleteUser()
     {
-       int id=3;
+       int id=7;
        int i=userDao.deleteUser(id);
         System.out.println(i);
     }

@@ -65,5 +65,16 @@ public class UserServiceImp implements UserService {
 
     }
 
+    @Override
+    public boolean deleteUser(int id) {
+        if(id==0)
+        {
+            return false;
+        }
+        int i=userDao.deleteUser(id);
+        log.info("UserServiceImp"+"删除用户={}", i);
+        return i>0?true:false;
+    }
+
 
 }

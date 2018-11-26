@@ -6,12 +6,20 @@
          version="3.1"
         >
   <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:spring/spring-*.xml</param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
   <servlet>
     <servlet-name>dispathcer-servlet</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:spring/spring-*.xml</param-value>
+      <param-value>classpath:spring/springweb.xml</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>

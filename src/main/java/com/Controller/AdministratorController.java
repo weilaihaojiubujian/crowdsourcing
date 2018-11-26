@@ -3,6 +3,7 @@ package com.Controller;
 import com.Dto.Business;
 import com.Dto.Person;
 import com.Service.AuditService;
+import com.Service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,29 @@ public class AdministratorController {
     @Autowired
     AuditService auditService;
 
+
+    @Autowired
+    UserService userService;
+
+
+    @RequestMapping(value = "/audituser",method = RequestMethod.GET)
+    public String audituser1(){
+        return "audituser";
+
+    }
+
+    @RequestMapping(value = "/administrator",method = RequestMethod.GET)
+    public String administrator(){
+        return "administrator";
+
+    }
+
+    @RequestMapping(value = "/deleteuser",method = RequestMethod.GET)
+    public String deleteuser1(){
+        return "deleteuser";
+
+    }
+
     @RequestMapping(value = "/audit",method = RequestMethod.GET)
     public  ModelAndView audituser(){
 
@@ -41,7 +65,7 @@ public class AdministratorController {
 
         m.addObject("persons", p);
         m.addObject("businesss", me);
-        m.setViewName("audituser");
+        m.setViewName("redirect:/administrator/audituser");
 
         return m;
     }
@@ -57,7 +81,7 @@ public class AdministratorController {
 
         if(i==true)
         {
-            m.setViewName("administrator");
+            m.setViewName("redirect:/administrator/administrator");
         }
         else
         {
@@ -67,4 +91,45 @@ public class AdministratorController {
 
         return m;
     }
+
+
+    @RequestMapping(value = "/auditbyevaluation",method = RequestMethod.GET)
+    public  ModelAndView audituserbyevaluation(){
+
+        ModelAndView m= new ModelAndView();
+        List<Person> p=auditService.selectPerson();
+        log.info("AdministratorController"+"用户个人信息={}", p);
+
+
+
+
+        m.addObject("persons", p);
+        m.setViewName("redirect:/administrator/deleteuser");
+
+        return m;
+    }
+
+
+    @RequestMapping(value = "/delete/{id}",method = RequestMethod.GET)
+    public  ModelAndView deleteuser(@PathVariable("id") int id){
+
+        ModelAndView m= new ModelAndView();
+        boolean i=userService.deleteUser(id);
+
+        log.info("AdministratorController"+"删除用户={}", i);
+
+
+        if(i==true)
+        {
+            m.setViewName("redirect:/administrator/administrator");
+        }
+        else
+        {
+
+            m.setViewName("redirect:/administrator/auditbyevaluation");
+        }
+
+        return m;
+    }
+
 }

@@ -33,7 +33,7 @@ import java.util.Date;
  */
 @Controller
 @RequestMapping("/user")
-@SessionAttributes("user")
+
 public class UserController {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
@@ -55,6 +55,52 @@ public class UserController {
     UserinformationService userinformationService;
 
 
+    @RequestMapping(value = "/login3",method = RequestMethod.GET)
+    public String login3(){
+        return "login";
+
+    }
+
+    @RequestMapping(value = "/login1",method = RequestMethod.GET)
+    public String login1(){
+        return "client";
+
+    }
+
+    @RequestMapping(value = "/login2",method = RequestMethod.GET)
+    public String login2(){
+        return "administrator";
+
+    }
+    @RequestMapping(value = "/error",method = RequestMethod.GET)
+    public String error(){
+        return "error";
+
+    }
+
+    @RequestMapping(value = "/registpersoninformation1",method = RequestMethod.GET)
+    public String registpersoninformation(){
+        return "registpersoninformation";
+
+    }
+
+    @RequestMapping(value = "/registbusinessinformation1",method = RequestMethod.GET)
+    public String registbusinessinformation(){
+        return "registbusinessinformation";
+
+    }
+
+    @RequestMapping(value = "/personinformation",method = RequestMethod.GET)
+    public String personinformation(){
+        return "personinformation";
+
+    }
+
+    @RequestMapping(value = "/businessinformation",method = RequestMethod.GET)
+    public String businessinformation(){
+        return "businessinformation";
+
+    }
 
 
     @RequestMapping(value = "/login",method = RequestMethod.POST)
@@ -64,7 +110,7 @@ public class UserController {
         String username=request.getParameter("username");
         String password=request.getParameter("password");
         if(password==null||password.equals("")|| username==null||username.equals(""))
-            return "error";//调试
+            return "redirect:/user/error";//调试
 
 
 
@@ -75,26 +121,27 @@ public class UserController {
             model.addAttribute("user",user);
             if(user!=null)
             {
-                return "client";
+                return "redirect:/user/login1";
             }
             else
             {
-                return "error";//调试
+                return "redirect:/user/error";//调试
             }
 
 
         } else {
             System.out.println("管理员");
             Administrator user=loginService.administratorLogin(username,password);
-            session.setAttribute("user",user);
+
+            session.setAttribute("administrator",user);
             model.addAttribute("user",user);
             if(user!=null)
             {
-                return "administrator";
+                return "redirect:/user/login2";
             }
             else
             {
-                return "error";//调试
+                return "redirect:/user/error";//调试
             }
 
 
@@ -133,22 +180,22 @@ public class UserController {
                 session.setAttribute("user",user);
                 if(species.equals("person"))
                 {
-                    return "registpersoninformation";
+                    return "redirect:/user/registpersoninformation1";
                 }
                 else
                 {
-                    return "registbusinessinformation";
+                    return "redirect:/user/registbusinessinformation1";
                 }
 
             }
             else
             {
-                return "regist";
+                return "redirect:/user/regist";
             }
         }
         else
         {
-            return "login";
+            return "redirect:/user/login3";
         }
 
 
@@ -170,13 +217,13 @@ public class UserController {
             Personinformation p=personinformationService.selectPersoninformation(uid);
             if(p==null)
             {
-                return "registpersoninformation";
+                return "redirect:/user/registpersoninformation1";
             }
             else
             {
                 Person q=userinformationService.selectpeopleinformation(uid);
                 model.addAttribute("person",q);
-                return "personinformation";
+                return "redirect:/user/personinformation";
             }
 
         }
@@ -185,12 +232,12 @@ public class UserController {
             Businessinformation b=businessinformationService.selectBusinessinformation(uid);
             if (b==null)
             {
-                return "registbusinessinformation";
+                return "redirect:/user/registbusinessinformation1";
             }
             else {
                 Business w=userinformationService.selectbusinessinformation(uid);
                 model.addAttribute("business",w);
-                return "businessinformation";
+                return "redirect:/user/businessinformation";
             }
 
 
@@ -226,11 +273,11 @@ public class UserController {
         boolean i=personinformationService.PersoninformationRegistered(p);
         if(i==true)
         {
-            return "login";
+            return "redirect:/user/login3";
         }
         else
         {
-            return "registpersoninformation";
+            return "redirect:/user/registpersoninformation1";
         }
 
 
@@ -259,11 +306,11 @@ public class UserController {
         boolean i=businessinformationService.BusinessinformationRegistered(b);
         if(i==true)
         {
-            return "login";
+            return "redirect:/user/login3";
         }
         else
         {
-            return "registbusinessinformation";
+            return "redirect:/user/registbusinessinformation1";
         }
 
 

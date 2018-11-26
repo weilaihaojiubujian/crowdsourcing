@@ -25,5 +25,17 @@ public interface AuditService {
      */
     List<Business> selectmerchants();
 
+    /**
+     * 审核用户
+     * @param id
+     * @return
+     */
     boolean updateUserState(int id);
+
+
+    /**
+     * 列出所有state=1的用户，按评价从低到高排列
+     * @return
+     */
+    List<Person> selectPerson();
 }

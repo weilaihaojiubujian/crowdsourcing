@@ -43,7 +43,7 @@ public class AuditServiceTest {
     public void selectmerchants() {
         List<Business> u = auditService.selectmerchants();
         for (Business i : u) {
-            log.info("商家用户={}", u);
+            log.info("商家用户={}", i);
         }
 
 
@@ -55,6 +55,17 @@ public class AuditServiceTest {
         int id=1;
         boolean i=auditService.updateUserState(id);
         log.info("审核用户通过={}", i);
+
+    }
+
+    @Test
+    public void selectPerson() {
+
+        List<Person> u = auditService.selectPerson();
+        for (Person i : u) {
+            log.info("个人用户={}", i);
+        }
+
 
     }
 }

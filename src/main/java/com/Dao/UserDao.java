@@ -65,6 +65,13 @@ public interface UserDao {
 
 
     /**
+     * 列出所有state=1的用户，按评价从低到高排列
+     * @return
+     */
+    List<Person> selectPerson();
+
+
+    /**
      * 查询个人用户信息
      * @param id
      * @return

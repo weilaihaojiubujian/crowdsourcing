@@ -66,4 +66,20 @@ public class AuditServiceImp implements AuditService{
         log.info("AuditServiceImp"+"审核用户通过={}", i);
         return i>0?true:false;
     }
+
+    @Override
+    public List<Person> selectPerson() {
+
+
+        List<Person> p=userDao.selectPerson();
+        log.info("AuditServiceImp"+"个人信息={}", p);
+        if (p!=null)
+        {
+            return p;
+        }
+        else {
+            return null;
+        }
+
+    }
 }

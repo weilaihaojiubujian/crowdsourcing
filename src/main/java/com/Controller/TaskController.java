@@ -30,6 +30,13 @@ public class TaskController {
     @Autowired
     PricingmodelService pricingmodelService;
 
+    @RequestMapping(value = "/release1",method = RequestMethod.GET)
+    public String release1(){
+        return "release";
+
+    }
+
+
     @RequestMapping(value = "/release",method = RequestMethod.GET)
     public ModelAndView release(){
 
@@ -41,7 +48,7 @@ public class TaskController {
         System.out.println("TaskController"+"计费种类"+p);
         m.addObject("tasktypes", t);
         m.addObject("pricingmodels", p);
-        m.setViewName("release");
+        m.setViewName("redirect:/task/release1");
 
         return m;
     }
@@ -58,6 +65,6 @@ public class TaskController {
 
 
 
-        return "release";
+        return "redirect:/task/release1";
     }
 }

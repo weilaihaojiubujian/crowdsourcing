@@ -37,4 +37,11 @@ public interface UserService {
      */
 
     User selectByUsernamePasswordToId(@Param("username")String username, @Param("password") String password);
+
+    /**
+     * 删除用户
+     * @param id
+     * @return
+     */
+    boolean deleteUser(int id);
 }
