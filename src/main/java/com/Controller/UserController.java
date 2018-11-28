@@ -334,4 +334,77 @@ public class UserController {
     }
 
 
+    @RequestMapping(value = "/personinformation1",method = RequestMethod.POST)
+    public String personinformation1(HttpServletRequest request, HttpSession session) throws ParseException {
+        User user= (User) session.getAttribute("user");
+        int uid=user.getId();
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        String phonenumber= request.getParameter("phonenumber");
+
+        String name = request.getParameter("name");
+        String sex = request.getParameter("sex");
+
+        String city= request.getParameter("city");
+        String idcard= request.getParameter("idcard");
+
+
+        Personinformation p=new Personinformation();
+        p.setBirthday(request.getParameter("birthday"));
+
+        Person q=new Person();
+        q.setBirthday(p.getBirthday());
+        q.setCity(city);
+        q.setId(uid);
+        q.setUsername(username);
+        q.setPassword(password);
+        q.setPhonenumber(phonenumber);
+        q.setName(name);
+        q.setSex(sex);
+        q.setIdcard(idcard);
+        log.info("UserController"+"用户更新个人信息={}", q);
+        boolean i=userService.updateUser(q);
+
+
+        return "redirect:/user/information";
+
+
+    }
+
+    @RequestMapping(value = "/businessinformation1",method = RequestMethod.POST)
+    public String businessinformation1(HttpServletRequest request, HttpSession session){
+        User user= (User) session.getAttribute("user");
+        int uid=user.getId();
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        String phonenumber= request.getParameter("phonenumber");
+
+        String name = request.getParameter("name");
+        String address = request.getParameter("address");
+
+        String headname= request.getParameter("headname");
+        String headidcard= request.getParameter("headidcard");
+
+        Business b=new Business();
+        b.setAddress(address);
+        b.setHeadidcard(headidcard);
+        b.setHeadname(headname);
+        b.setName(name);
+        b.setUsername(username);
+        b.setPassword(password);
+        b.setPhonenumber(phonenumber);
+        b.setId(uid);
+
+        log.info("UserController"+"商家用户更新个人信息={}", b);
+        boolean i=userService.updateBusiness(b);
+
+
+        return "redirect:/user/information";
+
+
+    }
+
+
 }

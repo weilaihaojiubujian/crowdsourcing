@@ -2,6 +2,7 @@ package com.Dao;
 
 import com.Dto.Business;
 import com.Dto.Person;
+import com.Entity.Personinformation;
 import com.Entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,6 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -155,21 +157,68 @@ public class UserDaoTest {
     }
 
     @Test
-    public void updateUser()
-    {
+    public void updateUser() throws ParseException {
         User u=new User();
-        int id=2;
+        int id=1;
         String password="123456";
         String phonenumber="1375770";
+        String username = "yo";
 
-        u.setId(id);
-        u.setPassword(password);
-        u.setPhonenumber(phonenumber);
 
-        int i=userDao.updateUser(u);
+        String name ="天";
+        String sex = "女";
+
+        String city= "宁海";
+        String idcard= "7456154754";
+        Personinformation p=new Personinformation();
+        p.setBirthday("2018-11-15");
+        Person q=new Person();
+        q.setBirthday(p.getBirthday());
+        q.setCity(city);
+        q.setId(id);
+        q.setUsername(username);
+        q.setPassword(password);
+        q.setPhonenumber(phonenumber);
+        q.setName(name);
+        q.setSex(sex);
+        q.setIdcard(idcard);
+
+        int i=userDao.updateUser(q);
+
         System.out.println(i);
     }
+    @Test
+    public void updateBusiness()  {
+        User u=new User();
+        int id=8;
+        String password="123456";
+        String phonenumber="1375770";
+        String username = "yo";
 
+
+        String name = "天第";
+        String address = "安吉";
+
+        String headname="李四";
+        String headidcard= "4561358795";
+
+
+        Person q=new Person();
+        Business b=new Business();
+        b.setId(id);
+        b.setPhonenumber(phonenumber);
+        b.setPassword(password);
+        b.setUsername(username);
+        b.setName(name);
+        b.setAddress(address);
+        b.setHeadname(headname);
+        b.setHeadidcard(headidcard);
+
+
+        int i=userDao.updateBusiness(b);
+
+        System.out.println(i);
+    }
 
     @Test
     public void deleteUser()

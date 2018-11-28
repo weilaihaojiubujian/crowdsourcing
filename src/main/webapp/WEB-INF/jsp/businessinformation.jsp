@@ -80,40 +80,40 @@
                     </tr>
                 </table>
             </section>
-            <section class="changeInformation">
+            <section class="changeInformation" >
                 <h2>修改商家信息</h2>
-                <form action="#">
+                <form action="/user/businessinformation1" method="post">
                     <div>
                         <label for="id">序号</label>
                         <input type="text" id="id" disabled>
                     </div>
                     <div>
                         <label for="userName">用户名</label>
-                        <input type="text" id="userName">
+                        <input type="text" id="userName" name="username">
                     </div>
                     <div>
                         <label for="password">密码</label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" name="password">
                     </div>
                     <div>
                         <label for="tel">手机号码:</label>
-                        <input type="tel" id="tel">
+                        <input type="tel" id="tel" name="phonenumber">
                     </div>
                     <div>
                         <label for="name">姓名:</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" name="name">
                     </div>
                     <div>
                         <label for="address">地址:</label>
-                        <input type="text" id="address">
+                        <input type="text" id="address" name="address">
                     </div>
                     <div>
                         <label for="headname">负责人姓名：</label>
-                        <input type="text" id="headname">
+                        <input type="text" id="headname" name="headname">
                     </div>
                     <div>
                         <label for="headidcard">身份证号</label>
-                        <input type="text" id="headidcard">
+                        <input type="text" id="headidcard" name="headidcard">
                     </div>
                     <div>
                         <input type="submit" value="提交">

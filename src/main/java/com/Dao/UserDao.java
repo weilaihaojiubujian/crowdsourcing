@@ -90,14 +90,21 @@ public interface UserDao {
      * @return
      */
     Business selectbusinessinformation(int id);
+
     /**
-     * 更新用户
-     * @param user
+     *
+     * @param p
      * @return
      */
-    int updateUser(User user);
+    int updateUser(Person p);
 
 
+    /**
+     * 更新商家信息
+     * @param b
+     * @return
+     */
+    int updateBusiness(Business b);
     /**
      * 更新用户状态
      * @param id

@@ -1,5 +1,7 @@
 package com.Service;
 
+import com.Dto.Business;
+import com.Dto.Person;
 import com.Entity.User;
 import org.apache.ibatis.annotations.Param;
 
@@ -37,6 +39,22 @@ public interface UserService {
      */
 
     User selectByUsernamePasswordToId(@Param("username")String username, @Param("password") String password);
+
+
+    /**
+     *
+     * @param p
+     * @return
+     */
+    boolean updateUser(Person p);
+
+    /**
+     * 更新商家信息
+     * @param b
+     * @return
+     */
+    boolean updateBusiness(Business b);
+
 
     /**
      * 删除用户

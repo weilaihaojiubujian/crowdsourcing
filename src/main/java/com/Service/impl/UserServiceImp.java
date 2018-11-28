@@ -1,6 +1,8 @@
 package com.Service.impl;
 
 import com.Dao.UserDao;
+import com.Dto.Business;
+import com.Dto.Person;
 import com.Entity.User;
 import com.Service.UserService;
 import org.slf4j.Logger;
@@ -64,6 +66,25 @@ public class UserServiceImp implements UserService {
 
 
     }
+
+    @Override
+    public boolean updateUser(Person p) {
+        if(p==null) return false;
+        int i=userDao.updateUser(p);
+        log.info("UserServiceImp"+"个人用户更新={}", i);
+        return i>0?true:false;
+
+
+    }
+
+    @Override
+    public boolean updateBusiness(Business b) {
+        if(b==null) return false;
+        int i=userDao.updateBusiness(b);
+        log.info("UserServiceImp"+"商家用户更新={}", i);
+        return i>0?true:false;
+    }
+
 
     @Override
     public boolean deleteUser(int id) {

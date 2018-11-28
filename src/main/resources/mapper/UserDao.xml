@@ -93,21 +93,76 @@
     <update id="updateUser" >
 
         update
-        user
+        user u,personinformation p
         <set>
-        <if test="id !=null">
-            id = #{id},
-        </if>
+
+         <if test="username !=null and username.length() !=0">
+             username = #{username},
+         </if>
         <if test="password !=null and password.length() !=0">
             password = #{password},
         </if>
         <if test="phonenumber!=null and phonenumber.length() !=0">
-            phonenumber = #{phonenumber}
+            phonenumber = #{phonenumber},
         </if>
+        <if test="name!=null and name.length() !=0">
+                name = #{name},
+        </if>
+        <if test="sex!=null and sex.length() !=0">
+                sex = #{sex},
+        </if>
+        <if test="city!=null and city.length() !=0">
+            city = #{city},
+         </if>
+         <if test="idcard!=null and idcard.length() !=0">
+                idcard = #{idcard},
+         </if>
+         <if test="birthday!=null ">
+                birthday = #{birthday}
+         </if>
+
+
 
         </set>
         where
-        id=#{id} and state!=0
+        u.id=#{id} and state!=0 and u.id=p.uid
+
+    </update>
+
+    <update id="updateBusiness" >
+
+        update
+        user u,businessinformation b
+        <set>
+
+            <if test="username !=null and username.length() !=0">
+                username = #{username},
+            </if>
+            <if test="password !=null and password.length() !=0">
+                password = #{password},
+            </if>
+            <if test="phonenumber!=null and phonenumber.length() !=0">
+                phonenumber = #{phonenumber},
+            </if>
+            <if test="name!=null and name.length() !=0">
+                name = #{name},
+            </if>
+            <if test="address!=null and address.length() !=0">
+                address = #{address},
+            </if>
+            <if test="headname!=null and headname.length() !=0">
+                headname = #{headname},
+            </if>
+            <if test="headidcard!=null and headidcard.length() !=0">
+                headidcard = #{headidcard}
+            </if>
+
+
+
+
+        </set>
+        where
+        u.id=#{id} and state!=0 and u.id=b.uid
 
     </update>
 
