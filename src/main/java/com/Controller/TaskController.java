@@ -48,7 +48,7 @@ public class TaskController {
         System.out.println("TaskController"+"计费种类"+p);
         m.addObject("tasktypes", t);
         m.addObject("pricingmodels", p);
-        m.setViewName("redirect:/task/release1");
+        m.setViewName("forward:/task/release1");
 
         return m;
     }

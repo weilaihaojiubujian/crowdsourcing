@@ -24,10 +24,10 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/normalize.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/main.css">
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/jquery-ui.css">
     <!-- 使用button图标 -->
     <!-- <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="css/buttons.css"> -->
@@ -145,12 +145,12 @@
 
 
 
-<script src="js/modernizr.custom.93262.js"></script>
+<script src="${pageContext.request.contextPath }/js/modernizr.custom.93262.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="${pageContext.request.contextPath }/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
 <!-- 通过上文的CDN使用jQuery 若引用失败 则使用本地jQuery -->
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="${pageContext.request.contextPath }/js/plugins.js"></script>
+<script src="${pageContext.request.contextPath }/js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
@@ -160,8 +160,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="js/personinformation.js"></script>
-<script src="js/jquery-ui.js"></script>
+<script src="${pageContext.request.contextPath }/js/personinformation.js"></script>
+<script src="${pageContext.request.contextPath }/js/jquery-ui.js"></script>
 <!-- 使用velocity动画库 -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script> -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script> -->

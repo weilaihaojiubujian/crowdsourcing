@@ -62,9 +62,9 @@
                     </div>
                     <h3>用户注册</h3>
                 </div>
-                <div class="personRegister"  method="post" action="/user/regist">
+                <div class="personRegister"  >
                     <!-- person -->
-                    <form action="#">
+                    <form method="post" action="/user/regist">
                         <div>
                             <div>
                                 <label for="name">用户名:</label>

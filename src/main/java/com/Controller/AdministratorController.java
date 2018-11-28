@@ -65,7 +65,7 @@ public class AdministratorController {
 
         m.addObject("persons", p);
         m.addObject("businesss", me);
-        m.setViewName("redirect:/administrator/audituser");
+        m.setViewName("forward:/administrator/audituser");
 
         return m;
     }
@@ -104,7 +104,7 @@ public class AdministratorController {
 
 
         m.addObject("persons", p);
-        m.setViewName("redirect:/administrator/deleteuser");
+        m.setViewName("forward:/administrator/deleteuser");
 
         return m;
     }

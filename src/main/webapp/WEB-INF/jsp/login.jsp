@@ -72,7 +72,7 @@
                 </div>
                 <div class="administratorLogin">
                     <!-- administrator -->
-                    <form action="#"   method="post">
+                    <form action="/user/administratorlogin"   method="post">
                         <div>
                             <div>
                                 <label for="name">用户名: </label>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="companyLogin">
                     <!-- company -->
-                    <form action="#"   method="post">
+                    <form action="/user/login"   method="post">
                         <div>
                             <div>
                                 <label for="name">用户名:</label>

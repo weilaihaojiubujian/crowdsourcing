@@ -106,19 +106,19 @@ public class UserController {
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String login(HttpServletRequest request, Model model, HttpSession session){
 
-        String use = request.getParameter("use");
-        String username=request.getParameter("username");
-        String password=request.getParameter("password");
-        if(password==null||password.equals("")|| username==null||username.equals(""))
-            return "redirect:/user/error";//调试
+
+            String username=request.getParameter("username");
+            String password=request.getParameter("password");
+            if(password==null||password.equals("")|| username==null||username.equals(""))
+              return "redirect:/user/error";//调试
 
 
 
-        if (use.equals("用户")) {
+
             System.out.println("用户");
             User user=loginService.userLogin(username,password);
             session.setAttribute("user",user);
-            model.addAttribute("user",user);
+
             if(user!=null)
             {
                 return "redirect:/user/login1";
@@ -129,12 +129,28 @@ public class UserController {
             }
 
 
-        } else {
+
+
+
+    }
+
+    @RequestMapping(value = "/administratorlogin",method = RequestMethod.POST)
+    public String administratorlogin(HttpServletRequest request, Model model, HttpSession session){
+
+
+            String username=request.getParameter("username");
+            String password=request.getParameter("password");
+            if(password==null||password.equals("")|| username==null||username.equals(""))
+               return "redirect:/user/error";//调试
+
+
+
+
             System.out.println("管理员");
             Administrator user=loginService.administratorLogin(username,password);
 
             session.setAttribute("administrator",user);
-            model.addAttribute("user",user);
+
             if(user!=null)
             {
                 return "redirect:/user/login2";
@@ -145,7 +161,7 @@ public class UserController {
             }
 
 
-        }
+
     }
 
     @RequestMapping(value = "/regist",method = RequestMethod.GET)
@@ -223,7 +239,7 @@ public class UserController {
             {
                 Person q=userinformationService.selectpeopleinformation(uid);
                 model.addAttribute("person",q);
-                return "redirect:/user/personinformation";
+                return "forward:/user/personinformation";
             }
 
         }
@@ -237,7 +253,7 @@ public class UserController {
             else {
                 Business w=userinformationService.selectbusinessinformation(uid);
                 model.addAttribute("business",w);
-                return "redirect:/user/businessinformation";
+                return "forward:/user/businessinformation";
             }
 
 
