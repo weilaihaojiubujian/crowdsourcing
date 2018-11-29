@@ -31,15 +31,15 @@ public class TaskmessageServiceTest {
     @Rollback(false) //能对数据库里的表进行增删操作.原因：在操作数据时开启了事务，数据被放在iBATIS的一级缓存中，而操作之后没有提交事务
     public void TaskmessageRelease() {
         Taskmessage t=new Taskmessage();
-        int uid=2;
+        int uid=6;
         int ttid=1;
         int pmid=2;
         String name="帮忙收快递";
         String message="中午需要一个人帮忙收一下快递";
-        String startingaddress="浙江省杭州市浙江科技学院小和山校区";
-        String startingdetail="西和公寓507";
-        String purposeaddress="浙江省杭州市浙江科技学院小和山校区";
-        String purposedetail="东和公寓653";
+        String startingaddress="浙江省杭州市浙江科技学院小和山校区西和公寓507";
+
+        String purposeaddress="浙江省杭州市浙江科技学院小和山校区东和公寓653";
+
         double weight=6.5;
         Double startinglocationX=89.11;
         Double startinglocationY=51.25;
@@ -57,9 +57,9 @@ public class TaskmessageServiceTest {
         t.setName(name);
         t.setMessage(message);
         t.setStartingaddress(startingaddress);
-        t.setStartingdetail(startingdetail);
+
         t.setPurposeaddress(purposeaddress);
-        t.setPurposedetail(purposedetail);
+
         t.setWeight(weight);
         boolean i=taskmessageService.TaskmessageRelease(t);
         log.info("任务具体信息发布={}", i);

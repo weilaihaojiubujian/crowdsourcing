@@ -15,7 +15,6 @@ public class Useraddress {
 
     private String address;//附近坐标
 
-    private String detail;//详细地址
 
     private String geohash;//用于查找附近订单的hash码
 
@@ -60,13 +59,7 @@ public class Useraddress {
         this.address = address;
     }
 
-    public String getDetail() {
-        return detail;
-    }
 
-    public void setDetail(String detail) {
-        this.detail = detail;
-    }
 
     public String getGeohash() {
         return geohash;
@@ -106,7 +99,6 @@ public class Useraddress {
                 "id=" + id +
                 ", uid=" + uid +
                 ", address='" + address + '\'' +
-                ", detail='" + detail + '\'' +
                 ", geohash='" + geohash + '\'' +
                 ", locationX=" + locationX +
                 ", locationY=" + locationY +

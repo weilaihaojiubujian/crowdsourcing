@@ -8,15 +8,15 @@
  <resultMap type="com.Entity.Useraddress" id="Useraddress">
      <id property="id" column="id"/>
      <result property="address" column="address"/>
-     <result property="detail" column="detail"/>
+
      <result property="createtime" column="createtime"/>
 </resultMap>
 
 
     <insert id="insertUseraddress">
 
-    insert into useraddress(uid,address,detail,geohash,position,createtime)
-    values (#{uid},#{address},#{detail},#{geohash},point(#{locationX},#{locationY}),#{createtime})
+    insert into useraddress(uid,address,geohash,position,createtime)
+    values (#{uid},#{address},#{geohash},point(#{locationX},#{locationY}),#{createtime})
 
    </insert>
 

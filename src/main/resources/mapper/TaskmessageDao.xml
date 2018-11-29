@@ -11,17 +11,15 @@
   <result property="message" column="message"/>
   <result property="state" column="state"/>
   <result property="startingaddress" column="startingaddress"/>
-  <result property="startingdetail" column="startingdetail"/>
   <result property="weight" column="weight"/>
   <result property="purposeaddress" column="purposeaddress"/>
-  <result property="purposedetail" column="purposedetail"/>
 
 </resultMap>
 
 
  <insert id="insertTaskmessage" parameterType="Taskmessage">
-  insert  into taskmessage(uid,ttid,pmid,name,message,startingaddress,startingdetail,purposeaddress,purposedetail,weight,startinggeohash,purposegeohash,startingposition,purposeposition)
-  values (#{uid},#{ttid},#{pmid},#{name},#{message},#{startingaddress},#{startingdetail},#{purposeaddress},#{purposedetail},#{weight},#{startinggeohash},#{purposegeohash},
+  insert  into taskmessage(uid,ttid,pmid,name,message,startingaddress,purposeaddress,weight,startinggeohash,purposegeohash,startingposition,purposeposition)
+  values (#{uid},#{ttid},#{pmid},#{name},#{message},#{startingaddress},#{purposeaddress},#{weight},#{startinggeohash},#{purposegeohash},
   point(#{startinglocationX},#{startinglocationY}),point(#{purposelocationX},#{purposelocationY}))
  </insert>
 
@@ -48,7 +46,7 @@
 
  <select id="selectTaskmessage" resultMap="Taskmessage" parameterType="int">
 
-  select id,uid,ttid,pmid,name,message,startingaddress,startingdetail,purposeaddress,purposedetail,weight from taskmessage where id=#{id}
+  select id,uid,ttid,pmid,name,message,startingaddress,purposeaddress,weight from taskmessage where id=#{id}
 
 
  </select>

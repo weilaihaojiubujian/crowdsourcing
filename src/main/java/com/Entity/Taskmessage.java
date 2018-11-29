@@ -23,7 +23,7 @@ public class Taskmessage {
 
     private String startingaddress;//起始附近坐标
 
-    private String startingdetail;//起始详细地址
+
 
     private String startinggeohash;//用于查找附近订单的hash码
 
@@ -31,7 +31,7 @@ public class Taskmessage {
 
     private String purposeaddress;//目的附近坐标
 
-    private String purposedetail;//目的详细地址
+
 
     private String purposegeohash;//用于查找附近订单的hash码
 
@@ -109,13 +109,7 @@ public class Taskmessage {
         this.startingaddress = startingaddress;
     }
 
-    public String getStartingdetail() {
-        return startingdetail;
-    }
 
-    public void setStartingdetail(String startingdetail) {
-        this.startingdetail = startingdetail;
-    }
 
     public String getStartinggeohash() {
         return startinggeohash;
@@ -141,13 +135,6 @@ public class Taskmessage {
         this.purposeaddress = purposeaddress;
     }
 
-    public String getPurposedetail() {
-        return purposedetail;
-    }
-
-    public void setPurposedetail(String purposedetail) {
-        this.purposedetail = purposedetail;
-    }
 
     public String getPurposegeohash() {
         return purposegeohash;
@@ -200,11 +187,9 @@ public class Taskmessage {
                 ", message='" + message + '\'' +
                 ", state=" + state +
                 ", startingaddress='" + startingaddress + '\'' +
-                ", startingdetail='" + startingdetail + '\'' +
                 ", startinggeohash='" + startinggeohash + '\'' +
                 ", weight=" + weight +
                 ", purposeaddress='" + purposeaddress + '\'' +
-                ", purposedetail='" + purposedetail + '\'' +
                 ", purposegeohash='" + purposegeohash + '\'' +
                 ", startinglocationX=" + startinglocationX +
                 ", startinglocationY=" + startinglocationY +

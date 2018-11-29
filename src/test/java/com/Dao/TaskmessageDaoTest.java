@@ -29,15 +29,13 @@ public class TaskmessageDaoTest {
     public void  insertTaskmessage()
     {
         Taskmessage t=new Taskmessage();
-        int uid=7;
+        int uid=8;
         int ttid=1;
         int pmid=2;
         String name="帮忙收快递";
         String message="中午需要一个人帮忙收一下快递";
-        String startingaddress="浙江省杭州市浙江科技学院小和山校区";
-        String startingdetail="西和公寓507";
-        String purposeaddress="浙江省杭州市浙江科技学院小和山校区";
-        String purposedetail="东和公寓653";
+        String startingaddress="浙江省杭州市浙江科技学院小和山校区西和公寓507";
+        String purposeaddress="浙江省杭州市浙江科技学院小和山校区东和公寓653";
         double weight=4.5;
         Double startinglocationX=89.11;
         Double startinglocationY=61.25;
@@ -55,9 +53,8 @@ public class TaskmessageDaoTest {
         t.setName(name);
         t.setMessage(message);
         t.setStartingaddress(startingaddress);
-        t.setStartingdetail(startingdetail);
         t.setPurposeaddress(purposeaddress);
-        t.setPurposedetail(purposedetail);
+
         t.setWeight(weight);
         int i=taskmessageDao.insertTaskmessage(t);
         System.out.println(i);

@@ -38,8 +38,8 @@ public class UseraddressServiceTest {
         int uid=1;
 
 
-        String startingaddress="浙江省杭州市浙江科技学院小和山校区";
-        String startingdetail="西和公寓507";
+        String startingaddress="浙江省杭州市浙江科技学院小和山校区西和公寓507";
+
 
 
         Double startinglocationX=59.11;
@@ -52,7 +52,7 @@ public class UseraddressServiceTest {
         u.setLocationY(startinglocationY);
         u.setUid(uid);
         u.setAddress(startingaddress);
-        u.setDetail(startingdetail);
+
         Timestamp createtime=new Timestamp(new Date().getTime());
         u.setCreatetime(createtime);
         boolean i=useraddressService.UseraddressRegistered(u);

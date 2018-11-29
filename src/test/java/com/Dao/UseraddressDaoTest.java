@@ -30,11 +30,11 @@ public class UseraddressDaoTest {
     public void  insertUseraddress()
     {
         Useraddress u=new Useraddress();
-        int uid=2;
+        int uid=1;
 
 
-        String startingaddress="浙江省杭州市浙江科技学院小和山校区";
-        String startingdetail="西和公寓507";
+        String startingaddress="浙江省杭州市浙江科技学院小和山校区西和公寓507";
+
 
 
         Double startinglocationX=79.11;
@@ -47,7 +47,7 @@ public class UseraddressDaoTest {
         u.setLocationY(startinglocationY);
         u.setUid(uid);
         u.setAddress(startingaddress);
-        u.setDetail(startingdetail);
+
         Timestamp createtime=new Timestamp(new Date().getTime());
         u.setCreatetime(createtime);
 
