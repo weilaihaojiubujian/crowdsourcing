@@ -1,0 +1,9 @@
+.hiddenStartPosition,.hiddenEndPosition{
+	/*visibility: hidden;*/
+}
+#startPostionMap,#endPostionMap{
+	/*max-height: 20em;*/
+	height: 20em;
+	display: none;
+	/*border: 1px solid black;*/
+}
