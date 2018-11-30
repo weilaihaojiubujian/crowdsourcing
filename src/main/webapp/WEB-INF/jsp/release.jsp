@@ -72,7 +72,7 @@
                         <label class="col-sm-2 control-label">任务起始位置</label>
                         <div class="col-sm-10">
                             <button class="col-sm-2 button button-primary button-pill button-small startPosition">选择任务起始位置</button>
-                            <input type="text" class="form-control hiddenStartPosition" id="startePostion" name = "startingdetail">
+                            <input type="text" class="form-control hiddenStartPosition" id="startePostion" name = "startingaddress">
                             <div id="startPostionMap"></div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                         <label class="col-sm-2 control-label">任务结束位置</label>
                         <div class="col-sm-10">
                             <button class="col-sm-2 endPosition button button-primary button-pill button-small">选择任务结束位置</button>
-                            <input type="text" class="form-control hiddenEndPosition" id="endPosition" name = "purposedetail">
+                            <input type="text" class="form-control hiddenEndPosition" id="endPosition" name = "purposeaddress">
                             <div id="endPostionMap"></div>
                         </div>
                     </div>
