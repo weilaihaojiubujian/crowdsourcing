@@ -68,6 +68,21 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
+    public List<User> selectuser() {
+
+        List<User> u=userDao.selectuser();
+        log.info("UserServiceImp"+"查询所有用户={}", u);
+
+        if (u!=null)
+        {
+            return u;
+        }
+        else {
+            return null;
+        }
+    }
+
+    @Override
     public boolean updateUser(Person p) {
         if(p==null) return false;
         int i=userDao.updateUser(p);

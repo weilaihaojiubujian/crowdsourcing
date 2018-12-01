@@ -121,7 +121,7 @@ public class UserController {
 
             if(user!=null)
             {
-                return "redirect:/user/login1";
+                return "redirect:/address/deleteUseraddress";
             }
             else
             {

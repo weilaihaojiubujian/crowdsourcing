@@ -42,6 +42,11 @@ public interface UserService {
 
 
     /**
+     * 列出所有用户
+     * @return
+     */
+    List<User> selectuser();
+    /**
      *
      * @param p
      * @return

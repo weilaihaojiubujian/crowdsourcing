@@ -84,12 +84,21 @@ public interface UserDao {
     List<Business> selectmerchants();
 
 
+
+
+
     /**
      * 查询商家信息
      * @param id
      * @return
      */
     Business selectbusinessinformation(int id);
+
+    /**
+     * 列出所有用户
+     * @return
+     */
+    List<User> selectuser();
 
     /**
      *

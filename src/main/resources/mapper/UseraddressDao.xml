@@ -45,7 +45,7 @@
 
     <select id="selectByUid" resultMap="Useraddress" parameterType="int">
 
-        select * from useraddress where uid=#{uid}
+        select * from useraddress where uid=#{uid} ORDER BY createtime ASC
 
 
     </select>

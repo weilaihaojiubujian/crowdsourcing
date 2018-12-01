@@ -148,6 +148,23 @@ public class UserDaoTest {
 
 
     }
+
+    @Test
+    public void selectuser()
+    {
+
+
+        List<User> u=userDao.selectuser();
+
+        for (User i:u)
+        {
+            System.out.println("用户:"+i);
+        }
+
+
+
+    }
+
     @Test
     public void updateUserState()
     {

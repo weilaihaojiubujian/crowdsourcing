@@ -41,7 +41,7 @@ $(function () {
 		        var pointArr = [];
 		        pointArr.push(ggPoint);
 		        convertor.translate(pointArr, 1, 5, translateCallback);
-		    }, 1000);
+		    }, 10000);
 		    
 	}
     getCurrentPistion();
@@ -51,7 +51,7 @@ $(function () {
     	// 	"lat":baiduLatitude
     	// };	// alert(position.lng);
     	$.ajax({
-    		url: '/path/to/file',
+    		url: '/address/position',
     		type: 'POST',
     		data: {
     			lng: baiduLongitude,
@@ -72,6 +72,6 @@ $(function () {
 
     var interval = setInterval(function () {
         getCurrentPistion();
-    }, 500);
+    }, 60000);
    	
 });

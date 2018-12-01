@@ -90,6 +90,13 @@
 
     </select>
 
+    <select id="selectuser" resultMap="User" >
+
+        select id from user where  state=1
+
+
+    </select>
+
     <update id="updateUser" >
 
         update
