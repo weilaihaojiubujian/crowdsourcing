@@ -1,6 +1,7 @@
 package com.Controller;
 
 import com.Entity.Pricingmodel;
+import com.Entity.Taskmessage;
 import com.Entity.Tasktype;
 import com.Entity.User;
 import com.Service.PricingmodelService;
@@ -62,7 +63,24 @@ public class TaskController {
         System.out.println("计费种类"+pmid);
         User u= (User) session.getAttribute("user");
         int uid=u.getId();
+        String name= request.getParameter("name");
+        String message = request.getParameter("message");
 
+        String startingaddress= request.getParameter("startingaddress");
+
+        String purposeaddress = request.getParameter("purposeaddress");
+        double weight = Double.parseDouble(request.getParameter("weight"));
+
+        Taskmessage t=new Taskmessage();
+        t.setWeight(weight);
+        t.setStartingaddress(startingaddress);
+        t.setPurposeaddress(purposeaddress);
+        t.setMessage(message);
+        t.setName(name);
+        t.setUid(uid);
+        t.setPmid(pmid);
+        t.setTtid(ttid);
+        System.out.println("任务信息"+t);
 
 
         return "redirect:/task/release1";

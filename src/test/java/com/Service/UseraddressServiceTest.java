@@ -38,12 +38,12 @@ public class UseraddressServiceTest {
         int uid=1;
 
 
-        String startingaddress="浙江省杭州市浙江科技学院小和山校区西和公寓507";
 
 
 
-        Double startinglocationX=59.11;
-        Double startinglocationY=65.25;
+
+        Double startinglocationX=69.11;
+        Double startinglocationY=85.25;
 
         u.setGeohash(new GeoHash().encode(startinglocationX,startinglocationY));
 
@@ -51,7 +51,7 @@ public class UseraddressServiceTest {
         u.setLocationX(startinglocationX);
         u.setLocationY(startinglocationY);
         u.setUid(uid);
-        u.setAddress(startingaddress);
+
 
         Timestamp createtime=new Timestamp(new Date().getTime());
         u.setCreatetime(createtime);

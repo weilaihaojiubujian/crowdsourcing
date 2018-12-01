@@ -13,7 +13,7 @@ public class Useraddress {
 
     private int uid;//用户的序号
 
-    private String address;//附近坐标
+
 
 
     private String geohash;//用于查找附近订单的hash码
@@ -51,13 +51,7 @@ public class Useraddress {
         this.uid = uid;
     }
 
-    public String getAddress() {
-        return address;
-    }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
 
 
@@ -98,7 +92,6 @@ public class Useraddress {
         return "Useraddress{" +
                 "id=" + id +
                 ", uid=" + uid +
-                ", address='" + address + '\'' +
                 ", geohash='" + geohash + '\'' +
                 ", locationX=" + locationX +
                 ", locationY=" + locationY +
