@@ -39,7 +39,7 @@ $(function () {
 	var baiduLongitude;
 	var baiduLatitude;
 
-
+	var geoc = new BMap.Geocoder();
 	// 转换定位
 	function success(position) {
 		naturalLatitude = position.coords.latitude;
@@ -71,7 +71,7 @@ $(function () {
 			baiduLongitude = data.points[0].lng;
 			baiduLatitude = data.points[0].lat;
 			// alert(baiduLongitude);
-			$("#startePostion").val(baiduLongitude+","+baiduLatitude);
+			$("#startPostion").val(baiduLongitude+","+baiduLatitude);
 
 			endMap.setCenter(data.points[0]);
 			endBaiduLongitude = data.points[0].lng;
@@ -90,8 +90,15 @@ $(function () {
 
 	// 点击地图获取坐标
 	map.addEventListener("click", function (e) {
-		$("#startePostion").val(e.point.lng+","+e.point.lat);
-		$('#startPostionMap').slideUp("slow");
+		$("#startPostion").val(e.point.lng+","+e.point.lat);
+		geoc.getLocation(e.point, function(rs){
+			var addComp = rs.addressComponents;
+			$(".startPositionSpan").text(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+			var msg1 = $('#startPostion').val();
+			$("#startPostion").val(msg1+","+addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+		});
+		$('.searchStartPosition').val("");
+		$('.startMapContainer').slideUp("slow");
 	}, false);
 
 	$('.startPosition').on('click', function(event) {
@@ -103,19 +110,135 @@ $(function () {
 
 	endMap.addEventListener("click", function (e) {
 		$("#endPosition").val(e.point.lng+","+e.point.lat);
-		$('#endPostionMap').slideUp("slow");
+		geoc.getLocation(e.point, function(rs){
+			var addComp = rs.addressComponents;
+			$(".endPositionSpan").text(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+			var msg1 = $('#endPostion').val();
+			$("#endPostion").val(msg1+","+addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+		});
+		$('.searchEndPosition').val("");
+		$('.endMapContainer').slideUp("slow");
 	}, false);
 
 	$('.endPosition').on('click', function(event) {
 		event.preventDefault();
-		$('#endPostionMap').slideDown("slow");
+		$('.endMapContainer').slideDown("slow");
 	});
 
 
 
-	// 关键字输入提示
+	// 关键字输入提示  startMap
+	function G(id) {
+		return document.getElementById(id);
+	}
+	var ac = new BMap.Autocomplete(    //建立一个自动完成的对象
+		{"input" : "suggestId",
+		"location" : map
+	});
+	ac.addEventListener("onhighlight", function(e) {  //鼠标放在下拉列表上的事件
+	var str = "";
+		var _value = e.fromitem.value;
+		var value = "";
+		if (e.fromitem.index > -1) {
+			value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+		}    
+		str = "FromItem<br />index = " + e.fromitem.index + "<br />value = " + value;
+		
+		value = "";
+		if (e.toitem.index > -1) {
+			_value = e.toitem.value;
+			value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+		}    
+		str += "<br />ToItem<br />index = " + e.toitem.index + "<br />value = " + value;
+		G("searchResultPanel").innerHTML = str;
+	});
+
+	var myValue;
+	ac.addEventListener("onconfirm", function(e) {    //鼠标点击下拉列表后的事件
+	var _value = e.item.value;
+		myValue = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+		G("searchResultPanel").innerHTML ="onconfirm<br />index = " + e.item.index + "<br />myValue = " + myValue;
+		
+		setPlace();
+	});
+
+	function setPlace(){
+		map.clearOverlays();    //清除地图上所有覆盖物
+		function myFun(){
+			var pp = local.getResults().getPoi(0).point;    //获取第一个智能搜索的结果
+			map.centerAndZoom(pp, 18);
+			map.addOverlay(new BMap.Marker(pp));    //添加标注
+			$('.hiddenStartPosition').val(pp.lng+","+pp.lat);
+		}
+		var local = new BMap.LocalSearch(map, { //智能搜索
+		  onSearchComplete: myFun
+		});
+		local.search(myValue);
+	}
 	
+	$(".startMapButton").on('click', function(event) {
+		event.preventDefault();
+		$('.startPositionSpan').text($('.searchStartPosition').val());
+		var msg1 = $('#startPostion').val();
+		$("#startPostion").val(msg1+","+$('.searchStartPosition').val());
+		$('.startMapContainer').slideUp("slow");
+	});
+
+	// 关键字输入提示  endMap
+
+	var ab = new BMap.Autocomplete(    //建立一个自动完成的对象
+		{"input" : "suggestEndId",
+		"location" : endMap
+	});
+	ab.addEventListener("onhighlight", function(e) {  //鼠标放在下拉列表上的事件
+	var str = "";
+		var _value = e.fromitem.value;
+		var value = "";
+		if (e.fromitem.index > -1) {
+			value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+		}    
+		str = "FromItem<br />index = " + e.fromitem.index + "<br />value = " + value;
+		
+		value = "";
+		if (e.toitem.index > -1) {
+			_value = e.toitem.value;
+			value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+		}    
+		str += "<br />ToItem<br />index = " + e.toitem.index + "<br />value = " + value;
+		G("searchEndResultPanel").innerHTML = str;
+	});
+
+	var myEndValue;
+	ab.addEventListener("onconfirm", function(e) {    //鼠标点击下拉列表后的事件
+	var _value = e.item.value;
+		myEndValue = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+		G("searchEndResultPanel").innerHTML ="onconfirm<br />index = " + e.item.index + "<br />myValue = " + myEndValue;
+		
+		setEndPlace();
+	});
+
+	function setEndPlace(){
+		endMap.clearOverlays();    //清除地图上所有覆盖物
+		function myFun(){
+			var pp = local.getResults().getPoi(0).point;    //获取第一个智能搜索的结果
+			endMap.centerAndZoom(pp, 18);
+			endMap.addOverlay(new BMap.Marker(pp));    //添加标注
+			$('.hiddenEndPosition').val(pp.lng+","+pp.lat);
+		}
+		var local = new BMap.LocalSearch(endMap, { //智能搜索
+		  onSearchComplete: myFun
+		});
+		local.search(myEndValue);
+	}
 	
+	$(".endMapButton").on('click', function(event) {
+		event.preventDefault();
+		$('.endPositionSpan').text($('.searchEndPosition').val());
+		var msg1 = $('#endPosition').val();
+		$("#endPosition").val(msg1+","+$('.searchEndPosition').val());
+		$('.endMapContainer').slideUp("slow");
+	});
+
 // -----------------------------百度地图api end-------------------------------------
 
 });

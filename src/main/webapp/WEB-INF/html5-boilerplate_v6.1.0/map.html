@@ -62,6 +62,7 @@
 		  					<label class="col-sm-2 control-label">任务起始位置</label>
 		  					<div class="col-sm-10">
 		  						<button class="col-sm-2 button button-primary button-pill button-small startPosition">选择任务起始位置</button>
+		  						<span class="startPositionSpan"></span>
 		  						<input type="text" class="form-control hiddenStartPosition" id="startPostion">	
 		  					</div>
 		  					<div class="startMapContainer col-sm-10 col-sm-offset-2">
@@ -77,8 +78,16 @@
 		  					<label class="col-sm-2 control-label">任务结束位置</label>
 		  					<div class="col-sm-10">
 		  						<button class="col-sm-2 endPosition button button-primary button-pill button-small">选择任务结束位置</button>
+		  						<span class="endPositionSpan"></span>
 		  						<input type="text" class="form-control hiddenEndPosition" id="endPosition">
-		  						<div id="endPostionMap"></div>
+		  					</div>
+		  					<div class="endMapContainer col-sm-10 col-sm-offset-2">
+		  						<div class="col-sm-10">
+		  							<input type="text" class="form-control searchEndPosition" id="suggestEndId" placeholder="请输入结束地点或者直接点击地图确定任务结束位置">
+		  							<div id="searchEndResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+		  						</div>
+	  							<button class="endMapButton col-sm-2 button button-primary button-pill button-small">确定</button>
+	  							<div id="endPostionMap" class="col-sm-12"></div>
 		  					</div>
 		  				</div>
 		  				<div class="form-group">

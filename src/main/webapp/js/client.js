@@ -71,7 +71,7 @@ $(function () {
     }
 
     var interval = setInterval(function () {
-        getCurrentPistion();
-    }, 500);
+    	getCurrentPistion();
+    }, 60000);
    	
 });
