@@ -84,26 +84,26 @@
             </section>
             <section class="changeInformation">
                 <h2>修改用户信息</h2>
-                <form action="#">
+                <form action="/user/personinformation1" method="post">
                     <div>
                         <label for="id">序号</label>
-                        <input type="text" id="id" disabled>
+                        <input type="text" id="id"  disabled>
                     </div>
                     <div>
                         <label for="userName">用户名</label>
-                        <input type="text" id="userName">
+                        <input type="text" id="userName" name="username">
                     </div>
                     <div>
                         <label for="password">密码</label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" name="password">
                     </div>
                     <div>
                         <label for="tel">手机号码:</label>
-                        <input type="tel" id="tel">
+                        <input type="tel" id="tel" name="phonenumber">
                     </div>
                     <div>
                         <label for="name">姓名</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" name="name">
                     </div>
                     <div>
                         <label>性别</label>
@@ -112,15 +112,15 @@
                     </div>
                     <div>
                         <label for="city">所在城市</label>
-                        <input type="text" id="city">
+                        <input type="text" id="city" name="city">
                     </div>
                     <div>
                         <label for="datepicker">生日</label>
-                        <input type="text" id="datepicker">
+                        <input type="date" id="datepicker" name="birthday">
                     </div>
                     <div>
                         <label for="idNumber">身份证号</label>
-                        <input type="text" id="idNumber">
+                        <input type="text" id="idNumber" name="idcard">
                     </div>
                     <div>
                         <input type="submit" value="提交">
