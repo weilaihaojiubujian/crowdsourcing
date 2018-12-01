@@ -8,48 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8a31b522-c928-4b46-861d-bbcf473218a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Controller/TaskController.class" afterPath="$PROJECT_DIR$/target/classes/com/Controller/TaskController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/Controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/Dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Entity/Taskmessage.class" afterPath="$PROJECT_DIR$/target/classes/com/Entity/Taskmessage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Entity/Useraddress.class" afterPath="$PROJECT_DIR$/target/classes/com/Entity/Useraddress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/UseraddressService.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/UseraddressService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/impl/UserServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/impl/UserServiceImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/impl/UseraddressServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/impl/UseraddressServiceImp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/TaskController.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/TaskController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/UserController.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/UserDao.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Taskmessage.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Taskmessage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Useraddress.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Useraddress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/UserService.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/UseraddressService.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/UseraddressService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/UserServiceImp.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/UserServiceImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/UseraddressServiceImp.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/UseraddressServiceImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Dao/TaskmessageDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Dao/TaskmessageDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Dao/UserDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Dao/UserDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Dao/UseraddressDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Dao/UseraddressDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Service/TaskmessageServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Service/TaskmessageServiceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Service/UseraddressServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Service/UseraddressServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html5-boilerplate_v6.1.0/css/map.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html5-boilerplate_v6.1.0/css/map.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html5-boilerplate_v6.1.0/js/client.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html5-boilerplate_v6.1.0/js/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html5-boilerplate_v6.1.0/js/map.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html5-boilerplate_v6.1.0/js/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html5-boilerplate_v6.1.0/map.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html5-boilerplate_v6.1.0/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/map.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/map.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/client.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/client.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/map.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TaskmessageDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TaskmessageDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/UseraddressDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UseraddressDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/springweb.xml" afterPath="$PROJECT_DIR$/target/classes/spring/springweb.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/TaskmessageDao.xml" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/TaskmessageDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/UserDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/UseraddressDao.xml" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/UseraddressDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/spring/springweb.xml" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/spring/springweb.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/index.html" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/businessinformation.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/businessinformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/client.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/client.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/personinformation.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/personinformation.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/release.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/release.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -63,91 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UseraddressServiceImp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/UseraddressServiceImp.java">
+      <file leaf-file-name="client.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="63" column="30" lean-forward="false" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UseraddressDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UseraddressDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <marker date="1543649202463" expanded="true" signature="422:556" ph="insert into useraddress... " />
-                <marker date="1543649202463" expanded="true" signature="652:692" ph="select * fro... useraddress" />
-                <marker date="1543649202463" expanded="true" signature="789:1163" ph="select u.uid... useraddress" />
-                <marker date="1543649202463" expanded="true" signature="897:983" ph="select x(sta... taskmessage" />
-                <marker date="1543649202463" expanded="true" signature="1263:1305" ph="select * fro... useraddress" />
-                <marker date="1543649202463" expanded="true" signature="1263:1329" ph="select * fro... useraddress" />
-                <marker date="1543649202463" expanded="true" signature="1391:1460" ph="delete from " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UseraddressController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UseraddressController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-248">
-              <caret line="79" column="66" lean-forward="false" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="60" column="28" lean-forward="true" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UseraddressService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/UseraddressService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
-              <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="224" column="90" lean-forward="false" selection-start-line="224" selection-start-column="70" selection-end-line="224" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdministratorController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/AdministratorController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="106" column="30" lean-forward="false" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+            <state relative-caret-position="-782">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -159,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="jsf" />
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -176,13 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/Service/BusinessinformationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Service/impl/BusinessinformationServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Dto/Business.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audituser.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registpersoninformation.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Entity/Personinformation.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/Service/PersoninformationServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/Dao/PersoninformationDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Service/Userinformation.java" />
@@ -209,7 +85,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/Service/TaskmessageServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/release.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/position.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Entity/Useraddress.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/Dao/UseraddressDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/Service/UseraddressServiceTest.java" />
@@ -227,6 +102,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/Controller/UseraddressController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Util/timer/TimerTask.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/client.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/map.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Entity/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Dao/MessageDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/MessageDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/Dao/MessageDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Service/MessageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Service/impl/MessageServiceImp.java" />
       </list>
     </option>
   </component>
@@ -512,9 +395,10 @@
       <recent name="com.Util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\intellij idea2\crowdsourcing\src\main\resources\mapper" />
+      <recent name="E:\intellij idea2\crowdsourcing\src\main\webapp\js" />
       <recent name="E:\intellij idea2\crowdsourcing\src\main\resources\spring" />
       <recent name="E:\intellij idea2\crowdsourcing\src\main\webapp\WEB-INF\jsp" />
-      <recent name="E:\intellij idea2\crowdsourcing\src\main\resources\mapper" />
       <recent name="E:\intellij idea2\crowdsourcing\src\main\resources" />
     </key>
   </component>
@@ -530,8 +414,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration name="TaskmessageDaoTest.insertTaskmessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MessageDaoTest.updateMessageState">
+    <configuration name="MessageDaoTest.deleteMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.Dao.*" />
@@ -542,8 +426,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.Dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Dao.TaskmessageDaoTest" />
-      <option name="METHOD_NAME" value="insertTaskmessage" />
+      <option name="MAIN_CLASS_NAME" value="com.Dao.MessageDaoTest" />
+      <option name="METHOD_NAME" value="deleteMessage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -556,19 +440,44 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TaskmessageServiceTest.TaskmessageRelease" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MessageDaoTest.insertMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.Service.*" />
+          <option name="PATTERN" value="com.Dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="crowdsourcing" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.Service" />
-      <option name="MAIN_CLASS_NAME" value="com.Service.TaskmessageServiceTest" />
-      <option name="METHOD_NAME" value="TaskmessageRelease" />
+      <option name="PACKAGE_NAME" value="com.Dao" />
+      <option name="MAIN_CLASS_NAME" value="com.Dao.MessageDaoTest" />
+      <option name="METHOD_NAME" value="insertMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MessageDaoTest.updateMessageState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="crowdsourcing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.Dao" />
+      <option name="MAIN_CLASS_NAME" value="com.Dao.MessageDaoTest" />
+      <option name="METHOD_NAME" value="updateMessageState" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -666,31 +575,6 @@
       <option name="PACKAGE_NAME" value="com.Dao" />
       <option name="MAIN_CLASS_NAME" value="com.Dao.UserDaoTest" />
       <option name="METHOD_NAME" value="selectuser" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="UseraddressDaoTest.insertUseraddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.Dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="crowdsourcing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.Dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Dao.UseraddressDaoTest" />
-      <option name="METHOD_NAME" value="insertUseraddress" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -811,19 +695,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TaskmessageDaoTest.insertTaskmessage" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TaskmessageServiceTest.TaskmessageRelease" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UseraddressDaoTest.insertUseraddress" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UseraddressServiceTest.UseraddressRegistered" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.UserDaoTest.selectuser" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UseraddressServiceTest.UseraddressRegistered" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserDaoTest.selectuser" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MessageDaoTest.insertMessage" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MessageDaoTest.deleteMessage" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.MessageDaoTest.updateMessageState" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserDaoTest.selectuser" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UseraddressServiceTest.UseraddressRegistered" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UseraddressDaoTest.insertUseraddress" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TaskmessageServiceTest.TaskmessageRelease" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TaskmessageDaoTest.insertTaskmessage" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MessageDaoTest.updateMessageState" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MessageDaoTest.deleteMessage" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MessageDaoTest.insertMessage" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserDaoTest.selectuser" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UseraddressServiceTest.UseraddressRegistered" />
       </list>
     </recent_temporary>
   </component>
@@ -867,25 +751,25 @@
       <workItem from="1543484319389" duration="2131000" />
       <workItem from="1543559955083" duration="1047000" />
       <workItem from="1543571466640" duration="1941000" />
-      <workItem from="1543636897188" duration="12038000" />
+      <workItem from="1543636897188" duration="18549000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="MessageDaoTest_deleteMessage - 2018.12.01 at 20h 08m 02s.xml">
+      <configuration name="MessageDaoTest.deleteMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MessageDaoTest_insertMessage - 2018.12.01 at 20h 07m 04s.xml">
+      <configuration name="MessageDaoTest.insertMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MessageDaoTest_insertMessage - 2018.12.01 at 20h 07m 43s.xml">
+      <configuration name="MessageDaoTest.insertMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MessageDaoTest_updateMessageState - 2018.12.01 at 20h 16m 01s.xml">
+      <configuration name="MessageDaoTest.updateMessageState" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="UserDaoTest_selectuser - 2018.12.01 at 15h 50m 36s.xml">
       <configuration name="UserDaoTest.selectuser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_updateUser - 2018.11.28 at 19h 22m 21s.xml">
-      <configuration name="UserDaoTest.updateUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_updateUser - 2018.11.28 at 19h 25m 27s.xml">
-      <configuration name="UserDaoTest.updateUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_updateUserState - 2018.11.23 at 20h 49m 14s.xml">
-      <configuration name="UserDaoTest.updateUserState" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest_userRegistered - 2018.11.23 at 20h 04m 31s.xml">
-      <configuration name="UserServiceTest.userRegistered" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UseraddressDaoTest_insertUseraddress - 2018.11.29 at 17h 47m 41s.xml">
       <configuration name="UseraddressDaoTest.insertUseraddress" configurationId="JUnit" />
@@ -904,7 +788,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163713000" />
+    <option name="totallyTimeSpent" value="170224000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1092,186 +976,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html5-boilerplate_v6.1.0/companyRegister.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audituser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/administrator.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="74" column="40" lean-forward="true" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/PersoninformationDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dto/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/ClientPreparedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="736" column="0" lean-forward="false" selection-start-line="736" selection-start-column="0" selection-end-line="736" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/exceptions/SQLExceptionsMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registpersoninformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dto/Business.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/businessinformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="115" column="75" lean-forward="false" selection-start-line="115" selection-start-column="75" selection-end-line="115" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Tasktype.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Pricingmodel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Personinformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/BankAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/TaskmessageDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/Service/TaskmessageServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-319">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Util/GeoHash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1978">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/position.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/regist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="46" column="41" lean-forward="false" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TaskmessageDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1293,26 +997,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Taskmessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/Service/UseraddressServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="45" column="34" lean-forward="false" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/release.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="84" column="27" lean-forward="false" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1333,14 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1354,37 +1034,6 @@
         <state relative-caret-position="281">
           <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <marker date="1543650498411" expanded="true" signature="625:743" ph="insert into user... " />
-            <marker date="1543650498411" expanded="true" signature="832:913" ph="select usern... user" />
-            <marker date="1543650498411" expanded="true" signature="832:925" ph="select usern... user" />
-            <marker date="1543650498411" expanded="true" signature="1042:1129" ph="select id,pa... user" />
-            <marker date="1543650498411" expanded="true" signature="1042:1140" ph="select id,pa... user" />
-            <marker date="1543650498411" expanded="true" signature="1229:1341" ph="select id,ph... user" />
-            <marker date="1543650498411" expanded="true" signature="1229:1352" ph="select id,us... user" />
-            <marker date="1543650498411" expanded="true" signature="1444:1556" ph="select id,us... user" />
-            <marker date="1543650498411" expanded="true" signature="1643:1761" ph="select id,us... user" />
-            <marker date="1543650498411" expanded="true" signature="1643:1792" ph="select id,us... user" />
-            <marker date="1543650498411" expanded="true" signature="1643:1797" ph="select u.id,... user" />
-            <marker date="1543650498411" expanded="true" signature="1884:2073" ph="select u.id,... user" />
-            <marker date="1543650498411" expanded="true" signature="2171:2340" ph="select u.id,... user" />
-            <marker date="1543650498411" expanded="true" signature="2432:2593" ph="select u.id,... user" />
-            <marker date="1543650498411" expanded="true" signature="2695:2871" ph="select u.id,... user" />
-            <marker date="1543650498411" expanded="true" signature="2945:2979" ph="select id fr... user" />
-            <marker date="1543650498411" expanded="true" signature="3036:3983" ph="update user " />
-            <marker date="1543650498411" expanded="true" signature="3036:3996" ph="update user " />
-            <marker date="1543650498411" expanded="true" signature="3036:4011" ph="update user " />
-            <marker date="1543650498411" expanded="true" signature="4071:5071" ph="update user " />
-            <marker date="1543650498411" expanded="true" signature="5132:5208" ph="update user " />
-            <marker date="1543650498411" expanded="true" signature="5263:5325" ph="delete from " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1408,14 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="60" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="100" column="15" lean-forward="false" selection-start-line="100" selection-start-column="3" selection-end-line="100" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1460,22 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="60" column="28" lean-forward="true" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="224" column="90" lean-forward="false" selection-start-line="224" selection-start-column="70" selection-end-line="224" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/AdministratorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -1488,14 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-156">
           <caret line="31" column="27" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="31" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="50" column="15" lean-forward="true" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1518,10 +1135,332 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html5-boilerplate_v6.1.0/js/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1352">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/release.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+          <folding>
+            <element signature="e#4040#4111#0#HTML" expanded="true" />
+            <element signature="e#5285#5356#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Taskmessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="45" column="36" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="45" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/TaskmessageDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="48" column="48" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="48" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="373">
+          <caret line="122" column="45" lean-forward="false" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="127" column="44" lean-forward="false" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AdministratorDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1542019876865" expanded="true" signature="497:595" ph="select id,us... administrator" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1542117738945" expanded="true" signature="483:575" ph="insert into task... " />
+            <marker date="1542117738945" expanded="true" signature="631:707" ph="update task " />
+            <marker date="1542117738945" expanded="true" signature="787:857" ph="select uid,t... task" />
+            <marker date="1542117738945" expanded="true" signature="900:939" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/BankAccountDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="52" selection-start-column="3" selection-end-line="59" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/AdministratorDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/TaskDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/AuditService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/PricingmodelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TaskmessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/LoginServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="121" column="32" lean-forward="true" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="184" column="13" lean-forward="true" selection-start-line="175" selection-start-column="3" selection-end-line="184" selection-end-column="13" />
+          <folding>
+            <marker date="1543650498411" expanded="true" signature="625:743" ph="insert into user... " />
+            <marker date="1543650498411" expanded="true" signature="832:913" ph="select usern... user" />
+            <marker date="1543650498411" expanded="true" signature="832:925" ph="select usern... user" />
+            <marker date="1543650498411" expanded="true" signature="1042:1129" ph="select id,pa... user" />
+            <marker date="1543650498411" expanded="true" signature="1042:1140" ph="select id,pa... user" />
+            <marker date="1543650498411" expanded="true" signature="1229:1341" ph="select id,ph... user" />
+            <marker date="1543650498411" expanded="true" signature="1229:1352" ph="select id,us... user" />
+            <marker date="1543650498411" expanded="true" signature="1444:1556" ph="select id,us... user" />
+            <marker date="1543650498411" expanded="true" signature="1643:1761" ph="select id,us... user" />
+            <marker date="1543650498411" expanded="true" signature="1643:1792" ph="select id,us... user" />
+            <marker date="1543650498411" expanded="true" signature="1643:1797" ph="select u.id,... user" />
+            <marker date="1543650498411" expanded="true" signature="1884:2073" ph="select u.id,... user" />
+            <marker date="1543650498411" expanded="true" signature="2171:2340" ph="select u.id,... user" />
+            <marker date="1543650498411" expanded="true" signature="2432:2593" ph="select u.id,... user" />
+            <marker date="1543650498411" expanded="true" signature="2695:2871" ph="select u.id,... user" />
+            <marker date="1543650498411" expanded="true" signature="2945:2979" ph="select id fr... user" />
+            <marker date="1543650498411" expanded="true" signature="3036:3983" ph="update user " />
+            <marker date="1543650498411" expanded="true" signature="3036:3996" ph="update user " />
+            <marker date="1543650498411" expanded="true" signature="3036:4011" ph="update user " />
+            <marker date="1543650498411" expanded="true" signature="4071:5071" ph="update user " />
+            <marker date="1543650498411" expanded="true" signature="5132:5208" ph="update user " />
+            <marker date="1543650498411" expanded="true" signature="5263:5325" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/MessageDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <marker date="1543666511775" expanded="true" signature="438:518" ph="insert into message... " />
+            <marker date="1543666511775" expanded="true" signature="570:620" ph="update messa... " />
+            <marker date="1543666511775" expanded="true" signature="667:709" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/MessageDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/MessageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/PersoninformationServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/TaskmessageServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="31" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="91" column="40" lean-forward="true" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/MessageServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-782">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding />
         </state>
       </provider>

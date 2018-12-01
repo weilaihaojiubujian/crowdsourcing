@@ -5,7 +5,9 @@ import com.Entity.Taskmessage;
 import com.Entity.Tasktype;
 import com.Entity.User;
 import com.Service.PricingmodelService;
+import com.Service.TaskmessageService;
 import com.Service.TasktypeService;
+import com.Util.GeoHash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -30,6 +33,9 @@ public class TaskController {
 
     @Autowired
     PricingmodelService pricingmodelService;
+
+    @Autowired
+    TaskmessageService taskmessageService;
 
     @RequestMapping(value = "/release1",method = RequestMethod.GET)
     public String release1(){
@@ -66,9 +72,21 @@ public class TaskController {
         String name= request.getParameter("name");
         String message = request.getParameter("message");
 
-        String startingaddress= request.getParameter("startingaddress");
+        String str= request.getParameter("startingaddress");
+        List<String> result = Arrays.asList(str.split(","));
+        String startingaddress=result.get(2);
+        Double startinglocationX= Double.valueOf(result.get(0));
+                //起始纬度
+        Double startinglocationY=Double.valueOf(result.get(1));
 
-        String purposeaddress = request.getParameter("purposeaddress");
+        String str1 = request.getParameter("purposeaddress");
+        List<String> resultv = Arrays.asList(str1.split(","));
+        String purposeaddress =resultv.get(2);
+
+        Double purposelocationX= Double.valueOf(resultv.get(0));
+        //目的纬度
+        Double purposelocationY=Double.valueOf(resultv.get(1));
+
         double weight = Double.parseDouble(request.getParameter("weight"));
 
         Taskmessage t=new Taskmessage();
@@ -80,9 +98,17 @@ public class TaskController {
         t.setUid(uid);
         t.setPmid(pmid);
         t.setTtid(ttid);
+        t.setStartinggeohash(new GeoHash().encode(startinglocationX,startinglocationY));
+        t.setPurposegeohash(new GeoHash().encode(purposelocationX,purposelocationY));
+        t.setStartinglocationX(startinglocationX);
+        t.setStartinglocationY(startinglocationY);
+        t.setPurposelocationX(purposelocationX);
+        t.setPurposelocationY(purposelocationY);
         System.out.println("任务信息"+t);
 
+        boolean i=taskmessageService.TaskmessageRelease(t);
 
-        return "redirect:/task/release1";
+
+        return "redirect:/user/login1";
     }
 }

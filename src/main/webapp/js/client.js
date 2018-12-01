@@ -51,7 +51,7 @@ $(function () {
         // 	"lat":baiduLatitude
         // };	// alert(position.lng);
         $.ajax({
-            url: '/path/to/file',
+            url: '/address/position',
             type: 'POST',
             data: {
                 lng: baiduLongitude,
