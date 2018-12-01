@@ -1,5 +1,7 @@
 
 $(function () {
+
+// -----------------------------百度地图api start-------------------------------------
 	// 百度地图API功能
 	var map = new BMap.Map("startPostionMap");    // 创建Map实例
 	map.centerAndZoom(new BMap.Point(116.404, 39.915), 15);  // 初始化地图,设置中心点坐标和地图级别
@@ -36,6 +38,9 @@ $(function () {
 	var naturalLatitude;
 	var baiduLongitude;
 	var baiduLatitude;
+
+
+	// 转换定位
 	function success(position) {
 		naturalLatitude = position.coords.latitude;
 		naturalLongitude = position.coords.longitude;
@@ -53,6 +58,7 @@ $(function () {
 	if (Modernizr.geolocation) {
 		navigator.geolocation.getCurrentPosition(success,fail);
 	}
+	
 	endMap.addControl(new BMap.NavigationControl());
 	map.addControl(new BMap.NavigationControl());
 	translateCallback = function (data) {
@@ -81,6 +87,8 @@ $(function () {
         convertor.translate(pointArr, 1, 5, translateCallback);
     }, 1000);
 
+
+	// 点击地图获取坐标
 	map.addEventListener("click", function (e) {
 		$("#startePostion").val(e.point.lng+","+e.point.lat);
 		$('#startPostionMap').slideUp("slow");
@@ -88,7 +96,7 @@ $(function () {
 
 	$('.startPosition').on('click', function(event) {
 		event.preventDefault();
-		$('#startPostionMap').slideDown("slow");
+		$('.startMapContainer').slideDown("slow");
 	});
 
 
@@ -102,5 +110,12 @@ $(function () {
 		event.preventDefault();
 		$('#endPostionMap').slideDown("slow");
 	});
+
+
+
+	// 关键字输入提示
+	
+	
+// -----------------------------百度地图api end-------------------------------------
 
 });
