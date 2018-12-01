@@ -113,8 +113,8 @@ $(function () {
         geoc.getLocation(e.point, function(rs){
             var addComp = rs.addressComponents;
             $(".endPositionSpan").text(addComp.province + " " + addComp.city + " " + addComp.district + " " + addComp.street + " " + addComp.streetNumber);
-            var msg1 = $('#endPostion').val();
-            $("#endPostion").val(msg1+","+addComp.province + " " + addComp.city + " " + addComp.district + " " + addComp.street + " " + addComp.streetNumber);
+            var msg1 = $('#endPosition').val();
+            $("#endPosition").val(msg1+" "+addComp.province + " " + addComp.city + " " + addComp.district + " " + addComp.street + " " + addComp.streetNumber);
         });
         $('.searchEndPosition').val("");
         $('.endMapContainer').slideUp("slow");
