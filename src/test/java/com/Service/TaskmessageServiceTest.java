@@ -69,9 +69,9 @@ public class TaskmessageServiceTest {
     @Test
     @Rollback(false) //能对数据库里的表进行增删操作.原因：在操作数据时开启了事务，数据被放在iBATIS的一级缓存中，而操作之后没有提交事务
     public void updateTaskmessagestate() {
-        int id=3;
+        int id=7;
         int state=1;
-        boolean i=taskmessageService.updateTaskmessagestate(id,state);
+        boolean i=taskmessageService.updateTaskmessagestate(id);
         System.out.println(i);
         log.info("任务状态更新={}", i);
     }

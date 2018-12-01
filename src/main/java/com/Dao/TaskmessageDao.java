@@ -1,5 +1,6 @@
 package com.Dao;
 
+import com.Dto.Taskinformation;
 import com.Entity.Taskmessage;
 import com.Entity.Useraddress;
 import org.apache.ibatis.annotations.Param;
@@ -28,7 +29,15 @@ public interface TaskmessageDao {
      * @param state
      * @return
      */
-    int updateTaskmessagestate(@Param("id")int id, @Param("state")int state);
+    int updateTaskmessagestate(@Param("id")int id);
+
+
+    /**
+     * 列出所有未审核的任务信息
+     * @return
+     */
+    List<Taskinformation> selectTaskinformation();
+
 
 
     /**

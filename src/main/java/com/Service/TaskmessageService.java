@@ -21,7 +21,7 @@ public interface TaskmessageService {
      * @param id
      * @param state
      */
-    boolean updateTaskmessagestate(int id,int state);
+    boolean updateTaskmessagestate(int id);
 
     /**
      * 查看具体的任务信息

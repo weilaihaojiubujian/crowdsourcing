@@ -31,9 +31,9 @@
 
 
     <select id="selectByPos" resultType="Useraddress">
-        select u.uid,st_distance_sphere(point(q.a,q.b),u.position) as distance
+        select DISTINCT u.uid,st_distance_sphere(point(q.a,q.b),u.position) as distance
         from
-        useraddress u,( select x(startingposition) a ,y(startingposition) b  from taskmessage where uid=#{uid}) as q
+        useraddress u,( select x(startingposition) a ,y(startingposition) b  from taskmessage where uid=#{uid} and state=1) as q
 
         where
         st_distance_sphere(point(q.a,q.b),u.position)<![CDATA[ <= ]]>#{distance}

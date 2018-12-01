@@ -2,6 +2,7 @@ package com.Service;
 
 import com.Dto.Business;
 import com.Dto.Person;
+import com.Dto.Taskinformation;
 
 import java.util.List;
 
@@ -24,6 +25,12 @@ public interface AuditService {
      * @return
      */
     List<Business> selectmerchants();
+
+    /**
+     * 列出所有未审核的任务信息
+     * @return
+     */
+    List<Taskinformation> selectTaskinformation();
 
     /**
      * 审核用户

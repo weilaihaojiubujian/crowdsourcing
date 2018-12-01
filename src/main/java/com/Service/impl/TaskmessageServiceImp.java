@@ -33,14 +33,14 @@ public class TaskmessageServiceImp implements TaskmessageService {
     }
 
     @Override
-    public boolean updateTaskmessagestate(int id, int state) {
+    public boolean updateTaskmessagestate(int id) {
 
-        if(id==0 || state==0)
+        if(id==0)
         {
             return false;
         }
 
-        int i=taskmessageDao.updateTaskmessagestate(id,state);
+        int i=taskmessageDao.updateTaskmessagestate(id);
         System.out.println(i);
         log.info("TaskmessageServiceImp"+"更新任务状态={}", i);
         return i>0?true:false;

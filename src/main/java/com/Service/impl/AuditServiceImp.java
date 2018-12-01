@@ -1,8 +1,10 @@
 package com.Service.impl;
 
+import com.Dao.TaskmessageDao;
 import com.Dao.UserDao;
 import com.Dto.Business;
 import com.Dto.Person;
+import com.Dto.Taskinformation;
 import com.Service.AuditService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +27,8 @@ public class AuditServiceImp implements AuditService{
     @Autowired
     private UserDao userDao;
 
+    @Autowired
+    private TaskmessageDao taskmessageDao;
 
     @Override
     public List<Person> selectpeople() {
@@ -56,6 +60,19 @@ public class AuditServiceImp implements AuditService{
         }
 
 
+    }
+
+    @Override
+    public List<Taskinformation> selectTaskinformation() {
+        List<Taskinformation> m=taskmessageDao.selectTaskinformation();
+        log.info("AuditServiceImp"+"任务信息={}", m);
+        if (m!=null)
+        {
+            return m;
+        }
+        else {
+            return null;
+        }
     }
 
     @Override

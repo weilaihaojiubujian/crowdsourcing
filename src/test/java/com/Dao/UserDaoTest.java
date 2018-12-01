@@ -30,9 +30,9 @@ public class UserDaoTest {
     public void insertUser()
     {
         User u=new User();
-      String username="weilai";
-      String password="123";
-      String phonenumber="13758149770";
+      String username="wauhoi";
+      String password="12326485";
+      String phonenumber="1375810";
       String species="person";
       u.setUsername(username);
       u.setPassword(password);

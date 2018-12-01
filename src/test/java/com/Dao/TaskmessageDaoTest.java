@@ -1,5 +1,6 @@
 package com.Dao;
 
+import com.Dto.Taskinformation;
 import com.Entity.Taskmessage;
 import com.Entity.Useraddress;
 import com.Util.GeoHash;
@@ -64,11 +65,23 @@ public class TaskmessageDaoTest {
     @Test
     public void  updateTaskmessagestate()
     {
-        int id=1;
-        int state=2;
+        int id=7;
 
-        int i=taskmessageDao.updateTaskmessagestate(id,state);
+
+        int i=taskmessageDao.updateTaskmessagestate(id);
         System.out.println(i);
+    }
+
+    @Test
+    public void selectTaskinformation()
+    {
+
+        List<Taskinformation> t=taskmessageDao.selectTaskinformation();
+        for (Taskinformation i:t)
+        {
+            System.out.println("任务信息："+i);
+        }
+
     }
 
     @Test

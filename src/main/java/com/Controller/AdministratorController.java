@@ -2,7 +2,9 @@ package com.Controller;
 
 import com.Dto.Business;
 import com.Dto.Person;
+import com.Dto.Taskinformation;
 import com.Service.AuditService;
+import com.Service.TaskmessageService;
 import com.Service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,10 +35,19 @@ public class AdministratorController {
     @Autowired
     UserService userService;
 
+    @Autowired
+    TaskmessageService taskmessageService;
+
 
     @RequestMapping(value = "/audituser",method = RequestMethod.GET)
     public String audituser1(){
         return "audituser";
+
+    }
+
+    @RequestMapping(value = "/audittask1",method = RequestMethod.GET)
+    public String audittask1(){
+        return "audittask";
 
     }
 
@@ -70,6 +81,24 @@ public class AdministratorController {
         return m;
     }
 
+
+    @RequestMapping(value = "/audittask",method = RequestMethod.GET)
+    public  ModelAndView audittask(){
+
+        ModelAndView m= new ModelAndView();
+        List<Taskinformation> t=auditService.selectTaskinformation();
+        log.info("AdministratorController"+"任务信息={}", t);
+
+
+
+
+        m.addObject("taskinformations", t);
+
+        m.setViewName("forward:/administrator/audittask1");
+
+        return m;
+    }
+
     @RequestMapping(value = "/audit/{id}",method = RequestMethod.GET)
     public  ModelAndView auditPeople(@PathVariable("id") int id){
 
@@ -87,6 +116,28 @@ public class AdministratorController {
         {
 
             m.setViewName("redirect:/administrator/audit");
+        }
+
+        return m;
+    }
+
+    @RequestMapping(value = "/audit1/{id}",method = RequestMethod.GET)
+    public  ModelAndView audittask(@PathVariable("id") int id){
+
+        ModelAndView m= new ModelAndView();
+        boolean i=taskmessageService.updateTaskmessagestate(id);
+
+        log.info("AdministratorController"+"审核任务通过={}", i);
+
+
+        if(i==true)
+        {
+            m.setViewName("redirect:/administrator/administrator");
+        }
+        else
+        {
+
+            m.setViewName("redirect:/administrator/audittask");
         }
 
         return m;

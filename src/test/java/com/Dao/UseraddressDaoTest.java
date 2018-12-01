@@ -68,7 +68,7 @@ public class UseraddressDaoTest {
 
     @Test
     public void selectByPos() {
-        int uid = 7;
+        int uid = 6;
         double distance=1000000000;
         List<Useraddress> t = useraddressDao.selectByPos(uid,distance);
         for (Useraddress i : t) {
