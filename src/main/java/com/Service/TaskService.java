@@ -35,6 +35,14 @@ public interface TaskService {
      */
     Task selectTask(int id);
 
+    /**
+     * 查看任务
+     * @param tmid
+     * @return
+     */
+    Task selectTaskBytmid(int tmid);
+
+
 
     /**
      * 用户删除接受的任务

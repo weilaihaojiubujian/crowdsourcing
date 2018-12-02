@@ -9,6 +9,8 @@ public class Taskinformation {
 
     private int id;
 
+    private int mid;
+
     private int uid;//用户的序号
 
     private int ttid;//任务种类的序号
@@ -195,10 +197,19 @@ public class Taskinformation {
         this.purposelocationY = purposelocationY;
     }
 
+    public int getMid() {
+        return mid;
+    }
+
+    public void setMid(int mid) {
+        this.mid = mid;
+    }
+
     @Override
     public String toString() {
         return "Taskinformation{" +
                 "id=" + id +
+                ", mid=" + mid +
                 ", uid=" + uid +
                 ", ttid=" + ttid +
                 ", ttname='" + ttname + '\'' +

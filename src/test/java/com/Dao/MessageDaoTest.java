@@ -1,5 +1,6 @@
 package com.Dao;
 
+import com.Dto.Taskinformation;
 import com.Entity.BankAccount;
 import com.Entity.Message;
 import org.junit.Test;
@@ -10,6 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.annotation.Resource;
 import java.sql.Timestamp;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @Author: wanghongbin
@@ -39,6 +41,28 @@ public class MessageDaoTest {
 
         System.out.println(i);
 
+    }
+
+    @Test
+    public void selectMessageByUid()
+    {
+
+        int uid=1;
+        List<Taskinformation> i=messageDao.selectMessageByUid(uid);
+        for (Taskinformation t:i)
+        {
+            System.out.println("任务消息:0"+t);
+        }
+
+    }
+
+    @Test
+    public void selectMessage()
+    {
+
+        int id=2;
+        Message i=messageDao.selectMessage(id);
+        System.out.println(i);
     }
 
     @Test

@@ -36,6 +36,14 @@ public interface TaskDao {
      */
     Task selectTask(int id);
 
+
+    /**
+     * 查看任务
+     * @param tmid
+     * @return
+     */
+    Task selectTaskBytmid(int tmid);
+
     /**
      * 删除任务
      * @param id

@@ -65,6 +65,21 @@ public class TaskServiceImp implements TaskService {
     }
 
     @Override
+    public Task selectTaskBytmid(int tmid) {
+        if(tmid==0)
+        {
+            return null;
+        }
+        Task t=taskDao.selectTaskBytmid(tmid);
+        log.info("TaskServiceImp"+"查看任务={}", t);
+        if(t!=null)
+        {
+            return t;
+        }
+        return null;
+    }
+
+    @Override
     public boolean deleteTask(int id) {
         if(id==0)
         {

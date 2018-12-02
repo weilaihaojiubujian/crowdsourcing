@@ -20,6 +20,20 @@
 
  </insert>
 
+ <select id="selectMessageByUid" resultType="com.Dto.Taskinformation">
+
+  select t.id,m.id as mid,t.uid,ttid,pmid,t.name,message,startingaddress,purposeaddress,weight,tt.name as ttname ,pm.name as pmname,m.state  from taskmessage t,tasktype tt,pricingmodel pm,message m where  t.ttid=tt.id and t.pmid=pm.id and m.uid=#{uid} and m.tmid=t.id order by createtime desc
+
+
+ </select>
+
+ <select id="selectMessage"  resultMap="Message">
+
+  select * from message  where  id=#{id}
+
+
+ </select>
+
  <update id="updateMessageState" >
 
   update

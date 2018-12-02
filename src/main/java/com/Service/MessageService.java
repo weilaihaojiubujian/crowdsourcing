@@ -1,6 +1,9 @@
 package com.Service;
 
+import com.Dto.Taskinformation;
 import com.Entity.Message;
+
+import java.util.List;
 
 /**
  * @Author: wanghongbin
@@ -15,6 +18,24 @@ public interface MessageService {
      * @return
      */
     boolean insertMessage(Message message);
+
+
+    /**
+     * 查看系统发的任务消息
+     * @param uid
+     * @return
+     */
+    List<Taskinformation> selectMessageByUid(int uid);
+
+
+
+    /**
+     * 查看信息
+     * @param id
+     * @return
+     */
+    Message selectMessage(int id);
+
 
     /**
      * 更新信息状态

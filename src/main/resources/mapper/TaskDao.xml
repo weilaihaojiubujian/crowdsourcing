@@ -42,6 +42,13 @@
 
  </select>
 
+ <select id="selectTaskBytmid" resultMap="Task" parameterType="int">
+
+  select id,uid,tmid,createtime,completetime,price from task where tmid=#{tmid}
+
+
+ </select>
+
  <delete id="deleteTask">
   delete
   from

@@ -60,6 +60,15 @@ public class TaskDaoTest {
     }
 
     @Test
+    public void  selectTaskBytmid()
+    {
+        int id=7;
+        Task t=taskDao.selectTaskBytmid(id);
+        System.out.println("任务："+t);
+
+    }
+
+    @Test
     public void  deleteTask()
     {
         int id=2;

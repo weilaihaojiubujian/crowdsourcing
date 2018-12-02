@@ -48,30 +48,36 @@ public class UseraddressController {
     @RequestMapping(value = "/position",method = RequestMethod.POST)
     public String positioning(HttpServletRequest request, HttpSession session)throws Exception{
         User user= (User) session.getAttribute("user");
-        int uid=user.getId();
-        Double locationX= Double.valueOf(request.getParameter("lng"));
-        //纬度
-        Double locationY=Double.valueOf(request.getParameter("lat"));
-        Useraddress u=new Useraddress();
-        u.setGeohash(new GeoHash().encode(locationX,locationY));
-        u.setLocationX(locationX);
-        u.setLocationY(locationY);
-        u.setUid(uid);
-
-
-
-        Timestamp createtime=new Timestamp(new Date().getTime());
-        u.setCreatetime(createtime);
-        System.out.println("用户地址:"+u);
-        Useraddress q=useraddressService.selectById(uid);
-        if(q!=null)
+        String species=user.getSpecies();
+        if(species.equals("person"))
         {
 
-            boolean i=useraddressService.updateUseraddress(u);
+            int uid=user.getId();
+            Double locationX= Double.valueOf(request.getParameter("lng"));
+            //纬度
+            Double locationY=Double.valueOf(request.getParameter("lat"));
+            Useraddress u=new Useraddress();
+            u.setGeohash(new GeoHash().encode(locationX,locationY));
+            u.setLocationX(locationX);
+            u.setLocationY(locationY);
+            u.setUid(uid);
+
+
+
+            Timestamp createtime=new Timestamp(new Date().getTime());
+            u.setCreatetime(createtime);
+            System.out.println("用户地址:"+u);
+            Useraddress q=useraddressService.selectById(uid);
+            if(q!=null)
+            {
+
+                boolean i=useraddressService.updateUseraddress(u);
+            }
+            else {
+                boolean i=useraddressService.UseraddressRegistered(u);
+            }
         }
-        else {
-            boolean i=useraddressService.UseraddressRegistered(u);
-        }
+
 
 
 

@@ -1,5 +1,6 @@
 package com.Controller;
 
+import com.Dto.Taskinformation;
 import com.Entity.*;
 import com.Service.*;
 import com.Util.GeoHash;
@@ -45,12 +46,19 @@ public class TaskController {
     @Autowired
     MessageService messageService;
 
+    @Autowired
+    TaskService taskService;
+
     @RequestMapping(value = "/release1",method = RequestMethod.GET)
     public String release1(){
         return "release";
 
     }
+    @RequestMapping(value = "/message1",method = RequestMethod.GET)
+    public String message1(){
+        return "message";
 
+    }
 
     @RequestMapping(value = "/release",method = RequestMethod.GET)
     public ModelAndView release(){
@@ -140,6 +148,58 @@ public class TaskController {
         }
 
         m.setViewName("redirect:/administrator/administrator");
+
+        return m;
+    }
+
+
+
+    @RequestMapping(value = "/message",method = RequestMethod.GET)
+    public ModelAndView usermessage(HttpSession session){
+
+        ModelAndView m= new ModelAndView();
+        User user= (User) session.getAttribute("user");
+        int uid=user.getId();
+        List<Taskinformation> t=messageService.selectMessageByUid(uid);
+
+
+        m.addObject("taskinformations", t);
+        m.setViewName("forward:/task/message1");
+
+        return m;
+    }
+    @RequestMapping(value = "/accept/{id}",method = RequestMethod.GET)
+    public ModelAndView accepttask(@PathVariable("id") int id,HttpSession session){
+
+        ModelAndView m= new ModelAndView();
+        User user= (User) session.getAttribute("user");
+        int uid=user.getId();
+        Task t=taskService.selectTaskBytmid(id);
+        if(t==null)
+        {
+            Task i=new Task();
+            i.setPrice(100);
+            i.setTmid(id);
+            Timestamp createtime=new Timestamp(new Date().getTime());
+            i.setCreatetime(createtime);
+            i.setUid(uid);
+            boolean j=taskService.insertTask(i);
+            if(j==true)
+            {
+
+                m.setViewName("redirect:/user/login1");
+            }
+            else{
+
+                //接受任务失败
+            }
+        }
+        else {
+
+            //任务已被人接受，无法接受任务
+        }
+
+
 
         return m;
     }

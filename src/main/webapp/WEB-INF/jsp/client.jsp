@@ -61,7 +61,8 @@
                 <td>主界面</td>
 
                 <a href="/task/release">发布任务</a>
-                <a href="/user/information">信息</a>
+                <a href="/user/information">个人信息</a>
+                <a href="/task/message"   ><input type="button" name="任务消息" value="任务消息"></a>
             </section>
         </article>
     </main>
