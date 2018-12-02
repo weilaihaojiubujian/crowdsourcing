@@ -1,5 +1,6 @@
 package com.Dao;
 
+import com.Dto.Business;
 import com.Entity.Useraddress;
 import org.apache.ibatis.annotations.Param;
 
@@ -25,7 +26,7 @@ public interface UseraddressDao {
      * @param id
      * @return
      */
-    Useraddress selectById(int id);
+    Useraddress selectById(int uid);
 
 
     /**
@@ -42,6 +43,14 @@ public interface UseraddressDao {
      * @return
      */
     List<Useraddress> selectByPos(@Param("uid") int uid,@Param("distance") double distance );
+
+
+    /**
+     * 更新用户地址
+     * @param u
+     * @return
+     */
+    int updateUseraddress(Useraddress u);
 
     /**
      * 删除地址

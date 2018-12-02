@@ -1,22 +1,22 @@
 package com.Controller;
 
-import com.Entity.Pricingmodel;
-import com.Entity.Taskmessage;
-import com.Entity.Tasktype;
-import com.Entity.User;
-import com.Service.PricingmodelService;
-import com.Service.TaskmessageService;
-import com.Service.TasktypeService;
+import com.Entity.*;
+import com.Service.*;
 import com.Util.GeoHash;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.sql.Timestamp;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -28,6 +28,8 @@ import java.util.List;
 @RequestMapping("/task")
 public class TaskController {
 
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
+
     @Autowired
     TasktypeService tasktypeService;
 
@@ -36,6 +38,12 @@ public class TaskController {
 
     @Autowired
     TaskmessageService taskmessageService;
+
+    @Autowired
+    UseraddressService useraddressService;
+
+    @Autowired
+    MessageService messageService;
 
     @RequestMapping(value = "/release1",method = RequestMethod.GET)
     public String release1(){
@@ -110,5 +118,29 @@ public class TaskController {
 
 
         return "redirect:/user/login1";
+    }
+
+
+    @RequestMapping(value = "/distribution/{id}",method = RequestMethod.GET)
+    public ModelAndView distributiontask(@PathVariable("id") int id){
+
+        ModelAndView m= new ModelAndView();
+        Taskmessage t=taskmessageService.selectTaskmessage(id);
+        List<Useraddress> u=useraddressService.selectbyposition(t.getUid(),10000000);
+        log.info("TaskController"+"附近的用户地址={}", u);
+        for(Useraddress i:u)
+        {
+            int uid=i.getUid();
+            Message q=new Message();
+            q.setTmid(id);
+            q.setUid(uid);
+            Timestamp createtime=new Timestamp(new Date().getTime());
+            q.setCreatetime(createtime);
+            boolean j=messageService.insertMessage(q);
+        }
+
+        m.setViewName("redirect:/administrator/administrator");
+
+        return m;
     }
 }

@@ -35,6 +35,21 @@ public class UseraddressServiceImp implements UseraddressService {
     }
 
     @Override
+    public Useraddress selectById(int uid) {
+        if (uid==0)return null;
+        Useraddress u=useraddressDao.selectById(uid);
+        log.info("UseraddressServiceImp"+"查询用户定位={}", u);
+        if (u!=null)
+        {
+            return u;
+        }
+        else {
+            return null;
+        }
+
+    }
+
+    @Override
     public List<Useraddress> selectByUid(int uid) {
 
         if (uid==0)return null;
@@ -56,6 +71,15 @@ public class UseraddressServiceImp implements UseraddressService {
             return  useraddress;
         }
         return null;
+    }
+
+    @Override
+    public boolean updateUseraddress(Useraddress u) {
+        if(u==null) return false;
+        int i=useraddressDao.updateUseraddress(u);
+        System.out.println(i);
+        log.info("UseraddressServiceImp"+"更新用户定位={}", i);
+        return i>0?true:false;
     }
 
     @Override

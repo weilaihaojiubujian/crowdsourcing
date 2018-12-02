@@ -21,6 +21,9 @@ public interface UseraddressService {
     boolean UseraddressRegistered(Useraddress useraddress);
 
 
+    Useraddress selectById(int uid);
+
+
     /**
      * 用用户id查找
      * @param uid
@@ -35,6 +38,14 @@ public interface UseraddressService {
      * @return
      */
     List<Useraddress> selectbyposition(@Param("uid") int uid, @Param("distance") double distance );
+
+
+    /**
+     * 更新用户定位
+     * @param u
+     * @return
+     */
+    boolean updateUseraddress(Useraddress u);
 
     /**
      * 删除地址

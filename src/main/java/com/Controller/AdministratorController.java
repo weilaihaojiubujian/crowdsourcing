@@ -132,7 +132,8 @@ public class AdministratorController {
 
         if(i==true)
         {
-            m.setViewName("redirect:/administrator/administrator");
+
+            m.setViewName("forward:/task/distribution/"+id);
         }
         else
         {

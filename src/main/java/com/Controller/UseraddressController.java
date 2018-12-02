@@ -59,49 +59,25 @@ public class UseraddressController {
         u.setUid(uid);
 
 
+
         Timestamp createtime=new Timestamp(new Date().getTime());
         u.setCreatetime(createtime);
         System.out.println("用户地址:"+u);
+        Useraddress q=useraddressService.selectById(uid);
+        if(q!=null)
+        {
 
+            boolean i=useraddressService.updateUseraddress(u);
+        }
+        else {
+            boolean i=useraddressService.UseraddressRegistered(u);
+        }
 
-
-        boolean i=useraddressService.UseraddressRegistered(u);
-        return "redirect:/address/login1";
-    }
-
-    @RequestMapping(value = "/deleteUseraddress",method = RequestMethod.GET)
-    public String deleteUseraddress( HttpSession session)
-    {
-
-
-            User user= (User) session.getAttribute("user");
-
-            int uid=user.getId();
-            List<Useraddress> u=useraddressService.selectByUid(uid);
-
-            for(int i=0;i<u.size();i++)
-            {
-                if(u.size()<=100)
-                {
-
-                }
-                else {
-                    if(i>=u.size()-100)
-                    {
-
-                    }
-                    else
-                    {
-                        Useraddress q=(Useraddress)u.get(i);
-                        boolean w=useraddressService.deleteAddress(q.getId());
-                    }
-
-
-                }
-            }
 
 
 
         return "redirect:/address/login1";
     }
+
+
 }

@@ -24,7 +24,7 @@
 
   <select id="selectById" resultMap="Useraddress" parameterType="int">
 
-      select * from useraddress where id=#{id}
+      select * from useraddress where uid=#{uid}
        
         
     </select>
@@ -52,7 +52,29 @@
 
 
 
+    <update id="updateUseraddress" >
 
+        update
+        useraddress
+        <set>
+
+            <if test="locationX !=0 and locationY!=0 ">
+                position = point(#{locationX},#{locationY}),
+            </if>
+            <if test="geohash !=null and geohash.length() !=0">
+                geohash = #{geohash},
+            </if>
+            <if test="createtime!=null ">
+                createtime = #{createtime}
+            </if>
+
+
+
+        </set>
+        where
+        uid=#{uid}
+
+    </update>
 
     <delete id="deleteAddress">
         delete

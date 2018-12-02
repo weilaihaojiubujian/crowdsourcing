@@ -92,6 +92,35 @@ public class UseraddressDaoTest {
     }
 
     @Test
+    public void  updateUseraddress()
+    {
+        Useraddress u=new Useraddress();
+        int uid=6;
+
+
+
+
+
+
+        Double startinglocationX=59.11;
+        Double startinglocationY=35.25;
+
+        u.setGeohash(new GeoHash().encode(startinglocationX,startinglocationY));
+
+
+        u.setLocationX(startinglocationX);
+        u.setLocationY(startinglocationY);
+        u.setUid(uid);
+
+
+        Timestamp createtime=new Timestamp(new Date().getTime());
+        u.setCreatetime(createtime);
+        int i=useraddressDao.updateUseraddress(u);
+        System.out.println("用户地址"+i);
+
+    }
+
+    @Test
     public void  deleteAddress()
     {
 
