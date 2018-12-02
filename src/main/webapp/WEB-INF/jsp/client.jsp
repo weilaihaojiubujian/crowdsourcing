@@ -63,6 +63,9 @@
                 <a href="/task/release">发布任务</a>
                 <a href="/user/information">个人信息</a>
                 <a href="/task/message"   ><input type="button" name="任务消息" value="任务消息"></a>
+                <c:if test="${ sessionScope.user.species.equals('person')}"> <a href="/task/already"   ><input type="button" name="查看接受的任务" value="查看接受的任务"></a></c:if>
+                <a href="/task/releasebyuser"   ><input type="button" name="查看发布的任务" value="查看发布的任务"></a>
+
             </section>
         </article>
     </main>

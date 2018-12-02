@@ -1,9 +1,11 @@
 package com.Dao;
 
+import com.Dto.Taskinformation;
 import com.Entity.Task;
 import org.apache.ibatis.annotations.Param;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * @Author: wanghongbin
@@ -26,7 +28,7 @@ public interface TaskDao {
      * @param completetime
      * @return
      */
-    int insertTaskcompletetime(@Param("id")int id, @Param("completetime")Timestamp completetime);
+    int insertTaskcompletetime(@Param("uid")int uid, @Param("completetime")Timestamp completetime);
 
 
     /**
@@ -35,6 +37,29 @@ public interface TaskDao {
      * @return
      */
     Task selectTask(int id);
+
+
+    /**
+     * 查看任务信息
+     * @param id
+     * @return
+     */
+    Taskinformation selectTaskByUId(int uid);
+
+
+    /**
+     *
+     * @param uid
+     * @return
+     */
+    List<Taskinformation> selectTaskAllByUId(int uid);
+
+    /**
+     * 查看任务
+     * @param uid
+     * @return
+     */
+    Task selectTaskByUid(int uid);
 
 
     /**

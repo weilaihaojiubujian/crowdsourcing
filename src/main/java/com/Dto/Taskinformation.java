@@ -27,6 +27,8 @@ public class Taskinformation {
 
     private int state;//状态
 
+    private double price;//价格
+
     private String startingaddress;//起始附近坐标
 
 
@@ -205,6 +207,14 @@ public class Taskinformation {
         this.mid = mid;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     @Override
     public String toString() {
         return "Taskinformation{" +
@@ -218,6 +228,7 @@ public class Taskinformation {
                 ", name='" + name + '\'' +
                 ", message='" + message + '\'' +
                 ", state=" + state +
+                ", price=" + price +
                 ", startingaddress='" + startingaddress + '\'' +
                 ", startinggeohash='" + startinggeohash + '\'' +
                 ", weight=" + weight +

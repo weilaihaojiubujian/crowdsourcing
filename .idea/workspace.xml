@@ -10,47 +10,51 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Controller/AdministratorController.class" afterPath="$PROJECT_DIR$/target/classes/com/Controller/AdministratorController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Controller/TaskController.class" afterPath="$PROJECT_DIR$/target/classes/com/Controller/TaskController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/Controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Dao/TaskDao.class" afterPath="$PROJECT_DIR$/target/classes/com/Dao/TaskDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Dao/TaskmessageDao.class" afterPath="$PROJECT_DIR$/target/classes/com/Dao/TaskmessageDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Dao/UseraddressDao.class" afterPath="$PROJECT_DIR$/target/classes/com/Dao/UseraddressDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/AuditService.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/AuditService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/TaskService.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/TaskService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/TaskmessageService.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/TaskmessageService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/UseraddressService.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/UseraddressService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/impl/AuditServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/impl/AuditServiceImp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/impl/TaskServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/impl/TaskServiceImp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/impl/TaskmessageServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/impl/TaskmessageServiceImp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/impl/UseraddressServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/impl/UseraddressServiceImp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/AdministratorController.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/AdministratorController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/TaskController.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/TaskController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/UserController.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/TaskDao.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/TaskDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/TaskmessageDao.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/TaskmessageDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/UseraddressDao.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/UseraddressDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/AuditService.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/AuditService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/TaskService.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/TaskService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/TaskmessageService.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/TaskmessageService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/UseraddressService.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/UseraddressService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/AuditServiceImp.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/AuditServiceImp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TaskServiceImp.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TaskServiceImp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TaskmessageServiceImp.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TaskmessageServiceImp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/UseraddressServiceImp.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/UseraddressServiceImp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Dao/TaskDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Dao/TaskDaoTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Dao/TaskmessageDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Dao/TaskmessageDaoTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Dao/UserDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Dao/UserDaoTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Dao/UseraddressDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Dao/UseraddressDaoTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Service/TaskmessageServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Service/TaskmessageServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Controller/UseraddressController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Controller/UseraddressController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Dao/MessageDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/Dao/MessageDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Dao/TaskDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/Dao/TaskDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Dto/Taskinformation.java" afterPath="$PROJECT_DIR$/src/main/java/com/Dto/Taskinformation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Service/MessageService.java" afterPath="$PROJECT_DIR$/src/main/java/com/Service/MessageService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Service/TaskService.java" afterPath="$PROJECT_DIR$/src/main/java/com/Service/TaskService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Service/impl/MessageServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/com/Service/impl/MessageServiceImp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Service/impl/TaskServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/com/Service/impl/TaskServiceImp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/MessageDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MessageDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Dao/MessageDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/Dao/MessageDaoTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Dao/TaskDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/Dao/TaskDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TaskDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TaskDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TaskmessageDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TaskmessageDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/UseraddressDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UseraddressDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/TaskDao.xml" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/TaskDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/TaskmessageDao.xml" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/TaskmessageDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/UseraddressDao.xml" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/UseraddressDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/client.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/client.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/release.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/release.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -67,67 +71,19 @@
       <file leaf-file-name="TaskController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="193" column="24" lean-forward="true" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TaskService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/TaskDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-              <folding>
-                <marker date="1543745153365" expanded="true" signature="483:575" ph="insert into task... " />
-                <marker date="1543745153365" expanded="true" signature="631:707" ph="update task " />
-                <marker date="1543745153365" expanded="true" signature="787:857" ph="select uid,t... task" />
-                <marker date="1543745153365" expanded="true" signature="944:1021" ph="select id,ui... task" />
-                <marker date="1543745153365" expanded="true" signature="1064:1103" ph="delete from " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <caret line="279" column="4" lean-forward="false" selection-start-line="279" selection-start-column="4" selection-end-line="279" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/MessageController.java">
+      <file leaf-file-name="releasetaskbyuser.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/releasetaskbyuser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,7 +92,57 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="263">
-              <caret line="230" column="9" lean-forward="true" selection-start-line="229" selection-start-column="8" selection-end-line="230" selection-end-column="9" />
+              <caret line="123" column="45" lean-forward="false" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="66" column="44" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/TaskDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-179">
+              <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding>
+                <marker date="1543752483442" expanded="true" signature="483:575" ph="insert into task... " />
+                <marker date="1543752483442" expanded="true" signature="631:709" ph="update task " />
+                <marker date="1543752483442" expanded="true" signature="631:734" ph="update task " />
+                <marker date="1543752483442" expanded="true" signature="814:884" ph="select uid,t... task" />
+                <marker date="1543752483442" expanded="true" signature="970:1242" ph="select t.id,... taskmessage" />
+                <marker date="1543752483442" expanded="true" signature="1329:1592" ph="select t.id,... tasktype" />
+                <marker date="1543752483442" expanded="true" signature="1679:1776" ph="select uid,t... task" />
+                <marker date="1543752483442" expanded="true" signature="1863:1940" ph="select id,ui... task" />
+                <marker date="1543752483442" expanded="true" signature="1983:2022" ph="delete from " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TaskService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -149,8 +155,8 @@
       <list>
         <option value="jsf" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -165,8 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/regist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/businessinformation.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/Entity/Taskmessage.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/release.jsp" />
@@ -200,8 +204,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/Service/impl/UseraddressServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Controller/AdministratorController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Dto/Taskinformation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Dao/MessageDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/MessageDao.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/Dao/MessageDaoTest.java" />
@@ -209,13 +211,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/Service/impl/MessageServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Controller/MessageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Controller/UseraddressController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Dto/Taskinformation.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/already.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/Dao/TaskDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/Dao/TaskDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/Service/TaskService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Service/impl/TaskServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Controller/UseraddressController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/releasetaskbyuser.jsp" />
       </list>
     </option>
   </component>
@@ -504,7 +510,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration name="MessageDaoTest.selectMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskDaoTest.insertTaskcompletetime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.Dao.*" />
@@ -515,8 +521,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.Dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Dao.MessageDaoTest" />
-      <option name="METHOD_NAME" value="selectMessage" />
+      <option name="MAIN_CLASS_NAME" value="com.Dao.TaskDaoTest" />
+      <option name="METHOD_NAME" value="insertTaskcompletetime" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -529,7 +535,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="MessageDaoTest.selectMessageByUid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskDaoTest.selectTaskAllByUId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.Dao.*" />
@@ -540,8 +546,58 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.Dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Dao.MessageDaoTest" />
-      <option name="METHOD_NAME" value="selectMessageByUid" />
+      <option name="MAIN_CLASS_NAME" value="com.Dao.TaskDaoTest" />
+      <option name="METHOD_NAME" value="selectTaskAllByUId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TaskDaoTest.selectTaskById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="crowdsourcing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.Dao" />
+      <option name="MAIN_CLASS_NAME" value="com.Dao.TaskDaoTest" />
+      <option name="METHOD_NAME" value="selectTaskById" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TaskDaoTest.selectTaskByUid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="crowdsourcing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.Dao" />
+      <option name="MAIN_CLASS_NAME" value="com.Dao.TaskDaoTest" />
+      <option name="METHOD_NAME" value="selectTaskByUid" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -651,56 +707,6 @@
         </option>
       </method>
     </configuration>
-    <configuration name="UseraddressDaoTest.selectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.Dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="crowdsourcing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.Dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Dao.UseraddressDaoTest" />
-      <option name="METHOD_NAME" value="selectById" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="UseraddressDaoTest.updateUseraddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.Dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="crowdsourcing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.Dao" />
-      <option name="MAIN_CLASS_NAME" value="com.Dao.UseraddressDaoTest" />
-      <option name="METHOD_NAME" value="updateUseraddress" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -784,19 +790,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UseraddressDaoTest.selectById" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UseraddressDaoTest.updateUseraddress" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MessageDaoTest.selectMessageByUid" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MessageDaoTest.selectMessage" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.selectTaskBytmid" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.selectTaskBytmid" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.selectTaskByUid" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.selectTaskById" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.insertTaskcompletetime" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.selectTaskAllByUId" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.selectTaskBytmid" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MessageDaoTest.selectMessage" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MessageDaoTest.selectMessageByUid" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UseraddressDaoTest.updateUseraddress" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UseraddressDaoTest.selectById" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.selectTaskAllByUId" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.insertTaskcompletetime" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.selectTaskById" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.selectTaskByUid" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TaskDaoTest.selectTaskBytmid" />
       </list>
     </recent_temporary>
   </component>
@@ -842,44 +848,44 @@
       <workItem from="1543571466640" duration="1941000" />
       <workItem from="1543636897188" duration="20954000" />
       <workItem from="1543669275756" duration="3194000" />
-      <workItem from="1543720506633" duration="12605000" />
+      <workItem from="1543720506633" duration="19639000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MessageDaoTest_selectMessage - 2018.12.02 at 15h 56m 39s.xml">
-      <configuration name="MessageDaoTest.selectMessage" configurationId="JUnit" />
+    <history-entry file="TaskDaoTest_insertTaskcompletetime - 2018.12.02 at 19h 34m 36s.xml">
+      <configuration name="TaskDaoTest.insertTaskcompletetime" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageDaoTest_selectMessageByUid - 2018.12.02 at 15h 25m 21s.xml">
-      <configuration name="MessageDaoTest.selectMessageByUid" configurationId="JUnit" />
+    <history-entry file="TaskDaoTest_selectTaskAllByUId - 2018.12.02 at 19h 57m 33s.xml">
+      <configuration name="TaskDaoTest.selectTaskAllByUId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageDaoTest_selectMessageByUid - 2018.12.02 at 15h 25m 45s.xml">
-      <configuration name="MessageDaoTest.selectMessageByUid" configurationId="JUnit" />
+    <history-entry file="TaskDaoTest_selectTaskAllByUId - 2018.12.02 at 20h 00m 37s.xml">
+      <configuration name="TaskDaoTest.selectTaskAllByUId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageDaoTest_selectMessageByUid - 2018.12.02 at 15h 26m 27s.xml">
-      <configuration name="MessageDaoTest.selectMessageByUid" configurationId="JUnit" />
+    <history-entry file="TaskDaoTest_selectTaskAllByUId - 2018.12.02 at 20h 01m 56s.xml">
+      <configuration name="TaskDaoTest.selectTaskAllByUId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageDaoTest_selectMessageByUid - 2018.12.02 at 15h 27m 22s.xml">
-      <configuration name="MessageDaoTest.selectMessageByUid" configurationId="JUnit" />
+    <history-entry file="TaskDaoTest_selectTaskAllByUId - 2018.12.02 at 20h 02m 33s.xml">
+      <configuration name="TaskDaoTest.selectTaskAllByUId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MessageDaoTest_selectMessageByUid - 2018.12.02 at 15h 52m 31s.xml">
-      <configuration name="MessageDaoTest.selectMessageByUid" configurationId="JUnit" />
+    <history-entry file="TaskDaoTest_selectTaskAllByUId - 2018.12.02 at 20h 04m 01s.xml">
+      <configuration name="TaskDaoTest.selectTaskAllByUId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TaskDaoTest_selectTaskBytmid - 2018.12.02 at 18h 06m 43s.xml">
-      <configuration name="TaskDaoTest.selectTaskBytmid" configurationId="JUnit" />
+    <history-entry file="TaskDaoTest_selectTaskAllByUId - 2018.12.02 at 20h 06m 12s.xml">
+      <configuration name="TaskDaoTest.selectTaskAllByUId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UseraddressDaoTest_updateUseraddress - 2018.12.02 at 13h 30m 33s.xml">
-      <configuration name="UseraddressDaoTest.updateUseraddress" configurationId="JUnit" />
+    <history-entry file="TaskDaoTest_selectTaskAllByUId - 2018.12.02 at 20h 07m 31s.xml">
+      <configuration name="TaskDaoTest.selectTaskAllByUId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UseraddressDaoTest_updateUseraddress - 2018.12.02 at 13h 31m 52s.xml">
-      <configuration name="UseraddressDaoTest.updateUseraddress" configurationId="JUnit" />
+    <history-entry file="TaskDaoTest_selectTaskAllByUId - 2018.12.02 at 20h 08m 13s.xml">
+      <configuration name="TaskDaoTest.selectTaskAllByUId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UseraddressDaoTest_updateUseraddress - 2018.12.02 at 13h 32m 21s.xml">
-      <configuration name="UseraddressDaoTest.updateUseraddress" configurationId="JUnit" />
+    <history-entry file="TaskDaoTest_selectTaskById - 2018.12.02 at 19h 22m 44s.xml">
+      <configuration name="TaskDaoTest.selectTaskById" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188428000" />
+    <option name="totallyTimeSpent" value="195462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -892,6 +898,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.50429183" order="7" side_tool="true" content_ui="tabs" />
@@ -915,7 +922,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918552" sideWeight="0.49570817" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35354078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35354078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -984,7 +991,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/Dao/TaskDaoTest.java</url>
-          <line>53</line>
+          <line>55</line>
           <properties class="com.Dao.TaskDaoTest" method="selectTask">
             <option name="EMULATED" value="true" />
           </properties>
@@ -1030,6 +1037,22 @@
           </properties>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/Dao/TaskDaoTest.java</url>
+          <line>88</line>
+          <properties class="com.Dao.TaskDaoTest" method="selectTaskByUid">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/Dao/TaskDaoTest.java</url>
+          <line>64</line>
+          <properties class="com.Dao.TaskDaoTest" method="selectTaskById">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/Dao/BankAccountDaoTest.java</url>
           <line>26</line>
@@ -1038,7 +1061,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/Dao/TaskDaoTest.java</url>
-          <line>45</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1061,55 +1084,16 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/PricingmodelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/LoginServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="24" column="12" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="24" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/PersoninformationServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/UserDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1157,14 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="44" column="12" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="44" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/TaskmessageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1225,41 +1201,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TaskmessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TaskmessageDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="44" selection-end-column="10" />
-          <folding>
-            <marker date="1543672163636" expanded="true" signature="689:1079" ph="insert into taskmessage" />
-            <marker date="1543672163636" expanded="true" signature="1135:1207" ph="update taskm... " />
-            <marker date="1543672163636" expanded="true" signature="1299:1491" ph="select t.id,... taskmessage" />
-            <marker date="1543672163636" expanded="true" signature="1299:1510" ph="select t.id,... taskmessage" />
-            <marker date="1543672163636" expanded="true" signature="1605:1711" ph="select id,ui... taskmessage" />
-            <marker date="1543672163636" expanded="true" signature="1761:1807" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audittask.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="43" column="12" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="43" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1276,14 +1221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="59" column="91" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="59" selection-end-column="91" />
           <folding />
         </state>
       </provider>
@@ -1376,77 +1313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dto/Taskinformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="216" column="40" lean-forward="true" selection-start-line="216" selection-start-column="40" selection-end-line="216" selection-end-column="40" />
-          <folding>
-            <element signature="e#3776#3777#0" expanded="true" />
-            <element signature="e#3802#3803#0" expanded="true" />
-            <element signature="e#3837#3838#0" expanded="true" />
-            <element signature="e#3867#3868#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/TaskDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="65" column="44" lean-forward="false" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-          <folding>
-            <marker date="1543745153365" expanded="true" signature="483:575" ph="insert into task... " />
-            <marker date="1543745153365" expanded="true" signature="631:707" ph="update task " />
-            <marker date="1543745153365" expanded="true" signature="787:857" ph="select uid,t... task" />
-            <marker date="1543745153365" expanded="true" signature="944:1021" ph="select id,ui... task" />
-            <marker date="1543745153365" expanded="true" signature="1064:1103" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/TaskDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/TaskServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TasktypeService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1471,24 +1341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2111">
           <caret line="78" column="30" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/MessageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="230" column="9" lean-forward="true" selection-start-line="229" selection-start-column="8" selection-end-line="230" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1519,10 +1371,181 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="879">
+          <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/TaskmessageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TaskmessageDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="44" selection-end-column="10" />
+          <folding>
+            <marker date="1543672163636" expanded="true" signature="689:1079" ph="insert into taskmessage" />
+            <marker date="1543672163636" expanded="true" signature="1135:1207" ph="update taskm... " />
+            <marker date="1543672163636" expanded="true" signature="1299:1491" ph="select t.id,... taskmessage" />
+            <marker date="1543672163636" expanded="true" signature="1299:1510" ph="select t.id,... taskmessage" />
+            <marker date="1543672163636" expanded="true" signature="1605:1711" ph="select id,ui... taskmessage" />
+            <marker date="1543672163636" expanded="true" signature="1761:1807" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audittask.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dto/Taskinformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="218" column="18" lean-forward="false" selection-start-line="218" selection-start-column="18" selection-end-line="218" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="123" column="45" lean-forward="false" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/already.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/TaskServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="90" column="39" lean-forward="false" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="49" column="12" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="49" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/TaskDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="75" column="16" lean-forward="false" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <marker date="1543752483442" expanded="true" signature="483:575" ph="insert into task... " />
+            <marker date="1543752483442" expanded="true" signature="631:709" ph="update task " />
+            <marker date="1543752483442" expanded="true" signature="631:734" ph="update task " />
+            <marker date="1543752483442" expanded="true" signature="814:884" ph="select uid,t... task" />
+            <marker date="1543752483442" expanded="true" signature="970:1242" ph="select t.id,... taskmessage" />
+            <marker date="1543752483442" expanded="true" signature="1329:1592" ph="select t.id,... tasktype" />
+            <marker date="1543752483442" expanded="true" signature="1679:1776" ph="select uid,t... task" />
+            <marker date="1543752483442" expanded="true" signature="1863:1940" ph="select id,ui... task" />
+            <marker date="1543752483442" expanded="true" signature="1983:2022" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TaskmessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="66" column="44" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/TaskDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179">
+          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/release.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/releasetaskbyuser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="193" column="24" lean-forward="true" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
+        <state relative-caret-position="396">
+          <caret line="279" column="4" lean-forward="false" selection-start-line="279" selection-start-column="4" selection-end-line="279" selection-end-column="4" />
           <folding />
         </state>
       </provider>

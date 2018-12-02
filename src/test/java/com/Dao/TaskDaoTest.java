@@ -1,5 +1,6 @@
 package com.Dao;
 
+import com.Dto.Taskinformation;
 import com.Entity.Task;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,6 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.annotation.Resource;
 import java.sql.Timestamp;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @Author: wanghongbin
@@ -44,7 +46,7 @@ public class TaskDaoTest {
     @Test
     public void insertTaskcompletetime()
     {
-        int id=5;
+        int id=1;
         Timestamp completetimee=new Timestamp(new Date().getTime());
         int i=taskDao.insertTaskcompletetime(id,completetimee);
         System.out.println(i);
@@ -55,6 +57,39 @@ public class TaskDaoTest {
     {
         int id=1;
         Task t=taskDao.selectTask(id);
+        System.out.println("任务："+t);
+
+    }
+
+    @Test
+    public void  selectTaskById()
+    {
+        int id=1;
+        Taskinformation t=taskDao.selectTaskByUId(id);
+        System.out.println("任务："+t);
+
+    }
+
+    @Test
+    public void  selectTaskAllByUId()
+    {
+        int id=6;
+        List<Taskinformation> t=taskDao.selectTaskAllByUId(id);
+        for (Taskinformation i:t)
+        {
+            System.out.println("任务："+i);
+        }
+
+
+    }
+
+
+
+    @Test
+    public void  selectTaskByUid()
+    {
+        int id=1;
+        Task t=taskDao.selectTaskByUid(id);
         System.out.println("任务："+t);
 
     }

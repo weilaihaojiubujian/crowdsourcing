@@ -60,6 +60,20 @@ public class TaskController {
 
     }
 
+    @RequestMapping(value = "/already1",method = RequestMethod.GET)
+    public String already1(){
+        return "already";
+
+    }
+
+
+    @RequestMapping(value = "/releasetaskbyuser",method = RequestMethod.GET)
+    public String  releasetaskbyuser(){
+        return "releasetaskbyuser";
+
+    }
+
+
     @RequestMapping(value = "/release",method = RequestMethod.GET)
     public ModelAndView release(){
 
@@ -175,7 +189,8 @@ public class TaskController {
         User user= (User) session.getAttribute("user");
         int uid=user.getId();
         Task t=taskService.selectTaskBytmid(id);
-        if(t==null)
+        Task p=taskService.selectTaskByUid(uid);
+        if(t==null && p==null)
         {
             Task i=new Task();
             i.setPrice(100);
@@ -198,9 +213,70 @@ public class TaskController {
 
             //任务已被人接受，无法接受任务
         }
+        return m;
+    }
 
 
+
+    @RequestMapping(value = "/already",method = RequestMethod.GET)
+    public ModelAndView alreadytask(HttpSession session){
+
+        ModelAndView m= new ModelAndView();
+        User user= (User) session.getAttribute("user");
+        int uid=user.getId();
+        Taskinformation t=taskService.selectTaskByUId(uid);
+
+
+        m.addObject("p", t);
+        m.setViewName("forward:/task/already1");
 
         return m;
     }
+
+    @RequestMapping(value = "/complete",method = RequestMethod.GET)
+    public ModelAndView completetask(HttpSession session){
+
+        ModelAndView m= new ModelAndView();
+        User user= (User) session.getAttribute("user");
+        int uid=user.getId();
+        Timestamp completetimee=new Timestamp(new Date().getTime());
+        boolean j=taskService.insertTaskcompletetime(uid,completetimee);
+        log.info("TaskController"+"用户完成任务，插入完成时间={}", j);
+
+
+        m.setViewName("redirect:/user/login1");
+
+        return m;
+    }
+
+    @RequestMapping(value = "/releasebyuser",method = RequestMethod.GET)
+    public ModelAndView releasebyusertask(HttpSession session){
+
+        ModelAndView m= new ModelAndView();
+        User user= (User) session.getAttribute("user");
+        int uid=user.getId();
+        List<Taskinformation> t=taskService.selectTaskAllByUId(uid);
+        log.info("TaskController"+"用户查看自己发布的任务={}", t);
+
+
+        m.addObject("taskinformations", t);
+        m.setViewName("forward:/task/releasetaskbyuser");
+
+        return m;
+    }
+
+    @RequestMapping(value = "/delete/{id}",method = RequestMethod.GET)
+    public ModelAndView deletetask(@PathVariable("id") int id){
+//取消任务
+        ModelAndView m= new ModelAndView();
+
+        boolean j=taskmessageService.deleteTaskmessage(id);
+
+
+
+        m.setViewName("redirect:/task/releasebyuser");
+
+        return m;
+    }
+
 }

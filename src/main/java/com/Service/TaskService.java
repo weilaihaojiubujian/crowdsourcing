@@ -1,8 +1,10 @@
 package com.Service;
 
+import com.Dto.Taskinformation;
 import com.Entity.Task;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * @Author: wanghongbin
@@ -21,11 +23,11 @@ public interface TaskService {
 
     /**
      * 用户完成任务，插入完成时间
-     * @param id
+     * @param uid
      * @param completetime
      * @return
      */
-    boolean insertTaskcompletetime(int id,Timestamp completetime);
+    boolean insertTaskcompletetime(int uid,Timestamp completetime);
 
 
     /**
@@ -34,6 +36,30 @@ public interface TaskService {
      * @return
      */
     Task selectTask(int id);
+
+
+    /**
+     * 查看任务信息
+     * @param uid
+     * @return
+     */
+    Taskinformation selectTaskByUId(int uid);
+
+
+    /**
+     *
+     * @param uid
+     * @return
+     */
+    List<Taskinformation> selectTaskAllByUId(int uid);
+
+
+    /**
+     * 查看任务
+     * @param uid
+     * @return
+     */
+    Task selectTaskByUid(int uid);
 
     /**
      * 查看任务

@@ -1,6 +1,7 @@
 package com.Service.impl;
 
 import com.Dao.TaskDao;
+import com.Dto.Taskinformation;
 import com.Entity.Task;
 import com.Entity.Taskmessage;
 import com.Service.TaskService;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * @Author: wanghongbin
@@ -37,12 +39,12 @@ public class TaskServiceImp implements TaskService {
     }
 
     @Override
-    public boolean insertTaskcompletetime(int id, Timestamp completetime) {
-        if(id==0 || completetime==null)
+    public boolean insertTaskcompletetime(int uid, Timestamp completetime) {
+        if(uid==0 || completetime==null)
         {
             return false;
         }
-        int i=taskDao.insertTaskcompletetime(id,completetime);
+        int i=taskDao.insertTaskcompletetime(uid,completetime);
         log.info("TaskServiceImp"+"任务完成时间更新={}", i);
         return i>0?true:false;
 
@@ -56,6 +58,51 @@ public class TaskServiceImp implements TaskService {
             return null;
         }
         Task t=taskDao.selectTask(id);
+        log.info("TaskServiceImp"+"查看任务={}", t);
+        if(t!=null)
+        {
+            return t;
+        }
+        return null;
+    }
+
+    @Override
+    public Taskinformation selectTaskByUId(int uid) {
+        if(uid==0)
+        {
+            return null;
+        }
+        Taskinformation t=taskDao.selectTaskByUId(uid);
+        log.info("TaskServiceImp"+"查看任务={}", t);
+        if(t!=null)
+        {
+            return t;
+        }
+        return null;
+    }
+
+    @Override
+    public List<Taskinformation> selectTaskAllByUId(int uid) {
+        if(uid==0)
+        {
+            return null;
+        }
+        List<Taskinformation> t=taskDao.selectTaskAllByUId(uid);
+        log.info("TaskServiceImp"+"查看发布任务={}", t);
+        if(t!=null)
+        {
+            return t;
+        }
+        return null;
+    }
+
+    @Override
+    public Task selectTaskByUid(int uid) {
+        if(uid==0)
+        {
+            return null;
+        }
+        Task t=taskDao.selectTaskByUid(uid);
         log.info("TaskServiceImp"+"查看任务={}", t);
         if(t!=null)
         {
