@@ -72,16 +72,32 @@
                         <label class="col-sm-2 control-label">任务起始位置</label>
                         <div class="col-sm-10">
                             <button class="col-sm-2 button button-primary button-pill button-small startPosition">选择任务起始位置</button>
-                            <input type="text" class="form-control hiddenStartPosition" id="startePostion" name = "startingaddress">
-                            <div id="startPostionMap"></div>
+                            <span class="startPositionSpan"></span>
+                            <input type="text" class="form-control hiddenStartPosition" id="startPostion" name = "startingaddress">
+                        </div>
+                        <div class="startMapContainer col-sm-10 col-sm-offset-2">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control searchStartPosition" id="suggestId" placeholder="请输入起始地点或者直接点击地图确定任务起始位置">
+                                <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+                            </div>
+                            <button class="startMapButton col-sm-2 button button-primary button-pill button-small">确定</button>
+                            <div id="startPostionMap" class="col-sm-12"></div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">任务结束位置</label>
                         <div class="col-sm-10">
                             <button class="col-sm-2 endPosition button button-primary button-pill button-small">选择任务结束位置</button>
+                            <span class="endPositionSpan"></span>
                             <input type="text" class="form-control hiddenEndPosition" id="endPosition" name = "purposeaddress">
-                            <div id="endPostionMap"></div>
+                        </div>
+                        <div class="endMapContainer col-sm-10 col-sm-offset-2">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control searchEndPosition" id="suggestEndId" placeholder="请输入结束地点或者直接点击地图确定任务结束位置">
+                                <div id="searchEndResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+                            </div>
+                            <button class="endMapButton col-sm-2 button button-primary button-pill button-small">确定</button>
+                            <div id="endPostionMap" class="col-sm-12"></div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -91,21 +107,21 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">任务种类</label>
-                        <div class="col-sm-10">
-                            <select id="tasktype" name="tasktype" class="form-control">
-                                <c:forEach var="t" items="${tasktypes}">
-                                    <option value="${t.id}">${t.name}</option>
-                                </c:forEach>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label class="col-sm-2 control-label">计费模式</label>
                         <div class="col-sm-10">
                             <select id="pricingmodel" name="pricingmodel" class="form-control">
                                 <c:forEach var="p" items="${pricingmodels}">
                                     <option value="${p.id}">${p.name}</option>
+                                </c:forEach>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">任务种类</label>
+                        <div class="col-sm-10">
+                            <select id="tasktype" name="tasktype" class="form-control">
+                                <c:forEach var="t" items="${tasktypes}">
+                                    <option value="${t.id}">${t.name}</option>
                                 </c:forEach>
                             </select>
                         </div>
@@ -161,25 +177,64 @@
 
 </html>
 
-
-<%--<form action="/task/release" method="post">--%>
-    <%--任务名:<input type="text" name = "name" ><p>--%>
-    <%--任务信息:<input type="text" name = "message" ><p>--%>
-    <%--起始大概位置:<input type="text" name = "startingaddress" ><p>--%>
-    <%--起始具体位置:<input type="text" name = "startingdetail" ><p>--%>
-    <%--目的大概位置:<input type="text" name = "purposeaddress" ><p>--%>
-    <%--目的大概位置:<input type="text" name = "purposedetail" ><p>--%>
-    <%--重量<input type="number" name="weight"><p>--%>
-    <%--任务种类:  <select id="tasktype" name="tasktype">--%>
-    <%--<c:forEach var="t" items="${tasktypes}">--%>
-        <%--<option value="${t.id}">${t.name}</option>--%>
-    <%--</c:forEach>--%>
-<%--</select>--%>
-    <%--计费模式:  <select id="pricingmodel" name="pricingmodel">--%>
-    <%--<c:forEach var="p" items="${pricingmodels}">--%>
-        <%--<option value="${p.id}">${p.name}</option>--%>
-    <%--</c:forEach>--%>
-<%--</select>--%>
-
-    <%--<input type="submit" value="登录">--%>
+<%--<form action="/task/release" method="post" class="form-horizontal">--%>
+    <%--<div class="form-group">--%>
+        <%--<label for="taskName" class="col-sm-2 control-label">任务名</label>--%>
+        <%--<div class="col-sm-10">--%>
+            <%--<input type="text" class="form-control" id="taskName" placeholder="给任务取个名吧，不超过10个字符" name = "name">--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="form-group">--%>
+        <%--<label for="taskDetailInformation" class="col-sm-2 control-label">任务具体信息</label>--%>
+        <%--<div class="col-sm-10">--%>
+            <%--<textarea name = "message" id="taskDetailInformation" class="col-sm-12 form-control" placeholder="请具体描述任务信息，以及给跑腿人员的备注等,不超过100个字符"></textarea>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="form-group">--%>
+        <%--<label class="col-sm-2 control-label">任务起始位置</label>--%>
+        <%--<div class="col-sm-10">--%>
+            <%--<button class="col-sm-2 button button-primary button-pill button-small startPosition">选择任务起始位置</button>--%>
+            <%--<input type="text" class="form-control hiddenStartPosition" id="startePostion" name = "startingaddress">--%>
+            <%--<div id="startPostionMap"></div>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="form-group">--%>
+        <%--<label class="col-sm-2 control-label">任务结束位置</label>--%>
+        <%--<div class="col-sm-10">--%>
+            <%--<button class="col-sm-2 endPosition button button-primary button-pill button-small">选择任务结束位置</button>--%>
+            <%--<input type="text" class="form-control hiddenEndPosition" id="endPosition" name = "purposeaddress">--%>
+            <%--<div id="endPostionMap"></div>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="form-group">--%>
+        <%--<label for="taskWeight" class="col-sm-2 control-label">重量</label>--%>
+        <%--<div class="col-sm-10">--%>
+            <%--<input type="number" class="form-control" id="taskWeight" placeholder="请输入重量" min="0" max="10000000" name="weight">--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="form-group">--%>
+        <%--<label class="col-sm-2 control-label">任务种类</label>--%>
+        <%--<div class="col-sm-10">--%>
+            <%--<select id="tasktype" name="tasktype" class="form-control">--%>
+                <%--<c:forEach var="t" items="${tasktypes}">--%>
+                    <%--<option value="${t.id}">${t.name}</option>--%>
+                <%--</c:forEach>--%>
+            <%--</select>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="form-group">--%>
+        <%--<label class="col-sm-2 control-label">计费模式</label>--%>
+        <%--<div class="col-sm-10">--%>
+            <%--<select id="pricingmodel" name="pricingmodel" class="form-control">--%>
+                <%--<c:forEach var="p" items="${pricingmodels}">--%>
+                    <%--<option value="${p.id}">${p.name}</option>--%>
+                <%--</c:forEach>--%>
+            <%--</select>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="form-group">--%>
+        <%--<div class="col-sm-offset-2 col-sm-10">--%>
+            <%--<button type="submit" class="btn btn-default">提交任务</button>--%>
+        <%--</div>--%>
+    <%--</div>--%>
 <%--</form>--%>
