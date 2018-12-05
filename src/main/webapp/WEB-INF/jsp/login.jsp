@@ -175,12 +175,12 @@
 </div>
 
 
-<script src="js/modernizr.custom.93262.js"></script>
+<script src="${pageContext.request.contextPath }/js/modernizr.custom.93262.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="${pageContext.request.contextPath }/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
 <!-- 通过上文的CDN使用jQuery 若引用失败 则使用本地jQuery -->
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="${pageContext.request.contextPath }/js/plugins.js"></script>
+<script src="${pageContext.request.contextPath }/js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
@@ -194,7 +194,7 @@
 <!-- 使用velocity动画库 -->
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script> -->
-<script src="js/login.js"></script>
+<script src="${pageContext.request.contextPath }/js/login.js"></script>
 </body>
 
 </html>
