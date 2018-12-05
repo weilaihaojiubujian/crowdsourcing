@@ -4,6 +4,8 @@ import com.Dto.Taskinformation;
 import com.Entity.*;
 import com.Service.*;
 import com.Util.GeoHash;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -169,15 +171,16 @@ public class TaskController {
 
 
     @RequestMapping(value = "/message",method = RequestMethod.GET)
-    public ModelAndView usermessage(HttpSession session){
+    public ModelAndView usermessage(int pageNum,HttpSession session){
 
         ModelAndView m= new ModelAndView();
         User user= (User) session.getAttribute("user");
         int uid=user.getId();
         List<Taskinformation> t=messageService.selectMessageByUid(uid);
+        PageHelper.startPage(pageNum, 10);
+        PageInfo<Taskinformation> taskinformation=new PageInfo<Taskinformation>(t);
 
-
-        m.addObject("taskinformations", t);
+        m.addObject("taskinformations", taskinformation);
         m.setViewName("forward:/task/message1");
 
         return m;
@@ -250,16 +253,17 @@ public class TaskController {
     }
 
     @RequestMapping(value = "/releasebyuser",method = RequestMethod.GET)
-    public ModelAndView releasebyusertask(HttpSession session){
+    public ModelAndView releasebyusertask(int pageNum,HttpSession session){
 
         ModelAndView m= new ModelAndView();
         User user= (User) session.getAttribute("user");
         int uid=user.getId();
         List<Taskinformation> t=taskService.selectTaskAllByUId(uid);
         log.info("TaskController"+"用户查看自己发布的任务={}", t);
+        PageHelper.startPage(pageNum, 10);
+        PageInfo<Taskinformation> taskinformation=new PageInfo<Taskinformation>(t);
 
-
-        m.addObject("taskinformations", t);
+        m.addObject("taskinformations", taskinformation);
         m.setViewName("forward:/task/releasetaskbyuser");
 
         return m;

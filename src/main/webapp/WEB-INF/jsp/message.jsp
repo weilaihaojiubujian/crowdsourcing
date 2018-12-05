@@ -29,7 +29,7 @@
         <th></th>
         <th></th>
     </tr>
-    <c:forEach var="p" items="${taskinformations}">
+    <c:forEach var="p" items="${taskinformations.list}">
         <tr>
             <td>${p.id}</td>
             <td><c:out value="${p.name}"></c:out></td>
@@ -46,7 +46,16 @@
             <td><a href="/message/delete/${p.mid}"   ><input type="button" name="删除" value="删除"></a></td>
         </tr><br>
     </c:forEach>
+    <tr align="center">
+        <td colspan="12">
+            <a href="/task/message?pageNum=1">首页</a>  
+            <a href="/task/message?pageNum=${taskinformations.pageNum>1 ? (taskinformations.pageNum-1):1 }">上一页</a>  
+            <a href="/task/message?pageNum=${taskinformations.pageNum<taskinformations.pages ? (taskinformations.pageNum+1):taskinformations.pages }">下一页</a>  
+            <a href="/task/message?pageNum=${taskinformations.pages }">尾页</a>    
+            当前${taskinformations.pageNum }/${taskinformations.pages }页，共${taskinformations.total }条
 
+        </td>
+    </tr>
 </table><br>
 </body>
 </html>

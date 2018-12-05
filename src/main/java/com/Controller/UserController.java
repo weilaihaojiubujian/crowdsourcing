@@ -55,6 +55,13 @@ public class UserController {
     UserinformationService userinformationService;
 
 
+    @RequestMapping(value = "/main",method = RequestMethod.GET)
+    public String  main(){
+        return "mainPage";
+
+    }
+
+
     @RequestMapping(value = "/login3",method = RequestMethod.GET)
     public String login3(){
         return "login";

@@ -58,14 +58,14 @@ public class AuditServiceTest {
 
     }
 
-    @Test
-    public void selectPerson() {
-
-        List<Person> u = auditService.selectPerson();
-        for (Person i : u) {
-            log.info("个人用户={}", i);
-        }
-
-
-    }
+//    @Test
+//    public void selectPerson() {
+//
+//        List<Person> u = auditService.selectPerson();
+//        for (Person i : u) {
+//            log.info("个人用户={}", i);
+//        }
+//
+//
+//    }
 }

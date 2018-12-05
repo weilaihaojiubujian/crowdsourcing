@@ -3,6 +3,7 @@ package com.Service;
 import com.Dto.Business;
 import com.Dto.Person;
 import com.Dto.Taskinformation;
+import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
@@ -44,5 +45,5 @@ public interface AuditService {
      * 列出所有state=1的用户，按评价从低到高排列
      * @return
      */
-    List<Person> selectPerson();
+    PageInfo<Person> selectPerson(int pageNum);
 }

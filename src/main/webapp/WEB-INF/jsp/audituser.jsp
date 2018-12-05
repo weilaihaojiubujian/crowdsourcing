@@ -27,7 +27,7 @@
         <th>身份证号</th>
         <th></th>
     </tr>
-    <c:forEach var="p" items="${persons}">
+    <c:forEach var="p" items="${persons.list}">
         <tr>
             <td>${p.id}</td>
             <td><c:out value="${p.username}"></c:out></td>
@@ -41,35 +41,16 @@
             <td><a href="/administrator/audit/${p.id}"   ><input type="button" name="审核通过" value="审核通过"></a></td>
         </tr><br>
     </c:forEach>
-
-</table><br>
-<h1>商家</h1>
-<table class="table table-bordered table-hover table-striped">
-    <tr>
-        <th>序号</th>
-        <th>用户名</th>
-        <th>密码</th>
-        <th>手机号</th>
-        <th>名字</th>
-        <th>地址</th>
-        <th>负责人姓名</th>
-        <th>负责人身份证号</th>
-        <th></th>
+    <tr align="center">
+        <td colspan="10">
+            <a href="/administrator/audituser?pageNum=1">首页</a>  
+            <a href="/administrator/audituser?pageNum=${persons.pageNum>1 ? (persons.pageNum-1):1 }">上一页</a>  
+            <a href="/administrator/audituser?pageNum=${persons.pageNum<persons.pages ? (persons.pageNum+1):persons.pages }">下一页</a>  
+            <a href="/administrator/audituser?pageNum=${persons.pages }">尾页</a>    
+            当前${persons.pageNum }/${persons.pages }页，共${persons.total }条
+        </td>
     </tr>
-    <c:forEach var="m" items="${businesss}">
-        <tr>
-            <td>${m.id}</td>
-            <td><c:out value="${m.username}"></c:out></td>
-            <td><c:out value="${m.password}"></c:out></td>
-            <td><c:out value="${m.phonenumber}"></c:out></td>
-            <td><c:out value="${m.name}"></c:out></td>
-            <td><c:out value="${m.address}"></c:out></td>
-            <td><c:out value="${m.headname}"></c:out></td>
-            <td><c:out value="${m.headidcard}"></c:out></td>
-            <td><a href="/administrator/audit/${m.id}"   ><input type="button" name="审核通过" value="审核通过"></a></td>
-        </tr><br>
-    </c:forEach>
+</table><br>
 
-</table>
 </body>
 </html>

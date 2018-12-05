@@ -28,7 +28,7 @@
         <th>评价</th>
         <th></th>
     </tr>
-    <c:forEach var="p" items="${persons}">
+    <c:forEach var="p" items="${persons.list}">
         <tr>
             <td>${p.id}</td>
             <td><c:out value="${p.username}"></c:out></td>
@@ -43,6 +43,16 @@
             <td><a href="/administrator/delete/${p.id}"   ><input type="button" name="删除用户" value="删除用户"></a></td>
         </tr><br>
     </c:forEach>
+    <tr align="center">
+        <td colspan="11">
+            <a href="/administrator/auditbyevaluation?pageNum=1">首页</a>  
+            <a href="/administrator/auditbyevaluation?pageNum=${persons.pageNum>1 ? (persons.pageNum-1):1 }">上一页</a>  
+            <a href="/administrator/auditbyevaluation?pageNum=${persons.pageNum<persons.pages ? (persons.pageNum+1):persons.pages }">下一页</a>  
+            <a href="/administrator/auditbyevaluation?pageNum=${persons.pages }">尾页</a>    
+            当前${persons.pageNum }/${persons.pages }页，共${persons.total }条
+        </td>
+    </tr>
+
 
 </table><br>
 </body>

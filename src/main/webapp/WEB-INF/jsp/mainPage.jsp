@@ -53,13 +53,13 @@
                 <div>同城跑腿，您的贴心做事帮手</div>
             </div>
             <div>
-                <a href="main.html">主页</a>
+                <a href="/user/main">主页</a>
             </div>
             <div>
-                <a href="login.html">登陆</a>
+                <a href="/user/login3">登陆</a>
             </div>
             <div>
-                <a href="personRegister.html">注册</a>
+                <a href="/user/regist">注册</a>
             </div>
         </nav>
     </header>

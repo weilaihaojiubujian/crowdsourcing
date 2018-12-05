@@ -27,7 +27,7 @@
 
         <th></th>
     </tr>
-    <c:forEach var="p" items="${taskinformations}">
+    <c:forEach var="p" items="${taskinformations.list}">
         <tr>
             <td>${p.id}</td>
             <td><c:out value="${p.name}"></c:out></td>
@@ -40,7 +40,16 @@
             <td><a href="/administrator/audit1/${p.id}"   ><input type="button" name="审核通过" value="审核通过"></a></td>
         </tr><br>
     </c:forEach>
+    <tr align="center">
+        <td colspan="9">
+            <a href="/administrator/audittask?pageNum=1">首页</a>  
+            <a href="/administrator/audittask?pageNum=${taskinformations.pageNum>1 ? (taskinformations.pageNum-1):1 }">上一页</a>  
+            <a href="/administrator/audittask?pageNum=${taskinformations.pageNum<taskinformations.pages ? (taskinformations.pageNum+1):taskinformations.pages }">下一页</a>  
+            <a href="/administrator/audittask?pageNum=${taskinformations.pages }">尾页</a>    
+            当前${taskinformations.pageNum }/${taskinformations.pages }页，共${taskinformations.total }条
 
+        </td>
+    </tr>
 </table><br>
 </body>
 </html>

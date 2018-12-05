@@ -6,11 +6,14 @@ import com.Dto.Business;
 import com.Dto.Person;
 import com.Dto.Taskinformation;
 import com.Service.AuditService;
+import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.github.pagehelper.PageHelper;
 
 import java.util.List;
 
@@ -85,14 +88,15 @@ public class AuditServiceImp implements AuditService{
     }
 
     @Override
-    public List<Person> selectPerson() {
+    public PageInfo<Person> selectPerson(int pageNum) {
 
-
+        PageHelper.startPage(pageNum, 10);
         List<Person> p=userDao.selectPerson();
+        PageInfo<Person> penson=new PageInfo<Person>(p);
         log.info("AuditServiceImp"+"个人信息={}", p);
         if (p!=null)
         {
-            return p;
+            return penson;
         }
         else {
             return null;

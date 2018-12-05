@@ -6,6 +6,8 @@ import com.Dto.Taskinformation;
 import com.Service.AuditService;
 import com.Service.TaskmessageService;
 import com.Service.UserService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,9 +41,15 @@ public class AdministratorController {
     TaskmessageService taskmessageService;
 
 
-    @RequestMapping(value = "/audituser",method = RequestMethod.GET)
+    @RequestMapping(value = "/audituser1",method = RequestMethod.GET)
     public String audituser1(){
         return "audituser";
+
+    }
+
+    @RequestMapping(value = "/auditbusiness1",method = RequestMethod.GET)
+    public String auditbusiness1(){
+        return "auditbusiness";
 
     }
 
@@ -63,36 +71,57 @@ public class AdministratorController {
 
     }
 
-    @RequestMapping(value = "/audit",method = RequestMethod.GET)
-    public  ModelAndView audituser(){
+    @RequestMapping(value = "/audituser",method = RequestMethod.GET)
+    public  ModelAndView audituser(int pageNum){
 
         ModelAndView m= new ModelAndView();
+        PageHelper.startPage(pageNum, 2);
         List<Person> p=auditService.selectpeople();
+        PageInfo<Person> penson=new PageInfo<Person>(p);
         log.info("AdministratorController"+"用户个人信息={}", p);
 
         List<Business> me=auditService.selectmerchants();
+
+        PageInfo<Business> business=new PageInfo<Business>(me);
         log.info("AdministratorController"+"商家个人信息={}", me);
 
 
-        m.addObject("persons", p);
-        m.addObject("businesss", me);
-        m.setViewName("forward:/administrator/audituser");
+        m.addObject("persons", penson);
+        m.addObject("businesss", business);
+        m.setViewName("forward:/administrator/audituser1");
 
         return m;
     }
 
 
+    @RequestMapping(value = "/auditbusiness",method = RequestMethod.GET)
+    public  ModelAndView auditbusiness(int pageNum){
+
+        ModelAndView m= new ModelAndView();
+        PageHelper.startPage(pageNum, 10);
+
+        List<Business> me=auditService.selectmerchants();
+
+        PageInfo<Business> business=new PageInfo<Business>(me);
+        log.info("AdministratorController"+"商家个人信息={}", me);
+
+        m.addObject("businesss", business);
+        m.setViewName("forward:/administrator/auditbusiness1");
+
+        return m;
+    }
+
     @RequestMapping(value = "/audittask",method = RequestMethod.GET)
-    public  ModelAndView audittask(){
+    public ModelAndView audittask2(int pageNum){
 
         ModelAndView m= new ModelAndView();
         List<Taskinformation> t=auditService.selectTaskinformation();
         log.info("AdministratorController"+"任务信息={}", t);
+        PageHelper.startPage(pageNum, 10);
+        PageInfo<Taskinformation> taskinformation=new PageInfo<Taskinformation>(t);
 
 
-
-
-        m.addObject("taskinformations", t);
+        m.addObject("taskinformations", taskinformation);
 
         m.setViewName("forward:/administrator/audittask1");
 
@@ -112,11 +141,7 @@ public class AdministratorController {
         {
             m.setViewName("redirect:/administrator/administrator");
         }
-        else
-        {
 
-            m.setViewName("redirect:/administrator/audit");
-        }
 
         return m;
     }
@@ -146,16 +171,16 @@ public class AdministratorController {
 
 
     @RequestMapping(value = "/auditbyevaluation",method = RequestMethod.GET)
-    public  ModelAndView audituserbyevaluation(){
+    public  ModelAndView audituserbyevaluation(int pageNum){
 
         ModelAndView m= new ModelAndView();
-        List<Person> p=auditService.selectPerson();
-        log.info("AdministratorController"+"用户个人信息={}", p);
 
 
 
 
-        m.addObject("persons", p);
+
+
+        m.addObject("persons", auditService.selectPerson(pageNum));
         m.setViewName("forward:/administrator/deleteuser");
 
         return m;
@@ -178,7 +203,7 @@ public class AdministratorController {
         else
         {
 
-            m.setViewName("redirect:/administrator/auditbyevaluation");
+            m.setViewName("redirect:/administrator/auditbyevaluation?pageNum=1");
         }
 
         return m;

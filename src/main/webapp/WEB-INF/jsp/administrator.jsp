@@ -11,8 +11,9 @@
     <title>管理员主界面</title>
 </head>
 <body>
-<a href="/administrator/audit"   ><input type="button" name="审核用户" value="审核用户"></a>
-<a href="/administrator/audittask"   ><input type="button" name="审核任务" value="审核任务"></a>
-<a href="/administrator/auditbyevaluation"   ><input type="button" name="通过评价审核用户是否为不良用户" value="通过评价审核用户是否为不良用户"></a>
+<a href="/administrator/audituser?pageNum=1"   ><input type="button" name="审核用户" value="审核用户"></a>
+<a href="/administrator/auditbusiness?pageNum=1"   ><input type="button" name="审核商家" value="审核商家"></a>
+<a href="/administrator/audittask?pageNum=1"   ><input type="button" name="审核任务" value="审核任务"></a>
+<a href="/administrator/auditbyevaluation?pageNum=1"   ><input type="button" name="通过评价审核用户是否为不良用户" value="通过评价审核用户是否为不良用户"></a>
 </body>
 </html>
