@@ -47,7 +47,21 @@
 <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
 <div class="container-fuild">
     <header role="banner">
-        <nav cole="navigation">导航 导航 等等再说</nav>
+        <nav class="topNav">
+            <div class="leftLogo">
+                <img src="img/logo.png" alt="logo">
+                <div>同城跑腿，您的贴心做事帮手</div>
+            </div>
+            <div>
+                <a href="main.html">主页</a>
+            </div>
+            <div>
+                <a href="login.html">登陆</a>
+            </div>
+            <div>
+                <a href="personRegister.html">注册</a>
+            </div>
+        </nav>
     </header>
     <main role="main">
         <article class="logoContainer">
@@ -156,16 +170,17 @@
     </main>
     <aside role="complementary"></aside>
     <footer role="contentinfo">
-        <address></address>
-        <small>这个footer写个什么 编不出来</small>
+        Copyright &copy; 2018.12.4 Design By 同城跑腿
     </footer>
 </div>
-<script src="${pageContext.request.contextPath }/js/modernizr.custom.93262.js"></script>
+
+
+<script src="js/modernizr.custom.93262.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="${pageContext.request.contextPath }/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
 <!-- 通过上文的CDN使用jQuery 若引用失败 则使用本地jQuery -->
-<script src="${pageContext.request.contextPath }/js/plugins.js"></script>
-<script src="${pageContext.request.contextPath }/js/main.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
@@ -179,8 +194,113 @@
 <!-- 使用velocity动画库 -->
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script> -->
-<script src="${pageContext.request.contextPath }/js/login.js"></script>
+<script src="js/login.js"></script>
 </body>
 
 </html>
 
+<%--<main role="main">--%>
+    <%--<article class="logoContainer">--%>
+        <%--<div class="logoImg"></div>--%>
+    <%--</article>--%>
+    <%--<article class="loginContainer">--%>
+        <%--<div class="loginText">--%>
+            <%--<div class="loginLogo">--%>
+                <%--<!-- <h3>登录</h3> -->--%>
+                <%--<div class="img"></div>--%>
+                <%--<div class="buttonContainer">--%>
+                    <%--<div class="personLoginButton">--%>
+                        <%--用户登录--%>
+                    <%--</div>--%>
+                    <%--<div class="companyLoginButton">--%>
+                        <%--企业登录--%>
+                    <%--</div>--%>
+                    <%--<div class="administratorLoginButton">--%>
+                        <%--管理员登录--%>
+                    <%--</div>--%>
+                <%--</div>--%>
+            <%--</div>--%>
+            <%--<div class="administratorLogin">--%>
+                <%--<!-- administrator -->--%>
+                <%--<form action="/user/administratorlogin"   method="post">--%>
+                    <%--<div>--%>
+                        <%--<div>--%>
+                            <%--<label for="name">用户名: </label>--%>
+                        <%--</div>--%>
+
+                        <%--<div>--%>
+                            <%--<input type="text" id="name" name="username">--%>
+                        <%--</div>--%>
+
+                    <%--</div>--%>
+                    <%--<div>--%>
+                        <%--<div>--%>
+                            <%--<label for="password">密码:</label>--%>
+                        <%--</div>--%>
+                        <%--<div>--%>
+                            <%--<input type="password" id="password" name="password">--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
+                    <%--<div class="submit">--%>
+                        <%--<input type="submit" value="登录" class="button button-glow button-border button-rounded button-primary">--%>
+                    <%--</div>--%>
+                    <%--<small>管理员登录专用</small>--%>
+                <%--</form>--%>
+            <%--</div>--%>
+            <%--<div class="companyLogin">--%>
+                <%--<!-- company -->--%>
+                <%--<form action="/user/login"   method="post">--%>
+                    <%--<div>--%>
+                        <%--<div>--%>
+                            <%--<label for="name">用户名:</label>--%>
+                        <%--</div>--%>
+
+                        <%--<div>--%>
+                            <%--<input type="text" id="companyName" name = "username" >--%>
+                        <%--</div>--%>
+
+                    <%--</div>--%>
+                    <%--<div>--%>
+                        <%--<div>--%>
+                            <%--<label for="password">密码:</label>--%>
+                        <%--</div>--%>
+                        <%--<div>--%>
+                            <%--<input type="password"  name = "password" >--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
+                    <%--<div class="submit">--%>
+                        <%--<input type="submit" value="登录" class="button button-glow button-border button-rounded button-primary">--%>
+                    <%--</div>--%>
+                    <%--<small><a href="/user/regist">没有商家账号？点击注册申请</a></small>--%>
+                <%--</form>--%>
+            <%--</div>--%>
+            <%--<div class="personLogin">--%>
+                <%--<!-- person -->--%>
+                <%--<form action="/user/login"  method="post">--%>
+                    <%--<div>--%>
+                        <%--<div>--%>
+                            <%--<label for="name">用户名:</label>--%>
+                        <%--</div>--%>
+
+                        <%--<div>--%>
+                            <%--<input type="text" id="userName"  name = "username">--%>
+                        <%--</div>--%>
+
+                    <%--</div>--%>
+                    <%--<div>--%>
+                        <%--<div>--%>
+                            <%--<label for="password">密码:</label>--%>
+                        <%--</div>--%>
+                        <%--<div>--%>
+                            <%--<input type="password" id="userPassword" name = "password">--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
+                    <%--<div class="submit">--%>
+                        <%--<input type="submit" value="登录" class="button button-glow button-border button-rounded button-primary">--%>
+                    <%--</div>--%>
+                    <%--<small><a href="/user/regist">没有账号？点击注册</a></small>--%>
+                <%--</form>--%>
+            <%--</div>--%>
+        <%--</div>--%>
+    <%--</article>--%>
+<%--</main>--%>

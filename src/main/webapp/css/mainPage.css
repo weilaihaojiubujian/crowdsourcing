@@ -1,0 +1,192 @@
+html,body{
+	min-height: 100%;
+	min-width: 85em;
+}
+@font-face{
+	font-family: "jbr";
+	src:url('../font/jbr.ttf');
+}
+
+/*-------------header--------------*/
+.topNav{
+	height: 4em;
+	display: flex;
+	background: white;
+	align-items: center;
+	padding: 0 10%;
+	position: fixed;
+	box-shadow: 0 0 2em #f1f1f1;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+}
+.leftLogo{
+	margin-right: auto;
+	margin-left: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.leftLogo div{
+	font-family: "jbr";
+	margin-left: 2em;
+	letter-spacing: 0.5em;
+}
+.topNav img{
+	height: 2.5em;
+	/*padding-top: 0.75em;*/
+}
+.topNav div+div{
+	height: inherit;
+	width: 7%;
+
+}
+.topNav div a{
+	display: block;
+	height: inherit;
+	color: #009900;
+	text-decoration: none;
+	text-align:center;
+	transition: background-color  0.5s ease;
+	min-width: 6em;
+	padding: 1.2em 2em;
+
+}
+.topNav div a:hover{
+	background-color: #009900;
+	color: white;
+}
+
+/*-------------main--------------*/
+#myCarousel{
+	height: 50em;
+	overflow: hidden;
+}
+#myCarousel  .carousel-inner > .item > img {
+    display: block;
+    width:100%;
+    height:50em;
+}
+
+.introduce-1{
+	width: 100%;
+	height: 30em;
+	/*border: 1px solid #009933 ;*/
+}
+.introduce-1 .introduce-top{
+	padding:0 10em;
+	height: 10em;
+	background-color: #009933 ;
+	display: flex;
+	/*flex-wrap: wrap;*/
+	align-items: center;
+	box-shadow: 1em 10px 2em #a2a0a0;
+
+}
+.introduce-1 .introduce-top > div{
+	width: 33.3333333%;
+	/*border: 1px solid black;*/
+	height: 8em;
+	display:inline-flex;
+	align-items: center;
+	padding: 0 4em;
+}
+.introduce-1 .introduce-top div i{
+	color: white;
+}
+.introduce-top div div{
+	margin-left: 2em;
+	padding-left: 2em;
+	color: white;
+	border-left: 2px solid white;
+}
+.introduce-top +div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+	padding: 5em 0;
+}
+
+
+.introduce-2{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 2rem;
+	/*height: 4em;*/
+	/*border:solid 1px black;*/
+	display: flex;
+	flex-wrap: wrap;
+}
+.introduce-2 section{
+	width: 45%;
+	margin: 2%;
+	display: flex;
+	box-shadow: 0 0 2em #f5f5f5;
+	/*margin:2em;*/
+}
+.introduce-2 section .img1{
+	background-image: url("../img/fish.png");
+}
+.introduce-2 section .img2{
+	background-image: url("../img/tea.png");
+}
+.introduce-2 section .img3{
+	background-image: url("../img/car.png");
+}
+.introduce-2 section .img4{
+	background-image: url("../img/road.png");
+}
+.introduce-2 section .img1,.introduce-2 section .img2,.introduce-2 section .img3,.introduce-2 section .img4{
+	width:100%;
+	background-size: cover;
+}
+.introduce-2 section div+div{
+	padding: 0 2em;
+}
+/*-------------footer--------------*/
+footer .contact{
+	margin-top: 4em;
+	height:35em;
+	box-shadow: inset 0 0 4em rgba(0,255,51,0.3) ;
+	background: linear-gradient(to right,#009900 ,#00CC99  );
+}
+footer>div+div{
+	width: 100%;
+	height: 3em;
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	font-size: small;
+	font-weight: 300;
+	background: white;
+	text-align:center;
+	line-height: 3em;
+}
+.contact{
+
+	background-color: inherit;
+	padding: 0 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	letter-spacing: 0.1em;
+}
+.contact li{
+	list-style-type: none;
+	margin-bottom: 0.3em;
+}
+.contact li i{
+	display: inline-block;
+	width: 2em;
+}
+.contactItem1{
+	width: 40%;
+	margin-right:4em;
+}
+.contactItem2{
+	width: 60%;
+	padding-left: 10%;
+	border-left: 3px white solid;
+}

@@ -47,7 +47,21 @@
 <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
 <div class="container-fuild">
     <header role="banner">
-        <nav cole="navigation">导航 导航 等等再说</nav>
+        <nav class="topNav">
+            <div class="leftLogo">
+                <img src="img/logo.png" alt="logo">
+                <div>同城跑腿，您的贴心做事帮手</div>
+            </div>
+            <div>
+                <a href="main.html">主页</a>
+            </div>
+            <div>
+                <a href="login.html">登陆</a>
+            </div>
+            <div>
+                <a href="personRegister.html">注册</a>
+            </div>
+        </nav>
     </header>
     <main role="main">
         <article class="logoContainer">
@@ -62,7 +76,7 @@
                     </div>
                     <h3>用户注册</h3>
                 </div>
-                <div class="personRegister"  >
+                <div class="personRegister">
                     <!-- person -->
                     <form method="post" action="/user/regist">
                         <div>
@@ -122,8 +136,7 @@
     </main>
     <aside role="complementary"></aside>
     <footer role="contentinfo">
-        <address></address>
-        <small>这个footer写个什么 编不出来</small>
+        Copyright &copy; 2018.12.4 Design By 同城跑腿
     </footer>
 </div>
 
@@ -135,12 +148,12 @@
 
 
 
-<script src="${pageContext.request.contextPath }/js/modernizr.custom.93262.js"></script>
+<script src="js/modernizr.custom.93262.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="${pageContext.request.contextPath }/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
 <!-- 通过上文的CDN使用jQuery 若引用失败 则使用本地jQuery -->
-<script src="${pageContext.request.contextPath }/js/plugins.js"></script>
-<script src="${pageContext.request.contextPath }/js/main.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
@@ -154,6 +167,59 @@
 <!-- 使用velocity动画库 -->
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script> -->
+<script src="js/login.js"></script>
 </body>
 
 </html>
+<%--<form method="post" action="/user/regist">--%>
+    <%--<div>--%>
+        <%--<div>--%>
+            <%--<label for="name">用户名:</label>--%>
+        <%--</div>--%>
+
+        <%--<div>--%>
+            <%--<input type="text" id="name" placeholder="请输入6-12个字符" autofocus   name="username">--%>
+        <%--</div>--%>
+
+    <%--</div>--%>
+    <%--<div>--%>
+        <%--<div>--%>
+            <%--<label for="password">密码:</label>--%>
+        <%--</div>--%>
+        <%--<div>--%>
+            <%--<input type="password" id="password" placeholder="请输入6-12个字符"  name="password">--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div>--%>
+        <%--<div>--%>
+            <%--<label for="password">确认密码:</label>--%>
+        <%--</div>--%>
+        <%--<div>--%>
+            <%--<input type="password" id="checkpassword" placeholder="请确认密码">--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div>--%>
+        <%--<div>--%>
+            <%--<label for="password">手机号码:</label>--%>
+        <%--</div>--%>
+        <%--<div>--%>
+            <%--<input type="tel" id="tel" placeholder="请输入11位手机号码" maxlength="11" name="phonenumber">--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div>--%>
+        <%--<div>--%>
+            <%--<label>用户类别: </label>--%>
+        <%--</div>--%>
+        <%--<div>--%>
+            <%--<select name="species" id="species">--%>
+                <%--<option value="person">个人</option>--%>
+                <%--<option value="business">商家</option>--%>
+            <%--</select>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div class="submit">--%>
+        <%--<input type="submit" value="立即注册" class="button button-glow button-border button-rounded button-primary">--%>
+    <%--</div>--%>
+    <%--<small><a href="/user/login3">已有账号，点击登录</a></small>--%>
+
+<%--</form>--%>
