@@ -27,6 +27,7 @@
         <th>价格</th>
         <th>接受任务人序号</th>
         <th></th>
+        <th></th>
     </tr>
     <c:forEach var="p" items="${taskinformations.list}">
         <tr>
@@ -41,6 +42,7 @@
             <td><c:out value="${p.price}"></c:out></td>
             <td><c:out value="${p.uid}"></c:out></td>
             <td><c:if test="${ p.uid==0}"><a href="/task/delete/${p.id}"   ><input type="button" name="取消任务" value="取消任务"></a></c:if></td>
+            <td><c:if test="${ p.uid!=0}"><a href="/task/evaluation/${p.id}"   ><input type="button" name="评价" value="评价"></a></c:if></td>
         </tr><br>
     </c:forEach>
     <tr align="center">

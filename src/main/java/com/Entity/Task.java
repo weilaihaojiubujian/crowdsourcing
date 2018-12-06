@@ -21,6 +21,8 @@ public class Task {
 
     private double price;//价格
 
+    private double evaluation;
+
     public int getId() {
         return id;
     }
@@ -69,6 +71,14 @@ public class Task {
         this.price = price;
     }
 
+    public double getEvaluation() {
+        return evaluation;
+    }
+
+    public void setEvaluation(double evaluation) {
+        this.evaluation = evaluation;
+    }
+
     @Override
     public String toString() {
         return "Task{" +
@@ -78,6 +88,7 @@ public class Task {
                 ", createtime=" + createtime +
                 ", completetime=" + completetime +
                 ", price=" + price +
+                ", evaluation=" + evaluation +
                 '}';
     }
 }
