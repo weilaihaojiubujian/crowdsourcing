@@ -65,7 +65,7 @@
                 <a href="/task/message?pageNum=1"   ><input type="button" name="任务消息" value="任务消息"></a>
                 <c:if test="${ sessionScope.user.species.equals('person')}"> <a href="/task/already"   ><input type="button" name="查看接受的任务" value="查看接受的任务"></a></c:if>
                 <a href="/task/releasebyuser?pageNum=1"   ><input type="button" name="查看发布的任务" value="查看发布的任务"></a>
-
+                <a href="/bankaccount/bankaccount?pageNum=1"   ><input type="button" name="查看银行卡" value="查看银行卡"></a>
             </section>
         </article>
     </main>

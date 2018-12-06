@@ -75,19 +75,17 @@ public class AdministratorController {
     public  ModelAndView audituser(int pageNum){
 
         ModelAndView m= new ModelAndView();
-        PageHelper.startPage(pageNum, 2);
+        PageHelper.startPage(pageNum, 10);
         List<Person> p=auditService.selectpeople();
         PageInfo<Person> penson=new PageInfo<Person>(p);
         log.info("AdministratorController"+"用户个人信息={}", p);
 
-        List<Business> me=auditService.selectmerchants();
 
-        PageInfo<Business> business=new PageInfo<Business>(me);
-        log.info("AdministratorController"+"商家个人信息={}", me);
+
 
 
         m.addObject("persons", penson);
-        m.addObject("businesss", business);
+
         m.setViewName("forward:/administrator/audituser1");
 
         return m;
