@@ -1,6 +1,7 @@
 package com.Service.impl;
 
 import com.Dao.TaskmessageDao;
+import com.Dto.Taskinformation;
 import com.Entity.Taskmessage;
 import com.Service.TaskmessageService;
 import org.slf4j.Logger;
@@ -47,13 +48,13 @@ public class TaskmessageServiceImp implements TaskmessageService {
     }
 
     @Override
-    public Taskmessage selectTaskmessage(int id) {
+    public Taskinformation selectTaskmessage(int id) {
 
         if(id==0)
         {
             return null;
         }
-        Taskmessage t=taskmessageDao.selectTaskmessage(id);
+        Taskinformation t=taskmessageDao.selectTaskmessage(id);
         log.info("TaskmessageServiceImp"+"查看任务具体信息={}", t);
         if(t!=null)
         {

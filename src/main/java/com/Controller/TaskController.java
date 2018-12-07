@@ -4,6 +4,7 @@ import com.Dto.Taskinformation;
 import com.Entity.*;
 import com.Service.*;
 import com.Util.GeoHash;
+import com.Util.Money;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
@@ -149,7 +150,7 @@ public class TaskController {
     public ModelAndView distributiontask(@PathVariable("id") int id){
 
         ModelAndView m= new ModelAndView();
-        Taskmessage t=taskmessageService.selectTaskmessage(id);
+        Taskinformation t=taskmessageService.selectTaskmessage(id);
         List<Useraddress> u=useraddressService.selectbyposition(t.getUid(),10000000);
         log.info("TaskController"+"附近的用户地址={}", u);
         for(Useraddress i:u)
@@ -195,8 +196,25 @@ public class TaskController {
         Task p=taskService.selectTaskByUid(uid);
         if(t==null && p==null)
         {
+            Taskinformation g=taskmessageService.selectTaskmessage(id);
+
             Task i=new Task();
-            i.setPrice(100);
+            if(g.getPmname().equals("按单计费"))
+            {
+                i.setPrice(20);
+            }
+            else if (g.getPmname().equals("按公里计费"))
+            {
+                i.setPrice(Money.calculatebydistance(g.getDistance()));
+            }
+            else if(g.getPmname().equals("按重量计费"))
+            {
+                i.setPrice(Money.calculatebyweight(g.getWeight()));
+            }
+            else {
+                i.setPrice(Money.calculatebytime(g.getDistance()));
+            }
+
             i.setTmid(id);
             Timestamp createtime=new Timestamp(new Date().getTime());
             i.setCreatetime(createtime);
@@ -205,17 +223,21 @@ public class TaskController {
             if(j==true)
             {
 
-                m.setViewName("redirect:/user/login1");
+                m.addObject("prompt", "接受任务成功");
+
             }
             else{
 
+                m.addObject("prompt", "接受任务失败");
                 //接受任务失败
             }
         }
         else {
 
+            m.addObject("prompt", "任务已被人接受，无法接受任务");
             //任务已被人接受，无法接受任务
         }
+        m.setViewName("forward:/user/login1");
         return m;
     }
 

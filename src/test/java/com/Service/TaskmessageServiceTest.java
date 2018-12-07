@@ -1,5 +1,6 @@
 package com.Service;
 
+import com.Dto.Taskinformation;
 import com.Entity.Businessinformation;
 import com.Entity.Taskmessage;
 import com.Util.GeoHash;
@@ -79,8 +80,8 @@ public class TaskmessageServiceTest {
     @Test
     public void selectTaskmessage() {
 
-        int id=1;
-        Taskmessage i=taskmessageService.selectTaskmessage(id);
+        int id=7;
+        Taskinformation i=taskmessageService.selectTaskmessage(id);
         log.info("任务信息={}", i);
 
     }

@@ -39,11 +39,11 @@ public class MessageController {
         if(q.getState()==0)
         {
             boolean i=messageService.updateMessageState(mid);
-            m.setViewName("redirect:/task/message");
+            m.setViewName("redirect:/task/message?pageNum=1");
         }
         else
         {
-            m.setViewName("redirect:/task/message");
+            m.setViewName("redirect:/task/message?pageNum=1");
         }
 
 
@@ -56,7 +56,7 @@ public class MessageController {
         ModelAndView m= new ModelAndView();
 
         boolean i=messageService.deleteMessage(mid);
-        m.setViewName("redirect:/task/message");
+        m.setViewName("redirect:/task/message?pageNum=1");
 
 
         return m;

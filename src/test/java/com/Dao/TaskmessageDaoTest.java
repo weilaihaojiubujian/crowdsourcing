@@ -87,8 +87,8 @@ public class TaskmessageDaoTest {
     @Test
     public void selectTaskmessage()
     {
-        int id=1;
-        Taskmessage t=taskmessageDao.selectTaskmessage(id);
+        int id=7;
+        Taskinformation t=taskmessageDao.selectTaskmessage(id);
         System.out.println("任务信息："+t);
     }
 

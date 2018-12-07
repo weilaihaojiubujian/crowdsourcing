@@ -45,7 +45,7 @@ public interface TaskmessageDao {
      * @param id
      * @return
      */
-    Taskmessage selectTaskmessage(int id);
+    Taskinformation selectTaskmessage(int id);
 
 
 

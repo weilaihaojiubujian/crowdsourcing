@@ -31,6 +31,8 @@ public class Taskinformation {
 
     private double price;//价格
 
+    private Double distance;
+
     private String startingaddress;//起始附近坐标
 
 
@@ -226,6 +228,14 @@ public class Taskinformation {
     }
 
 
+    public Double getDistance() {
+        return distance;
+    }
+
+    public void setDistance(Double distance) {
+        this.distance = distance;
+    }
+
     @Override
     public String toString() {
         return "Taskinformation{" +
@@ -241,6 +251,7 @@ public class Taskinformation {
                 ", message='" + message + '\'' +
                 ", state=" + state +
                 ", price=" + price +
+                ", distance=" + distance +
                 ", startingaddress='" + startingaddress + '\'' +
                 ", startinggeohash='" + startinggeohash + '\'' +
                 ", weight=" + weight +

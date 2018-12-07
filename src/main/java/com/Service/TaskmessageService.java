@@ -1,5 +1,6 @@
 package com.Service;
 
+import com.Dto.Taskinformation;
 import com.Entity.Taskmessage;
 
 /**
@@ -28,7 +29,7 @@ public interface TaskmessageService {
      * @param id
      * @return
      */
-    Taskmessage selectTaskmessage(int id);
+    Taskinformation selectTaskmessage(int id);
 
 
     /**
