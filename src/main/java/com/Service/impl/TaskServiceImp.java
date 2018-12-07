@@ -51,6 +51,17 @@ public class TaskServiceImp implements TaskService {
     }
 
     @Override
+    public boolean insertevaluation(int id, double evaluation) {
+        if(id==0 || evaluation<0)
+        {
+            return false;
+        }
+        int i=taskDao.insertevaluation(id,evaluation);
+        log.info("TaskServiceImp"+"添加任务评价={}", i);
+        return i>0?true:false;
+    }
+
+    @Override
     public Task selectTask(int id) {
 
         if(id==0)

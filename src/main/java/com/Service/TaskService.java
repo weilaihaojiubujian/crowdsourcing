@@ -2,6 +2,7 @@ package com.Service;
 
 import com.Dto.Taskinformation;
 import com.Entity.Task;
+import org.apache.ibatis.annotations.Param;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -28,6 +29,16 @@ public interface TaskService {
      * @return
      */
     boolean insertTaskcompletetime(int uid,Timestamp completetime);
+
+
+
+    /**
+     * 插入发布者对任务完成的评价
+     * @param id
+     * @param evaluation
+     * @return
+     */
+    boolean  insertevaluation(@Param("id")int id, @Param("evaluation")double evaluation);
 
 
     /**

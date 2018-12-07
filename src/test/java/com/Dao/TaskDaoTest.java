@@ -53,6 +53,15 @@ public class TaskDaoTest {
     }
 
     @Test
+    public void insertevaluation()
+    {
+        int id=1;
+       double e=2;
+        int i=taskDao.insertevaluation(id,e);
+        System.out.println(i);
+    }
+
+    @Test
     public void  selectTask()
     {
         int id=1;

@@ -9,6 +9,8 @@ public class Taskinformation {
 
     private int id;
 
+    private int tid;
+
     private int mid;
 
     private int uid;//用户的序号
@@ -215,10 +217,20 @@ public class Taskinformation {
         this.price = price;
     }
 
+    public int getTid() {
+        return tid;
+    }
+
+    public void setTid(int tid) {
+        this.tid = tid;
+    }
+
+
     @Override
     public String toString() {
         return "Taskinformation{" +
                 "id=" + id +
+                ", tid=" + tid +
                 ", mid=" + mid +
                 ", uid=" + uid +
                 ", ttid=" + ttid +

@@ -32,6 +32,14 @@ public interface TaskDao {
 
 
     /**
+     * 插入发布者对任务完成的评价
+     * @param id
+     * @param evaluation
+     * @return
+     */
+    int insertevaluation(@Param("id")int id,@Param("evaluation")double evaluation);
+
+    /**
      * 查看任务
      * @param id
      * @return

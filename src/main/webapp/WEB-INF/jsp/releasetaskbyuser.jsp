@@ -85,15 +85,16 @@
                             <td><c:if test="${ p.uid!=0}"><input type="button" name="评价" value="评价" class="evaluationButton"></c:if></td>
 
                         </tr>
-                    </c:forEach>
+
                     <tr class="evaluationContainer">
                         <td colspan="12">
-                            <form action="/task/evaluation/${p.id}">
+                            <form action="/task/evaluation/${p.tid}" method="get">
                                 <input type="text" name="evaluation" class="evaluation"> <br>
                                 <input type="submit" value="提交评价">
                             </form>
                         </td>
                     </tr>
+                    </c:forEach>
                     <tr align="center">
                         <td colspan="11">
                             <a href="/task/releasebyuser?pageNum=1">首页</a>  

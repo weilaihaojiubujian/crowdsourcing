@@ -85,14 +85,15 @@ public class BankaccountController {
     }
 
 
-    @RequestMapping(value = "/add",method = RequestMethod.GET)
-    public ModelAndView addbankaccount(HttpServletRequest request, HttpSession session){
+    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    public ModelAndView addbankaccount(HttpServletRequest request, HttpSession session)throws Exception{
 
         ModelAndView m= new ModelAndView();
         User user= (User) session.getAttribute("user");
         int uid=user.getId();
 
-        String account= (String) request.getAttribute("account");
+        String account= (String) request.getParameter("account");
+        System.out.println("银行账号"+account);
 
         BankAccount b=new BankAccount();
         b.setUid(uid);
@@ -103,7 +104,7 @@ public class BankaccountController {
         log.info("BankaccountController"+"银行卡信息={}", i);
 
 
-        m.setViewName("forward:/bankaccount/bankaccount?pageNum=1");
+        m.setViewName("redirect:/bankaccount/bankaccount?pageNum=1");
 
         return m;
 

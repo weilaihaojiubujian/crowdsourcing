@@ -35,6 +35,20 @@
 
  </update>
 
+ <update id="insertevaluation" >
+
+  update
+  task
+  set
+
+  evaluation= #{evaluation}
+
+
+
+  where
+  id=#{id}
+ </update>
+
  <select id="selectTask" resultMap="Task" parameterType="int">
 
   select uid,tmid,createtime,completetime,price from task where id=#{id}
@@ -44,7 +58,7 @@
 
  <select id="selectTaskByUId" resultType="com.Dto.Taskinformation">
 
-  select t.id,t.uid,ttid,pmid,t.name,message,startingaddress,purposeaddress,weight,tt.name as ttname ,pm.name as pmname
+  select t.id,t.uid,ttid,pmid,t.name,message,startingaddress,purposeaddress,weight,tt.name as ttname ,pm.name as pmname,k.id as tid
    from taskmessage t,tasktype tt,pricingmodel pm,task k
    where  t.ttid=tt.id and t.pmid=pm.id and k.tmid=t.id and k.uid=#{uid} and completetime is null
 
@@ -53,7 +67,7 @@
 
  <select id="selectTaskAllByUId" resultType="com.Dto.Taskinformation">
 
-select t.id,k.uid,ttid,pmid,t.name,message,startingaddress,purposeaddress,weight,tt.name as ttname ,pm.name as pmname,price
+select t.id,k.uid,ttid,pmid,t.name,message,startingaddress,purposeaddress,weight,tt.name as ttname ,pm.name as pmname,price,k.id as tid
   from tasktype tt,pricingmodel pm,taskmessage t
   LEFT JOIN task k on t.id=k.tmid
   where  t.ttid=tt.id and t.pmid=pm.id  and t.uid=#{uid}

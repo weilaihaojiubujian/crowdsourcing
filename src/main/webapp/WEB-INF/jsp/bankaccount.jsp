@@ -84,12 +84,11 @@
             <section>
                 <h2>添加银行卡</h2>
                 <input type="button" name="添加银行卡" value="添加银行卡" class="addBankAccountButton button button-action button-rounded">
-                <form action="/bankaccount/add" class="addBankAccount form-inline
-		  			">
+                <form action="/bankaccount/add" method="post" class="addBankAccount form-inline">
                     <h4>请在下方输入您需要添加的银行卡号</h4>
                     <div class="form-group">
                         <label for="num">卡号：</label>
-                        <input type="number" class="form-control" id="num" oninput="if(value.length>12)value=value.slice(0,12)">
+                        <input type="number" class="form-control" id="num" name="account" oninput="if(value.length>12)value=value.slice(0,12)">
                     </div>
                     <button type="submit" class="button button-action button-rounded">添加银行卡</button>
                 </form>

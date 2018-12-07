@@ -283,4 +283,27 @@ public class TaskController {
         return m;
     }
 
+    @RequestMapping(value = "/evaluation/{id}",method = RequestMethod.GET)
+    public ModelAndView evaluationtask(@PathVariable("id") int id,HttpServletRequest request){
+//取消任务
+        ModelAndView m= new ModelAndView();
+
+        double evaluation= Double.parseDouble(request.getParameter("evaluation"));
+
+        boolean j=taskService.insertevaluation(id,evaluation);
+        if(j==true)
+        {
+            m.addObject("prompt", "评价成功");
+        }
+        else {
+            m.addObject("prompt", "评价失败");
+        }
+
+
+
+        m.setViewName("forward:/task/releasebyuser?pageNum=1");
+
+        return m;
+    }
+
 }
