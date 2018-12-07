@@ -1,0 +1,17 @@
+/*------------header-----------------*/
+
+
+/*---------------main------------------*/
+
+.evaluationContainer{
+	display: none;
+}
+.evaluation{
+	width: 100%;
+	min-height: 4em;
+	/*resize: none;*/
+}
+
+
+
+/*--------------footer--------------------*/
