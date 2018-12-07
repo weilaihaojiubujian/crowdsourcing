@@ -75,13 +75,13 @@
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="img/bk1.png" alt="First slide">
+                        <img src="${pageContext.request.contextPath }/img/bk1.png" alt="First slide">
                     </div>
                     <div class="item">
-                        <img src="img/bk2.png" alt="Second slide">
+                        <img src="${pageContext.request.contextPath }/img/bk2.png" alt="Second slide">
                     </div>
                     <div class="item">
-                        <img src="img/bk3.png" alt="Third slide">
+                        <img src="${pageContext.request.contextPath }/img/bk3.png" alt="Third slide">
                     </div>
                 </div>
                 <!-- 轮播（Carousel）导航 -->
