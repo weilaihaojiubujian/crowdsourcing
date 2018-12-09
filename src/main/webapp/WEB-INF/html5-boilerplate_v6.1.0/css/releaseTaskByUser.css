@@ -9,7 +9,7 @@
 .evaluation{
 	width: 100%;
 	min-height: 4em;
-	/*resize: none;*/
+	resize: none;
 }
 
 
