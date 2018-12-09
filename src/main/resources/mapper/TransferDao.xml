@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Dao.TransferDao">
+
+ <resultMap type="com.Entity.Transfer" id="Transfer">
+  <id property="id" column="id"/>
+  <result property="price" column="price"/>
+  <result property="state" column="state"/>
+  <result property="uid_one" column="uid_one"/>
+  <result property="uid_two" column="uid_two"/>
+</resultMap>
+
+
+ <insert id="insertTransfer">
+
+  insert into transfer(uid_one,uid_two,price)
+  values (#{uid_one},#{uid_two},#{price})
+
+ </insert>
+
+ <select id="selectbyUidOne" resultMap="Transfer" parameterType="int">
+
+  select id,uid_one,uid_two,price,state from transfer where uid_one=#{uid_one} OR uid_two=#{uid_one}
+
+
+ </select>
+
+    
+
+</mapper>

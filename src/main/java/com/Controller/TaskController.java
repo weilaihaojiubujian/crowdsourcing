@@ -52,6 +52,9 @@ public class TaskController {
     @Autowired
     TaskService taskService;
 
+    @Autowired
+    TransferService transferService;
+
     @RequestMapping(value = "/release1",method = RequestMethod.GET)
     public String release1(){
         return "release";
@@ -264,9 +267,15 @@ public class TaskController {
         ModelAndView m= new ModelAndView();
         User user= (User) session.getAttribute("user");
         int uid=user.getId();
+        Taskinformation t=taskService.selectTaskByUId(uid);
         Timestamp completetimee=new Timestamp(new Date().getTime());
         boolean j=taskService.insertTaskcompletetime(uid,completetimee);
         log.info("TaskController"+"用户完成任务，插入完成时间={}", j);
+        Transfer transfer=new Transfer();
+        transfer.setUid_one(t.getUid());
+        transfer.setUid_two(uid);
+        transfer.setPrice(t.getPrice());
+        boolean i=transferService.insertTransfer(transfer);
 
 
         m.setViewName("redirect:/user/login1");

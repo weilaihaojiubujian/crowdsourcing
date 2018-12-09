@@ -66,6 +66,7 @@
                 <c:if test="${ sessionScope.user.species.equals('person')}"> <a href="/task/already"   ><input type="button" name="查看接受的任务" value="查看接受的任务"></a></c:if>
                 <a href="/task/releasebyuser?pageNum=1"   ><input type="button" name="查看发布的任务" value="查看发布的任务"></a>
                 <a href="/bankaccount/bankaccount?pageNum=1"   ><input type="button" name="查看银行卡" value="查看银行卡"></a>
+                <a href="/transfer/view?pageNum=1"   ><input type="button" name="查看转账记录" value="查看转账记录"></a>
             </section>
         </article>
     </main>

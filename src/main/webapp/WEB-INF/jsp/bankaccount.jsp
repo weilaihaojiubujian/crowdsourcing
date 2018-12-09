@@ -88,19 +88,19 @@
                     ">
                         <h4>请在下方输入您需要添加的银行卡号</h4>
                         <div class="form-group">
-                            <label for="num">卡号：</label>
+
                             <input type="text" class="form-control" name="firstInput" maxlength="4">
                         </div>
                         <div class="form-group">
-                            <label for="num">-</label>
+
                             <input type="text" class="form-control" maxlength="4">
                         </div>
                         <div class="form-group">
-                            <label for="num">-</label>
+
                             <input type="text" class="form-control" maxlength="4">
                         </div>
                         <div class="form-group">
-                            <label for="num">-</label>
+
                             <input type="text" class="form-control" maxlength="4">
                         </div>
                           <button type="submit" class="button button-action button-rounded">添加银行卡</button>
