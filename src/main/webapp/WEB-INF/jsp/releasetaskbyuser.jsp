@@ -89,7 +89,7 @@
                     <tr class="evaluationContainer">
                         <td colspan="12">
                             <form action="/task/evaluation/${p.tid}" method="get">
-                                <input type="text" name="evaluation" class="evaluation"> <br>
+                                <textarea name="evaluation" class="evaluation" id="evaluation" placeholder="请在此输入评价"></textarea>
                                 <input type="submit" value="提交评价">
                             </form>
                         </td>
@@ -105,18 +105,17 @@
 
                         </td>
                     </tr>
-                </table><br>
-</body>
-</section>
-</article>
-</main>
-<aside role="complementary"></aside>
-<footer role="contentinfo">
-    <address></address>
-    <small></small>
-</footer>
-</div>
+                </table>
 
+            </section>
+        </article>
+    </main>
+    <aside role="complementary"></aside>
+    <footer role="contentinfo">
+        <address></address>
+        <small></small>
+    </footer>
+</div>
 
 
 
