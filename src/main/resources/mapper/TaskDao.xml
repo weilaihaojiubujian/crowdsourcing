@@ -83,6 +83,13 @@ select t.id,k.uid,ttid,pmid,t.name,message,startingaddress,purposeaddress,weight
 
  </select>
 
+ <select id="selectevaluationByUid" resultType="Double" parameterType="int">
+
+  select AVG(evaluation) from task where uid=#{uid} and evaluation is NOT null
+
+
+ </select>
+
  <select id="selectTaskBytmid" resultMap="Task" parameterType="int">
 
   select id,uid,tmid,createtime,completetime,price from task where tmid=#{tmid}

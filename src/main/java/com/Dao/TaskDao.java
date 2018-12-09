@@ -71,6 +71,14 @@ public interface TaskDao {
 
 
     /**
+     *
+     * @param uid
+     * @return
+     */
+    Double selectevaluationByUid(int uid);
+
+
+    /**
      * 查看任务
      * @param tmid
      * @return

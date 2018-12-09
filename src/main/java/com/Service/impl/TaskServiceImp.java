@@ -138,6 +138,24 @@ public class TaskServiceImp implements TaskService {
     }
 
     @Override
+    public Double selectevaluationByUid(int uid) {
+        if(uid==0)
+        {
+            return null;
+        }
+        Double d=taskDao.selectevaluationByUid(uid);
+        if(d>=0)
+        {
+            return d;
+        }
+        else
+        {
+            return null;
+        }
+
+    }
+
+    @Override
     public boolean deleteTask(int id) {
         if(id==0)
         {

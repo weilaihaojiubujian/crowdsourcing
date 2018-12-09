@@ -54,6 +54,9 @@ public class UserController {
     @Autowired
     UserinformationService userinformationService;
 
+    @Autowired
+    TaskService taskService;
+
 
     @RequestMapping(value = "/main",method = RequestMethod.GET)
     public String  main(){
@@ -128,6 +131,16 @@ public class UserController {
 
             if(user!=null)
             {
+                if(user.getSpecies().equals("person"))
+                {
+                    Double d=taskService.selectevaluationByUid(user.getId());
+                    Personinformation p=new Personinformation();
+                    p.setUid(user.getId());
+                    p.setEvaluation(d);
+                    boolean l=personinformationService.updatePersoninformation(p);
+
+                }
+
                 return "redirect:/user/login1";
             }
             else

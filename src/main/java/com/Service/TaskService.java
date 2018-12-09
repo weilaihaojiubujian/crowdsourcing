@@ -82,6 +82,12 @@ public interface TaskService {
 
 
     /**
+     *平均用户评价
+     * @param uid
+     * @return
+     */
+    Double selectevaluationByUid(int uid);
+    /**
      * 用户删除接受的任务
      * @param id
      * @return

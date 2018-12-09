@@ -104,6 +104,15 @@ public class TaskDaoTest {
     }
 
     @Test
+    public void selectevaluationByUid()
+    {
+        int id=1;
+        Double t=taskDao.selectevaluationByUid(id);
+        System.out.println("任务："+t);
+
+    }
+
+    @Test
     public void  selectTaskBytmid()
     {
         int id=7;
