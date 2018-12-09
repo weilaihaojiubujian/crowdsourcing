@@ -56,7 +56,7 @@
 		  			            <td>${m.id}</td>
 		  			            <td><c:out value="${m.account}"></c:out></td>
 
-		  			            <td><a href="/bankaccount/delete/${m.id}"   ><input type="button" name="删除" value="删除"></a></td>
+		  			            <td><a href="/bankaccount/delete/${m.id}"><input type="button" name="删除" value="删除"></a></td>
 		  			        </tr><br>
 		  			    </c:forEach>
 		  			    <tr align="center">
@@ -74,14 +74,30 @@
 		  		<section>
 		  			<h2>添加银行卡</h2>
 		  			<input type="button" name="添加银行卡" value="添加银行卡" class="addBankAccountButton button button-action button-rounded">
-		  			<form action="/bankaccount/add" class="addBankAccount form-inline
+		  			<form action="/bankaccount/add" method="post" class="addBankAccount form-inline
 		  			">
 		  				<h4>请在下方输入您需要添加的银行卡号</h4>
 		  				<div class="form-group">
 		  				    <label for="num">卡号：</label>
-		  				    <input type="number" class="form-control" id="num" oninput="if(value.length>12)value=value.slice(0,12)">
-		  				  </div>
+		  				    <input type="text" class="form-control" name="firstInput" maxlength="4">
+		  				</div>
+		  				<div class="form-group">
+		  				    <label for="num">-</label>
+		  				    <input type="text" class="form-control" maxlength="4">
+		  				</div>
+		  				<div class="form-group">
+		  				    <label for="num">-</label>
+		  				    <input type="text" class="form-control" maxlength="4">
+		  				</div>
+		  				<div class="form-group">
+		  				    <label for="num">-</label>
+		  				    <input type="text" class="form-control" maxlength="4">
+		  				</div>
 		  				  <button type="submit" class="button button-action button-rounded">添加银行卡</button>
+		  				  <span class="help-block">请输入正确的银行卡号！</span>
+		  				<div>
+		  					<input type="text" class="hiddenCardNumber" name="account">
+		  				</div>
 		  			</form>
 		  		</section>
 		  	</article>

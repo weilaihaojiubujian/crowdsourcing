@@ -6,7 +6,12 @@
 .addBankAccount{
 	display: none;
 }
-
+.addBankAccount .form-control{
+	width: 4em;
+}
+.help-block{
+	display: none;
+}
 
 
 

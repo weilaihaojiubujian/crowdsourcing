@@ -46,61 +46,78 @@
 <!-- 对于使用低于IE9版本的用户，给出升级提示 -->
 <!-- Add your site or application content here -->
 <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
-<div class="container">
-    <header role="banner">
-        <nav cole="navigation"></nav>
-    </header>
-    <main role="main">
-        <article>
-            <section>
-                <h1>商家</h1>
-                <table class="table table-bordered table-hover table-striped">
-                    <tr>
-                        <th>序号</th>
-                        <th>银行卡号</th>
-
-                        <th></th>
-                    </tr>
-                    <c:forEach var="m" items="${bankAccounts.list}">
+ <div class="container">
+          <header role="banner">
+            <nav cole="navigation"></nav>
+          </header>
+          <main role="main">
+            <article>
+                <section>
+                    <h1>商家</h1>
+                    <table class="table table-bordered table-hover table-striped">
                         <tr>
-                            <td>${m.id}</td>
-                            <td><c:out value="${m.account}"></c:out></td>
+                            <th>序号</th>
+                            <th>银行卡号</th>
 
-                            <td><a href="/bankaccount/delete/${m.id}"   ><input type="button" name="删除" value="删除"></a></td>
-                        </tr><br>
-                    </c:forEach>
-                    <tr align="center">
-                        <td colspan="9">
-                            <a href="/bankaccount/bankaccount?pageNum=1">首页</a>  
-                            <a href="/bankaccount/bankaccount?pageNum=${bankAccounts.pageNum>1 ? (bankAccounts.pageNum-1):1 }">上一页</a>  
-                            <a href="/bankaccount/bankaccount?pageNum=${bankAccounts.pageNum<bankAccounts.pages ? (bankAccounts.pageNum+1):bankAccounts.pages }">下一页</a>  
-                            <a href="/bankaccount/bankaccount?pageNum=${bankAccounts.pages }">尾页</a>    
-                            当前${bankAccounts.pageNum }/${bankAccounts.pages }页，共${bankAccounts.total }条
+                            <th></th>
+                        </tr>
+                        <c:forEach var="m" items="${bankAccounts.list}">
+                            <tr>
+                                <td>${m.id}</td>
+                                <td><c:out value="${m.account}"></c:out></td>
 
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <h2>添加银行卡</h2>
-                <input type="button" name="添加银行卡" value="添加银行卡" class="addBankAccountButton button button-action button-rounded">
-                <form action="/bankaccount/add" method="post" class="addBankAccount form-inline">
-                    <h4>请在下方输入您需要添加的银行卡号</h4>
-                    <div class="form-group">
-                        <label for="num">卡号：</label>
-                        <input type="number" class="form-control" id="num" name="account" oninput="if(value.length>12)value=value.slice(0,12)">
-                    </div>
-                    <button type="submit" class="button button-action button-rounded">添加银行卡</button>
-                </form>
-            </section>
-        </article>
-    </main>
-    <aside role="complementary"></aside>
-    <footer role="contentinfo">
-        <address></address>
-        <small></small>
-    </footer>
-</div>
+                                <td><a href="/bankaccount/delete/${m.id}"><input type="button" name="删除" value="删除"></a></td>
+                            </tr><br>
+                        </c:forEach>
+                        <tr align="center">
+                            <td colspan="9">
+                                <a href="/bankaccount/bankaccount?pageNum=1">首页</a>  
+                                <a href="/bankaccount/bankaccount?pageNum=${bankAccounts.pageNum>1 ? (bankAccounts.pageNum-1):1 }">上一页</a>  
+                                <a href="/bankaccount/bankaccount?pageNum=${bankAccounts.pageNum<bankAccounts.pages ? (bankAccounts.pageNum+1):bankAccounts.pages }">下一页</a>  
+                                <a href="/bankaccount/bankaccount?pageNum=${bankAccounts.pages }">尾页</a>    
+                                当前${bankAccounts.pageNum }/${bankAccounts.pages }页，共${bankAccounts.total }条
+
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h2>添加银行卡</h2>
+                    <input type="button" name="添加银行卡" value="添加银行卡" class="addBankAccountButton button button-action button-rounded">
+                    <form action="/bankaccount/add" method="post" class="addBankAccount form-inline
+                    ">
+                        <h4>请在下方输入您需要添加的银行卡号</h4>
+                        <div class="form-group">
+                            <label for="num">卡号：</label>
+                            <input type="text" class="form-control" name="firstInput" maxlength="4">
+                        </div>
+                        <div class="form-group">
+                            <label for="num">-</label>
+                            <input type="text" class="form-control" maxlength="4">
+                        </div>
+                        <div class="form-group">
+                            <label for="num">-</label>
+                            <input type="text" class="form-control" maxlength="4">
+                        </div>
+                        <div class="form-group">
+                            <label for="num">-</label>
+                            <input type="text" class="form-control" maxlength="4">
+                        </div>
+                          <button type="submit" class="button button-action button-rounded">添加银行卡</button>
+                          <span class="help-block">请输入正确的银行卡号！</span>
+                        <div>
+                            <input type="text" class="hiddenCardNumber" name="account">
+                        </div>
+                    </form>
+                </section>
+            </article>
+          </main>
+          <aside role="complementary"></aside>
+          <footer role="contentinfo">
+            <address></address>
+            <small></small>
+          </footer>
+      </div>
 
 
 
