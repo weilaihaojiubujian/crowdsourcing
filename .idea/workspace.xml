@@ -43,11 +43,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Dao/UseraddressDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Dao/UseraddressDaoTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Service/AuditServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Service/AuditServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Service/TaskmessageServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Service/TaskmessageServiceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TaskDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TaskDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TaskmessageDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TaskmessageDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/UseraddressDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UseraddressDao.xml" />
@@ -877,7 +872,7 @@
       <workItem from="1544067115425" duration="5874000" />
       <workItem from="1544161872191" duration="10108000" />
       <workItem from="1544263476571" duration="1441000" />
-      <workItem from="1544335625438" duration="9285000" />
+      <workItem from="1544335625438" duration="9375000" />
     </task>
     <servers />
   </component>
@@ -914,7 +909,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240182000" />
+    <option name="totallyTimeSpent" value="240272000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
