@@ -8,7 +8,7 @@ package com.Entity;
 //转账记录表
 public class Transfer {
 
-    private int id;//序号
+    private String id;//序号
 
     private int uid_one;//支付用户序号
 
@@ -18,11 +18,11 @@ public class Transfer {
 
     private double price;//价格
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

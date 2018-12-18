@@ -31,6 +31,8 @@ public class Person {
 
     private double evaluation;//评价
 
+    private Double money;
+
     public int getId() {
         return id;
     }
@@ -111,6 +113,14 @@ public class Person {
         this.evaluation = evaluation;
     }
 
+    public Double getMoney() {
+        return money;
+    }
+
+    public void setMoney(Double money) {
+        this.money = money;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -124,6 +134,7 @@ public class Person {
                 ", birthday=" + birthday +
                 ", idcard='" + idcard + '\'' +
                 ", evaluation=" + evaluation +
+                ", money=" + money +
                 '}';
     }
 }

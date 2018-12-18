@@ -16,8 +16,8 @@
 
  <insert id="insertTransfer">
 
-  insert into transfer(uid_one,uid_two,price)
-  values (#{uid_one},#{uid_two},#{price})
+  insert into transfer(id,uid_one,uid_two,price)
+  values (#{id},#{uid_one},#{uid_two},#{price})
 
  </insert>
 
@@ -28,6 +28,22 @@
 
  </select>
 
+ <select id="selectByid" resultMap="Transfer" parameterType="String">
+
+  select id,uid_one,uid_two,price,state from transfer where id=#{id}
+
+
+ </select>
+ <update id="updateState" >
+
+  update
+  transfer
+  SET
+  state=1
+  where
+  id=#{id}
+
+ </update>
     
 
 </mapper>

@@ -25,4 +25,11 @@ public interface TransferDao {
      * @return
      */
     List<Transfer> selectbyUidOne(int uid_one);
+
+    /**
+     * 查看转账记录
+     */
+    Transfer selectByid(String id);
+
+    int updateState(String  id);
 }

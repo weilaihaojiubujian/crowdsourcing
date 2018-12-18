@@ -208,28 +208,12 @@ public class UserDaoTest {
     public void updateBusiness()  {
         User u=new User();
         int id=8;
-        String password="123456";
-        String phonenumber="1375770";
-        String username = "yo";
 
 
-        String name = "天第";
-        String address = "安吉";
 
-        String headname="李四";
-        String headidcard= "4561358795";
-
-
-        Person q=new Person();
         Business b=new Business();
         b.setId(id);
-        b.setPhonenumber(phonenumber);
-        b.setPassword(password);
-        b.setUsername(username);
-        b.setName(name);
-        b.setAddress(address);
-        b.setHeadname(headname);
-        b.setHeadidcard(headidcard);
+       b.setMoney((double) 10);
 
 
         int i=userDao.updateBusiness(b);

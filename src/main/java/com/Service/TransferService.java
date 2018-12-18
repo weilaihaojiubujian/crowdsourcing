@@ -24,4 +24,12 @@ public interface TransferService {
      * @return
      */
     List<Transfer> selectbyUidOne(int uid_one);
+
+    /**
+     * 查看转账记录
+     */
+    Transfer selectByid(String  id);
+
+
+    boolean updateState(String  id);
 }

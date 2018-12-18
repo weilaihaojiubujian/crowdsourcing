@@ -10,5 +10,7 @@
         <property name="dataSource" ref="dataSource"></property>
     </bean>
 
+    <bean id="sid" class="com.org.n3r.idworker.Sid"></bean>
+
     <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
 </beans>

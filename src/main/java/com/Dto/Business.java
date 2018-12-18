@@ -24,6 +24,8 @@ public class Business {
 
     private String headidcard;//负责人身份证号
 
+    private Double money;
+
     public int getId() {
         return id;
     }
@@ -88,6 +90,14 @@ public class Business {
         this.headidcard = headidcard;
     }
 
+    public Double getMoney() {
+        return money;
+    }
+
+    public void setMoney(Double money) {
+        this.money = money;
+    }
+
     @Override
     public String toString() {
         return "Business{" +
@@ -99,6 +109,7 @@ public class Business {
                 ", address='" + address + '\'' +
                 ", headname='" + headname + '\'' +
                 ", headidcard='" + headidcard + '\'' +
+                ", money=" + money +
                 '}';
     }
 }

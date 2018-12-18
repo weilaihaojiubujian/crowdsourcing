@@ -47,4 +47,25 @@ public class TransferServiceImp implements TransferService {
         }
         return null;
     }
+
+    @Override
+    public Transfer selectByid(String  id) {
+        if (id==null)return null;
+        Transfer t=transferDao.selectByid(id);
+        log.info("TransferServiceImp"+"转账记录={}", t);
+        if(t!=null )
+        {
+            return  t;
+        }
+        return null;
+    }
+
+    @Override
+    public boolean updateState(String  id) {
+        if (id==null) return false;
+        int i=transferDao.updateState(id);
+        System.out.println(i);
+        log.info("TransferServiceImp"+"更新转账记录={}", i);
+        return i>0?true:false;
+    }
 }

@@ -33,7 +33,7 @@
                 <c:if test="${ sessionScope.user.id==m.uid_two}">+${m.price}</c:if></td>
             <td><c:out value="${m.state}"></c:out></td>
 
-            <td> <c:if test="${ sessionScope.user.id==m.uid_one}"><c:if test="${ m.state==0}"><a href=""   ><input type="button" name="支付未付的金额" value="支付未付的金额"></a> </c:if></c:if></td>
+            <td> <c:if test="${ sessionScope.user.id==m.uid_one}"><c:if test="${ m.state==0}"><a href="/alipay/pay/${m.id}"   ><input type="button" name="支付未付的金额" value="支付未付的金额"></a> </c:if></c:if></td>
         </tr><br>
     </c:forEach>
     <tr align="center">

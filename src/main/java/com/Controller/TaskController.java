@@ -7,6 +7,7 @@ import com.Util.GeoHash;
 import com.Util.Money;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.org.n3r.idworker.Sid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,6 +55,9 @@ public class TaskController {
 
     @Autowired
     TransferService transferService;
+
+    @Autowired
+    Sid sid;
 
     @RequestMapping(value = "/release1",method = RequestMethod.GET)
     public String release1(){
@@ -272,9 +276,11 @@ public class TaskController {
         boolean j=taskService.insertTaskcompletetime(uid,completetimee);
         log.info("TaskController"+"用户完成任务，插入完成时间={}", j);
         Transfer transfer=new Transfer();
+        String id = sid.nextShort();
         transfer.setUid_one(t.getUid());
         transfer.setUid_two(uid);
         transfer.setPrice(t.getPrice());
+        transfer.setId(id);
         boolean i=transferService.insertTransfer(transfer);
 
 

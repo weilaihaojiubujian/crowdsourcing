@@ -46,4 +46,28 @@ public class TransferDaoTest {
 
 
     }
+
+    @Test
+    public void selectByid()
+    {
+        Transfer t=transferDao.selectByid("1");
+
+
+        System.out.println(t);
+
+
+
+    }
+
+    @Test
+    public void updateState()
+    {
+        int t=transferDao.updateState("1");
+
+
+        System.out.println(t);
+
+
+
+    }
 }
