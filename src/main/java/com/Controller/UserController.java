@@ -77,6 +77,12 @@ public class UserController {
 
     }
 
+    @RequestMapping(value = "/login4",method = RequestMethod.POST)
+    public String login4(){
+        return "client";
+
+    }
+
     @RequestMapping(value = "/login2",method = RequestMethod.GET)
     public String login2(){
         return "administrator";

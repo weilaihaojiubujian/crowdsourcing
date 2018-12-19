@@ -28,7 +28,7 @@
 
   <select id="selectById" resultMap="User" parameterType="int">
 
-      select username,password,phonenumber,state,species,money from user where id=#{id} and state=1
+      select id,username,password,phonenumber,state,species,money from user where id=#{id} and state=1
        
         
     </select>

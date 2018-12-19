@@ -94,7 +94,7 @@ public class AlipayController {
 		User u= (User) session.getAttribute("user");
 		if(t.getPrice()<=u.getMoney())
 		{
-			if(u.getSpecies().equals("'person'"))
+			if(u.getSpecies().equals("person"))
 			{
 				Person p=new Person();
 				p.setId(u.getId());
@@ -131,6 +131,26 @@ public class AlipayController {
 					//接受任务失败
 				}
 
+
+
+			}
+			User h=userService.selectUserById(t.getUid_two());
+			System.out.println("用户："+h);
+			System.out.println("用户序号："+h.getId());
+			if(h.getSpecies().equals("person"))
+			{
+				Person p=new Person();
+				p.setId(h.getId());
+				p.setMoney(h.getMoney()+t.getPrice());
+				boolean w=userService.updateUser(p);
+
+
+			}
+			else {
+				Business b = new Business();
+				b.setId(h.getId());
+				b.setMoney(h.getMoney() + t.getPrice());
+				boolean w = userService.updateBusiness(b);
 			}
 			m.setViewName("redirect:/user/login1");
 
@@ -266,7 +286,24 @@ public class AlipayController {
 
 			boolean i=flowService.insert(flow);
 
+			User h=userService.selectUserById(t.getUid_two());
+			System.out.println("用户："+h);
+			System.out.println("用户序号："+h.getId());
+			if(h.getSpecies().equals("person"))
+			{
+				Person p=new Person();
+				p.setId(h.getId());
+				p.setMoney(h.getMoney()+t.getPrice());
+				boolean w=userService.updateUser(p);
 
+
+			}
+			else {
+				Business b = new Business();
+				b.setId(h.getId());
+				b.setMoney(h.getMoney() + t.getPrice());
+				boolean w = userService.updateBusiness(b);
+			}
 
 			log.info("********************** 支付成功(支付宝同步通知) **********************");
     		log.info("* 订单号: {}", out_trade_no);
@@ -376,7 +413,22 @@ public class AlipayController {
 				flow.setPaidmethod(1);
 
 				boolean i=flowService.insert(flow);
+				User h=userService.selectUserById(t.getUid_two());
+				if(h.getSpecies().equals("person"))
+				{
+					Person p=new Person();
+					p.setId(h.getId());
+					p.setMoney(h.getMoney()+t.getPrice());
+					boolean w=userService.updateUser(p);
 
+
+				}
+				else {
+					Business b = new Business();
+					b.setId(h.getId());
+					b.setMoney(h.getMoney() + t.getPrice());
+					boolean w = userService.updateBusiness(b);
+				}
 				log.info("********************** 支付成功(支付宝异步通知) **********************");
 	    		log.info("* 订单号: {}", out_trade_no);
 	    		log.info("* 支付宝交易号: {}", trade_no);
