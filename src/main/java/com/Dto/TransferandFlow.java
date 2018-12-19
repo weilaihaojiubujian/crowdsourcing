@@ -13,7 +13,11 @@ public class TransferandFlow {
 
     private int uidone;//支付用户序号
 
+    private String uidonename;
+
     private int uidtwo;//收到序号
+
+    private String uidtwoname;
 
     private int state;//是否支付
 
@@ -109,12 +113,30 @@ public class TransferandFlow {
         this.createtime = createtime;
     }
 
+    public String getUidonename() {
+        return uidonename;
+    }
+
+    public void setUidonename(String uidonename) {
+        this.uidonename = uidonename;
+    }
+
+    public String getUidtwoname() {
+        return uidtwoname;
+    }
+
+    public void setUidtwoname(String uidtwoname) {
+        this.uidtwoname = uidtwoname;
+    }
+
     @Override
     public String toString() {
         return "TransferandFlow{" +
                 "id='" + id + '\'' +
                 ", uidone=" + uidone +
+                ", uidonename='" + uidonename + '\'' +
                 ", uidtwo=" + uidtwo +
+                ", uidtwoname='" + uidtwoname + '\'' +
                 ", state=" + state +
                 ", price=" + price +
                 ", fid='" + fid + '\'' +

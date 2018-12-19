@@ -17,8 +17,8 @@
 <table class="table table-bordered table-hover table-striped">
     <tr>
         <th>序号</th>
-        <th>支付人序号</th>
-        <th>收钱人序号</th>
+        <th>支付人名字</th>
+        <th>收钱人名字</th>
         <th>金额</th>
         <th>是否支付</th>
 
@@ -27,8 +27,8 @@
     <c:forEach var="m" items="${transfers.list}">
         <tr>
             <td>${m.id}</td>
-            <td><c:out value="${m.uidone}"></c:out></td>
-            <td><c:out value="${m.uidtwo}"></c:out></td>
+            <td><c:out value="${m.uidonename}"></c:out></td>
+            <td><c:out value="${m.uidtwoname}"></c:out></td>
             <td> <c:if test="${ m.uidtwo==m.uidone}">
                 <c:if test="${ m.fid==null}">-${m.price}</c:if>
                 <c:if test="${ m.fid!=null}">+${m.price}</c:if>

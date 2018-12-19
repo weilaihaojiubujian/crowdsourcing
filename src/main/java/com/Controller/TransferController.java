@@ -7,6 +7,7 @@ import com.Entity.Transfer;
 import com.Entity.User;
 import com.Service.TransferService;
 import com.Service.UserService;
+import com.Service.UserinformationService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.org.n3r.idworker.Sid;
@@ -43,6 +44,9 @@ public class TransferController {
     @Autowired
     UserService userService;
 
+    @Autowired
+    UserinformationService userinformationService;
+
     @RequestMapping(value = "/transfer",method = RequestMethod.GET)
     public String transfer(){
         return "transfer";
@@ -73,8 +77,37 @@ public class TransferController {
         int uid=user.getId();
         PageHelper.startPage(pageNum, 10);
         List<TransferandFlow> p=transferService.selectbyOne(uid);
+        for(TransferandFlow i:p)
+        {
+           User q=userService.selectUserById(i.getUidone());
+           if(q.getSpecies().equals("person"))
+           {
+               Person w=userinformationService.selectpeopleinformation(i.getUidone());
+               i.setUidonename(w.getName());
+           }
+           else
+           {
+               Business b=userinformationService.selectbusinessinformation(i.getUidone());
+               i.setUidonename(b.getName());
+           }
+
+            User r=userService.selectUserById(i.getUidtwo());
+            if(r.getSpecies().equals("person"))
+            {
+                Person w=userinformationService.selectpeopleinformation(i.getUidtwo());
+                i.setUidtwoname(w.getName());
+            }
+            else
+            {
+                Business b=userinformationService.selectbusinessinformation(i.getUidtwo());
+                i.setUidtwoname(b.getName());
+            }
+
+        }
+
         PageInfo<TransferandFlow> penson=new PageInfo<TransferandFlow>(p);
         log.info("TransferController"+"转账信息={}", p);
+
 
 
 
