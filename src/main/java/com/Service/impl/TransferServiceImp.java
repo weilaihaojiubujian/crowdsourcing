@@ -1,6 +1,7 @@
 package com.Service.impl;
 
 import com.Dao.TransferDao;
+import com.Dto.TransferandFlow;
 import com.Entity.Transfer;
 import com.Entity.Useraddress;
 import com.Service.TransferService;
@@ -67,5 +68,17 @@ public class TransferServiceImp implements TransferService {
         System.out.println(i);
         log.info("TransferServiceImp"+"更新转账记录={}", i);
         return i>0?true:false;
+    }
+
+    @Override
+    public List<TransferandFlow> selectbyOne(int uid_one) {
+        if (uid_one==0)return null;
+        List<TransferandFlow> t=transferDao.selectbyOne(uid_one);
+        log.info("TransferServiceImp"+"列出用户所有转账记录={}", t);
+        if(t!=null )
+        {
+            return  t;
+        }
+        return null;
     }
 }

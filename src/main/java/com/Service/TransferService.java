@@ -1,5 +1,6 @@
 package com.Service;
 
+import com.Dto.TransferandFlow;
 import com.Entity.Transfer;
 
 import java.util.List;
@@ -32,4 +33,11 @@ public interface TransferService {
 
 
     boolean updateState(String  id);
+
+    /**
+     * 列出所有转账记录
+     * @param uid_one
+     * @return
+     */
+    List<TransferandFlow> selectbyOne(int uid_one);
 }

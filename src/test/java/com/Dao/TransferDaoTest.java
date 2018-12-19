@@ -1,5 +1,6 @@
 package com.Dao;
 
+import com.Dto.TransferandFlow;
 import com.Entity.Transfer;
 import com.Entity.User;
 import org.junit.Test;
@@ -67,6 +68,19 @@ public class TransferDaoTest {
 
         System.out.println(t);
 
+
+
+    }
+
+    @Test
+    public void selectbyOne()
+    {
+        List<TransferandFlow> t=transferDao.selectbyOne(1);
+
+        for (TransferandFlow i:t)
+        {
+            System.out.println("转账记录："+i);
+        }
 
 
     }

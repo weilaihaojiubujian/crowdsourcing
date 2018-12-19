@@ -1,5 +1,6 @@
 package com.Dao;
 
+import com.Dto.TransferandFlow;
 import com.Entity.Transfer;
 
 import java.util.List;
@@ -32,4 +33,11 @@ public interface TransferDao {
     Transfer selectByid(String id);
 
     int updateState(String  id);
+
+    /**
+     *
+     * @param uid_one
+     * @return
+     */
+    List<TransferandFlow> selectbyOne(int uid_one);
 }

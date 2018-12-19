@@ -2,6 +2,7 @@ package com.Controller;
 
 import com.Dto.Business;
 import com.Dto.Person;
+import com.Dto.TransferandFlow;
 import com.Entity.Transfer;
 import com.Entity.User;
 import com.Service.TransferService;
@@ -71,8 +72,8 @@ public class TransferController {
         User user= (User) session.getAttribute("user");
         int uid=user.getId();
         PageHelper.startPage(pageNum, 10);
-        List<Transfer> p=transferService.selectbyUidOne(uid);
-        PageInfo<Transfer> penson=new PageInfo<Transfer>(p);
+        List<TransferandFlow> p=transferService.selectbyOne(uid);
+        PageInfo<TransferandFlow> penson=new PageInfo<TransferandFlow>(p);
         log.info("TransferController"+"转账信息={}", p);
 
 
