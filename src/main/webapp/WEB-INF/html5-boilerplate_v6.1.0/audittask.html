@@ -5,7 +5,7 @@
 	  <meta charset="utf-8">
 	  <meta http-equiv="x-ua-compatible" content="ie=edge">
 	  <!-- 兼容模式的元标签 -->
-	  <title>银行卡</title>
+	  <title>管理员审核任务</title>
 	  <meta name="description" content="">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	  <!-- 移动端不对网页进行缩放 -->
@@ -22,15 +22,17 @@
 	  <!-- <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
 	  <link rel="stylesheet" href="css/buttons.css">
 	  <!-- 按钮样式 -->
-	  <!-- <link rel="stylesheet" href="css/hover.css"> -->
+	  <link rel="stylesheet" href="css/hover-min.css">
 	  <!-- 悬浮效果 -->
 	  <!-- <link rel="stylesheet" href="css/animate.css"> -->
 	  <!-- 动画库 -->
 	  <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
+
+      <link rel="stylesheet" type="text/css" href="css/administrator.css">
+      <link rel="stylesheet" href="css/audituser.css">
+
 	  
-	  <link rel="stylesheet" href="css/administrator.css">
-	  <link rel="stylesheet" href="css/audituser.css">
-	  <link rel="stylesheet" href="css/bankaccount.css">
 	</head>
 
 	<body>
@@ -51,22 +53,22 @@
 		  	  </a> 
               <a href="/administrator/audituser?pageNum=1" class="hvr-underline-from-center">
               	<div class="navItems">
-              		管理银行卡
+              		审核用户
               	</div>
               </a>
               <a href="/administrator/auditbusiness?pageNum=1" class="hvr-underline-from-center">
               	<div class="navItems">
-              		管理信息
+              		审核商家
               	</div>
               </a>
               <a href="/administrator/audittask?pageNum=1" class="hvr-underline-from-center">
               	<div class="navItems">
-              		发布任务            	
+              		审核任务             	
               	</div>
               </a>
               <a href="/administrator/auditbyevaluation?pageNum=1" class="hvr-underline-from-left">
               	<div class="navItems">
-              		资金管理
+              		管理不良用户
               	</div>
               </a>
               <div class="navItems lastNavItem">
@@ -89,42 +91,22 @@
 		  	  		<ul>
 		  	  			<li>
 		  	  				<div class="liItems">
-		  	  					<div><i class="icon-user"></i></div><div><a href="/task/release">发布任务</a></div>
+		  	  					<div><i class="icon-user"></i></div><div><p>审核用户</p></div>
 		  	  				</div>
 		  	  			</li>
 		  	  			<li>
 		  					<div class="liItems">
-		  	  					<div><i class="icon-group"></i></div><div><a href="/user/information">个人信息</a></div>
+		  	  					<div><i class="icon-group"></i></div><div><p>审核商家</p></div>
 		  	  				</div>
 		  	  			</li>
 		  	  			<li>
 		  					<div class="liItems">
-		  	  					<div><i class="icon-list-alt"></i></div><div><a href="/task/message?pageNum=1">任务消息</a></div>
+		  	  					<div><i class="icon-list-alt"></i></div><div><p>审核任务</p></div>
 		  	  				</div>
 		  	  			</li>
 		  	  			<li>
 		  					<div class="liItems">
-		  	  					<div><i class="icon-angle-right"></i></div><div><a href="/task/releasebyuser?pageNum=1">查看任务</a></div>
-		  	  				</div>
-		  	  			</li>
-		  	  			<li>
-		  					<div class="liItems">
-		  	  					<div><i class="icon-angle-right"></i></div><div><a href="/bankaccount/bankaccount?pageNum=1">查看银行卡</a></div>
-		  	  				</div>
-		  	  			</li>
-		  	  			<li>
-		  					<div class="liItems">
-		  	  					<div><i class="icon-exchange"></i></div><div><a href="/transfer/view?pageNum=1">查看转账记录</a></div>
-		  	  				</div>
-		  	  			</li>
-		  	  			<li>
-		  					<div class="liItems">
-		  	  					<div><i class="icon-exchange"></i></div><div><a href="/transfer/recharge1">充值</a></div>
-		  	  				</div>
-		  	  			</li>
-		  	  			<li>
-		  					<div class="liItems">
-		  	  					<div><i class="icon-exchange"></i></div><div><a href="/transfer/withdrawal1">提现</a></div>
+		  	  					<div><i class="icon-minus-sign"></i></div><div><p>管理用户</p></div>
 		  	  				</div>
 		  	  			</li>
 		  	  		</ul>
@@ -132,79 +114,54 @@
 		  	  </aside>
 		  	  <main role="main" class="col-md-8 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 		  	  	<div class="container-fuild">
-		  	  		<article>
-		  	  		    <section>
-		  	  		        <h1>商家</h1>
-		  	  		        <table class="table table-bordered table-hover table-striped">
-		  	  		            <tr>
-		  	  		                <th>序号</th>
-		  	  		                <th>银行卡号</th>
+		  	  		<div class="row">
+		  	  		  <section class="col-md-12 userTable">		  						  					
+		  				<div class="tableAndNav">
+		  					<table class="table table-bordered table-hover table-striped">
+		  						<caption>审核任务</caption>
+		  					    <tr>
+	  					            <th>序号</th>
+	  					            <th>任务名</th>
+	  					            <th>任务信息</th>
+	  					            <th>任务种类名</th>
+	  					            <th>计费方式名</th>
+	  					            <th>起始位置</th>
+	  					            <th>目的位置</th>
+	  					            <th>物品重量</th>
 
-		  	  		                <th></th>
-		  	  		            </tr>
-		  	  		            <c:forEach var="m" items="${bankAccounts.list}">
-		  	  		                <tr>
-		  	  		                    <td>${m.id}</td>
-		  	  		                    <td><c:out value="${m.account}"></c:out></td>
-
-		  	  		                    <td><a href="/bankaccount/delete/${m.id}"><input type="button" name="删除" value="删除"></a></td>
-		  	  		                </tr><br>
-		  	  		            </c:forEach>
-		  	  		            <tr align="center">
-		  	  		                <td colspan="9">
-		  	  		                    <a href="">首页</a>  
-		  	  		                    <a href="">上一页</a>  
-		  	  		                    <a href="">下一页</a>  
-		  	  		                    <a href="">尾页</a>    
-		  	  		                    
-
-		  	  		                </td>
-		  	  		            </tr>
-		  	  		        </table>
-		  	  		        <nav class="changePage" style="position: static;">
+	  					            <th></th>
+	  					        </tr>
+	  					        <c:forEach var="p" items="${taskinformations.list}">
+	  					            <tr>
+	  					                <td>${p.id}</td>
+	  					                <td><c:out value="${p.name}"></c:out></td>
+	  					                <td><c:out value="${p.message}"></c:out></td>
+	  					                <td><c:out value="${p.ttname}"></c:out></td>
+	  					                <td><c:out value="${p.pmname}"></c:out></td>
+	  					                <td><c:out value="${p.startingaddress}"></c:out></td>
+	  					                <td><c:out value="${p.purposeaddress}"></c:out></td>
+	  					                <td><c:out value="${p.weight}"></c:out></td>
+	  					                <td><a href="/administrator/audit1/${p.id}"   ><input type="button" name="审核通过" value="审核通过"></a></td>
+	  					            </tr><br>
+	  					        </c:forEach>
+	  					        
+		  					</table>
+		  					<nav class="changePage">
 		  					  <ul class="pager">
-		  					  	<li class="previous"><a href="/bankaccount/bankaccount?pageNum=1"><span aria-hidden="true">&larr;</span>首页</a></li>
-		  					    <li><a href="/bankaccount/bankaccount?pageNum=${bankAccounts.pageNum>1 ? (bankAccounts.pageNum-1):1 }">上一页</a></li>
-		  					    <li><a href="/bankaccount/bankaccount?pageNum=${bankAccounts.pageNum<bankAccounts.pages ? (bankAccounts.pageNum+1):bankAccounts.pages }">下一页</a></li>
-		  					  	<li class="next"><a href="/bankaccount/bankaccount?pageNum=${bankAccounts.pages }">尾页 <span aria-hidden="true">&rarr;</span></a></li>
+		  					  	<li class="previous"><a href="/administrator/audittask?pageNum=1"><span aria-hidden="true">&larr;</span>首页</a></li>
+		  					    <li><a href="/administrator/audittask?pageNum=${taskinformations.pageNum>1 ? (taskinformations.pageNum-1):1 }">上一页</a></li>
+		  					    <li><a href="/administrator/audittask?pageNum=${taskinformations.pageNum<taskinformations.pages ? (taskinformations.pageNum+1):taskinformations.pages }">下一页</a></li>
+		  					  	<li class="next"><a href="/administrator/audittask?pageNum=${taskinformations.pages }">尾页 <span aria-hidden="true">&rarr;</span></a></li>
 		  					  </ul>
 		  					  <div class="changePageMessage">
 		  					  	<p class="small">
-		  					            当前${bankAccounts.pageNum }/${bankAccounts.pages }页，共${bankAccounts.total }条
+	  					                当前${taskinformations.pageNum }/${taskinformations.pages }页，共${taskinformations.total }条
+		  					          
 		  					  	</p>
 		  					  </div>
 		  					</nav>
-		  	  		    </section>
-		  	  		    <section>
-		  	  		        <h2>添加银行卡</h2>
-		  	  		        <input type="button" name="添加银行卡" value="添加银行卡" class="addBankAccountButton button button-action button-rounded">
-		  	  		        <form action="/bankaccount/add" method="post" class="addBankAccount form-inline
-		  	  		        ">
-		  	  		            <h4>请在下方输入您需要添加的银行卡号</h4>
-		  	  		            <div class="form-group">
-
-		  	  		                <input type="text" class="form-control" name="firstInput" maxlength="4">
-		  	  		            </div>
-		  	  		            <div class="form-group">
-
-		  	  		                <input type="text" class="form-control" maxlength="4">
-		  	  		            </div>
-		  	  		            <div class="form-group">
-
-		  	  		                <input type="text" class="form-control" maxlength="4">
-		  	  		            </div>
-		  	  		            <div class="form-group">
-
-		  	  		                <input type="text" class="form-control" maxlength="4">
-		  	  		            </div>
-		  	  		              <button type="submit" class="button button-action button-rounded">添加银行卡</button>
-		  	  		              <span class="help-block">请输入正确的银行卡号！</span>
-		  	  		            <div>
-		  	  		                <input type="text" class="hiddenCardNumber" name="account">
-		  	  		            </div>
-		  	  		        </form>
-		  	  		    </section>
-		  	  		</article>
+		  				</div>
+		  	  		  </section>
 		  	  		</div>
 		  	  		
 		  	  	</div>
@@ -214,12 +171,6 @@
 		  	Copyright &copy; 2018.12.4 Design By 同城跑腿
 		  </footer>
 	  </div>
-
-
-
-
-
-
 
 	  
 	  <script src="js/modernizr.custom.93262.js"></script>
@@ -237,13 +188,14 @@
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	  <!-- <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
 	  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  <script src="js/bankaccount.js"></script>
 	  <!-- <script src="js/jquery-ui.js"></script> -->
 	  <!-- 使用velocity动画库 -->
 	  <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script> -->
-	  <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script> -->
-	  <!-- <script src="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-	  <!-- bootstrap轮播插件 与bootstrap.js连用 -->
+	  <script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-dropdown.js"></script>
+	  <<script src="js/responsive-nav.js" type="text/javascript"></script>
+
+      <script src="js/administrator.js"></script>
 	</body>
 
 </html>
+	  				

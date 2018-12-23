@@ -5,7 +5,7 @@
 	  <meta charset="utf-8">
 	  <meta http-equiv="x-ua-compatible" content="ie=edge">
 	  <!-- 兼容模式的元标签 -->
-	  <title></title>
+	  <title>修改用户信息</title>
 	  <meta name="description" content="">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	  <!-- 移动端不对网页进行缩放 -->
@@ -18,6 +18,9 @@
 	  <link rel="stylesheet" href="css/main.css">
 	  <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	  <link rel="stylesheet" href="css/jquery-ui.css">
+	  <link rel="stylesheet" href="css/administrator.css">
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" href="css/audituser.css">
 	  <!-- 使用button图标 -->
 	  <!-- <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
 	  <!-- <link rel="stylesheet" href="css/buttons.css"> -->
@@ -36,103 +39,195 @@
 	<!-- 对于使用低于IE9版本的用户，给出升级提示 -->
 	  <!-- Add your site or application content here -->
 	  <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
-	  <div class="container">
-		  <header role="banner">
-		  	<nav cole="navigation"></nav>
-		  </header>
-		  <main role="main">
-		  	<article>
-		  		<section class="showInformation">
-		  			<h2>用户个人信息</h2>
-		  			<table class="table table-bordered table-hover table-striped">
-		  				<tr>
-		  					<td>序号</td>
-		  					<td>用户名</td>
-		  					<td>密码</td>
-		  					<td>手机号</td>
-		  					<td>姓名</td>
-		  					<td>性别</td>
-		  					<td>所在城市</td>
-		  					<td>生日</td>
-		  					<td>身份证号</td>
-		  				</tr>
-		  				<tr name="personMessage">
-		  					<td name="id">序号11</td>
-		  					<td name="userName">用户名11</td>
-		  					<td name="password">密码11</td>
-		  					<td name="tel">手机号11</td>
-		  					<td name="name">名字11</td>
-		  					<td name="sex">女</td>
-		  					<td name="city">所在城市11</td>
-		  					<td name="birthday">生日11</td>
-		  					<td name="idNumber">身份证号11</td>
-		  				</tr>
-		  				<tr>
-		  					<td colspan="9"><button name="modifyMessage">修改信息</button></td>
-		  				</tr>
-		  			</table>
-		  		</section>
-		  		<section class="changeInformation">
-		  			<h2>修改用户信息</h2>
-		  			<form action="#">
-		  				<div>
-		  					<label for="id">序号</label>
-		  					<input type="text" id="id" disabled>
-		  				</div>
-		  				<div>
-		  					<label for="userName">用户名</label>
-		  					<input type="text" id="userName">
-		  				</div>
-		  				<div>
-		  					<label for="password">密码</label>
-		  					<input type="password" id="password">		
-		  				</div>	
-		  				<div>
-		  					<label for="tel">手机号码:</label>
-		  					<input type="tel" id="tel">
-		  				</div>
-		  				<div>
-		  					<label for="name">姓名</label>
-		  					<input type="text" id="name">
-		  				</div>
-		  				<div>
-		  					<label for="sex">性别</label>
-		  					<input type="radio" name="sex" id="male">男
-		  					<input type="radio" name="sex" id="female">女
-		  				</div>
-		  				<div>
-		  					<label for="city">所在城市</label>
-		  					<input type="text" id="city">
-		  				</div>
-		  				<div>
-		  					<label for="birthday">生日</label>
-		  					<input type="text" id="datepicker">
-		  				</div>
-		  				<div>
-		  					<label for="idNumber">身份证号</label>
-		  					<input type="text" id="idNumber">
-		  				</div>
-		  				<div>
-		  					<input type="submit" value="提交">
-		  					<button name="showMessage">查看信息</button>
-		  				</div>
-		  			</form>
-		  		</section>
-		  	</article>
-		  </main>
-		  <aside role="complementary"></aside>
-		  <footer role="contentinfo">
-		  	<address></address>
-		  	<small></small>
-		  </footer>
-	  </div>
-
-
-
-
-
-
-
+	  	  <div class="container-fuild page">
+	  		  <header role="banner">
+	  		  	<nav class="topNav hidden-xs hidden-sm">
+	  		  	  <a href="#" class="hvr-underline-from-right">
+	  		  	  	<div class="navItems">
+	  		  	  	登出
+	  		  	  	<!-- <span class="caret"></span>           	 -->
+	  		  	  	</div>
+	  		  	  </a> 
+	                <a href="/administrator/audituser?pageNum=1" class="hvr-underline-from-center">
+	                	<div class="navItems">欢迎您:【${sessionScope.user.username}】
+	                	    【 <c:if test="${ sessionScope.user.species.equals('person')}">用户</c:if>
+	                	    <c:if test="${ sessionScope.user.species.equals('business')}">商家</c:if>】使用系统
+	                	</div>	
+	                </a>
+	                
+	                <div class="navItems lastNavItem">
+	                	<img src="img/logo.png" alt="logo">
+	                </div>           
+	              </nav>
+	              <nav class="smallTopNav hidden-md hidden-lg">
+	              	<div>
+	              		<i class="icon-2x icon-list openSideBar"></i>
+	              	</div>
+	              	<div class="navItems lastNavItem">
+	              		<img src="img/logo.png" alt="logo">
+	              	</div> 
+	              	
+	              </nav>
+	  		  </header>
+	  		  <div class="row">	  	  
+	  		  	  <aside role="complementary" class="asideNav hidden-xs hidden-sm hideAside">
+	  		  	  	  	<div class="sideNav">
+	  		  	  	  		<ul>
+	  		  	  	  			<li>
+	  		  	  	  				<div class="liItems">
+	  		  	  	  					<div><i class="icon-user"></i></div><div><a href="/task/release">发布任务</a></div>
+	  		  	  	  				</div>
+	  		  	  	  			</li>
+	  		  	  	  			<li>
+	  		  	  					<div class="liItems">
+	  		  	  	  					<div><i class="icon-group"></i></div><div><a href="/user/information">个人信息</a></div>
+	  		  	  	  				</div>
+	  		  	  	  			</li>
+	  		  	  	  			<li>
+	  		  	  					<div class="liItems">
+	  		  	  	  					<div><i class="icon-list-alt"></i></div><div><a href="/task/message?pageNum=1">任务消息</a></div>
+	  		  	  	  				</div>
+	  		  	  	  			</li>
+	  		  	  	  			<li>
+	  		  	  					<div class="liItems">
+	  		  	  	  					<div><i class="icon-angle-right"></i></div><div><a href="/task/releasebyuser?pageNum=1">查看任务</a></div>
+	  		  	  	  				</div>
+	  		  	  	  			</li>
+	  		  	  	  			<li>
+	  		  	  					<div class="liItems">
+	  		  	  	  					<div><i class="icon-angle-right"></i></div><div><a href="/bankaccount/bankaccount?pageNum=1">查看银行卡</a></div>
+	  		  	  	  				</div>
+	  		  	  	  			</li>
+	  		  	  	  			<li>
+	  		  	  					<div class="liItems">
+	  		  	  	  					<div><i class="icon-exchange"></i></div><div><a href="/transfer/view?pageNum=1">查看转账记录</a></div>
+	  		  	  	  				</div>
+	  		  	  	  			</li>
+	  		  	  	  			<li>
+	  		  	  					<div class="liItems">
+	  		  	  	  					<div><i class="icon-exchange"></i></div><div><a href="/transfer/recharge1">充值</a></div>
+	  		  	  	  				</div>
+	  		  	  	  			</li>
+	  		  	  	  			<li>
+	  		  	  					<div class="liItems">
+	  		  	  	  					<div><i class="icon-exchange"></i></div><div><a href="/transfer/withdrawal1">提现</a></div>
+	  		  	  	  				</div>
+	  		  	  	  			</li>
+	  		  	  	  		</ul>
+	  		  	  	  	</div>
+	  		  	  </aside>
+	  		  	  <main role="main" class="col-md-8 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+	  		  	  	<div class="container-fuild">
+	  		  	  		<div class="row">
+	  		  	  		  <section class="col-md-12 userTable">		  						  					
+	  		  				<article>
+	  		  					<section class="showInformation">
+	  		  						<h2>用户个人信息</h2>
+	  		  						<table class="table table-bordered table-hover table-striped">
+	  		  							<tr>
+	  		  								<td>序号</td>
+	  		  								<td>用户名</td>
+	  		  								<td>密码</td>
+	  		  								<td>手机号</td>
+	  		  								<td>姓名</td>
+	  		  								<td>性别</td>
+	  		  								<td>所在城市</td>
+	  		  								<td>生日</td>
+	  		  								<td>身份证号</td>
+	  		  							</tr>
+	  		  							<tr name="personMessage">
+					                        <td name="id">${person.id}</td>
+					                        <td name="userName"><c:out value="${person.username}"></c:out></td>
+					                        <td name="password"><c:out value="${person.password}"></c:out></td>
+					                        <td name="tel"><c:out value="${person.phonenumber}"></c:out></td>
+					                        <td name="name"><c:out value="${person.name}"></c:out></td>
+					                        <td name="sex"><c:out value="${person.sex}"></c:out></td>
+					                        <td name="city"><c:out value="${person.city}"></c:out></td>
+					                        <td name="birthday"><c:out value="${person.birthday}"></c:out></td>
+					                        <td name="idNumber"><c:out value="${person.idcard}"></c:out></td>
+					                    </tr>
+	  		  							<tr>
+	  		  								<td colspan="9"><button name="modifyMessage">修改信息</button></td>
+	  		  							</tr>
+	  		  						</table>
+	  		  					</section>
+	  		  					<section class="changeInformation">
+	  		  						<h2>修改用户信息</h2>
+	  		  						<form class="form-horizontal" action="/user/personinformation1" method="post">
+	  		  						  <div class="form-group">
+	  		  						    <label for="id" class="col-sm-2 control-label">序号</label>
+	  		  						    <div class="col-sm-10">
+	  		  						      <input type="text" class="form-control" id="id" disabled>
+	  		  						    </div>
+	  		  						  </div>
+	  		  						  <div class="form-group">
+	  		  						    <label for="userName" class="col-sm-2 control-label">用户名</label>
+	  		  						    <div class="col-sm-10">
+	  		  						      <input type="text" id="userName" name="username" class="form-control">
+	  		  						    </div>
+	  		  						  </div>
+	  		  						  <div class="form-group">
+	  		  						    <label for="password" class="col-sm-2 control-label">密码</label>
+	  		  						    <div class="col-sm-10">
+	  		  						      <input type="password" id="password" name="password" class="form-control">
+	  		  						    </div>
+	  		  						  </div>
+	  		  						  <div class="form-group">
+	  		  						    <label for="tel" class="col-sm-2 control-label">手机号码</label>
+	  		  						    <div class="col-sm-10">
+	  		  						      <input type="tel" id="tel" name="phonenumber" class="form-control">
+	  		  						    </div>
+	  		  						  </div>
+	  		  						  <div class="form-group">
+	  		  						    <label for="name" class="col-sm-2 control-label">姓名</label>
+	  		  						    <div class="col-sm-10">
+	  		  						      <input type="text" id="name" name="name" class="form-control">
+	  		  						    </div>
+	  		  						  </div>
+	  		  						  <div class="form-group">
+	  		  						    <label for="address" class="col-sm-2 control-label">性别</label>
+	  		  						    <div class="col-sm-10">
+	  		  						      <input type="radio" name="sex" id="male">男
+	  				                      <input type="radio" name="sex" id="female">女
+	  		  						    </div>
+	  		  						  </div>
+	  		  						  <div class="form-group">
+	  		  						    <label for="city" class="col-sm-2 control-label">所在城市</label>
+	  		  						    <div class="col-sm-10">
+	  		  						      <input type="text" id="city" name="city" class="form-control">
+	  		  						    </div>
+	  		  						  </div>
+	  		  						  <div class="form-group">
+	  		  						    <label for="datepicker" class="col-sm-2 control-label">生日</label>
+	  		  						    <div class="col-sm-10">
+	  		  						      <input type="date" id="datepicker" name="birthday" class="form-control">
+	  		  						    </div>
+	  		  						  </div>
+	  		  						  <div class="form-group">
+	  		  						    <label for="idNumber" class="col-sm-2 control-label">身份证号</label>
+	  		  						    <div class="col-sm-10">
+	  		  						      <input type="text" id="idNumber" name="idcard" class="form-control">
+	  		  						    </div>
+	  		  						  </div>
+	  		  						  <div class="form-group">
+	  		  						    <div class="col-sm-offset-2 col-sm-10">
+	  		  						      <button type="submit" class="btn btn-default">提交</button>
+	  		  						      <button name="showMessage" class="btn btn-default">查看信息</button>
+	  		  						    </div>
+	  		  						  </div>
+	  		  						</form>
+	  		  					</section>
+	  		  				</article>
+	  		  	  		  </section>
+	  		  	  		</div>
+	  		  	  		
+	  		  	  	</div>
+	  		  	  </main>
+	  		  </div>
+	  		  <footer role="contentinfo">
+	  		  	Copyright &copy; 2018.12.4 Design By 同城跑腿
+	  		  </footer>
+	  	  </div>
 
 	  
 	  <script src="js/modernizr.custom.93262.js"></script>
@@ -152,6 +247,7 @@
 	  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	  <script src="js/personinformation.js"></script>
 	  <script src="js/jquery-ui.js"></script>
+
 	  <!-- 使用velocity动画库 -->
 	  <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script> -->
 	  <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script> -->

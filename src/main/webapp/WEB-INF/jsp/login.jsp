@@ -49,7 +49,7 @@
     <header role="banner">
         <nav class="topNav">
             <div class="leftLogo">
-                <img src="img/logo.png" alt="logo">
+                <img src="${pageContext.request.contextPath }/img/logo.png" alt="logo">
                 <div>同城跑腿，您的贴心做事帮手</div>
             </div>
             <div>

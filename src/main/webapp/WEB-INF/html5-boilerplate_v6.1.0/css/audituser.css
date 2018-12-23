@@ -1,0 +1,53 @@
+/*---------------header--------------------*/
+
+
+
+
+
+
+/*------------------main------------------------*/
+
+.small{
+	text-align: center;
+}
+.userTable{
+	margin-top: 2em;
+	/*min-height: 100%;*/
+	padding: 2em 4em;
+	box-shadow: 0 0 1.5em rgba( 0, 204, 153,0.125);
+	border-radius: 1.5em;
+	min-width: 30em;
+	overflow-x: auto;
+
+}
+main .container-fuild .row{
+	border-bottom:none;
+}
+.page>.row,main,main>.container-fuild,main>.container-fuild>.row{
+	height: 100%;
+}
+main>.container-fuild>.row>section{
+	min-height: 80%;
+}
+.tableAndNav{
+	position: relative;
+	/*padding: 0 2em;*/
+	height: 100%;
+}
+section nav{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/*margin: 0 0 0 -4em;*/
+}
+/*----------------------aside----------------------*/
+.liItems a{
+	text-decoration: none;
+	color:#00CC66;
+}
+/*--------------footer----------------------------*/
+footer{
+	position: absolute;
+	bottom: 0;
+	width:100%;
+}

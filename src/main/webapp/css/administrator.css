@@ -1,0 +1,184 @@
+li{
+	list-style-type: none;
+}
+body,html,.page{
+	height: 100%;
+}
+/*---------------header------------------*/
+header{
+	max-height: 4em;
+	background-color:white ;
+	position: fixed;
+	top: 0;
+	/*margin: 0 auto;*/
+	width: 100%;
+	z-index: 2000;
+	box-shadow: 0 0.25em 1em rgba( 0, 204, 102,0.15);
+
+}
+.topNav{
+	width: 80%;
+	margin: 0 auto;
+	height: inherit;
+	display: flex;
+	flex-direction: row-reverse;
+	/*border-bottom: 1px solid #003333;*/
+	/*align-items: center;*/
+
+}
+.openSideBar{
+	cursor: pointer;
+}
+.topNav img{
+	max-height: 4em;
+}
+.topNav a{
+	margin: 0 0.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 6em;
+}
+
+.topNav a{
+	height: inherit;
+	color:#00CC66 ;
+	/*font-weight: 600;*/
+	font-size: 1.25em;
+	transition: color .5s ease;
+}
+.topNav a:hover{
+	color:#00CC66;
+	text-decoration: none;
+}
+.topNav a:visited,.topNav a:active,.topNav a:focus{
+	text-decoration: none;
+}
+
+.topNav .lastNavItem{
+	margin-right: auto;
+}
+
+
+/*------------------main----------------------*/
+main{
+	padding-top: 4em;
+}
+main .container-fuild .row{
+	margin-bottom: 1em;
+	border-bottom: 1px solid #f1f1f1;
+}
+tfoot{
+	text-align:center;
+	letter-spacing: 0.25em;
+}
+tfoot:hover{
+	background-color: #f1f1f1;
+}
+tfoot a,tfoot a:hover,tfoot a:active,tfoot a:link,tfoot a:visited{
+	color: #00CC66;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+}
+
+.smallTopNav{
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: 1px solid #f1f1f1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color:#00CC66;
+}
+.smallTopNav img{
+	max-height: 4em;
+}
+.tableDiv1,.tableDiv,.tableDiv2,.tableDiv3{
+	margin: 1em;
+	background-color:#fffcfc;
+	border-radius: 2em;
+	padding: 1em 3em;
+	color:#e64b4b;
+	overflow: auto;
+
+}
+.tableDiv{
+	background-color:#fbfffc ;
+	color: #02aa38;
+}
+.tableDiv2{
+	background-color:#9be4ff1a ;
+	color: #0080b8;
+}
+.tableDiv3{
+	background-color: #fbffb01a;
+	color: #bab540;
+}
+.tableDiv1 a,.tableDiv1 a:hover,.tableDiv1 a:active,.tableDiv1 a:link,.tableDiv1 a:visited{
+	color: #e64b4b;
+}
+.tableDiv2 a,.tableDiv2 a:hover,.tableDiv2 a:active,.tableDiv2 a:link,.tableDiv2 a:visited{
+	color: #0080b8;
+}
+.tableDiv3 a,.tableDiv3 a:hover,.tableDiv3 a:active,.tableDiv3 a:link,.tableDiv3 a:visited{
+	color: #bab540;
+}
+/*-----------------sidebar---------------------*/
+
+aside{
+	width: 20%;
+	min-width: 226px;
+	margin-right: 80%;
+	background-color: #003333;
+	box-shadow: 1.5em 0.5em 1.5em #f0f9f5;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top:4em;
+}
+aside .sideNav ul{
+	padding: 0 2em;
+	font-size: 1.25em;
+	color: #00FF99;
+}
+aside .sideNav ul .liItems{
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	width: inherit;
+
+	max-height: 2em;
+	margin-top: 1em;
+}
+aside .sideNav ul li:hover{
+	border-left: 0.15em solid #00CC66;
+	cursor: pointer;
+}
+aside .sideNav ul li i{
+	margin-top: 0.2em;
+	margin-right: 1em;
+	/*display: block;*/
+	/*margin-left: auto;*/
+	/*height: 1em;*/
+	/*vertical-align: middle;*/
+}
+aside .sideNav ul li p{
+	/*vertical-align: middle;*/
+	letter-spacing: 0.5em;
+	/*height: 1em;*/
+}
+aside .sideNav ul li span{
+	margin-left: auto;
+}
+.liItems div{
+	padding: 0.15em 0;
+}
+.showAside{
+	background-color: white;
+	z-index: 6000;
+}
+/*----------------footer----------------------*/
+footer{
+	text-align:center;
+}
