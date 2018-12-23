@@ -1,5 +1,5 @@
 $(function () {
-	 $( "#datepicker" ).datepicker();
+
 	var $tableItems= $("[name='personMessage']").children();
 	// alert($tableMessage.eq(0).html());
 	var $table = $(".showInformation");
@@ -19,9 +19,18 @@ $(function () {
 	else {
 		$("#male").attr("checked",true);
 	}
-	
 	$("#city").val($tableItems.eq(6).html());
-	$("#datepicker").val($tableItems.eq(7).html());
+
+	var time = $tableItems.eq(7).html().toString();
+	$('#datepicker').datepicker({
+        defaultDate: "+1w",
+        dateFormat: 'yy-mm-dd',
+        minDate: '+0',
+    }); 
+
+	$( "#datepicker" ).datepicker('setDate',new Date(time));
+
+	// $("#datepicker").val();
 	$("#idNumber").val($tableItems.eq(8).html());
 	$modifyMessageButton.on('click', function(event) {
 		event.preventDefault();

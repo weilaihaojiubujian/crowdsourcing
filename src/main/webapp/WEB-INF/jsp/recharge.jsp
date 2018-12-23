@@ -142,7 +142,7 @@
 		  						</div>
 		  					    <div class="form-group">
 		  					      <div class="col-sm-offset-2 col-sm-10">
-		  					        <button type="submit" class="btn btn-default">充值</button>
+									  <input type="submit" class="btn btn-default" value="充值">
 		  					      </div>
 		  					    </div>
 		  					</form>
