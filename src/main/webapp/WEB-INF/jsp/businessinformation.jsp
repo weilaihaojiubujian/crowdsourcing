@@ -158,7 +158,8 @@
                                         <td name="headidcard"><c:out value="${business.headidcard}"></c:out></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="8"><button name="modifyMessage">修改信息</button></td>
+                                        <td colspan="4"><button name="modifyMessage">修改信息</button></td>
+                                        <td colspan="4"><a href="/user/updatepassword1">修改密码</a></td>
                                     </tr>
                                 </table>
                             </section>
@@ -175,12 +176,6 @@
                                     <label for="userName" class="col-sm-2 control-label">用户名</label>
                                     <div class="col-sm-10">
                                       <input type="text" id="userName" name="username" class="form-control">
-                                    </div>
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="password" class="col-sm-2 control-label">密码</label>
-                                    <div class="col-sm-10">
-                                      <input type="password" id="password" name="password" class="form-control">
                                     </div>
                                   </div>
                                   <div class="form-group">

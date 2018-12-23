@@ -64,6 +64,12 @@ public class UserController {
 
     }
 
+    @RequestMapping(value = "/updatepassword1",method = RequestMethod.GET)
+    public String  updatepassword1(){
+        return "updatepassword";
+
+    }
+
 
     @RequestMapping(value = "/login3",method = RequestMethod.GET)
     public String login3(){
@@ -264,6 +270,7 @@ public class UserController {
             else
             {
                 Person q=userinformationService.selectpeopleinformation(uid);
+                System.out.println("身份"+q);
                 model.addAttribute("person",q);
                 return "forward:/user/personinformation";
             }
@@ -365,7 +372,7 @@ public class UserController {
         User user= (User) session.getAttribute("user");
         int uid=user.getId();
         String username = request.getParameter("username");
-        String password = request.getParameter("password");
+//        String password = request.getParameter("password");
 
         String phonenumber= request.getParameter("phonenumber");
 
@@ -384,7 +391,7 @@ public class UserController {
         q.setCity(city);
         q.setId(uid);
         q.setUsername(username);
-        q.setPassword(password);
+//        q.setPassword(password);
         q.setPhonenumber(phonenumber);
         q.setName(name);
         q.setSex(sex);
@@ -403,7 +410,7 @@ public class UserController {
         User user= (User) session.getAttribute("user");
         int uid=user.getId();
         String username = request.getParameter("username");
-        String password = request.getParameter("password");
+
 
         String phonenumber= request.getParameter("phonenumber");
 
@@ -419,12 +426,34 @@ public class UserController {
         b.setHeadname(headname);
         b.setName(name);
         b.setUsername(username);
-        b.setPassword(password);
         b.setPhonenumber(phonenumber);
         b.setId(uid);
 
         log.info("UserController"+"商家用户更新个人信息={}", b);
         boolean i=userService.updateBusiness(b);
+
+
+        return "redirect:/user/information";
+
+
+    }
+
+
+    @RequestMapping(value = "/updatepassword",method = RequestMethod.POST)
+    public String updatepassword(HttpServletRequest request, HttpSession session) throws ParseException {
+        User user= (User) session.getAttribute("user");
+        int uid=user.getId();
+
+        String password = request.getParameter("password");
+
+
+        Person q=new Person();
+        q.setId(uid);
+
+        q.setPassword(password);
+
+        log.info("UserController"+"用户更新密码={}", q);
+        boolean i=userService.updateUser(q);
 
 
         return "redirect:/user/information";
