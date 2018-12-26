@@ -41,6 +41,18 @@
     <!-- 悬浮效果 -->
     <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <!-- 动画库 -->
+      <script>
+           var a="${prompt}";
+           if(a!=null)
+           {
+              alert(a);
+           }
+           else {
+               alert("查看身份信息失败");
+           }
+
+
+      </script>
     
   </head>
 

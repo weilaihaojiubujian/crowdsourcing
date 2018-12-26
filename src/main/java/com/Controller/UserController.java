@@ -272,6 +272,7 @@ public class UserController {
                 Person q=userinformationService.selectpeopleinformation(uid);
                 System.out.println("身份"+q);
                 model.addAttribute("person",q);
+                model.addAttribute("prompt", "查看身份信息成功");
                 return "forward:/user/personinformation";
             }
 
