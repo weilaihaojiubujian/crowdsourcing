@@ -1,4 +1,6 @@
 $(function () {	
+	$('.hiddenInformation').hide();
+	$('.hiddenMoneyInformation').hide();
 	function showSideBar() {		
 				if ($('aside').hasClass('hideAside')) {
 					// alert("10");
@@ -23,5 +25,28 @@ $(function () {
 		if($('aside').hasClass('showAside')){
 			$('aside').removeClass('showAside').addClass('hideAside hidden-xs hidden-sm');
 		}
+	});
+	$('.personInformation').on('click', function(event) {
+		// event.preventDefault();
+		$('.changeI').toggle(function () {
+			$('.changeI').addClass('icon-angle-down').removeClass('icon-angle-right');
+		}),
+		function () {
+			$('.changeI').addClass('icon-angle-right').removeClass('icon-angle-down');	
+		}
+
+		$('.hiddenInformation').slideToggle();
+	});
+	
+	$('.moneyInformation').on('click', function(event) {
+		// event.preventDefault();
+		$('.changei').toggle(function () {
+			$('.changei').addClass('icon-angle-down').removeClass('icon-angle-right');
+		}),
+		function () {
+			$('.changei').addClass('icon-angle-right').removeClass('icon-angle-down');	
+		}
+
+		$('.hiddenMoneyInformation').slideToggle();
 	});
 });

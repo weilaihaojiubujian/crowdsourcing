@@ -66,7 +66,8 @@ main{
 }
 main .container-fuild .row{
 	margin-bottom: 1em;
-	border-bottom: 1px solid #f1f1f1;
+	/*border-bottom: 1px solid #f1f1f1;*/
+
 }
 tfoot{
 	text-align:center;
@@ -81,7 +82,10 @@ tfoot a,tfoot a:hover,tfoot a:active,tfoot a:link,tfoot a:visited{
 	display: block;
 	width: 100%;
 }
+.row{
+	background-color: #f9f9f9;
 
+}
 .smallTopNav{
 	width: 80%;
 	margin: 0 auto;
@@ -94,35 +98,51 @@ tfoot a,tfoot a:hover,tfoot a:active,tfoot a:link,tfoot a:visited{
 .smallTopNav img{
 	max-height: 4em;
 }
-.tableDiv1,.tableDiv,.tableDiv2,.tableDiv3{
-	margin: 1em;
-	background-color:#fffcfc;
-	border-radius: 2em;
-	padding: 1em 3em;
-	color:#e64b4b;
-	overflow: auto;
+.topH{
+	height: 6em;
+	background-color: #00CC66;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.imgDiv{
+	border-radius: 0.2em;
+	border: 1px solid #f1f1f1;
+	background-color: white;
+}
+.adp{
+	width: 100%;	
+}
+
+.desDiv{
+	display: flex;
+	align-items: space-between;
+	justify-content: space-between;
+	flex-wrap: wrap;
 
 }
-.tableDiv{
-	background-color:#fbfffc ;
-	color: #02aa38;
+.desDiv>div{
+	background-color: white;
+	height: 10em;
+	border-radius: 0.75em;
+	border:1px solid #f1f1f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.tableDiv2{
-	background-color:#9be4ff1a ;
-	color: #0080b8;
+.desDiv .msgDiv{
+	margin-right: 1em;
 }
-.tableDiv3{
-	background-color: #fbffb01a;
-	color: #bab540;
+.desDiv>div>div{
+	color: #308D68;
 }
-.tableDiv1 a,.tableDiv1 a:hover,.tableDiv1 a:active,.tableDiv1 a:link,.tableDiv1 a:visited{
-	color: #e64b4b;
+.desDiv>div i{
+	color: #308D68;
+
 }
-.tableDiv2 a,.tableDiv2 a:hover,.tableDiv2 a:active,.tableDiv2 a:link,.tableDiv2 a:visited{
-	color: #0080b8;
-}
-.tableDiv3 a,.tableDiv3 a:hover,.tableDiv3 a:active,.tableDiv3 a:link,.tableDiv3 a:visited{
-	color: #bab540;
+.fakeItem:hover{
+	border: 1px solid #308D68;
 }
 /*-----------------sidebar---------------------*/
 
@@ -144,7 +164,7 @@ aside .sideNav ul{
 }
 aside .sideNav ul .liItems{
 	display:flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-content: center;
 	width: inherit;
 
@@ -152,7 +172,7 @@ aside .sideNav ul .liItems{
 	margin-top: 1em;
 }
 aside .sideNav ul li:hover{
-	border-left: 0.15em solid #00CC66;
+	border-right: 0.15em solid #00CC66;
 	cursor: pointer;
 }
 aside .sideNav ul li i{
@@ -177,6 +197,11 @@ aside .sideNav ul li span{
 .showAside{
 	background-color: white;
 	z-index: 6000;
+}
+.alert{
+	position: absolute;
+	bottom: 10%;
+	right:-60%;
 }
 /*----------------footer----------------------*/
 footer{

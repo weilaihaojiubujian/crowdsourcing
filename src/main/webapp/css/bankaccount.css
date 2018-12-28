@@ -16,8 +16,16 @@ main{
 	height: auto;
 }
 
+.hiddenCardNumber{
+	visibility: hidden;
+}
 
+main .container-fuild article section{
+	padding:2.5em 2em;
+	border-bottom: 1px solid black;
+	min-height: 20em;
+}
+main .container-fuild article section h2{
+	border-bottom: 1px solid #f1f1f1;
 
-
-
- /*---------------------footer---------------------*/
+ /*---------------------footer---------------------*/}

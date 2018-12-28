@@ -91,22 +91,22 @@
 		  	  		<ul>
 		  	  			<li>
 		  	  				<div class="liItems">
-		  	  					<div><i class="icon-user"></i></div><div><p>审核用户</p></div>
+		  	  					<div><i class="icon-user"></i></div><div><p>审核用户</p></div><div><i class="icon-angle-right invisible"></i></div>
 		  	  				</div>
 		  	  			</li>
 		  	  			<li>
 		  					<div class="liItems">
-		  	  					<div><i class="icon-group"></i></div><div><p>审核商家</p></div>
+		  	  					<div><i class="icon-group"></i></div><div><p>审核商家</p></div><div><i class="icon-angle-right invisible"></i></div>
 		  	  				</div>
 		  	  			</li>
 		  	  			<li>
 		  					<div class="liItems">
-		  	  					<div><i class="icon-list-alt"></i></div><div><p>审核任务</p></div>
+		  	  					<div><i class="icon-list-alt"></i></div><div><p>审核任务</p></div><div><i class="icon-angle-right invisible"></i></div>
 		  	  				</div>
 		  	  			</li>
 		  	  			<li>
 		  					<div class="liItems">
-		  	  					<div><i class="icon-minus-sign"></i></div><div><p>管理用户</p></div>
+		  	  					<div><i class="icon-minus-sign"></i></div><div><p>管理用户</p></div><div><i class="icon-angle-right invisible"></i></div>
 		  	  				</div>
 		  	  			</li>
 		  	  		</ul>
@@ -115,6 +115,14 @@
 		  	  <main role="main" class="col-md-8 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 		  	  	<div class="container-fuild">
 		  	  		<div class="row">
+		  	  			<div class="col-md-12">
+		  	  				<ol class="breadcrumb">
+		  	  				  <li><a href="#">企业管理</a></li>
+		  	  				  <li class="active">审核注册</li>
+		  	  				</ol>
+		  	  			</div>
+		  	  		</div>
+		  	  		<div class="row tableDiv">
 		  	  		  <section class="col-md-12 userTable">		  						  					
 		  				<div class="tableAndNav">
 		  					<table class="table table-bordered table-hover table-striped">
@@ -140,7 +148,7 @@
 	  					                <td><c:out value="${m.address}"></c:out></td>
 	  					                <td><c:out value="${m.headname}"></c:out></td>
 	  					                <td><c:out value="${m.headidcard}"></c:out></td>
-	  					                <td><a href="/administrator/audit/${m.id}"   ><input type="button" name="审核通过" value="审核通过"></a></td>
+	  					                <td><a href="/administrator/audit/${m.id}"><i class="icon-ok"></i></td>
 	  					            </tr><br>
 	  					        </c:forEach>
 	  					        
@@ -166,9 +174,9 @@
 		  	  	</div>
 		  	  </main>
 		  </div>
-		  <footer role="contentinfo">
+		  <!-- <footer role="contentinfo">
 		  	Copyright &copy; 2018.12.4 Design By 同城跑腿
-		  </footer>
+		  </footer> -->
 	  </div>
 
 	  

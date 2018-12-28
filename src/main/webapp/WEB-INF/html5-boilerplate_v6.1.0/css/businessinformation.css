@@ -1,0 +1,17 @@
+
+.personHeader{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.personHeader div{
+	width: 10%;
+}
+main .container-fuild .row{
+	border-bottom: 1px solid #f1f1f1;
+}
+.buttonDiv{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}

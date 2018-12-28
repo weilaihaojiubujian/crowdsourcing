@@ -124,6 +124,7 @@ html,body{
 	margin: 2%;
 	display: flex;
 	box-shadow: 0 0 2em #f5f5f5;
+	min-height: 17em;
 	/*margin:2em;*/
 }
 .introduce-2 section .img1{
@@ -139,11 +140,15 @@ html,body{
 	background-image: url("../img/road.png");
 }
 .introduce-2 section .img1,.introduce-2 section .img2,.introduce-2 section .img3,.introduce-2 section .img4{
-	width:100%;
+	width:40%;
 	background-size: cover;
 }
 .introduce-2 section div+div{
 	padding: 0 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 /*-------------footer--------------*/
 footer .contact{

@@ -1,6 +1,6 @@
 $(function () {
 	 // $( "#datepicker" ).datepicker();
-	var $tableItems= $("[name='businessMessage']").children();
+	var $tableItems= $(".businessInformation");
 	// alert($tableMessage.eq(0).html());
 	var $table = $(".showInformation");
 	var $form = $(".changeInformation");
@@ -9,15 +9,15 @@ $(function () {
 	$table.hide().slideDown();
 	$form.hide();
 	$("#id").val($tableItems.eq(0).html());
-	$("#userName").val($tableItems.eq(1).html());
+	$("#userName").val($tableItems.eq(2).html());
 	// $("#password").val($tableItems.eq(2).html());
 	$("#tel").val($tableItems.eq(3).html());
-	$("#name").val($tableItems.eq(4).html());
-	$("#address").val($tableItems.eq(5).html());
+	$("#name").val($tableItems.eq(1).html());
+	$("#address").val($tableItems.eq(4).html());
 	
 	
-	$("#headname").val($tableItems.eq(6).html());
-	$("#headidcard").val($tableItems.eq(7).html());
+	$("#headname").val($tableItems.eq(5).html());
+	$("#headidcard").val($tableItems.eq(6).html());
 	$modifyMessageButton.on('click', function(event) {
 		event.preventDefault();
 		$table.slideUp();

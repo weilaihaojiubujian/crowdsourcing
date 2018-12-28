@@ -49,17 +49,17 @@
     <header role="banner">
         <nav class="topNav">
             <div class="leftLogo">
-                <img src="img/logo.png" alt="logo">
+                <img src="${pageContext.request.contextPath }/img/logo.png" alt="logo">
                 <div>同城跑腿，您的贴心做事帮手</div>
             </div>
             <div>
-                <a href="/user/main">主页</a>
+                <a href="main.html">主页</a>
             </div>
             <div>
-                <a href="/user/login3">登陆</a>
+                <a href="login.html">登陆</a>
             </div>
             <div>
-                <a href="/user/regist">注册</a>
+                <a href="personRegister.html">注册</a>
             </div>
         </nav>
     </header>
@@ -75,7 +75,7 @@
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="${pageContext.request.contextPath }/img/bk1.png" alt="First slide">
+                        <img src="${pageContext.request.contextPath }/img/bk5.png" alt="First slide">
                     </div>
                     <div class="item">
                         <img src="${pageContext.request.contextPath }/img/bk2.png" alt="Second slide">
@@ -130,35 +130,31 @@
             <section>
                 <div class="img1"></div>
                 <div class="right-text">
-                    <h3>帮您运送</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga vitae neque saepe, laboriosam temporibus deleniti quaerat facere sunt qui dolor doloremque vel cupiditate repellat cumque nesciunt tenetur assumenda odit.
-                    </p>
+                    <h3>天气太冷，不想出门？</h3>
+
                 </div>
             </section>
             <section>
                 <div class="img2"></div>
 
                 <div class="right-text">
-                    <h3>帮您运送</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga vitae neque saepe, laboriosam temporibus deleniti quaerat facere sunt qui dolor doloremque vel cupiditate repellat cumque nesciunt tenetur assumenda odit.
-                    </p>
+                    <h3> 一时心急，忘带东西？</h3>
+
                 </div>
             </section>
             <section>
                 <div class="img3"></div>
                 <div class="right-text">
-                    <h3>帮您运送</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga vitae neque saepe, laboriosam temporibus deleniti quaerat facere sunt qui dolor doloremque vel cupiditate repellat cumque nesciunt tenetur assumenda odit.
-                    </p>
+                    <h3>工作繁忙，没空排队？</h3>
+
                 </div>
             </section>
             <section>
                 <div class="img4"></div>
 
                 <div class="right-text">
-                    <h3>帮您运送</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga vitae neque saepe, laboriosam temporibus deleniti quaerat facere sunt qui dolor doloremque vel cupiditate repellat cumque nesciunt tenetur assumenda odit.
-                    </p>
+                    <h3>同城跑腿，包君满意。</h3>
+
                 </div>
             </section>
         </article>
@@ -177,9 +173,9 @@
             <section class="contactItem2">
                 <h2>Special Thanks</h2>
                 <p>
-                    本项目由 浙江科技学院软工 161 汪宏斌
-                    浙江科技学院 软工161 张钰恺
-                    浙江科技学院 软工162 单家颖
+                    本项目由 浙江科技学院软工 161 汪宏斌 <br>
+                    浙江科技学院 软工161 张钰恺<br>
+                    浙江科技学院 软工162 单家颖<br>
                     合作完成
                 </p>
             </section>
@@ -211,8 +207,9 @@
 <!-- 使用velocity动画库 -->
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script> -->
-<%--<script src="${pageContext.request.contextPath }/js/login.js"></script>--%>
+<!-- <script src="js/login.js"></script> -->
 </body>
 
 </html>
+
 

@@ -1,6 +1,6 @@
 $(function () {
 
-	var $tableItems= $("[name='personMessage']").children();
+	var $tableItems= $(".personInformation");
 	// alert($tableMessage.eq(0).html());
 	var $table = $(".showInformation");
 	var $form = $(".changeInformation");
@@ -11,17 +11,17 @@ $(function () {
 	$("#id").val($tableItems.eq(0).html());
 	$("#userName").val($tableItems.eq(1).html());
 	// $("#password").val($tableItems.eq(2).html());
-	$("#tel").val($tableItems.eq(3).html());
-	$("#name").val($tableItems.eq(4).html());
-	if ($tableItems.eq(5).html()=="女") {
+	$("#tel").val($tableItems.eq(4).html());
+	$("#name").val($tableItems.eq(2).html());
+	if ($tableItems.eq(3).html()=="女") {
 		$("#female").attr("checked",true);
 	}
 	else {
 		$("#male").attr("checked",true);
 	}
-	$("#city").val($tableItems.eq(6).html());
+	$("#city").val($tableItems.eq(5).html());
 
-	var time = $tableItems.eq(7).html().toString();
+	var time = $tableItems.eq(6).html().toString();
 	$('#datepicker').datepicker({
         defaultDate: "+1w",
         dateFormat: 'yy-mm-dd',
@@ -30,8 +30,8 @@ $(function () {
 
 	$( "#datepicker" ).datepicker('setDate',new Date(time));
 
-	// $("#datepicker").val();
-	$("#idNumber").val($tableItems.eq(8).html());
+	// // $("#datepicker").val();
+	$("#idNumber").val($tableItems.eq(7).html());
 	$modifyMessageButton.on('click', function(event) {
 		event.preventDefault();
 		$table.slideUp();
@@ -39,8 +39,6 @@ $(function () {
 	});
 	$showMessageButton.on('click', function(event) {
 		event.preventDefault();
-		
-
 		$form.slideUp();
 		$table.slideDown();
 	});
