@@ -21,7 +21,7 @@ $(function () {
 	});	
 	$('main').on('click', function(event) {
 		// alert("focus");
-		event.preventDefault();
+		// event.preventDefault();
 		if($('aside').hasClass('showAside')){
 			$('aside').removeClass('showAside').addClass('hideAside hidden-xs hidden-sm');
 		}

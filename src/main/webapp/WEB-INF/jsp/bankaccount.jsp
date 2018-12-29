@@ -192,8 +192,7 @@
                 <section>
                     <h2>添加银行卡<small>添加新的银行卡至您的账户</small></h2>
                     <input type="button" name="添加银行卡" value="添加银行卡" class="addBankAccountButton button button-action button-rounded">
-                    <form action="/bankaccount/add" method="post" class="addBankAccount form-inline
-		  	  		        ">
+                    <form action="/bankaccount/add" method="post" class="addBankAccount form-inline">
                         <h4>请在下方输入您需要添加的银行卡号</h4>
                         <div class="form-group">
                             <input type="text" class="form-control" name="firstInput" maxlength="4">
