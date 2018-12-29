@@ -190,11 +190,11 @@ public class TransferController {
                 boolean y = userService.updateBusiness(b);
                 if (y == true) {
                     boolean j = transferService.updateState(id);
-                    m.addObject("prompt", "支付成功");
+                    m.addObject("prompt", "提现成功");
 
                 } else {
 
-                    m.addObject("prompt", "支付失败");
+                    m.addObject("prompt", "提现失败");
                     //接受任务失败
                 }
 
