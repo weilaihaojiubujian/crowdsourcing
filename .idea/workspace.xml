@@ -47,26 +47,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Dao/UseraddressDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Dao/UseraddressDaoTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Service/AuditServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Service/AuditServiceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/Service/TaskmessageServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/Service/TaskmessageServiceTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/already.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/already.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/auditbusiness.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/auditbusiness.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audittask.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audittask.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audituser.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audituser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/businessinformation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/businessinformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/deleteuser.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/deleteuser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recharge.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recharge.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/regist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/regist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registbusinessinformation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registbusinessinformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registpersoninformation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registpersoninformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/release.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/release.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/releasetaskbyuser.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/releasetaskbyuser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/transfer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/transfer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/updatepassword.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/updatepassword.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/withdrawal.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/withdrawal.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TaskDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TaskDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TaskmessageDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TaskmessageDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" />
@@ -111,103 +93,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="personinformation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp">
+      <file leaf-file-name="AdministratorController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/AdministratorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+            <state relative-caret-position="279">
+              <caret line="180" column="50" lean-forward="false" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="50" />
               <folding>
-                <marker date="1546088696731" expanded="true" signature="17773:17775" ph="..." />
+                <element signature="e#2138#2146#0" expanded="true" />
+                <element signature="e#2666#2676#0" expanded="true" />
+                <element signature="e#3274#3291#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recharge.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recharge.jsp">
+      <file leaf-file-name="AuditService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/AuditService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+            <state relative-caret-position="378">
+              <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regist.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/regist.jsp">
+      <file leaf-file-name="TaskController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-736">
-              <caret line="61" column="45" lean-forward="true" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+            <state relative-caret-position="394">
+              <caret line="243" column="28" lean-forward="false" selection-start-line="243" selection-start-column="28" selection-end-line="243" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registbusinessinformation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registbusinessinformation.jsp">
+      <file leaf-file-name="message.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="187" column="70" lean-forward="true" selection-start-line="187" selection-start-column="70" selection-end-line="187" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuditServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/AuditServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="93" column="40" lean-forward="false" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="70" column="17" lean-forward="false" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personinformation.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="228" column="98" lean-forward="true" selection-start-line="228" selection-start-column="98" selection-end-line="228" selection-end-column="98" />
+              <folding>
+                <marker date="1546092543577" expanded="true" signature="17793:17795" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="207" column="22" lean-forward="true" selection-start-line="207" selection-start-column="22" selection-end-line="207" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="administrator.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/administrator.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registpersoninformation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registpersoninformation.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="release.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/release.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="releasetaskbyuser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/releasetaskbyuser.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="transfer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/transfer.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updatepassword.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/updatepassword.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="withdrawal.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/withdrawal.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+              <caret line="75" column="57" lean-forward="false" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -274,12 +250,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/auditbusiness.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audittask.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audituser.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/businessinformation.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/deleteuser.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recharge.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registbusinessinformation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registpersoninformation.jsp" />
@@ -288,6 +261,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/transfer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/updatepassword.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/withdrawal.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp" />
       </list>
     </option>
   </component>
@@ -327,7 +303,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="498" />
     <option name="y" value="212" />
     <option name="width" value="974" />
@@ -488,7 +464,7 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/网上下载的项目/UDPChatAppEncryt-master/UDPChatAppEncryt-master" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27665442" />
@@ -884,7 +860,7 @@
       <workItem from="1545791604060" duration="1909000" />
       <workItem from="1545794469520" duration="3011000" />
       <workItem from="1546051797806" duration="2517000" />
-      <workItem from="1546068696517" duration="6756000" />
+      <workItem from="1546068696517" duration="10753000" />
     </task>
     <servers />
   </component>
@@ -921,7 +897,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="313407000" />
+    <option name="totallyTimeSpent" value="317404000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -933,7 +909,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1139,87 +1115,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/Personinformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-779">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2967">
-          <caret line="129" column="46" lean-forward="false" selection-start-line="129" selection-start-column="46" selection-end-line="129" selection-end-column="46" />
-          <folding>
-            <marker date="1545537681087" expanded="true" signature="625:743" ph="insert into user... " />
-            <marker date="1545537681087" expanded="true" signature="832:928" ph="select id,us... user" />
-            <marker date="1545537681087" expanded="true" signature="1045:1143" ph="select id,pa... user" />
-            <marker date="1545537681087" expanded="true" signature="1232:1355" ph="select id,us... user" />
-            <marker date="1545537681087" expanded="true" signature="1447:1559" ph="select id,us... user" />
-            <marker date="1545537681087" expanded="true" signature="1646:1800" ph="select u.id,... user" />
-            <marker date="1545537681087" expanded="true" signature="1887:2076" ph="select u.id,... user" />
-            <marker date="1545537681087" expanded="true" signature="2174:2343" ph="select u.id,... user" />
-            <marker date="1545537681087" expanded="true" signature="2435:2596" ph="select u.id,... user" />
-            <marker date="1545537681087" expanded="true" signature="2698:2874" ph="select u.id,... user" />
-            <marker date="1545537681087" expanded="true" signature="2948:2982" ph="select id fr... user" />
-            <marker date="1545537681087" expanded="true" signature="3039:4113" ph="update user " />
-            <marker date="1545537681087" expanded="true" signature="4173:5273" ph="update user " />
-            <marker date="1545537681087" expanded="true" signature="5334:5410" ph="update user " />
-            <marker date="1545537681087" expanded="true" signature="5465:5527" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/MessageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/BankaccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="42" column="69" lean-forward="false" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/AlipayController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2001">
-          <caret line="116" column="18" lean-forward="false" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/modernizr.custom.93262.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/personinformation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-371">
@@ -1232,22 +1127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TransferController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4393">
-          <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1331,42 +1210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3611">
-          <caret line="228" column="44" lean-forward="true" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/administrator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/AdministratorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1023">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="e#2138#2146#0" expanded="true" />
-            <element signature="e#2666#2676#0" expanded="true" />
-            <element signature="e#3274#3291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/administrator.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/alipaySuccess.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -1407,26 +1250,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/businessinformation.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="57" column="27" lean-forward="false" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1447,14 +1274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goPay.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1213">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1633">
@@ -1467,32 +1286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2323">
           <caret line="58" column="45" lean-forward="true" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-          <folding>
-            <marker date="1546088696731" expanded="true" signature="17773:17775" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recharge.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1529,22 +1322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/releasetaskbyuser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/transfer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/updatepassword.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1553,10 +1330,234 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/withdrawal.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/releasetaskbyuser.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
+          <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="64" column="26" lean-forward="false" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/TaskServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="100" column="52" lean-forward="false" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TaskDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="69" column="96" lean-forward="false" selection-start-line="69" selection-start-column="96" selection-end-line="69" selection-end-column="96" />
+          <folding>
+            <marker date="1544356034391" expanded="true" signature="483:575" ph="insert into task... " />
+            <marker date="1544356034391" expanded="true" signature="631:734" ph="update task " />
+            <marker date="1544356034391" expanded="true" signature="784:854" ph="update task " />
+            <marker date="1544356034391" expanded="true" signature="933:1003" ph="select uid,t... task" />
+            <marker date="1544356034391" expanded="true" signature="1089:1379" ph="select t.id,... taskmessage" />
+            <marker date="1544356034391" expanded="true" signature="1466:1741" ph="select t.id,... tasktype" />
+            <marker date="1544356034391" expanded="true" signature="1828:1925" ph="select uid,t... task" />
+            <marker date="1544356034391" expanded="true" signature="2020:2096" ph="select AVG(e... task" />
+            <marker date="1544356034391" expanded="true" signature="2183:2260" ph="select id,ui... task" />
+            <marker date="1544356034391" expanded="true" signature="2303:2342" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/TaskDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1656">
+          <caret line="165" column="37" lean-forward="false" selection-start-line="165" selection-start-column="37" selection-end-line="165" selection-end-column="37" />
+          <folding>
+            <marker date="1546091704404" expanded="true" signature="9954:10086" ph="..." />
+            <marker date="1546091704404" expanded="true" signature="10135:10250" ph="..." />
+            <marker date="1546091704404" expanded="true" signature="10299:10414" ph="..." />
+            <marker date="1546091704404" expanded="true" signature="10463:10578" ph="..." />
+            <marker date="1546091704404" expanded="true" signature="10781:10900" ph="..." />
+            <marker date="1546091704404" expanded="true" signature="11063:11245" ph="..." />
+            <marker date="1546091704404" expanded="false" signature="11178:11185" ph="×" />
+            <marker date="1546091704404" expanded="true" signature="11292:11348" ph="..." />
+            <marker date="1546091704404" expanded="false" signature="11308:11314" ph="©" />
+            <marker date="1546091704404" expanded="true" signature="11365:11575" ph="..." />
+            <marker date="1546091704404" expanded="true" signature="11408:11566" ph="{...}" />
+            <marker date="1546091704404" expanded="true" signature="11438:11466" ph="{...}" />
+            <marker date="1546091704404" expanded="true" signature="11499:11558" ph="{...}" />
+            <marker date="1546091704404" expanded="true" signature="12235:12391" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TransferController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-641">
+          <caret line="71" column="28" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/transfer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="219" column="34" lean-forward="false" selection-start-line="219" selection-start-column="34" selection-end-line="219" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goPay.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1213">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/withdrawal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2185">
           <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/administrator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recharge.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="168" column="8" lean-forward="false" selection-start-line="168" selection-start-column="8" selection-end-line="168" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/administrator.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="75" column="57" lean-forward="false" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/AuditService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/AuditServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="93" column="40" lean-forward="false" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1173">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1545537681087" expanded="true" signature="625:743" ph="insert into user... " />
+            <marker date="1545537681087" expanded="true" signature="832:928" ph="select id,us... user" />
+            <marker date="1545537681087" expanded="true" signature="1045:1143" ph="select id,pa... user" />
+            <marker date="1545537681087" expanded="true" signature="1232:1355" ph="select id,us... user" />
+            <marker date="1545537681087" expanded="true" signature="1447:1559" ph="select id,us... user" />
+            <marker date="1545537681087" expanded="true" signature="1646:1800" ph="select u.id,... user" />
+            <marker date="1545537681087" expanded="true" signature="1887:2076" ph="select u.id,... user" />
+            <marker date="1545537681087" expanded="true" signature="2174:2343" ph="select u.id,... user" />
+            <marker date="1545537681087" expanded="true" signature="2435:2596" ph="select u.id,... user" />
+            <marker date="1545537681087" expanded="true" signature="2698:2874" ph="select u.id,... user" />
+            <marker date="1545537681087" expanded="true" signature="2948:2982" ph="select id fr... user" />
+            <marker date="1545537681087" expanded="true" signature="3039:4113" ph="update user " />
+            <marker date="1545537681087" expanded="true" signature="4173:5273" ph="update user " />
+            <marker date="1545537681087" expanded="true" signature="5334:5410" ph="update user " />
+            <marker date="1545537681087" expanded="true" signature="5465:5527" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="70" column="17" lean-forward="false" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personinformation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="228" column="98" lean-forward="true" selection-start-line="228" selection-start-column="98" selection-end-line="228" selection-end-column="98" />
+          <folding>
+            <marker date="1546092543577" expanded="true" signature="17793:17795" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="187" column="70" lean-forward="true" selection-start-line="187" selection-start-column="70" selection-end-line="187" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3611">
+          <caret line="228" column="44" lean-forward="true" selection-start-line="228" selection-start-column="44" selection-end-line="228" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/AdministratorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="180" column="50" lean-forward="false" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="50" />
+          <folding>
+            <element signature="e#2138#2146#0" expanded="true" />
+            <element signature="e#2666#2676#0" expanded="true" />
+            <element signature="e#3274#3291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="243" column="28" lean-forward="false" selection-start-line="243" selection-start-column="28" selection-end-line="243" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="207" column="22" lean-forward="true" selection-start-line="207" selection-start-column="22" selection-end-line="207" selection-end-column="22" />
           <folding />
         </state>
       </provider>

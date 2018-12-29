@@ -225,8 +225,8 @@
                                     <div class="form-group">
                                         <label for="sex" class="col-sm-2 control-label">性别</label>
                                         <div class="col-sm-10">
-                                            <input type="radio" name="sex" id="male">男
-                                            <input type="radio" name="sex" id="female">女
+                                            <input type="radio" name="sex" id="male" value="男">男
+                                            <input type="radio" name="sex" id="female" value="女">女
                                         </div>
                                     </div>
                                     <div class="form-group">
