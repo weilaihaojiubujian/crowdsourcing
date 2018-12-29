@@ -260,7 +260,7 @@
 <!-- bootstrap轮播插件 与bootstrap.js连用 -->
 <script>
     var a="${prompt}";
-    if(a!=null)
+    if(a!="")
     {
         $('.alert').animate({
                 right : 0},
