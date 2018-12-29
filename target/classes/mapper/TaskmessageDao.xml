@@ -28,25 +28,27 @@
 
   update
   taskmessage
-  <set>
-   <if test="id !=null">
-    id = #{id},
-   </if>
-   <if test="state !=null ">
-    state = #{state}
-   </if>
+  set
+    state =1
 
-  </set>
   where
   id=#{id} and state!=1
 
  </update>
 
 
+ <select id="selectTaskinformation" resultType="com.Dto.Taskinformation">
 
- <select id="selectTaskmessage" resultMap="Taskmessage" parameterType="int">
+  select t.id,uid,ttid,pmid,t.name,message,startingaddress,purposeaddress,weight,tt.name as ttname ,pm.name as pmname  from taskmessage t,tasktype tt,pricingmodel pm where state=0 and t.ttid=tt.id and t.pmid=pm.id
 
-  select id,uid,ttid,pmid,name,message,startingaddress,purposeaddress,weight from taskmessage where id=#{id}
+
+ </select>
+
+ <select id="selectTaskmessage" resultType="com.Dto.Taskinformation" parameterType="int">
+
+  select t.id,uid,ttid,pmid,t.name,message,startingaddress,purposeaddress,weight,tt.name as ttname ,pm.name as pmname,x(t.startingposition) as startinglocationX,y(t.startingposition) as startinglocationY,x(t.purposeposition) as purposelocationX,y(t.purposeposition) as purposelocationY,st_distance_sphere(point(x(t.startingposition),y(t.startingposition)),point(x(t.purposeposition),y(t.purposeposition))) as distance
+  from taskmessage t,tasktype tt,pricingmodel pm
+  where  t.ttid=tt.id and t.pmid=pm.id and t.id=#{id}
 
 
  </select>

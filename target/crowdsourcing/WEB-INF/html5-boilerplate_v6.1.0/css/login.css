@@ -1,22 +1,65 @@
 html,body{
-	height: 100%;
+	min-height: 100%;
+	min-width: 85em;
+}
+@font-face{
+	font-family: "chanyu";
+	src:url('../font/chanyu.ttf');
 }
 body{
-	background-image: url("../img/Login.png");
+	background-image: url("../img/bk.png");
 	/*visibility: hidden;*/
 	background-size: cover;
 }
-
 /*-------------header--------------*/
-header{
-	font-size: small;
-	font-weight: 400;
+.topNav{
+	height: 4em;
+	display: flex;
+	background: white;
+	align-items: center;
+	padding: 0 10%;
+	position: fixed;
+	box-shadow: 0 0 2em #f1f1f1;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+}
+.leftLogo{
+	margin-right: auto;
+	margin-left: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.leftLogo div{
+	font-family: "chanyu";
+	margin-left: 2em;
+	letter-spacing: 0.5em;
+}
+.topNav img{
+	height: 2.5em;
+	/*padding-top: 0.75em;*/
+}
+.topNav div+div{
+	height: inherit;
+	width: 7%;
+
+}
+.topNav div a{
+	display: block;
+	height: inherit;
+	color: #009900;
+	text-decoration: none;
+	text-align:center;
+	transition: background-color  0.5s ease;
+	min-width: 6em;
+	padding: 1.2em 2em;
+
+}
+.topNav div a:hover{
+	background-color: #009900;
 	color: white;
 }
-
-
-
-
 
 
 /*-------------mian--------------*/
@@ -67,7 +110,7 @@ article{
 .loginText{
 	height: 30em;
 	
-	width: 50%;
+	width: 25em;
 	/*height: inherit;*/
 	background-color: rgba(255,255,255,0.8);
 	box-shadow:0 0 0.5em #c1c1c1; 
@@ -77,7 +120,7 @@ article{
 	top: 8em;*/
 	/*vertical-align: middle;*/
 	margin: auto;
-	/*margin-top: 5em;*/
+	margin-top: 5em;
 	padding: 1em 2em;
 	/*border: 1px solid black;*/
 }
@@ -91,7 +134,7 @@ article{
 }
 .loginLogo{
 	/*width: inherit;*/
-	height: 30%;
+	height: 25%;
 	/*border: 1px solid black;*/
 }
 .administratorLogin,.companyLogin,.personLogin{
@@ -165,9 +208,13 @@ input:focus{
 /*-------------footer--------------*/
 
 footer{
+	width: 100%;
+	height: 3em;
 	position: absolute;
 	bottom: 0;
 	font-size: small;
-	font-weight: 700;
-	color: white;
+	font-weight: 300;
+	background: white;
+	text-align:center;
+	line-height: 3em;
 }

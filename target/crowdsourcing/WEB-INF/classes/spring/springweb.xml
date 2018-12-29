@@ -11,7 +11,7 @@
        http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
 
 
-    <mvc:view-controller path="/" view-name="login"/>
+    <mvc:view-controller path="/" view-name="mainPage"/>
 
     <context:component-scan base-package="com.Controller"/>
 

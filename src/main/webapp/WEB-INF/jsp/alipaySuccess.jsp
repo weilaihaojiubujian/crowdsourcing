@@ -12,6 +12,7 @@
     <meta charset="utf-8">
     <title>成功支付</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="5;url=/user/login1">
     <style>
 
         * {

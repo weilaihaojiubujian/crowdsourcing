@@ -256,17 +256,7 @@
 
 
 
-<script>
-    var a="${prompt}";
-    if(a!="")
-    {
-        $('.alert').animate({
-                right : 0},
-            'slow', function() {
-                $('.alert strong').text(a);
-            });
-    }
-</script>
+
 
 
 
@@ -294,6 +284,17 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script> -->
 <!-- <script src="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <!-- bootstrap轮播插件 与bootstrap.js连用 -->
+<script>
+    var a="${prompt}";
+    if(a!=null)
+    {
+        $('.alert').animate({
+                right : 0},
+            'slow', function() {
+                $('.alert strong').text(a);
+            });
+    }
+</script>
 </body>
 
 </html>

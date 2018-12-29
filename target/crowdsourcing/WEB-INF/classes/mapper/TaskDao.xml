@@ -31,13 +31,68 @@
 
 
   where
-  id=#{id}
+  uid=#{uid} and completetime is null
 
+ </update>
+
+ <update id="insertevaluation" >
+
+  update
+  task
+  set
+
+  evaluation= #{evaluation}
+
+
+
+  where
+  id=#{id}
  </update>
 
  <select id="selectTask" resultMap="Task" parameterType="int">
 
   select uid,tmid,createtime,completetime,price from task where id=#{id}
+
+
+ </select>
+
+ <select id="selectTaskByUId" resultType="com.Dto.Taskinformation">
+
+  select t.id,t.uid,ttid,pmid,t.name,message,startingaddress,purposeaddress,weight,tt.name as ttname ,pm.name as pmname,k.id as tid,price
+   from taskmessage t,tasktype tt,pricingmodel pm,task k
+   where  t.ttid=tt.id and t.pmid=pm.id and k.tmid=t.id and k.uid=#{uid} and completetime is null
+
+
+ </select>
+
+ <select id="selectTaskAllByUId" resultType="com.Dto.Taskinformation">
+
+select t.id,k.uid,ttid,pmid,t.name,message,startingaddress,purposeaddress,weight,tt.name as ttname ,pm.name as pmname,price,k.id as tid
+  from tasktype tt,pricingmodel pm,taskmessage t
+  LEFT JOIN task k on t.id=k.tmid
+  where  t.ttid=tt.id and t.pmid=pm.id  and t.uid=#{uid}
+
+
+
+ </select>
+
+ <select id="selectTaskByUid" resultMap="Task" parameterType="int">
+
+  select uid,tmid,createtime,completetime,price from task where uid=#{uid} and completetime is null
+
+
+ </select>
+
+ <select id="selectevaluationByUid" resultType="Double" parameterType="int">
+
+  select AVG(evaluation) from task where uid=#{uid} and evaluation is NOT null
+
+
+ </select>
+
+ <select id="selectTaskBytmid" resultMap="Task" parameterType="int">
+
+  select id,uid,tmid,createtime,completetime,price from task where tmid=#{tmid}
 
 
  </select>
