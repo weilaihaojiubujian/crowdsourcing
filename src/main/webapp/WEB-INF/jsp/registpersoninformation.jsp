@@ -1,3 +1,11 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 汪宏斌
+  Date: 2018/11/24
+  Time: 17:46
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html class="no-js" lang="">
 <!-- no-js类检查浏览器是否启用JavaScript 与modernizr连用 使用modernizr时会将no-js更改为js -->
