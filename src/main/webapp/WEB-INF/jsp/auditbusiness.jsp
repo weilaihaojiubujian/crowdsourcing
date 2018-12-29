@@ -55,7 +55,7 @@
 <div class="container-fuild page">
     <header role="banner">
         <nav class="topNav hidden-xs hidden-sm">
-            <a href="#" class="hvr-underline-from-right">
+            <a href="/user/main" class="hvr-underline-from-right">
                 <div class="navItems">
                     登出
                     <!-- <span class="caret"></span>           	 -->

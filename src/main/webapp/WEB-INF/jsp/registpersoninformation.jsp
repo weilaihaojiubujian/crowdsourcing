@@ -54,18 +54,18 @@
 <div class="container-fuild page">
   <header role="banner">
     <nav class="topNav hidden-xs hidden-sm">
-      <a href="#" class="hvr-underline-from-right">
+      <a href="/user/main" class="hvr-underline-from-right">
         <div class="navItems">
           登出
           <!-- <span class="caret"></span>           	 -->
         </div>
       </a>
-      <a href="/administrator/audituser?pageNum=1" class="hvr-underline-from-center">
+
         <div class="navItems">欢迎您:【${sessionScope.user.username}】
           【 <c:if test="${ sessionScope.user.species.equals('person')}">用户</c:if>
           <c:if test="${ sessionScope.user.species.equals('business')}">商家</c:if>】使用系统
         </div>
-      </a>
+
 
       <div class="navItems lastNavItem">
         <img src="${pageContext.request.contextPath }/img/logo.png" alt="logo">
@@ -194,7 +194,7 @@
                 </div>
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">提交</button>
+                    <input type="submit" class="btn btn-default">提交</input>
                   </div>
                 </div>
               </form>
