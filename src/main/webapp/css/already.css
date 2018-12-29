@@ -1,0 +1,18 @@
+main h3{
+	padding-bottom: 1em;
+	border-bottom: 1px solid #f1f1f1;
+}
+main .userTable .row{
+	border-bottom: 1px solid #f1f1f1;
+
+}
+main .row .media-left{
+	max-width: 30%;
+}
+.page > .row, main, main > .container-fuild, main > .container-fuild > .row{
+	height: auto;
+}
+.textCenter{
+	text-align: center;
+	vertical-align: middle;
+}
