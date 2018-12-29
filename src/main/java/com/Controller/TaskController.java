@@ -315,7 +315,7 @@ public class TaskController {
 
 
 
-        m.setViewName("redirect:/task/releasebyuser");
+        m.setViewName("redirect:/task/releasebyuser?pageNum=1");
 
         return m;
     }

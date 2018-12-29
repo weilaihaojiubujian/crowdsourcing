@@ -204,17 +204,7 @@
     </footer>
 </div>
 
-<script>
-    var a="${prompt}";
-    if(a!="")
-    {
-        $('.alert').animate({
-                right : 0},
-            'slow', function() {
-                $('.alert strong').text(a);
-            });
-    }
-</script>
+
 <script src="${pageContext.request.contextPath }/js/modernizr.custom.93262.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="${pageContext.request.contextPath }/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
@@ -237,7 +227,17 @@
 <script src="${pageContext.request.contextPath }/js/responsive-nav.js" type="text/javascript"></script>
 
 <script src="${pageContext.request.contextPath }/js/administrator.js"></script>
-
+<script>
+    var a="${prompt}";
+    if(a!="")
+    {
+        $('.alert').animate({
+                right : 0},
+            'slow', function() {
+                $('.alert strong').text(a);
+            });
+    }
+</script>
 </body>
 
 </html>
