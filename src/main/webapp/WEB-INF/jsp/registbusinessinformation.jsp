@@ -121,7 +121,7 @@
                 </div>
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-10">
-                    <input type="submit" class="btn btn-default">提交</input>
+                    <input type="submit" class="btn btn-default" value="提交"/>
                   </div>
                 </div>
               </form>

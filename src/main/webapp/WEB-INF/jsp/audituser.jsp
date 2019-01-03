@@ -37,7 +37,7 @@
     <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <!-- 动画库 -->
     <link rel="stylesheet" href="${pageContext.request.contextPath }/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/css/responsive-nav.css">
+    <%--<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/css/responsive-nav.css">--%>
 
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/css/administrator.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath }/css/audituser.css">

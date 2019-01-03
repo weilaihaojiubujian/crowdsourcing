@@ -9,8 +9,6 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@page isELIgnored="false" %>
 
-
-
 <!doctype html>
 <html class="no-js" lang="">
 <!-- no-js类检查浏览器是否启用JavaScript 与modernizr连用 使用modernizr时会将no-js更改为js -->
@@ -44,6 +42,11 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath }/css/administrator.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath }/css/audituser.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath }/css/bankaccount.css">
+    <style>
+        .row{
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>

@@ -11,39 +11,39 @@
 <!doctype html>
 <html class="no-js" lang="">
 <!-- no-js类检查浏览器是否启用JavaScript 与modernizr连用 使用modernizr时会将no-js更改为js -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- 兼容模式的元标签 -->
-    <title>商家信息</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- 移动端不对网页进行缩放 -->
-    <link rel="manifest" href="site.webmanifest">
-    <!-- 设置应用程序缓存 -->
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 兼容模式的元标签 -->
+        <title>商家信息</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- 移动端不对网页进行缩放 -->
+        <link rel="manifest" href="site.webmanifest">
+        <!-- 设置应用程序缓存 -->
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/normalize.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/main.css">
-    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
-    <!-- 使用button图标 -->
-    <!-- <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/buttons.css">
-    <!-- 按钮样式 -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/hover-min.css">
-    <!-- 悬浮效果 -->
-    <!-- <link rel="stylesheet" href="css/animate.css"> -->
-    <!-- 动画库 -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/responsive-nav.css"> -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/css/normalize.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/css/main.css">
+        <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+        <!-- 使用button图标 -->
+        <!-- <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/css/buttons.css">
+        <!-- 按钮样式 -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/css/hover-min.css">
+        <!-- 悬浮效果 -->
+        <!-- <link rel="stylesheet" href="css/animate.css"> -->
+        <!-- 动画库 -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/responsive-nav.css"> -->
 
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/css/administrator.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/audituser.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/businessinformation.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/css/administrator.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/css/audituser.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/css/businessinformation.css">
 
-</head>
+    </head>
 
 <body>
 <!--[if lte IE 9]>
@@ -169,7 +169,7 @@
 </div>
 <div class="row">
 <p class="lead col-md-6 text-right col-xs-6">用户名:</p>
-<p class="lead col-md-6 col-xs-6 businessInformation"><c:out value="${business.username}"></p>
+    <p class="lead col-md-6 col-xs-6 businessInformation"><c:out value="${business.username}"></c:out></p>
     </div>
 
     <div class="row">
@@ -283,31 +283,4 @@
     <script src="${pageContext.request.contextPath }/js/businessinformation.js"></script>
     <script src="${pageContext.request.contextPath }/js/administrator.js"></script>
     </body>
-
-    </html>
-    <!-- <table class="table table-bordered table-hover table-striped">
-    <tr>
-    <td>序号</td>
-    <td>用户名</td>
-    <td>密码</td>
-    <td>手机号</td>
-    <td>姓名</td>
-    <td>地址</td>
-    <td>负责人姓名</td>
-    <td>负责人身份证号</td>
-    </tr>
-    <tr name="businessMessage">
-    <td name="id">${business.id}</td>
-    <td name="userName"><c:out value="${business.username}"></c:out></td>
-    <td name="password"><c:out value="${business.password}"></c:out></td>
-    <td name="tel"><c:out value="${business.phonenumber}"></c:out></td>
-    <td name="name"><c:out value="${business.name}"></c:out></td>
-    <td name="address"><c:out value="${business.address}"></c:out></td>
-    <td name="headname"><c:out value="${business.headname}"></c:out></td>
-    <td name="headidcard"><c:out value="${business.headidcard}"></c:out></td>
-    </tr>
-    <tr>
-    <td colspan="4"><button name="modifyMessage">修改信息</button></td>
-    <td colspan="4"><a href="/user/updatepassword1">修改密码</a></td>
-    </tr>
-    </table> -->
+</html>
