@@ -146,10 +146,14 @@ public class UserController {
                 if(user.getSpecies().equals("person"))
                 {
                     Double d=taskService.selectevaluationByUid(user.getId());
-                    Personinformation p=new Personinformation();
-                    p.setUid(user.getId());
-                    p.setEvaluation(d);
-                    boolean l=personinformationService.updatePersoninformation(p);
+                    if(d!=null)
+                    {
+                        Personinformation p=new Personinformation();
+                        p.setUid(user.getId());
+                        p.setEvaluation(d);
+                        boolean l=personinformationService.updatePersoninformation(p);
+                    }
+
 
                 }
 

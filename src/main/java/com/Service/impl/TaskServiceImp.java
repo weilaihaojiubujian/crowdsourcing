@@ -144,7 +144,12 @@ public class TaskServiceImp implements TaskService {
             return null;
         }
         Double d=taskDao.selectevaluationByUid(uid);
-        if(d>=0)
+        System.out.println("评价："+d);
+        if (d==null)
+        {
+            return null;
+        }
+        else if(d>=0)
         {
             return d;
         }
