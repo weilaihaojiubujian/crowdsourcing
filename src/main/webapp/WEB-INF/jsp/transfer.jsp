@@ -62,26 +62,12 @@
                     <!-- <span class="caret"></span>           	 -->
                 </div>
             </a>
-            <a href="/administrator/audituser?pageNum=1" class="hvr-underline-from-center">
+            <a href="#" class="hvr-underline-from-center">
                 <div class="navItems">
-                    管理银行卡
+                    欢迎您:${sessionScope.user.username}
                 </div>
             </a>
-            <a href="/administrator/auditbusiness?pageNum=1" class="hvr-underline-from-center">
-                <div class="navItems">
-                    管理信息
-                </div>
-            </a>
-            <a href="/administrator/audittask?pageNum=1" class="hvr-underline-from-center">
-                <div class="navItems">
-                    发布任务
-                </div>
-            </a>
-            <a href="/administrator/auditbyevaluation?pageNum=1" class="hvr-underline-from-left">
-                <div class="navItems">
-                    资金管理
-                </div>
-            </a>
+
             <div class="navItems lastNavItem">
                 <img src="${pageContext.request.contextPath }/img/logo.png" alt="logo">
             </div>
@@ -233,9 +219,9 @@
 
     </main>
 </div>
-<footer role="contentinfo">
-    Copyright &copy; 2018.12.4 Design By 同城跑腿
-</footer>
+<%--<footer role="contentinfo">--%>
+    <%--Copyright &copy; 2018.12.4 Design By 同城跑腿--%>
+<%--</footer>--%>
 </div>
 
 

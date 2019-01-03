@@ -188,6 +188,14 @@ aside .sideNav ul li p{
 	letter-spacing: 0.5em;
 	/*height: 1em;*/
 }
+aside .sideNav ul li p a{
+	text-decoration: none;
+	color: inherit;
+}
+aside .sideNav ul li p a:hover{
+	text-decoration: none;
+	color: inherit;
+}
 aside .sideNav ul li span{
 	margin-left: auto;
 }

@@ -61,26 +61,12 @@
                     <!-- <span class="caret"></span>           	 -->
                 </div>
             </a>
-            <a href="/administrator/audituser?pageNum=1" class="hvr-underline-from-center">
+            <a href="#" class="hvr-underline-from-center">
                 <div class="navItems">
-                    审核用户
+                    欢迎您 管理员
                 </div>
             </a>
-            <a href="/administrator/auditbusiness?pageNum=1" class="hvr-underline-from-center">
-                <div class="navItems">
-                    审核商家
-                </div>
-            </a>
-            <a href="/administrator/audittask?pageNum=1" class="hvr-underline-from-center">
-                <div class="navItems">
-                    审核任务
-                </div>
-            </a>
-            <a href="/administrator/auditbyevaluation?pageNum=1" class="hvr-underline-from-left">
-                <div class="navItems">
-                    管理不良用户
-                </div>
-            </a>
+
             <div class="navItems lastNavItem">
                 <img src="${pageContext.request.contextPath }/img/logo.png" alt="logo">
             </div>

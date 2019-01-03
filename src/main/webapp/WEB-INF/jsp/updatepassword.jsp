@@ -55,15 +55,14 @@
             <a href="/user/main" class="hvr-underline-from-right">
                 <div class="navItems">
                     登出
-                    <!-- <span class="caret"></span>             -->
+                    <!-- <span class="caret"></span>           	 -->
                 </div>
             </a>
-
-                <div class="navItems">欢迎您:【${sessionScope.user.username}】
-                    【 <c:if test="${ sessionScope.user.species.equals('person')}">用户</c:if>
-                    <c:if test="${ sessionScope.user.species.equals('business')}">商家</c:if>】使用系统
+            <a href="#" class="hvr-underline-from-center">
+                <div class="navItems">
+                    欢迎您:${sessionScope.user.username}
                 </div>
-
+            </a>
 
             <div class="navItems lastNavItem">
                 <img src="${pageContext.request.contextPath }/img/logo.png" alt="logo">
@@ -184,9 +183,9 @@
             </div>
         </main>
     </div>
-    <footer role="contentinfo">
-        Copyright &copy; 2018.12.4 Design By 同城跑腿
-    </footer>
+    <%--<footer role="contentinfo">--%>
+        <%--Copyright &copy; 2018.12.4 Design By 同城跑腿--%>
+    <%--</footer>--%>
 </div>
 
 

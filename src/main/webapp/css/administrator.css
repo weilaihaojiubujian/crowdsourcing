@@ -112,7 +112,7 @@ tfoot a,tfoot a:hover,tfoot a:active,tfoot a:link,tfoot a:visited{
 	background-color: white;
 }
 .adp{
-	width: 100%;	
+	width: 100%;
 }
 
 .desDiv{
@@ -187,6 +187,14 @@ aside .sideNav ul li p{
 	/*vertical-align: middle;*/
 	letter-spacing: 0.5em;
 	/*height: 1em;*/
+}
+aside .sideNav ul li p a{
+	text-decoration: none;
+	color: inherit;
+}
+aside .sideNav ul li p a:hover{
+	text-decoration: none;
+	color: inherit;
 }
 aside .sideNav ul li span{
 	margin-left: auto;

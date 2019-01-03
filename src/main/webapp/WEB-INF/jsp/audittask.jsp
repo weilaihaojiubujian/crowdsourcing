@@ -61,26 +61,12 @@
                     <!-- <span class="caret"></span>           	 -->
                 </div>
             </a>
-            <a href="/administrator/audituser?pageNum=1" class="hvr-underline-from-center">
+            <a href="#" class="hvr-underline-from-center">
                 <div class="navItems">
-                    审核用户
+                    欢迎您 管理员
                 </div>
             </a>
-            <a href="/administrator/auditbusiness?pageNum=1" class="hvr-underline-from-center">
-                <div class="navItems">
-                    审核商家
-                </div>
-            </a>
-            <a href="/administrator/audittask?pageNum=1" class="hvr-underline-from-center">
-                <div class="navItems">
-                    审核任务
-                </div>
-            </a>
-            <a href="/administrator/auditbyevaluation?pageNum=1" class="hvr-underline-from-left">
-                <div class="navItems">
-                    管理不良用户
-                </div>
-            </a>
+
             <div class="navItems lastNavItem">
                 <img src="${pageContext.request.contextPath }/img/logo.png" alt="logo">
             </div>
@@ -101,22 +87,22 @@
                 <ul>
                     <li>
                         <div class="liItems">
-                            <div><i class="icon-user"></i></div><div><p>审核用户</p></div><div><i class="icon-angle-right invisible"></i></div>
+                            <div><i class="icon-user"></i></div><div><p>	<a href="/administrator/audituser?pageNum=1" >审核用户</a></p></div><div><i class="icon-angle-right invisible"></i></div>
                         </div>
                     </li>
                     <li>
                         <div class="liItems">
-                            <div><i class="icon-group"></i></div><div><p>审核商家</p></div><div><i class="icon-angle-right invisible"></i></div>
+                            <div><i class="icon-group"></i></div><div><p><a href="/administrator/auditbusiness?pageNum=1" >审核商家</a></p></div><div><i class="icon-angle-right invisible"></i></div>
                         </div>
                     </li>
                     <li>
                         <div class="liItems">
-                            <div><i class="icon-list-alt"></i></div><div><p>审核任务</p></div><div><i class="icon-angle-right invisible"></i></div>
+                            <div><i class="icon-list-alt"></i></div><div><p>	<a href="/administrator/audittask?pageNum=1" >审核任务</a></p></div><div><i class="icon-angle-right invisible"></i></div>
                         </div>
                     </li>
                     <li>
                         <div class="liItems">
-                            <div><i class="icon-minus-sign"></i></div><div><p>管理用户</p></div><div><i class="icon-angle-right invisible"></i></div>
+                            <div><i class="icon-minus-sign"></i></div><div><p>	<a href="/administrator/auditbyevaluation?pageNum=1" >管理用户</a></p></div><div><i class="icon-angle-right invisible"></i></div>
                         </div>
                     </li>
                 </ul>

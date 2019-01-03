@@ -135,9 +135,9 @@
         </article>
     </main>
     <aside role="complementary"></aside>
-    <footer role="contentinfo">
-        Copyright &copy; 2018.12.4 Design By 同城跑腿
-    </footer>
+    <%--<footer role="contentinfo">--%>
+        <%--Copyright &copy; 2018.12.4 Design By 同城跑腿--%>
+    <%--</footer>--%>
 </div>
 
 
