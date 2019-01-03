@@ -95,7 +95,6 @@
           <section class="col-md-12 userTable">
             <section>
               <h2>注册个人信息</h2>
-
               <form method="post" action="/user/registpersoninformation"  class="form-horizontal">
                 <div class="form-group">
                   <label for="name" class="col-sm-2 control-label">姓名</label>
@@ -104,7 +103,7 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="" class="col-sm-2 control-label">性别</label>
+                  <label  class="col-sm-2 control-label">性别</label>
                   <div class="col-sm-10">
                     <select name="sex" id="sex">
                       <option value="男">男</option>
@@ -132,7 +131,7 @@
                 </div>
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-10">
-                    <input type="submit" class="btn btn-default">提交</input>
+                    <input type="submit" class="btn btn-default" value="提交"/>
                   </div>
                 </div>
               </form>

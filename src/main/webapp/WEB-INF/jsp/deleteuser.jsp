@@ -68,7 +68,7 @@
             </a>
 
             <div class="navItems lastNavItem">
-                <img src="img/logo.png" alt="logo">
+                <img src="${pageContext.request.contextPath }/img/logo.png" alt="logo">
             </div>
         </nav>
         <nav class="smallTopNav hidden-md hidden-lg">
