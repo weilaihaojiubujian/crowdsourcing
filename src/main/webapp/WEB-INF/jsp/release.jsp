@@ -251,10 +251,7 @@
                 </div>
 
             </div>
-            <div class="alert alert-info alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <strong></strong>
-            </div>
+
         </main>
     </div>
     <!-- <footer role="contentinfo">
@@ -284,17 +281,7 @@
 <script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-dropdown.js"></script>
 <!-- <script src="js/responsive-nav.js" type="text/javascript"></script> -->
 <!-- <script src="js/jquery-ui.js"></script> -->
-<script>
-    var a="${prompt}";
-    if(a!="")
-    {
-        $('.alert').animate({
-                right : 0},
-            'slow', function() {
-                $('.alert strong').text(a);
-            });
-    }
-</script>
+
 <!-- <script src="js/businessinformation.js"></script> -->
 <!-- <script src="js/administrator.js"></script> -->
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=xF2LVjT56BEmuoYDHUtNMkGch0FAVi3F"></script>
