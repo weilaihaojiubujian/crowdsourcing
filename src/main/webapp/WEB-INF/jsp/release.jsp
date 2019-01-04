@@ -186,7 +186,7 @@
                                         <div class="col-sm-10">
                                             <button class="col-sm-3 button button-primary button-pill button-small startPosition">选择任务起始位置</button>
                                             <span class="startPositionSpan"></span>
-                                            <input type="text" class="form-control hiddenStartPosition" id="startPostion" name = "startingaddress">
+                                            <input type="text" class="form-control hiddenStartPosition hidden" id="startPostion" name = "startingaddress">
                                         </div>
                                         <div class="startMapContainer col-sm-10 col-sm-offset-2">
                                             <div class="col-sm-10">
@@ -202,7 +202,7 @@
                                         <div class="col-sm-10">
                                             <button class="col-sm-3 endPosition button button-primary button-pill button-small">选择任务结束位置</button>
                                             <span class="endPositionSpan"></span>
-                                            <input type="text" class="form-control hiddenEndPosition" id="endPosition" name = "purposeaddress">
+                                            <input type="text" class="form-control hiddenEndPosition hidden" id="endPosition" name = "purposeaddress">
                                         </div>
                                         <div class="endMapContainer col-sm-10 col-sm-offset-2">
                                             <div class="col-sm-10">

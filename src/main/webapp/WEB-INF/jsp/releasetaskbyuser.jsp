@@ -177,8 +177,8 @@
                                         <th>物品重量</th>
                                         <th>价格</th>
                                         <th>接受任务人序号</th>
-                                        <th></th>
-                                        <th></th>
+                                        <th>是否取消</th>
+                                        <th>评价</th>
                                     </tr>
                                     <c:forEach var="p" items="${taskinformations.list}">
                                         <tr>

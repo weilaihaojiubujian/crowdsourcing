@@ -132,7 +132,7 @@
                                     <th>地址</th>
                                     <th>负责人姓名</th>
                                     <th>负责人身份证号</th>
-                                    <th></th>
+                                    <th>是否通过</th>
                                 </tr>
                                 <c:forEach var="m" items="${businesss.list}">
                                     <tr>

@@ -89,7 +89,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="liItems personInformation">
+                        <div class="liItems">
                             <div><i class="icon-user"></i></div><div><a>个人信息</a></div><div><i class="icon-angle-down changeI"></i></div>
                         </div>
                     </li>
@@ -229,7 +229,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="sex" class="col-sm-2 control-label">性别</label>
+                                        <label class="col-sm-2 control-label">性别</label>
                                         <div class="col-sm-10">
                                             <input type="radio" name="sex" id="male" value="男">男
                                             <input type="radio" name="sex" id="female" value="女">女

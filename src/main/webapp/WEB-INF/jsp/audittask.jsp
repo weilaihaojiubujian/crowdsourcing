@@ -133,8 +133,7 @@
                                     <th>起始位置</th>
                                     <th>目的位置</th>
                                     <th>物品重量</th>
-
-                                    <th></th>
+                                    <th>是否通过</th>
                                 </tr>
                                 <c:forEach var="p" items="${taskinformations.list}">
                                     <tr>
