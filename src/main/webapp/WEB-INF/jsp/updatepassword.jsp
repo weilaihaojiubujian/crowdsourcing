@@ -116,7 +116,7 @@
                     </c:if>
                     <li>
                         <div class="liItems">
-                            <div><i class="icon-angle-right"></i></div><div><a href="/task/releasebyuser?pageNum=1">已发布任务</a></div><div><i class="icon-angle-right invisible"></i></div>
+                            <div><i class="icon-list-alt"></i></div><div><a href="/task/releasebyuser?pageNum=1">已发布任务</a></div><div><i class="icon-angle-right invisible"></i></div>
                         </div>
                     </li>
                     <li>
