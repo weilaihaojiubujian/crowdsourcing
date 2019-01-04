@@ -157,7 +157,6 @@
                         <section>
                             <h2></h2>
                             <div id="allmap"></div>
-
                         </section>
                     </section>
                 </div>
@@ -231,7 +230,8 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script> -->
 <script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-dropdown.js"></script>
 <script src="${pageContext.request.contextPath }/js/responsive-nav.js" type="text/javascript"></script>
-
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=xF2LVjT56BEmuoYDHUtNMkGch0FAVi3F"></script>
+<script src="${pageContext.request.contextPath }/js/client.js"></script>
 <script src="${pageContext.request.contextPath }/js/administrator.js"></script>
 <script>
     var a="${prompt}";
