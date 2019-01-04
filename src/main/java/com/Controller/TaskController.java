@@ -114,7 +114,7 @@ public class TaskController {
         int uid=u.getId();
 
         List<TransferandFlow> p=transferService.selectOne(uid);
-        if(p!=null || p.size()!=0)
+        if(p!=null && p.size()!=0)
         {
             m.addObject("prompt", "请先去支付未付的金额");
 //        return "forward:/user/login1";

@@ -7,12 +7,189 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a31b522-c928-4b46-861d-bbcf473218a1" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/AdministratorController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/TaskController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/AdministratorDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/BankAccountDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/BusinessinformationDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/PersoninformationDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/PricingmodelDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/TaskDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/TaskmessageDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/TasktypeDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dao/UseraddressDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dto/Business.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Dto/Person.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Administrator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/BankAccount.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Businessinformation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Personinformation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Pricingmodel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Task.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Taskmessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Tasktype.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Entity/Useraddress.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Intercept/EncodeFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/AuditService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/BusinessinformationService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/LoginService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/PersoninformationService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/PricingmodelService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/TaskService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/TaskmessageService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/TasktypeService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/UseraddressService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/UserinformationService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/AuditServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/BusinessinformationServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/LoginServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/PersoninformationServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/PricingmodelServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TaskServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TaskmessageServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TasktypeServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/UserServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/UseraddressServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/UserinformationServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Util/GeoHash.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/AdministratorDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/BankAccountDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/BusinessinformationDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/PersoninformationDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/PricingmodelDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/TaskDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/TaskmessageDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/TasktypeDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/UserDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mapper/UseraddressDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/mybatis-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/spring/spring-dao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/spring/spring-service.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/spring/springweb.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/browserconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/companyRegister.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/css/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/css/buttons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/css/hover-min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/css/hover.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/css/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/css/personRegister.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/doc/TOC.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/doc/css.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/doc/extend.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/doc/faq.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/doc/html.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/doc/js.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/doc/misc.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/doc/usage.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/font/Acme-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/font/AlexBrush-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/font/Aller Font License.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/font/AllerDisplay.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/font/Aller_Bd.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/font/Aller_BdIt.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/font/Aller_It.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/font/Aller_Lt.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/font/Aller_LtIt.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/font/Aller_Rg.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/humans.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/img/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/img/Login.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/img/Login.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/img/LoginBackground.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/img/LoginBackground.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/img/logoWhite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/js/TweenMax.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/js/jquery-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/js/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/js/modernizr.custom.93262.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/js/plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/js/vendor/jquery-3.3.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/js/vendor/modernizr-3.6.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/personRegister.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/site.webmanifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/tile-wide.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/tile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/administrator.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/audituser.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/businessinformation.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/client.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/deleteuser.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/error.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/personinformation.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/regist.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/registbusinessinformation.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/registpersoninformation.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/release.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/aspectjrt-1.9.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/aspectjweaver-1.9.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/c3p0-0.9.5.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/commons-fileupload-1.3.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/commons-io-2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/druid-1.1.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/gson-2.8.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/jackson-core-2.9.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/jackson-databind-2.9.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/javax.mail-1.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/jcl-over-slf4j-1.8.0-beta2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/logback-access-1.3.0-alpha4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/logback-classic-1.3.0-alpha4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/logback-core-1.3.0-alpha4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/mchange-commons-java-0.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/mybatis-3.4.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/mysql-connector-java-8.0.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/protobuf-java-3.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/slf4j-api-1.8.0-beta2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-aop-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-aspects-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-beans-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-context-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-context-support-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-core-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-data-commons-2.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-data-keyvalue-2.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-data-redis-2.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-expression-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-jcl-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-jdbc-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-orm-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-oxm-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-tx-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-web-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/lib/spring-webmvc-5.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/web.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Controller/TaskController.class" afterPath="$PROJECT_DIR$/target/classes/com/Controller/TaskController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/Controller/UserController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/impl/TaskServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/impl/TaskServiceImp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/TaskController.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/TaskController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/UserController.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TaskServiceImp.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TaskServiceImp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/crowdsourcing_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/crowdsourcing_war.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/crowdsourcing_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/crowdsourcing_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_access_1_3_0_alpha4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_access_1_3_0_alpha4.xml" />
@@ -64,30 +241,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_1_RELEASE.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_1_RELEASE.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Controller/AlipayController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Controller/AlipayController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Controller/BankaccountController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Controller/BankaccountController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crowdsourcing.iml" afterPath="$PROJECT_DIR$/crowdsourcing.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Controller/TransferController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Controller/TransferController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Dao/TransferDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/Dao/TransferDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Service/TransferService.java" afterPath="$PROJECT_DIR$/src/main/java/com/Service/TransferService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Service/impl/TransferServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/com/Service/impl/TransferServiceImp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/TransferDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TransferDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Dao/TransferDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/Dao/TransferDaoTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/crowdsourcing/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/index.html" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/html5-boilerplate_v6.1.0/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/administrator.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/administrator.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/audituser.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/audituser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/businessinformation.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/businessinformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/client.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/client.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/deleteuser.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/deleteuser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/personinformation.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/personinformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/regist.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/regist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/registbusinessinformation.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/registbusinessinformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/registpersoninformation.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/registpersoninformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/release.jsp" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/jsp/release.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -100,101 +256,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TaskController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TaskController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="120" column="50" lean-forward="false" selection-start-line="120" selection-start-column="50" selection-end-line="120" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="85" column="36" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="194" column="62" lean-forward="true" selection-start-line="194" selection-start-column="62" selection-end-line="194" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="136" column="106" lean-forward="false" selection-start-line="136" selection-start-column="82" selection-end-line="136" selection-end-column="106" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransferController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TransferController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-546">
-              <caret line="133" column="55" lean-forward="true" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bankaccount.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1670">
-              <caret line="128" column="115" lean-forward="true" selection-start-line="128" selection-start-column="81" selection-end-line="128" selection-end-column="115" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransferDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/TransferDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransferServiceImp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/TransferServiceImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="88" column="57" lean-forward="true" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransferDaoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/TransferDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransferService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TransferService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="43" column="49" lean-forward="false" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+            <state relative-caret-position="414">
+              <caret line="119" column="7" lean-forward="false" selection-start-line="119" selection-start-column="7" selection-end-line="119" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -273,8 +339,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/Service/TransferService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Service/impl/TransferServiceImp.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/Dao/TransferDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Controller/TransferController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java" />
       </list>
     </option>
   </component>
@@ -386,140 +452,7 @@
               <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Dao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -757,9 +690,7 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="crowdsourcing:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -974,7 +905,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="338770000" />
+    <option name="totallyTimeSpent" value="339128000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1016,11 +947,35 @@
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Redis Servers" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25375536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1224,7 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1794">
           <caret line="93" column="40" lean-forward="false" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,14 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1495">
           <caret line="70" column="17" lean-forward="false" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1255,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="97" column="59" lean-forward="true" selection-start-line="97" selection-start-column="59" selection-end-line="97" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1263,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1271,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,7 +1230,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3817">
           <caret line="63" column="14" lean-forward="false" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,7 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="737">
           <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,7 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="102" column="99" lean-forward="false" selection-start-line="102" selection-start-column="99" selection-end-line="102" selection-end-column="99" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1311,7 +1251,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-574">
           <caret line="61" column="45" lean-forward="false" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1319,7 +1258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1426">
           <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1327,9 +1265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="668">
           <caret line="101" column="115" lean-forward="false" selection-start-line="101" selection-start-column="115" selection-end-line="101" selection-end-column="115" />
-          <folding>
-            <marker date="1546488832955" expanded="true" signature="2861:2866" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1337,7 +1272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-345">
           <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,7 +1279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="104" column="82" lean-forward="false" selection-start-line="104" selection-start-column="82" selection-end-line="104" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,18 +1302,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="69" column="96" lean-forward="false" selection-start-line="69" selection-start-column="96" selection-end-line="69" selection-end-column="96" />
-          <folding>
-            <marker date="1546488832415" expanded="true" signature="483:575" ph="insert into task... " />
-            <marker date="1546488832415" expanded="true" signature="631:734" ph="update task " />
-            <marker date="1546488832415" expanded="true" signature="784:854" ph="update task " />
-            <marker date="1546488832415" expanded="true" signature="933:1003" ph="select uid,t... task" />
-            <marker date="1546488832415" expanded="true" signature="1089:1379" ph="select t.id,... taskmessage" />
-            <marker date="1546488832415" expanded="true" signature="1466:1741" ph="select t.id,... tasktype" />
-            <marker date="1546488832415" expanded="true" signature="1828:1925" ph="select uid,t... task" />
-            <marker date="1546488832415" expanded="true" signature="2020:2096" ph="select AVG(e... task" />
-            <marker date="1546488832415" expanded="true" signature="2183:2260" ph="select id,ui... task" />
-            <marker date="1546488832415" expanded="true" signature="2303:2342" ph="delete from " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1388,7 +1310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="64" column="26" lean-forward="false" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1396,33 +1317,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="164" column="56" lean-forward="false" selection-start-line="164" selection-start-column="56" selection-end-line="164" selection-end-column="56" />
-          <folding>
-            <marker date="1546586407261" expanded="true" signature="4697:4785" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="4697:4774" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="4795:4983" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="4840:4972" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="4993:5237" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="5044:5226" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="5247:5479" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="5298:5468" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="5489:5712" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="5540:5701" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="5722:5947" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6084:6990" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6117:6980" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6139:6304" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6168:6293" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6198:6281" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6326:6969" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6369:6958" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6385:6942" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6484:6925" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6517:6730" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6622:6715" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6763:6910" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="6812:6895" ph="..." />
-            <marker date="1546586407261" expanded="true" signature="7769:7919" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1430,7 +1324,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1438,7 +1331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="165" column="96" lean-forward="false" selection-start-line="165" selection-start-column="96" selection-end-line="165" selection-end-column="96" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1446,7 +1338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="211" column="45" lean-forward="false" selection-start-line="211" selection-start-column="45" selection-end-line="211" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1470,7 +1361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1013">
           <caret line="196" column="182" lean-forward="true" selection-start-line="196" selection-start-column="182" selection-end-line="196" selection-end-column="182" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1486,7 +1376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="164" column="58" lean-forward="true" selection-start-line="164" selection-start-column="58" selection-end-line="164" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1494,7 +1383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="649">
           <caret line="80" column="69" lean-forward="false" selection-start-line="80" selection-start-column="69" selection-end-line="80" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,7 +1390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1510,7 +1397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2111">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1518,7 +1404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-641">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1534,7 +1419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="170" column="55" lean-forward="false" selection-start-line="170" selection-start-column="55" selection-end-line="170" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1542,7 +1426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1720">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1550,14 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="58" column="46" lean-forward="true" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
-          <folding>
-            <marker date="1546593663081" expanded="true" signature="527:621" ph="insert into transfer... " />
-            <marker date="1546593663081" expanded="true" signature="709:807" ph="select id,ui... transfer" />
-            <marker date="1546593663081" expanded="true" signature="895:961" ph="select id,ui... transfer" />
-            <marker date="1546593663081" expanded="true" signature="1006:1058" ph="update trans... " />
-            <marker date="1546593663081" expanded="true" signature="1158:1368" ph="select t.id,... transfer" />
-            <marker date="1546593663081" expanded="true" signature="1467:1669" ph="select t.id,... transfer" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1565,7 +1440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="43" column="49" lean-forward="false" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1573,7 +1447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1581,7 +1454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="88" column="57" lean-forward="true" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1589,7 +1461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1597,7 +1468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="194" column="62" lean-forward="true" selection-start-line="194" selection-start-column="62" selection-end-line="194" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1605,7 +1475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="136" column="106" lean-forward="false" selection-start-line="136" selection-start-column="82" selection-end-line="136" selection-end-column="106" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1613,14 +1482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="85" column="36" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="120" column="50" lean-forward="false" selection-start-line="120" selection-start-column="50" selection-end-line="120" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1637,6 +1498,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1670">
           <caret line="128" column="115" lean-forward="true" selection-start-line="128" selection-start-column="81" selection-end-line="128" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="119" column="7" lean-forward="false" selection-start-line="119" selection-start-column="7" selection-end-line="119" selection-end-column="7" />
           <folding />
         </state>
       </provider>
