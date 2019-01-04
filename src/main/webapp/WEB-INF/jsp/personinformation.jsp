@@ -89,7 +89,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="liItems">
+                        <div class="liItems personInformation">
                             <div><i class="icon-user"></i></div><div><a>个人信息</a></div><div><i class="icon-angle-down changeI"></i></div>
                         </div>
                     </li>
@@ -108,9 +108,16 @@
                             <div><i class="icon-list-alt"></i></div><div><a href="/task/message?pageNum=1">任务消息</a></div><div><i class="icon-angle-right invisible"></i></div>
                         </div>
                     </li>
+                    <c:if test="${ sessionScope.user.species.equals('person')}">
+                        <li>
+                            <div class="liItems">
+                                <div><i class="icon-list-alt"></i></div><div><a href="/task/already">已接受任务</a></div><div><i class="icon-angle-right invisible"></i></div>
+                            </div>
+                        </li>
+                    </c:if>
                     <li>
                         <div class="liItems">
-                            <div><i class="icon-angle-right"></i></div><div><a href="/task/releasebyuser?pageNum=1">查看任务</a></div><div><i class="icon-angle-right invisible"></i></div>
+                            <div><i class="icon-angle-right"></i></div><div><a href="/task/releasebyuser?pageNum=1">已发布任务</a></div><div><i class="icon-angle-right invisible"></i></div>
                         </div>
                     </li>
                     <li>
