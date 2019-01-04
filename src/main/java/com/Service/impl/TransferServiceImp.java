@@ -81,4 +81,16 @@ public class TransferServiceImp implements TransferService {
         }
         return null;
     }
+
+    @Override
+    public List<TransferandFlow> selectOne(int uid_one) {
+        if (uid_one==0)return null;
+        List<TransferandFlow> t=transferDao.selectOne(uid_one);
+        log.info("TransferServiceImp"+"列出用户未转账记录={}", t);
+        if(t!=null )
+        {
+            return  t;
+        }
+        return null;
+    }
 }

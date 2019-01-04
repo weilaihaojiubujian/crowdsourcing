@@ -47,13 +47,21 @@
 
  <select id="selectbyOne" resultType="com.Dto.TransferandFlow" parameterType="int">
 
+ select t.id,uid_one as uidone,uid_two as uidtwo,price,state,f.id as fid,flownum,createtime,paidmethod,paidamount
+ from transfer t LEFT JOIN  flow f on t.id=f.tfid
+ where uid_one=#{uid_one} OR uid_two=#{uid_one}
+
+
+</select>
+
+ <select id="selectOne" resultType="com.Dto.TransferandFlow" parameterType="int">
+
   select t.id,uid_one as uidone,uid_two as uidtwo,price,state,f.id as fid,flownum,createtime,paidmethod,paidamount
   from transfer t LEFT JOIN  flow f on t.id=f.tfid
-  where uid_one=#{uid_one} OR uid_two=#{uid_one}
+  where uid_one=#{uid_one} and state=0
 
 
  </select>
-
 
 
 </mapper>

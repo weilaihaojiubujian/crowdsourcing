@@ -72,13 +72,13 @@ public class BankaccountController {
         {
 
             m.addObject("prompt", "删除银行卡成功");
-            m.setViewName("forward:/bankaccount/bankaccount1");
+            m.setViewName("forward:/bankaccount/bankaccount?pageNum=1");
         }
         else
         {
 
             m.addObject("prompt", "删除银行卡失败");
-            m.setViewName("forward:/bankaccount/bankaccount1");
+            m.setViewName("forward:/bankaccount/bankaccount?pageNum=1");
         }
 
         return m;

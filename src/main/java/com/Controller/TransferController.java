@@ -53,6 +53,12 @@ public class TransferController {
 
     }
 
+    @RequestMapping(value = "/transfer1",method = RequestMethod.POST)
+    public String transfer1(){
+        return "transfer";
+
+    }
+
 
     @RequestMapping(value = "/recharge1",method = RequestMethod.GET)
     public String recharge1(){
@@ -116,6 +122,58 @@ public class TransferController {
         m.addObject("transfers", penson);
 
         m.setViewName("forward:/transfer/transfer");
+
+        return m;
+    }
+
+    @RequestMapping(value = "/view2",method = RequestMethod.POST)
+    public ModelAndView audituser2(HttpSession session){
+
+        int pageNum=1;
+        ModelAndView m= new ModelAndView();
+        User user= (User) session.getAttribute("user");
+        int uid=user.getId();
+        PageHelper.startPage(pageNum, 10);
+        List<TransferandFlow> p=transferService.selectbyOne(uid);
+        for(TransferandFlow i:p)
+        {
+            User q=userService.selectUserById(i.getUidone());
+            if(q.getSpecies().equals("person"))
+            {
+                Person w=userinformationService.selectpeopleinformation(i.getUidone());
+                i.setUidonename(w.getName());
+            }
+            else
+            {
+                Business b=userinformationService.selectbusinessinformation(i.getUidone());
+                i.setUidonename(b.getName());
+            }
+
+            User r=userService.selectUserById(i.getUidtwo());
+            if(r.getSpecies().equals("person"))
+            {
+                Person w=userinformationService.selectpeopleinformation(i.getUidtwo());
+                i.setUidtwoname(w.getName());
+            }
+            else
+            {
+                Business b=userinformationService.selectbusinessinformation(i.getUidtwo());
+                i.setUidtwoname(b.getName());
+            }
+
+        }
+
+        PageInfo<TransferandFlow> penson=new PageInfo<TransferandFlow>(p);
+        log.info("TransferController"+"转账信息={}", p);
+
+
+
+
+
+
+        m.addObject("transfers", penson);
+
+        m.setViewName("forward:/transfer/transfer1");
 
         return m;
     }

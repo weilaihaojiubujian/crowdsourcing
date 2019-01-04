@@ -40,4 +40,6 @@ public interface TransferDao {
      * @return
      */
     List<TransferandFlow> selectbyOne(int uid_one);
+
+    List<TransferandFlow> selectOne(int uid_one);
 }

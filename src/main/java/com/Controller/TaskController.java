@@ -1,6 +1,7 @@
 package com.Controller;
 
 import com.Dto.Taskinformation;
+import com.Dto.TransferandFlow;
 import com.Entity.*;
 import com.Service.*;
 import com.Util.GeoHash;
@@ -101,55 +102,75 @@ public class TaskController {
     }
 
     @RequestMapping(value = "/release",method = RequestMethod.POST)
-    public String releasetask(HttpServletRequest request, HttpSession session){
+    public ModelAndView releasetask(HttpServletRequest request, HttpSession session){
 
+
+        ModelAndView m= new ModelAndView();
         int ttid = Integer.parseInt(request.getParameter("tasktype"));
         System.out.println("任务种类"+ttid);
         int pmid = Integer.parseInt(request.getParameter("pricingmodel"));
         System.out.println("计费种类"+pmid);
         User u= (User) session.getAttribute("user");
         int uid=u.getId();
-        String name= request.getParameter("name");
-        String message = request.getParameter("message");
 
-        String str= request.getParameter("startingaddress");
-        List<String> result = Arrays.asList(str.split(","));
-        String startingaddress=result.get(2);
-        Double startinglocationX= Double.valueOf(result.get(0));
-                //起始纬度
-        Double startinglocationY=Double.valueOf(result.get(1));
+        List<TransferandFlow> p=transferService.selectOne(uid);
+        if(p!=null || p.size()!=0)
+        {
+            m.addObject("prompt", "请先去支付未付的金额");
+//        return "forward:/user/login1";
+            m.setViewName("forward:/transfer/view2");
+            return m;
+        }
+        else {
+            String name= request.getParameter("name");
+            String message = request.getParameter("message");
 
-        String str1 = request.getParameter("purposeaddress");
-        List<String> resultv = Arrays.asList(str1.split(","));
-        String purposeaddress =resultv.get(2);
+            String str= request.getParameter("startingaddress");
+            List<String> result = Arrays.asList(str.split(","));
+            String startingaddress=result.get(2);
+            Double startinglocationX= Double.valueOf(result.get(0));
+            //起始纬度
+            Double startinglocationY=Double.valueOf(result.get(1));
 
-        Double purposelocationX= Double.valueOf(resultv.get(0));
-        //目的纬度
-        Double purposelocationY=Double.valueOf(resultv.get(1));
+            String str1 = request.getParameter("purposeaddress");
+            List<String> resultv = Arrays.asList(str1.split(","));
+            String purposeaddress =resultv.get(2);
 
-        double weight = Double.parseDouble(request.getParameter("weight"));
+            Double purposelocationX= Double.valueOf(resultv.get(0));
+            //目的纬度
+            Double purposelocationY=Double.valueOf(resultv.get(1));
 
-        Taskmessage t=new Taskmessage();
-        t.setWeight(weight);
-        t.setStartingaddress(startingaddress);
-        t.setPurposeaddress(purposeaddress);
-        t.setMessage(message);
-        t.setName(name);
-        t.setUid(uid);
-        t.setPmid(pmid);
-        t.setTtid(ttid);
-        t.setStartinggeohash(new GeoHash().encode(startinglocationX,startinglocationY));
-        t.setPurposegeohash(new GeoHash().encode(purposelocationX,purposelocationY));
-        t.setStartinglocationX(startinglocationX);
-        t.setStartinglocationY(startinglocationY);
-        t.setPurposelocationX(purposelocationX);
-        t.setPurposelocationY(purposelocationY);
-        System.out.println("任务信息"+t);
+            double weight = Double.parseDouble(request.getParameter("weight"));
 
-        boolean i=taskmessageService.TaskmessageRelease(t);
+            Taskmessage t=new Taskmessage();
+            t.setWeight(weight);
+            t.setStartingaddress(startingaddress);
+            t.setPurposeaddress(purposeaddress);
+            t.setMessage(message);
+            t.setName(name);
+            t.setUid(uid);
+            t.setPmid(pmid);
+            t.setTtid(ttid);
+            t.setStartinggeohash(new GeoHash().encode(startinglocationX,startinglocationY));
+            t.setPurposegeohash(new GeoHash().encode(purposelocationX,purposelocationY));
+            t.setStartinglocationX(startinglocationX);
+            t.setStartinglocationY(startinglocationY);
+            t.setPurposelocationX(purposelocationX);
+            t.setPurposelocationY(purposelocationY);
+            System.out.println("任务信息"+t);
+
+            boolean i=taskmessageService.TaskmessageRelease(t);
+
+            m.addObject("prompt", "发布任务成功");
+//        return "forward:/user/login1";
+            m.setViewName("forward:/user/login4");
+            return m;
+        }
 
 
-        return "redirect:/user/login1";
+
+
+
     }
 
 

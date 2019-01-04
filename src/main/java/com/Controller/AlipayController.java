@@ -152,7 +152,7 @@ public class AlipayController {
 				b.setMoney(h.getMoney() + t.getPrice());
 				boolean w = userService.updateBusiness(b);
 			}
-			m.setViewName("redirect:/user/login1");
+			m.setViewName("forward:/user/login1");
 
 
 		}

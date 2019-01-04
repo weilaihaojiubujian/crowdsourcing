@@ -84,4 +84,17 @@ public class TransferDaoTest {
 
 
     }
+
+    @Test
+    public void selectOne()
+    {
+        List<TransferandFlow> t=transferDao.selectOne(1);
+
+        for (TransferandFlow i:t)
+        {
+            System.out.println("转账记录："+i);
+        }
+
+
+    }
 }
