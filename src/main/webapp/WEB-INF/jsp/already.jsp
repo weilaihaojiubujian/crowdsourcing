@@ -103,7 +103,7 @@
                     </li>
                     <li>
                         <div class="liItems hiddenInformation">
-                            <div><i class="icon-edit"></i></div><div><a href="/user/information">修改密码</a></div><div><i class="icon-angle-righ invisiblet"></i></div>
+                            <div><i class="icon-edit"></i></div><div><a href="/user/updatepassword1">修改密码</a></div><div><i class="icon-angle-righ invisiblet"></i></div>
                         </div>
                     </li>
                     <li>
