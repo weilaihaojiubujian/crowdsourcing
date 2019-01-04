@@ -215,10 +215,7 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <strong></strong>
         </div>
-        <div class="alert alert-info alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong></strong>
-        </div>
+
     </main>
 </div>
 <%--<footer role="contentinfo">--%>
@@ -247,17 +244,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <!-- <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-    var a="${prompt}";
-    if(a!="")
-    {
-        $('.alert').animate({
-                right : 0},
-            'slow', function() {
-                $('.alert strong').text(a);
-            });
-    }
-</script>
+
 <script src="${pageContext.request.contextPath }/js/bankaccount.js"></script>
 <script src="${pageContext.request.contextPath }/js/administrator.js"></script>
 <!-- <script src="js/jquery-ui.js"></script> -->
