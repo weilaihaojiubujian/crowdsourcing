@@ -26,4 +26,17 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <!-- 拦截器 -->
+    <mvc:interceptors>
+        <!-- 多个拦截器，顺序执行 -->
+        <!-- 登录认证拦截器 -->
+        <mvc:interceptor>
+            <mvc:mapping path="/user/login1"/>
+            <mvc:mapping path="/user/login"/>
+
+            <bean class="com.Intercept.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+
 </beans>

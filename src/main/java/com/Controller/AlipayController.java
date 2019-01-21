@@ -172,14 +172,7 @@ public class AlipayController {
 	/**
 	 *
 	 * @Title: AlipayController.java
-	 * @Package com.sihai.controller
 	 * @Description: 前往支付宝第三方网关进行支付
-	 * Copyright: Copyright (c) 2017
-	 * Company:FURUIBOKE.SCIENCE.AND.TECHNOLOGY
-	 *
-	 * @author sihai
-	 * @date 2017年8月23日 下午8:50:43
-	 * @version V1.0
 	 */
 	@RequestMapping(value = "/goAlipay", produces = "text/html; charset=UTF-8")
 	@ResponseBody
@@ -223,14 +216,7 @@ public class AlipayController {
 	/**
 	 *
 	 * @Title: AlipayController.java
-	 * @Package com.sihai.controller
 	 * @Description: 支付宝同步通知页面
-	 * Copyright: Copyright (c) 2017
-	 * Company:FURUIBOKE.SCIENCE.AND.TECHNOLOGY
-	 *
-	 * @author sihai
-	 * @date 2017年8月23日 下午8:51:01
-	 * @version V1.0
 	 */
 	@RequestMapping(value = "/alipayReturnNotice")
 	public ModelAndView alipayReturnNotice(HttpServletRequest request, HttpServletRequest response,HttpSession session) throws Exception {
@@ -328,14 +314,7 @@ public class AlipayController {
 	/**
 	 *
 	 * @Title: AlipayController.java
-	 * @Package com.sihai.controller
 	 * @Description: 支付宝异步 通知页面
-	 * Copyright: Copyright (c) 2017
-	 * Company:FURUIBOKE.SCIENCE.AND.TECHNOLOGY
-	 *
-	 * @author sihai
-	 * @date 2017年8月23日 下午8:51:13
-	 * @version V1.0
 	 */
 	@RequestMapping(value = "/alipayNotifyNotice")
 	@ResponseBody
