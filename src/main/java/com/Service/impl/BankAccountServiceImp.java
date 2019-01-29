@@ -6,6 +6,7 @@ import com.Service.BankAccountService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -26,6 +27,7 @@ public class BankAccountServiceImp implements BankAccountService {
     private BankAccountDao bankAccountDao;
 
     @Override
+    @Cacheable(value="common",key="#bankAccount")
     public boolean insertBankAccount(BankAccount bankAccount) {
         if(bankAccount==null) return false;
         int i=bankAccountDao.insertBankAccount(bankAccount);
