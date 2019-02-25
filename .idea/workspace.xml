@@ -13,7 +13,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/Service/impl/TaskServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/com/Service/impl/TaskServiceImp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/TaskController.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/TaskController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/UserController.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Intercept/EncodeFilter.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Intercept/EncodeFilter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/LoginServiceImp.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/LoginServiceImp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TaskServiceImp.class" afterPath="$PROJECT_DIR$/target/crowdsourcing/WEB-INF/classes/com/Service/impl/TaskServiceImp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/crowdsourcing_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/crowdsourcing_war.xml" />
@@ -69,9 +68,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crowdsourcing.iml" afterPath="$PROJECT_DIR$/crowdsourcing.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Service/impl/BankAccountServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/com/Service/impl/BankAccountServiceImp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Service/impl/LoginServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/com/Service/impl/LoginServiceImp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/Controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/Dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/Entity/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/Service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Service/impl/UserServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/com/Service/impl/UserServiceImp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/springweb.xml" afterPath="$PROJECT_DIR$/target/classes/spring/springweb.xml" />
@@ -114,32 +117,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="SendEmailUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Util/SendEmailUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="241" column="16" lean-forward="false" selection-start-line="241" selection-start-column="16" selection-end-line="241" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-redis.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-redis.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-dao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="99" lean-forward="false" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
-              <folding />
+            <state relative-caret-position="201">
+              <caret line="48" column="46" lean-forward="true" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,8 +132,8 @@
       <file leaf-file-name="UserServiceImp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/UserServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1147">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="-938">
+              <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -157,72 +142,86 @@
       <file leaf-file-name="UserDao.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="276">
+              <caret line="45" column="60" lean-forward="false" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
               <folding>
-                <marker date="1548754766087" expanded="true" signature="625:743" ph="insert into user... " />
-                <marker date="1548754766087" expanded="true" signature="832:928" ph="select id,us... user" />
-                <marker date="1548754766087" expanded="true" signature="1045:1143" ph="select id,pa... user" />
-                <marker date="1548754766087" expanded="true" signature="1232:1355" ph="select id,us... user" />
-                <marker date="1548754766087" expanded="true" signature="1447:1559" ph="select id,us... user" />
-                <marker date="1548754766087" expanded="true" signature="1646:1800" ph="select u.id,... user" />
-                <marker date="1548754766087" expanded="true" signature="1887:2076" ph="select u.id,... user" />
-                <marker date="1548754766087" expanded="true" signature="2174:2343" ph="select u.id,... user" />
-                <marker date="1548754766087" expanded="true" signature="2435:2596" ph="select u.id,... user" />
-                <marker date="1548754766087" expanded="true" signature="2698:2874" ph="select u.id,... user" />
-                <marker date="1548754766087" expanded="true" signature="2948:2982" ph="select id fr... user" />
-                <marker date="1548754766087" expanded="true" signature="3039:4113" ph="update user " />
-                <marker date="1548754766087" expanded="true" signature="4173:5273" ph="update user " />
-                <marker date="1548754766087" expanded="true" signature="5334:5410" ph="update user " />
-                <marker date="1548754766087" expanded="true" signature="5465:5527" ph="delete from " />
+                <marker date="1551090337504" expanded="true" signature="710:828" ph="insert into user... " />
+                <marker date="1551090337504" expanded="true" signature="887:1037" ph="insert into user... " />
+                <marker date="1551090337504" expanded="true" signature="1127:1223" ph="select id,us... user" />
+                <marker date="1551090337504" expanded="true" signature="1336:1435" ph="select id,us... user" />
+                <marker date="1551090337504" expanded="true" signature="1537:1635" ph="select id,pa... user" />
+                <marker date="1551090337504" expanded="true" signature="1724:1847" ph="select id,us... user" />
+                <marker date="1551090337504" expanded="true" signature="1939:2051" ph="select id,us... user" />
+                <marker date="1551090337504" expanded="true" signature="2138:2292" ph="select u.id,... user" />
+                <marker date="1551090337504" expanded="true" signature="2379:2568" ph="select u.id,... user" />
+                <marker date="1551090337504" expanded="true" signature="2666:2835" ph="select u.id,... user" />
+                <marker date="1551090337504" expanded="true" signature="2927:3088" ph="select u.id,... user" />
+                <marker date="1551090337504" expanded="true" signature="3190:3366" ph="select u.id,... user" />
+                <marker date="1551090337504" expanded="true" signature="3440:3474" ph="select id fr... user" />
+                <marker date="1551090337504" expanded="true" signature="3531:4605" ph="update user " />
+                <marker date="1551090337504" expanded="true" signature="4665:5765" ph="update user " />
+                <marker date="1551090337504" expanded="true" signature="5826:5902" ph="update user " />
+                <marker date="1551090337504" expanded="true" signature="5957:6019" ph="delete from " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redis.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/redis.properties">
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="189">
+              <caret line="135" column="19" lean-forward="false" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServiceImp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/LoginServiceImp.java">
+      <file leaf-file-name="emailregist.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/emailregist.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="75" column="57" lean-forward="true" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankAccountServiceImp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/BankAccountServiceImp.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+            <state relative-caret-position="3841">
+              <caret line="303" column="51" lean-forward="true" selection-start-line="303" selection-start-column="51" selection-end-line="303" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="127.0.0.1-127.0.0.1:6379-explorer" pinned="false" current-in-tab="true">
-        <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=1004758012&amp;timestamp=1548753817686&amp;nodeHost=127.0.0.1&amp;nodePort=6379">
-          <provider selected="true" editor-type-id="x">
-            <state />
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="31" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EncodeFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/Intercept/EncodeFilter.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="385">
+              <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="23" />
+              <folding>
+                <element signature="e#1710#1711#0" expanded="true" />
+                <element signature="e#1738#1739#0" expanded="true" />
+                <element signature="e#1780#1781#0" expanded="true" />
+                <element signature="e#1814#1815#0" expanded="true" />
+                <element signature="e#1845#1846#0" expanded="true" />
+                <element signature="e#1872#1873#0" expanded="true" />
+                <element signature="e#1912#1913#0" expanded="true" />
+                <element signature="e#1944#1945#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -234,9 +233,9 @@
       <list>
         <option value="jsf" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -251,15 +250,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/Util/LeeJSONResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Util/AlipayConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/Dao/FlowDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Dto/TransferandFlow.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/one.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/administrator.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/regist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/auditbusiness.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audittask.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/audituser.jsp" />
@@ -269,7 +261,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/alipaySuccess.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/Service/impl/TaskServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/businessinformation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp" />
@@ -293,15 +284,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/Controller/AlipayController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/springweb.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/Intercept/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/Util/RedisCache.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-redis.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/redis.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/Intercept/EncodeFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Service/impl/LoginServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Service/impl/BankAccountServiceImp.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/emailregist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Service/impl/UserServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/Util/SendEmailUtil.java" />
       </list>
     </option>
   </component>
@@ -365,7 +364,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -407,6 +405,24 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="Dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdsourcing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crowdsourcing" type="b2602c69:ProjectViewProjectNode" />
@@ -496,13 +512,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/网上下载的项目/JMSBOCS-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mail" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27665442" />
@@ -926,6 +943,8 @@
       <workItem from="1548574177938" duration="2005000" />
       <workItem from="1548736677615" duration="2922000" />
       <workItem from="1548742792060" duration="4978000" />
+      <workItem from="1548846281489" duration="1817000" />
+      <workItem from="1551082406603" duration="7423000" />
     </task>
     <servers />
   </component>
@@ -962,7 +981,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368904000" />
+    <option name="totallyTimeSpent" value="378144000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -995,11 +1014,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27843347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24087983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1164,7 +1183,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java</url>
-          <line>342</line>
+          <line>415</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
@@ -1174,8 +1193,14 @@
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/emailregist.jsp</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1184,62 +1209,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Util/LeeJSONResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-641">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dto/TransferandFlow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1720">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TransferDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="58" column="46" lean-forward="true" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/TransferService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="43" column="49" lean-forward="false" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/Dao/TransferDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/TransferDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/message.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="194" column="62" lean-forward="true" selection-start-line="194" selection-start-column="62" selection-end-line="194" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bankaccount.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1670">
-          <caret line="128" column="115" lean-forward="true" selection-start-line="128" selection-start-column="81" selection-end-line="128" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -1353,26 +1322,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2645">
-          <caret line="115" column="45" lean-forward="false" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UseraddressController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="139" column="29" lean-forward="false" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1399,86 +1352,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/springweb.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=1004758012&amp;timestamp=1540385454969&amp;nodeHost=127.0.0.1&amp;nodePort=6379" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="241" column="16" lean-forward="false" selection-start-line="241" selection-start-column="16" selection-end-line="241" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1548741353639&amp;nodeHost=127.0.0.1&amp;nodePort=6379">
-      <provider selected="true" editor-type-id="x">
-        <state />
-      </provider>
-    </entry>
-    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1548742835165&amp;nodeHost=127.0.0.1&amp;nodePort=6379">
-      <provider selected="true" editor-type-id="x">
-        <state />
-      </provider>
-    </entry>
-    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1548742968098&amp;nodeHost=127.0.0.1&amp;nodePort=6379">
-      <provider selected="true" editor-type-id="x">
-        <state />
-      </provider>
-    </entry>
-    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=123&amp;timestamp=1548743082657&amp;nodeHost=127.0.0.1&amp;nodePort=6379">
-      <provider selected="true" editor-type-id="x">
-        <state />
-      </provider>
-    </entry>
-    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1548744201884&amp;nodeHost=127.0.0.1&amp;nodePort=6379">
-      <provider selected="true" editor-type-id="x">
-        <state />
-      </provider>
-    </entry>
-    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1548744600642&amp;nodeHost=127.0.0.1&amp;nodePort=6379">
-      <provider selected="true" editor-type-id="x">
-        <state />
-      </provider>
-    </entry>
-    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=1004758012&amp;timestamp=1548744765806&amp;nodeHost=127.0.0.1&amp;nodePort=6379">
-      <provider selected="true" editor-type-id="x">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/redis.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-redis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1548741353639&amp;nodeHost=127.0.0.1&amp;nodePort=6379" />
+    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1548742835165&amp;nodeHost=127.0.0.1&amp;nodePort=6379" />
+    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1548742968098&amp;nodeHost=127.0.0.1&amp;nodePort=6379" />
+    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=123&amp;timestamp=1548743082657&amp;nodeHost=127.0.0.1&amp;nodePort=6379" />
+    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1548744201884&amp;nodeHost=127.0.0.1&amp;nodePort=6379" />
+    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=&amp;timestamp=1548744600642&amp;nodeHost=127.0.0.1&amp;nodePort=6379" />
+    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=1004758012&amp;timestamp=1548744765806&amp;nodeHost=127.0.0.1&amp;nodePort=6379" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Intercept/EncodeFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1492,48 +1376,8 @@
         <state relative-caret-position="187">
           <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <marker date="1548754766087" expanded="true" signature="625:743" ph="insert into user... " />
-            <marker date="1548754766087" expanded="true" signature="832:928" ph="select id,us... user" />
-            <marker date="1548754766087" expanded="true" signature="1045:1143" ph="select id,pa... user" />
-            <marker date="1548754766087" expanded="true" signature="1232:1355" ph="select id,us... user" />
-            <marker date="1548754766087" expanded="true" signature="1447:1559" ph="select id,us... user" />
-            <marker date="1548754766087" expanded="true" signature="1646:1800" ph="select u.id,... user" />
-            <marker date="1548754766087" expanded="true" signature="1887:2076" ph="select u.id,... user" />
-            <marker date="1548754766087" expanded="true" signature="2174:2343" ph="select u.id,... user" />
-            <marker date="1548754766087" expanded="true" signature="2435:2596" ph="select u.id,... user" />
-            <marker date="1548754766087" expanded="true" signature="2698:2874" ph="select u.id,... user" />
-            <marker date="1548754766087" expanded="true" signature="2948:2982" ph="select id fr... user" />
-            <marker date="1548754766087" expanded="true" signature="3039:4113" ph="update user " />
-            <marker date="1548754766087" expanded="true" signature="4173:5273" ph="update user " />
-            <marker date="1548754766087" expanded="true" signature="5334:5410" ph="update user " />
-            <marker date="1548754766087" expanded="true" signature="5465:5527" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="99" lean-forward="false" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/UserServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1147">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1547,7 +1391,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/LoginServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
+        <state relative-caret-position="460">
           <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding />
         </state>
@@ -1555,7 +1399,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/BankAccountServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="437">
           <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
           <folding />
         </state>
@@ -1564,6 +1408,179 @@
     <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=6379&amp;password=1004758012&amp;timestamp=1548753817686&amp;nodeHost=127.0.0.1&amp;nodePort=6379">
       <provider selected="true" editor-type-id="x">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/springweb.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/redis.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="255" column="32" lean-forward="false" selection-start-line="255" selection-start-column="32" selection-end-line="255" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/regist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="224" column="0" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="224" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="165" column="46" lean-forward="false" selection-start-line="165" selection-start-column="46" selection-end-line="165" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="45" column="60" lean-forward="false" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
+          <folding>
+            <marker date="1551090337504" expanded="true" signature="710:828" ph="insert into user... " />
+            <marker date="1551090337504" expanded="true" signature="887:1037" ph="insert into user... " />
+            <marker date="1551090337504" expanded="true" signature="1127:1223" ph="select id,us... user" />
+            <marker date="1551090337504" expanded="true" signature="1336:1435" ph="select id,us... user" />
+            <marker date="1551090337504" expanded="true" signature="1537:1635" ph="select id,pa... user" />
+            <marker date="1551090337504" expanded="true" signature="1724:1847" ph="select id,us... user" />
+            <marker date="1551090337504" expanded="true" signature="1939:2051" ph="select id,us... user" />
+            <marker date="1551090337504" expanded="true" signature="2138:2292" ph="select u.id,... user" />
+            <marker date="1551090337504" expanded="true" signature="2379:2568" ph="select u.id,... user" />
+            <marker date="1551090337504" expanded="true" signature="2666:2835" ph="select u.id,... user" />
+            <marker date="1551090337504" expanded="true" signature="2927:3088" ph="select u.id,... user" />
+            <marker date="1551090337504" expanded="true" signature="3190:3366" ph="select u.id,... user" />
+            <marker date="1551090337504" expanded="true" signature="3440:3474" ph="select id fr... user" />
+            <marker date="1551090337504" expanded="true" signature="3531:4605" ph="update user " />
+            <marker date="1551090337504" expanded="true" signature="4665:5765" ph="update user " />
+            <marker date="1551090337504" expanded="true" signature="5826:5902" ph="update user " />
+            <marker date="1551090337504" expanded="true" signature="5957:6019" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1780#1781#0" expanded="true" />
+            <element signature="e#1814#1815#0" expanded="true" />
+            <element signature="e#1845#1846#0" expanded="true" />
+            <element signature="e#1872#1873#0" expanded="true" />
+            <element signature="e#1912#1913#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/AuditService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/AuditServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1124">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="135" column="19" lean-forward="false" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/emailregist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="75" column="57" lean-forward="true" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Service/impl/UserServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-938">
+          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3841">
+          <caret line="303" column="51" lean-forward="true" selection-start-line="303" selection-start-column="51" selection-end-line="303" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Util/SendEmailUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="48" column="46" lean-forward="true" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

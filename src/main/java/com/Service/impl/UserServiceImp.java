@@ -36,8 +36,28 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
+    public boolean useremailRegistered(User user) {
+        if(user==null) return false;
+        int i=userDao.insertemailUser(user);
+        log.info("UserServiceImp"+"用户邮箱注册={}", i);
+
+        return i>0?true:false;
+    }
+
+    @Override
     public User selectUserById(int id) {
         User user=userDao.selectById(id);
+        log.info("UserServiceImp"+"查询用户={}", user);
+        if(user!=null)
+        {
+            return user;
+        }
+        return null;
+    }
+
+    @Override
+    public User selectByCode(String code) {
+        User user=userDao.selectByCode(code);
         log.info("UserServiceImp"+"查询用户={}", user);
         if(user!=null)
         {

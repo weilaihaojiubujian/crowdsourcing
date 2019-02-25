@@ -163,6 +163,7 @@
                             <input type="submit" value="登录" class="button button-glow button-border button-rounded button-primary">
                         </div>
                         <small><a href="/user/regist">没有账号？点击注册</a></small>
+                        <small><a href="/user/emailregist">邮件注册</a></small>
                     </form>
                 </div>
             </div>

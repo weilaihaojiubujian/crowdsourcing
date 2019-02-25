@@ -7,6 +7,7 @@ import com.Entity.Businessinformation;
 import com.Entity.Personinformation;
 import com.Entity.User;
 import com.Service.*;
+import com.Util.SendEmailUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,11 +21,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.UUID;
 
 /**
  * @Author: wanghongbin
@@ -56,6 +59,9 @@ public class UserController {
 
     @Autowired
     TaskService taskService;
+
+    @Autowired
+    AuditService auditService;
 
 
     @RequestMapping(value = "/main",method = RequestMethod.GET)
@@ -122,6 +128,32 @@ public class UserController {
     public String businessinformation(){
         return "businessinformation";
 
+    }
+
+    @RequestMapping(value = "/regist",method = RequestMethod.GET)
+    public String regist(){
+        return "regist";
+    }
+
+
+    @RequestMapping(value = "/emailregist",method = RequestMethod.GET)
+    public String  emailregist(){
+        return "emailregist";
+    }
+
+
+    /**
+     * 用户激活账户
+     * @param code
+     * @return
+     */
+    @RequestMapping(value ="/activation",method = RequestMethod.GET)
+    public String activation(String code) {
+        //根据激活码查询用户
+        User user = userService.selectByCode(code);
+
+        auditService.updateUserState(user.getId());
+        return "redirect:/user/login3";
     }
 
 
@@ -200,10 +232,6 @@ public class UserController {
 
     }
 
-    @RequestMapping(value = "/regist",method = RequestMethod.GET)
-    public String regist(){
-        return "regist";
-    }
 
 
     @RequestMapping(value = "/regist",method = RequestMethod.POST)
@@ -256,6 +284,51 @@ public class UserController {
 
 
     }
+
+    @RequestMapping(value = "/emailregist",method = RequestMethod.POST)
+    public String emailregistuser(HttpServletRequest request, Model model, HttpSession session) throws MessagingException {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        String phonenumber= request.getParameter("phonenumber");
+        String species= request.getParameter("species");
+        String email=request.getParameter("email");
+        User u=new User();
+
+        u.setSpecies(species);
+        u.setPassword(password);
+        u.setUsername(username);
+
+        u.setPhonenumber(phonenumber);
+        u.setEmail(email);
+        String code = UUID.randomUUID().toString();
+
+        u.setCode(code);
+
+        User use=userService.selectByUsernamePasswordToId(username,password);
+        if(use==null)
+        {
+            boolean i=userService.useremailRegistered(u);
+            if(i==true)
+            {
+                User user=userService.selectByUsernamePasswordToId(username,password);
+                SendEmailUtil.sendEmail(email,code);
+                session.setAttribute("user",user);
+
+                return "redirect:/user/login3";
+            }
+            else
+            {
+                return "redirect:/user/regist";
+            }
+        }
+        else
+        {
+            return "redirect:/user/login3";
+        }
+
+    }
+
 
     @RequestMapping(value = "/information",method = RequestMethod.GET)
     public String information(HttpServletRequest request, Model model, HttpSession session){

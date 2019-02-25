@@ -13,7 +13,8 @@
   <result property="state" column="state"/>
   <result property="species" column="species"/>
   <result property="money" column="money"/>
-
+  <result property="email" column="email"/>
+  <result property="code" column="code"/>
 </resultMap>
 
 
@@ -24,6 +25,13 @@
 
    </insert>
 
+    <insert id="insertemailUser">
+
+        insert into user(username,password,phonenumber,species,email,code)
+        values (#{username},#{password},#{phonenumber},#{species},#{email},#{code})
+
+    </insert>
+
 
 
   <select id="selectById" resultMap="User" parameterType="int">
@@ -31,6 +39,13 @@
       select id,username,password,phonenumber,state,species,money from user where id=#{id} and state=1
        
         
+    </select>
+
+    <select id="selectByCode" resultMap="User" parameterType="String">
+
+        select id,username,password,phonenumber,state,species,money,email,code from user where code=#{code}
+
+
     </select>
 
     <select id="selectByUsername" resultMap="User" parameterType="String">

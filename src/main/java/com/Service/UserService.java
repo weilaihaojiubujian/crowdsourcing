@@ -23,11 +23,26 @@ public interface UserService {
 
 
     /**
+     * 用户邮箱注册
+     * @param user
+     * @return
+     */
+    boolean useremailRegistered(User user);
+
+
+    /**
      * 通过id查找用户
      * @param id
      * @return
      */
     User selectUserById(int id);
+
+    /**
+     * 用code查询用户
+     * @param code
+     * @return
+     */
+    User selectByCode(String code);
 
 
 

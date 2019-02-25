@@ -22,6 +22,13 @@ public interface UserDao {
      */
     int insertUser(User user);
 
+
+    /**
+     * 插入邮箱，用户
+     * @param user
+     * @return
+     */
+    int insertemailUser(User user);
     /**
      * 通过id查询用户
      * @param id
@@ -30,6 +37,13 @@ public interface UserDao {
 
     User selectById(int id);
 
+
+    /**
+     * 用code查询用户
+     * @param code
+     * @return
+     */
+    User selectByCode(String code);
 
     /**
      * 通过用户名查找用户
